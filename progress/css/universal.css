@@ -25,9 +25,6 @@ font-family:'BauerBodoniW01-DemiBdDi';
 font-family:'BauerBodoniW01-DemiBdIt_927287';
 font-family:'BauerBodoniW01-BoldDisp';
 font-family:'BauerBodoniW01-BdItalDi';
-font-family:'Bodoni W01 Poster691960';
-font-family:'BodoniW01-PosterItalic';
-font-family:'BodoniW01-PosterCompres';
 font-family:'EngraversGothicBTW01-Re';
 font-family:'AdobeGaramondW01-Regula';
 font-family:'Adobe Garamond W01 It';
@@ -35,12 +32,23 @@ font-family:'Adobe Garamond W01 SmBd';
 font-family:'AdobeGaramondW01-SmBdIt';
 font-family:'Adobe Garamond W01 Bd';
 font-family:'AdobeGaramondW01-BdIt';
+
+
+Delete:
+font-family:'Bodoni W01 Poster691960';
+font-family:'BodoniW01-PosterItalic';
+font-family:'BodoniW01-PosterCompres';
+
+
 */
 html {
-  font-family: georgia, serif; }
-
-p {
-  line-height: 1.5em; }
+  font-family: georgia, serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-kerning: normal;
+          font-kerning: normal;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%; }
 
 img {
   width: 100%; }
