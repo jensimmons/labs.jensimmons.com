@@ -1,0 +1,41 @@
+html {
+  font-family: 'CaslonClassico W00', georgia, serif;
+}
+
+body {
+  width: 60%;
+  max-width: 800px;
+  margin: 3rem auto;
+}
+
+h1 {
+  font-family: 'Bodoni W01 Poster691960', helvetica, georgia, serif;
+}
+
+img {
+  width: 80%;
+}
+
+img.grapes,
+img.onion {
+  float: left;
+  margin-left: -20%;
+}
+
+img.orange {
+  float: right;
+  margin-right: -20%;
+}
+
+img.grapes {
+  -webkit-shape-outside: polygon(nonzero, -2% 6.6%, 36% 1.75%, 82.8% 14.95%, 100% 50.1%, 88.65% 90.1%, 68% 86.15%, -2.2% 96.7%);
+          shape-outside: polygon(nonzero, -2% 6.6%, 36% 1.75%, 82.8% 14.95%, 100% 50.1%, 88.65% 90.1%, 68% 86.15%, -2.2% 96.7%);
+}
+
+img.orange {
+  width: 50%;
+  -webkit-shape-outside: circle();
+          shape-outside: circle();
+  -webkit-shape-margin: 1em;
+          shape-margin: 1em;
+}
