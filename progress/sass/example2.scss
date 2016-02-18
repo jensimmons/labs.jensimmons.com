@@ -1,0 +1,64 @@
+
+html {
+  font-family: 'EngraversGothicBTW01-Re', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 
+  Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 18px;
+  background: url('../images/jazzpaper1.jpg');
+}
+
+header {
+  background: url('../images/jazzpaper2.jpg');
+  height: 10vh;
+  display: flex; 
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+h1 {
+  font-family: 'Vere Dignum LT W01', Helvetica, serif;
+  margin: 0 50px;
+  font-size: 92px;
+  opacity: 0.8;
+}
+.text {
+  margin: 30px 40px 60px; 
+}
+blockquote {
+  font-size: 24px;
+  margin: 30px 0 0;
+  padding: 30px;
+  background: url('../images/jazzpaper3.jpg');
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    height: 160px;
+  }
+  h1 {
+    margin: 0 100px 0 0;
+    font-size: 160px;
+  }
+  .text {
+    font-size: 18px;
+    margin-left: 50px; 
+  }  
+  img {
+    float: right;
+    width: 45%;
+    margin-left: 5;
+    clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+    shape-outside: polygon(22.3% 0.15%, 100% 0%, 100% 100%, -55.85% 99.85%);
+  }  
+}
+
+@media screen and (min-width: 800px) {
+  blockquote {
+    clip-path: polygon(60px 0%, 68% 0%, 65% 100%, 0% 100%);
+    padding-left: 80px;
+  }  
+}
+@media screen and (min-width: 1000px) {
+  blockquote {
+
+  }  
+}
+
