@@ -1,0 +1,16 @@
+html {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh; }
+
+body {
+  width: 500px;
+  margin: auto; }
+
+.box {
+  width: 500px;
+  height: 500px;
+  background: #bbb;
+  border: 10px solid black; }

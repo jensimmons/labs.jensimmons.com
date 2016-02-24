@@ -1,0 +1,17 @@
+html {
+  display: flex;
+  height: 100vh;
+}
+
+body {
+  width: 500px;
+  margin: auto;
+}
+
+.box {
+  width: 500px;
+  height: 500px;
+  background: #bbb;
+  border: 10px solid black;
+//  border-radius: 50px;
+}
