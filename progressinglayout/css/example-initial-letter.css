@@ -16,9 +16,9 @@ p {
   p::first-letter {
     color: rgba(255, 190, 150, 0.9);
     font-weight: bold;
+    margin-right: 0.5em;
     -webkit-initial-letter: 4;
-    initial-letter: 4;
-    margin-right: 0.5em; } }
+    initial-letter: 4; } }
 .warning {
   color: red;
   font-size: 200%; }
