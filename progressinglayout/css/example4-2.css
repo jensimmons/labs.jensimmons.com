@@ -1,0 +1,10 @@
+@import url("example3-1.css");
+header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh; }
+
+h1 {
+  margin: auto; }

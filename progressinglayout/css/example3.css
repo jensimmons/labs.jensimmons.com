@@ -1,68 +1,36 @@
 html {
   font-family: 'AdobeGaramondW01-Regula', georgia, serif;
-  font-size: 18px; }
+  font-size: 21px; }
 
-header {
-  background: #2E1811;
-  background-image: url("../images/dirt.jpg");
-  background-size: cover;
-  padding: 2rem;
-  color: #fff;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
+p {
+  line-height: 2em;
+  width: 64vw;
+  margin: 12vw 24vw 12vw 12vw;
+  padding-bottom: 6vw;
+  margin-bottom: 6vw; }
 
-h1 {
-  font-family: 'BauerBodoniW01-BoldDisp', georgia, serif;
-  margin: 0;
-  line-height: 1.1em;
-  background: rgba(0, 0, 0, 0.4);
-  font-size: 2rem; }
-  @media (min-width: 500px) {
-    h1 {
-      font-size: 4rem; } }
+@supports (initial-letter: 3) or (-webkit-initial-letter: 3) {
+  p::first-letter {
+    color: rgba(255, 190, 150, 0.9);
+    font-weight: bold;
+    initial-letter: 4;
+    -webkit-initial-letter: 4;
+    margin-right: 0.5em; } }
+.warning {
+  color: red;
+  font-size: 200%; }
 
-.publication-details {
-  text-indent: 0; }
-
-.author,
-.publication,
-.pubdate {
-  background: rgba(0, 0, 0, 0.4);
-  padding: 0.1em 0.25em;
-  display: block;
-  margin: 0.25em 0; }
-
-cite {
-  font-style: italic; }
-
-@media (min-width: 500px) {
-  .author,
-  .publication,
-  .pubdate {
-    display: inline; }
-
-  .author::after,
-  .publication::after {
-    content: " | ";
-    opacity: 0.5;
-    margin-left: 0.5em; } }
-.article-body {
-  width: 80vw;
-  margin: 2rem auto; }
-  .article-body p {
-    line-height: 1.6em;
-    text-indent: 1em; }
-  .article-body a {
-    color: green; }
-
-.pullquote {
-  margin: 1em 0;
-  font-size: 3rem;
-  font-family: 'BauerBodoniW01-BoldDisp', georgia, serif; }
-
+@supports (initial-letter: 3) or (-webkit-initial-letter: 3) {
+  .warning {
+    display: none; } }
 footer {
-  padding: 1em 2em;
-  background: #e1f3cc;
-  font-style: italic; }
+  border-top: 1px solid grey;
+  padding-top: 2em;
+  margin-top: 2em;
+  font-size: 65%;
+  color: gray;
+  line-height: 1.4em;
+  width: 64vw;
+  margin: 12vw 24vw 12vw 12vw;
+  padding-bottom: 6vw;
+  margin-bottom: 6vw; }

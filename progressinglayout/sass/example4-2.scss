@@ -1,0 +1,13 @@
+// Load all the CSS from Example 3 Part 1
+@import url('example3-1.css');
+
+
+// Now let's add some things
+header {
+  display: flex;
+  height: 100vh;
+}
+h1 {
+  margin: auto;
+}
+
