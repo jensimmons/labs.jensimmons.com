@@ -2,6 +2,9 @@ html {
   font-family: 'AdobeGaramondW01-Regula', georgia, serif;
   font-size: 21px;
 }
+a {
+  color: #e18f13;
+}
 
 p {
   line-height: 2em;  
@@ -20,6 +23,7 @@ p {
     margin-right: 0.5em;
   }
 }
+
 
 // ---------------------------------------------------------------------------------
 //   Styling a warning message, hiding it when support for initial letter is present 

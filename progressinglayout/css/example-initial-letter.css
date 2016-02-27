@@ -2,6 +2,9 @@ html {
   font-family: 'AdobeGaramondW01-Regula', georgia, serif;
   font-size: 21px; }
 
+a {
+  color: #e18f13; }
+
 p {
   line-height: 2em;
   width: 64vw;
