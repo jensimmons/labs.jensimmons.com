@@ -1,0 +1,37 @@
+html {
+  font-family: 'AdobeGaramondW01-Regula', georgia, serif;
+  font-size: 18px; }
+
+body {
+  background: black; }
+
+h1 {
+  font-family: 'BauerBodoniW01-BoldDisp', georgia, serif;
+  font-size: 3rem;
+  color: #fff;
+  margin: 0;
+  padding: 0.75em 0.25em;
+  background: #2c2c2c;
+  line-height: 1.1em; }
+
+ul {
+  padding: 0;
+  background: grey;
+  *zoom: 1; }
+  ul:before, ul:after {
+    display: table;
+    content: "";
+    line-height: 0; }
+  ul:after {
+    clear: both; }
+
+li {
+  list-style-type: none; }
+
+li {
+  float: left;
+  width: 25%;
+  border: 1px solid black; }
+
+img {
+  display: block; }
