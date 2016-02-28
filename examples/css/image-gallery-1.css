@@ -33,16 +33,16 @@ ul {
       -ms-flex-pack: distribute;
           justify-content: space-around; }
 
-img {
-  height: 300px;
-  height: calc(25vh - 2px);
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover; }
-
 li {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   border: 1px solid black; }
+
+img {
+  height: 300px;
+  height: calc(25vh - 2px);
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover; }

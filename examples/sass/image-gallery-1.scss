@@ -31,20 +31,20 @@ ul {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+li {
+  flex-grow: 1;
+  border: 1px solid black;
+}
 img {
   height: 300px;
   height: calc(25vh - 2px);
   display: block;
   object-fit: cover;
 }
-li {
-  flex-grow: 1;
-  border: 1px solid black;
-}
 
 
-/// WHAT's NEW??
 
+/// WHAT's NEW-ish?? (aka, what do we need to think about support for across browsers)
 // flexbox
 // object-fit
 // viewport units
