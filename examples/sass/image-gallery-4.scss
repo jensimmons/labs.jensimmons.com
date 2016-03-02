@@ -27,25 +27,44 @@ li {
 // Code for the Layout ---------------------------------------
 
 ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+//  grid-template-columns: 3fr 2fr 3fr 5fr 8fr 3fr 2fr;  
+  grid-template-columns: repeat(7, 1fr);
+  grid-auto-rows: 15vw;  
+  grid-auto-flow: dense;
 }
 li {
-  flex-grow: 1;
+  height: 100%;
   border: 1px solid black;
 }
+li.highlight {
+  grid-row: span 2;
+  grid-column: span 2;
+}
 img {
-  height: 300px;
-  height: calc(25vh - 2px);
   display: block;
   object-fit: cover;
+  height: 100%;
 }
 
 
 
-/// WHAT's NEW-ish?? (aka, what do we need to think about support for across browsers)
-// flexbox
+/// WHAT's NEW??
+
+// grid
 // object-fit
 // viewport units
-// calc
+
+
+// Style a Warning Message. Remove if Grid works ---------------------------------------
+
+.warning {
+  color: red;
+  font-size: 200%; 
+}
+@supports (display: grid) {
+  .warning {
+    display: none;
+  }
+}
+

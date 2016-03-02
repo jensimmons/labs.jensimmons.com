@@ -1,3 +1,20 @@
+// We need to clearfix our float, so here's a Sass mixin. If you don't get Sass, just look at the CSS file and see what the CSS is post-Sass.
+
+@mixin clearfix {
+    *zoom: 1;
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+        // Fixes Opera/contenteditable bug:
+        // http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952
+        line-height: 0;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
 // Code for the Styling --------------------------------------
 
 html {
@@ -18,7 +35,8 @@ h1 {
 }
 ul {
   padding: 0;
-  background: white;
+  background: grey;
+  @include clearfix;
 }
 li {
   list-style-type:none;
@@ -27,25 +45,13 @@ li {
 // Code for the Layout ---------------------------------------
 
 ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+
 }
 li {
-  flex-grow: 1;
+  float: left;
+  width: 25%;
   border: 1px solid black;
 }
 img {
-  height: 300px;
-  height: calc(25vh - 2px);
   display: block;
-  object-fit: cover;
 }
-
-
-
-/// WHAT's NEW-ish?? (aka, what do we need to think about support for across browsers)
-// flexbox
-// object-fit
-// viewport units
-// calc
