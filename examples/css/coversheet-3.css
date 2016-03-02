@@ -1,0 +1,12 @@
+@import url("coversheet-1.css");
+header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 500px;
+  height: 100vh; }
+
+h1 {
+  padding: 2em 0;
+  margin: auto; }

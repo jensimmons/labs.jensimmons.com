@@ -1,0 +1,20 @@
+// Load all the CSS from Example 3 Part 1
+@import url('coversheet-1.css');
+
+
+// Now let's add some things
+
+header {
+  display: flex;
+  height: 500px; // This was added to make the header taller 
+                 // in browsers that don't support viewport units
+  height: 100vh; // This overrides the height: 500px completely, 
+                // replacing it in browsers that do understand
+}
+h1 {
+  padding: 2em 0; // This was added to push the headline down in 
+                  // browsers that don't understand flexbox. Otherwise it has no affect. 
+  margin: auto;
+}
+
+
