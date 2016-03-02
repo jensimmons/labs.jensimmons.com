@@ -13,4 +13,5 @@ body {
   width: 500px;
   height: 500px;
   background: #bbb;
-  border: 10px solid black; }
+  border: 10px solid black;
+  border-radius: 50px; }
