@@ -5,25 +5,25 @@ html {
 a {
   color: #e18f13; }
 
-p {
+article p {
   line-height: 2em;
   width: 64vw;
   margin: 12vw 24vw 12vw 12vw;
   padding-bottom: 6vw;
   margin-bottom: 6vw; }
-
 @supports (initial-letter: 4) or (-webkit-initial-letter: 4) {
-  p::first-letter {
+  article p::first-letter {
     color: rgba(255, 190, 150, 0.9);
     font-weight: bold;
     margin-right: 0.5em;
     -webkit-initial-letter: 4;
     initial-letter: 4; } }
+
 .warning {
   color: red;
   font-size: 200%; }
 
-@supports (initial-letter: 3) or (-webkit-initial-letter: 3) {
+@supports (initial-letter: 4) or (-webkit-initial-letter: 4) {
   .warning {
     display: none; } }
 footer {
