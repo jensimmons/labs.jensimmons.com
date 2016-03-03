@@ -41,14 +41,68 @@ font-family:'BodoniW01-PosterCompres';
 
 
 */
+* {
+  box-sizing: border-box; }
+
 html {
   font-family: georgia, serif;
   text-rendering: optimizeLegibility;
   -webkit-font-kerning: normal;
-  font-kerning: normal;
+          font-kerning: normal;
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%; }
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%; }
 
 img {
   width: 100%; }
+  
+  
+/* --------------------------------------------------------*/
+  
+body {
+  font-family: 'AdobeGaramondW01-Regula', georgia, serif;
+  font-size: 18px;
+  width: 80%;
+  margin: 4rem auto;
+}
+
+h1, h2, h3 {
+  font-family: 'BauerBodoniW01-BoldDisp', georgia, serif;
+}
+a {
+  color: #146ccb;
+}
+  
+ul, ul > li {
+  list-style: none;
+  padding: 0 0 0 1em;
+}
+ol {
+  padding: 0;
+  margin: 0;  
+}
+.list-of-demos {
+  display: flex;
+  flex-wrap: wrap;
+}
+.demo-box {
+  padding: 2rem;
+  border: 1px solid black;
+  /*
+  width: 100%;
+  @media (min-width: 600px) {
+    width: 50%;
+  }
+  @media (min-width: 800px) {
+    width: 33.33%;
+  }
+  @media (min-width: 1000px) {
+    width: 25%;
+  }
+  @media (min-width: 1200px) {
+    width: 20%;
+  }
+  */
+}
+
+

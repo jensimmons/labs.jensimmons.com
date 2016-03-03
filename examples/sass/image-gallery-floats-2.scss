@@ -1,0 +1,59 @@
+// We need to clearfix our float, so here's a Sass mixin. If you don't get Sass, just look at the CSS file and see what the CSS is post-Sass.
+
+@mixin clearfix {
+    *zoom: 1;
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+        // Fixes Opera/contenteditable bug:
+        // http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952
+        line-height: 0;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+// Code for the Styling --------------------------------------
+
+html {
+  font-family: 'AdobeGaramondW01-Regula', georgia, serif;
+  font-size: 18px;
+}
+body {
+  background: black;
+}
+h1 {
+  font-family: 'BauerBodoniW01-BoldDisp', georgia, serif;  
+  font-size: 3rem;
+  color: #fff;
+  margin: 0;
+  padding: 0.75em 0.25em;
+  background: #2c2c2c;
+  line-height: 1.1em;
+}
+ul {
+  padding: 0;
+  background: grey;
+  @include clearfix;
+}
+li {
+  list-style-type:none;
+}
+
+// Code for the Layout ---------------------------------------
+
+ul {
+
+}
+li {
+  float: left;
+  width: 25%;
+  height: 25vw;
+  border: 1px solid black;
+}
+img {
+  display: block;
+  
+}

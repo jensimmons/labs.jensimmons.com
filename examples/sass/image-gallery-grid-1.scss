@@ -9,7 +9,7 @@ body {
 }
 h1 {
   font-family: 'BauerBodoniW01-BoldDisp', georgia, serif;  
-  font-size: 3rem;
+  font-size: 2rem;
   color: #fff;
   margin: 0;
   padding: 0.75em 0.25em;
@@ -27,18 +27,45 @@ li {
 // Code for the Layout ---------------------------------------
 
 ul {
+  background: black;
   display: grid;
-//  grid-template-columns: 3fr 2fr 3fr 5fr 8fr 3fr 2fr;  
-  grid-template-columns: repeat(7, 1fr);
-  grid-auto-rows: 15vw;  
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 50vw;  
   grid-auto-flow: dense;
+  @media (min-width: 360px) {
+    grid-template-columns: repeat(3, 1fr);  
+    grid-auto-rows: 33vw;  
+  }
+  @media (min-width: 500px) {
+    grid-template-columns: repeat(4, 1fr);  
+    grid-auto-rows: 25vw;  
+  }
+  @media (min-width: 700px) {
+    grid-template-columns: repeat(5, 1fr);  
+    grid-auto-rows: 20vw;  
+  }
+  @media (min-width: 900px) {
+    grid-template-columns: repeat(7, 1fr);  
+    grid-auto-rows: 15vw;  
+  }
+  @media (min-width: 1100px) {
+    grid-template-columns: repeat(9, 1fr);  
+    grid-auto-rows: 11vw;  
+  }
 }
+
 li {
   height: 100%;
   border: 1px solid black;
 }
-li.highlight {
+li.highlight-box {
   grid-row: span 2;
+  grid-column: span 2;
+}
+li.highlight-tall {
+  grid-row: span 2;
+}
+li.highlight-wide {
   grid-column: span 2;
 }
 img {
@@ -49,11 +76,10 @@ img {
 
 
 
-/// WHAT's NEW??
-
+/// WHAT's NEW?? (To check for progressive enhancement strategy)
 // grid
 // object-fit
-// viewport units
+// viewport units (used with Grid only)
 
 
 // Style a Warning Message. Remove if Grid works ---------------------------------------
