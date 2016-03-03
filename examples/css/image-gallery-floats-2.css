@@ -7,10 +7,10 @@ body {
 
 h1 {
   font-family: 'BauerBodoniW01-BoldDisp', georgia, serif;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #fff;
   margin: 0;
-  padding: 0.75em 0.25em;
+  padding: 0.5em 0.5em;
   background: #2c2c2c;
   line-height: 1.1em; }
 
@@ -30,9 +30,29 @@ li {
 
 li {
   float: left;
-  width: 25%;
-  height: 25vw;
   border: 1px solid black; }
 
 img {
-  display: block; }
+  display: block;
+  height: 100%; }
+
+li {
+  width: 50%;
+  height: 50vw; }
+
+@media (min-width: 500px) {
+  li {
+    width: 33.33%;
+    height: 33.33vw; } }
+@media (min-width: 700px) {
+  li {
+    width: 25%;
+    height: 25vw; } }
+@media (min-width: 900px) {
+  li {
+    width: 20%;
+    height: 20vw; } }
+@media (min-width: 1100px) {
+  li {
+    width: 16.66%;
+    height: 16.66vw; } }
