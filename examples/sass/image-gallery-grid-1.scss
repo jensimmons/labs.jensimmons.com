@@ -18,16 +18,15 @@ h1 {
 }
 ul {
   padding: 0;
-  background: white;
+  background: #000;
 }
 li {
-  list-style-type:none;
+  list-style-type: none;
 }
 
 // Code for the Layout ---------------------------------------
 
 ul {
-  background: black;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 50vw;  
