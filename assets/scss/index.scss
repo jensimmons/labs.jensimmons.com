@@ -68,9 +68,11 @@ body {
 
 h1, h2, h3 {
   font-family: 'BauerBodoniW01-BoldDisp', georgia, serif;
+  margin-top: 0;
 }
 a {
   color: #146ccb;
+  text-decoration: none;
 }
   
 ul, ul > li {
@@ -78,7 +80,7 @@ ul, ul > li {
   padding: 0 0 0 1em;
 }
 ol {
-  padding: 0;
+  padding: 0 0 0 1.5em;
   margin: 0;  
 }
 
@@ -92,10 +94,16 @@ ol {
 .demo-list {
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
+  
 }
 .demo-box {
   padding: 2rem;
-  border: 1px solid black;
+  border: 1px solid #ccc;
+  background: #e8fafc;
+  border: 2px solid #19608D;
+  clip-path: polygon(4% 1%, 99% 0, 93% 97%, 1% 100%);    
+  margin: 0.5rem;
   /*
   width: 100%;
   @media (min-width: 600px) {
@@ -123,7 +131,7 @@ ol {
   }
   ul {
     display: flex;
-    li {
+    li.presentation {
       width: 50%;
     }
   }
