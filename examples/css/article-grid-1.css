@@ -1,0 +1,110 @@
+@charset "UTF-8";
+html {
+  font-family: 'AdobeGaramondW01-Regula', georgia, serif;
+  font-size: 18px;
+  background: #f5f5f5; }
+
+article {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 100vh max-content 1fr 1fr max-content;
+      grid-template-rows: 100vh max-content 1fr 1fr max-content;
+  -ms-grid-columns: 0.8fr 2fr 2fr 2fr 2fr 2fr 1.2fr;
+      grid-template-columns: 0.8fr 2fr 2fr 2fr 2fr 2fr 1.2fr;
+  border: 2px solid red; }
+
+header {
+  grid-row: 1 / 2;
+  grid-column: 1 / 8;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  header h1 {
+    margin: auto;
+    padding: 0 2em; }
+
+.publication-details {
+  grid-row: 6 / 8;
+  grid-column: 5 / 6;
+  z-index: -1000;
+  background: red; }
+
+.article-body {
+  grid-row: 3 / 5;
+  grid-column: 2 / 6; }
+
+.pullquote {
+  grid-row: 3 / 4;
+  grid-column: 6 / 6; }
+
+footer {
+  grid-row: 5 / 6;
+  grid-column: 1 / 8; }
+
+.ad1, .ad2, .ad3 {
+  grid-column: 6 / 6; }
+
+.ad1 {
+  grid-row: 4 / 5; }
+
+.ad2 {
+  grid-row: 4 / 5; }
+
+.ad3 {
+  grid-row: 4 / 5; }
+
+header {
+  background: #2E1811;
+  background-image: url("../images/dirt.jpg");
+  background-size: cover;
+  color: #fff;
+  text-shadow: 0px 1px 6px rgba(0, 0, 0, 0.6); }
+
+h1 {
+  font-family: 'BauerBodoniW01-BoldDisp', georgia, serif;
+  line-height: 1.1em;
+  font-size: 2rem; }
+  @media (min-width: 500px) {
+    h1 {
+      font-size: 4rem; } }
+
+.publication-details {
+  padding: 0.5em 0 0.3333em;
+  text-align: center; }
+
+.author,
+.publication,
+.pubdate {
+  padding: 0.1em 0.25em; }
+
+.author::after,
+.publication::after {
+  content: " ⋄ ";
+  opacity: 0.7;
+  margin-left: 0.5em; }
+
+cite {
+  font-style: italic; }
+
+.article-body {
+  background: #fffff9;
+  padding: 2em; }
+  .article-body p {
+    line-height: 1.6em;
+    text-indent: 1em; }
+  .article-body a {
+    color: green; }
+
+.pullquote {
+  margin: 1em 0;
+  font-family: 'BauerBodoniW01-BoldDisp', georgia, serif;
+  font-size: 2rem; }
+  @media (min-width: 500px) {
+    .pullquote {
+      font-size: 3rem; } }
+
+footer {
+  padding: 0.8em 1em;
+  background: #e1f3cc;
+  font-style: italic; }
