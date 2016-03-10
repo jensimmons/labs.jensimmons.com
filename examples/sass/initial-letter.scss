@@ -33,8 +33,8 @@ article.two {
   @supports (initial-letter: 4 ) or
     (-webkit-initial-letter: 4 ) {
     p::first-letter {
-      color: #75306C;
-      font-family:'Le Havre Hand W01 Crosshatch', 'MarcoPolo W00 Italic', 'Vere Dignum LT W01', 'Avenir';
+      color: #ae4ea5;
+      font-family:'Le Havre Hand W01 Crosshatch', 'Avenir'; // I don't know why my custom font isn't loading. Meh.
       font-weight: bold;
       margin-right: 0.5em;
       margin-left: -2em;
