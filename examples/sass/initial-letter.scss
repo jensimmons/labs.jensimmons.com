@@ -6,7 +6,7 @@ a {
   color: #e75e18;
 }
 
-article {
+article { 
   p {
     line-height: 2em;  
     width: 64vw;
@@ -14,6 +14,9 @@ article {
     padding-bottom: 6vw;
     margin-bottom: 6vw;
   }
+}
+
+article.one { 
   @supports (initial-letter: 4 ) or
     (-webkit-initial-letter: 4 ) {
     p::first-letter {
@@ -22,6 +25,20 @@ article {
       margin-right: 0.5em;
       -webkit-initial-letter: 4;
       initial-letter: 4;
+    }
+  }
+}
+
+article.two { 
+  @supports (initial-letter: 4 ) or
+    (-webkit-initial-letter: 4 ) {
+    p::first-letter {
+      color: #75306C;
+      font-family:'Le Havre Hand W01 Crosshatch', 'MarcoPolo W00 Italic', 'Vere Dignum LT W01', 'Avenir';
+      font-weight: bold;
+      margin-right: 0.5em;
+      -webkit-initial-letter: 6 1;
+      initial-letter: 6 1;
     }
   }
 }

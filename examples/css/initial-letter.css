@@ -11,13 +11,23 @@ article p {
   margin: 12vw 24vw 12vw 12vw;
   padding-bottom: 6vw;
   margin-bottom: 6vw; }
+
 @supports (initial-letter: 4) or (-webkit-initial-letter: 4) {
-  article p::first-letter {
+  article.one p::first-letter {
     color: #FE742F;
     font-weight: bold;
     margin-right: 0.5em;
     -webkit-initial-letter: 4;
     initial-letter: 4; } }
+
+@supports (initial-letter: 4) or (-webkit-initial-letter: 4) {
+  article.two p::first-letter {
+    color: #75306C;
+    font-family: 'Le Havre Hand W01 Crosshatch', 'MarcoPolo W00 Italic', 'Vere Dignum LT W01', 'Avenir';
+    font-weight: bold;
+    margin-right: 0.5em;
+    -webkit-initial-letter: 6 1;
+    initial-letter: 6 1; } }
 
 .warning {
   color: red;
