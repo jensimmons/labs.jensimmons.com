@@ -26,8 +26,11 @@ article p {
     font-family: 'Le Havre Hand W01 Crosshatch', 'MarcoPolo W00 Italic', 'Vere Dignum LT W01', 'Avenir';
     font-weight: bold;
     margin-right: 0.5em;
-    -webkit-initial-letter: 6 1;
-    initial-letter: 6 1; } }
+    margin-left: -2em;
+    -webkit-initial-letter: 4 1;
+    initial-letter: 4 1; }
+  article.two p {
+    margin-left: 10em; } }
 
 .warning {
   color: red;
