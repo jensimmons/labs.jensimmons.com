@@ -3,7 +3,7 @@ html {
   font-size: 21px; }
 
 a {
-  color: #e18f13; }
+  color: #e75e18; }
 
 article p {
   line-height: 2em;
@@ -13,7 +13,7 @@ article p {
   margin-bottom: 6vw; }
 @supports (initial-letter: 4) or (-webkit-initial-letter: 4) {
   article p::first-letter {
-    color: rgba(255, 190, 150, 0.9);
+    color: #FE742F;
     font-weight: bold;
     margin-right: 0.5em;
     -webkit-initial-letter: 4;
