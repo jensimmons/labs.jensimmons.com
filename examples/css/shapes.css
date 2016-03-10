@@ -1,0 +1,46 @@
+html {
+  font-family: 'AdobeGaramondW01-Regula', georgia, serif;
+  font-size: 18px; }
+
+body {
+  width: 80%;
+  margin: 8rem 15% 5rem 5%;
+  max-width: 800px; }
+
+h1 {
+  font-family: 'BauerBodoniW01-BoldDisp', georgia, serif;
+  font-size: 5rem;
+  color: #6e8e21;
+  margin: 0;
+  line-height: 1.1em; }
+
+p {
+  line-height: 1.75em; }
+
+h1.egg {
+  color: #AA5734; }
+
+h1.tomato {
+  color: #F23628; }
+
+h1, h2, h3, p {
+  margin-left: 20vw; }
+
+img {
+  width: 36vw;
+  float: left;
+  margin: 1em; }
+
+img.tomato {
+  margin-bottom: 0;
+  -webkit-shape-outside: circle();
+          shape-outside: circle(); }
+
+img.egg {
+  -webkit-shape-outside: ellipse();
+          shape-outside: ellipse(); }
+
+img.grapes {
+  width: 50vw;
+  -webkit-shape-outside: polygon(nonzero, 72.35% 83.95%, 45.5% 94.3%, 0% 100%, 0% 88.4%, 0% 23.7%, 38.7% 11.35%, 55% 11.1%, 63.5% 22.7%, 72.15% 20.75%, 79.1% 30.6%, 79.8% 34.55%, 87.6% 43.95%, 83.7% 57.3%, 89.15% 65.7%, 92.55% 72.1%, 91.15% 83.2%);
+          shape-outside: polygon(nonzero, 72.35% 83.95%, 45.5% 94.3%, 0% 100%, 0% 88.4%, 0% 23.7%, 38.7% 11.35%, 55% 11.1%, 63.5% 22.7%, 72.15% 20.75%, 79.1% 30.6%, 79.8% 34.55%, 87.6% 43.95%, 83.7% 57.3%, 89.15% 65.7%, 92.55% 72.1%, 91.15% 83.2%); }
