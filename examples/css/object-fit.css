@@ -1,0 +1,65 @@
+html {
+  font-family: 'AdobeGaramondW01-Regula', georgia, serif;
+  font-size: 21px;
+  padding: 5%; }
+
+h4 {
+  font-weight: normal;
+  font-size: 0.8em;
+  margin-bottom: 10px;
+  margin-top: 0; }
+
+img {
+  height: 200px;
+  width: 100%;
+  background-color: #ccc;
+  border: 10px solid red; }
+
+.smaller-test-image img {
+  border: 10px solid blue; }
+
+img.original-image,
+.smaller-test-image img.original-image {
+  margin-bottom: 50px;
+  border-color: white; }
+
+ol {
+  width: 45%;
+  float: left; }
+
+ol.smaller-test-image {
+  float: right; }
+
+li {
+  margin: 0 30px 20px 0; }
+
+.original-image {
+  height: auto; }
+
+.object-fit-fill {
+  -o-object-fit: fill;
+     object-fit: fill; }
+
+.object-fit-contain {
+  -o-object-fit: contain;
+     object-fit: contain; }
+
+.object-fit-cover {
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.object-fit-none {
+  -o-object-fit: none;
+     object-fit: none; }
+
+.object-fit-scale {
+  -o-object-fit: scale-down;
+     object-fit: scale-down; }
+
+.warning {
+  color: red;
+  font-size: 200%; }
+
+@supports ((-o-object-fit: fill) or (object-fit: fill)) {
+  .warning {
+    display: none; } }
