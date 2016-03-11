@@ -1,17 +1,8 @@
 /*
-  font-family:'Vere Dignum LT W01';
-font-family:'Large Old English Riband W90 R';
-font-family:'Le Havre Hand W01 Fill';
+font-family:'Vere Dignum LT W01';
 font-family:'Le Havre Hand W01 Crosshatch';
 font-family:'Lexia Ad W01 Regular';
-font-family:'Lexia Ad W04 Italic';
-font-family:'MarcoPolo W00';
-font-family:'MarcoPolo W00 SC';
-font-family:'MarcoPolo W00 Italic';
-font-family:'CaslonClassico W00';
-font-family:'CaslonClassicoW00-Itali';
 font-family:'CaslonClassico W00 Bold';
-font-family:'CaslonClassicoW00-BoldI';
 font-family:'BauerBodoniW01-Regular';
 font-family:'BauerBodoniW01-RegItali';
 font-family:'BauerBodoniW01-DemiBold';
@@ -25,6 +16,9 @@ font-family:'BauerBodoniW01-DemiBdDi';
 font-family:'BauerBodoniW01-DemiBdIt_927287';
 font-family:'BauerBodoniW01-BoldDisp';
 font-family:'BauerBodoniW01-BdItalDi';
+font-family:'Bodoni W01 Poster691960';
+font-family:'BodoniW01-PosterItalic';
+font-family:'BodoniW01-PosterCompres';
 font-family:'EngraversGothicBTW01-Re';
 font-family:'AdobeGaramondW01-Regula';
 font-family:'Adobe Garamond W01 It';
@@ -32,15 +26,9 @@ font-family:'Adobe Garamond W01 SmBd';
 font-family:'AdobeGaramondW01-SmBdIt';
 font-family:'Adobe Garamond W01 Bd';
 font-family:'AdobeGaramondW01-BdIt';
-
-
-Delete:
-font-family:'Bodoni W01 Poster691960';
-font-family:'BodoniW01-PosterItalic';
-font-family:'BodoniW01-PosterCompres';
-
-
 */
+
+
 * {
   box-sizing: border-box; }
 
@@ -71,7 +59,7 @@ h1, h2, h3 {
   margin-top: 0;
 }
 a {
-  color: #146ccb;
+  color: #297496;
   text-decoration: none;
 }
   
@@ -104,21 +92,6 @@ ol {
   border: 2px solid #19608D;
   clip-path: polygon(4% 1%, 99% 0, 93% 97%, 1% 100%);    
   margin: 0.5rem;
-  /*
-  width: 100%;
-  @media (min-width: 600px) {
-    width: 50%;
-  }
-  @media (min-width: 800px) {
-    width: 33.33%;
-  }
-  @media (min-width: 1000px) {
-    width: 25%;
-  }
-  @media (min-width: 1200px) {
-    width: 20%;
-  }
-  */
 }
 
 .presentation-list {
