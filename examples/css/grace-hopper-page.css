@@ -1,0 +1,28 @@
+html {
+  font-family: 'AdobeGaramondW01-Regula', georgia, serif;
+  font-size: 21px; }
+
+htm, body {
+  margin: 0;
+  padding: 0; }
+
+img {
+  float: left;
+  margin-right: 2em;
+  width: 50vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+div {
+  padding: 2em; }
+
+h1 {
+  margin-top: 0;
+  font-size: 6vw; }
+
+p {
+  font-size: 2vw; }
+
+footer {
+  text-align: center; }

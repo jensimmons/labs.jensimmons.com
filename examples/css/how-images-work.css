@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  font-family: georgia, serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-kerning: normal;
+          font-kerning: normal;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%; }
+
+htm, body {
+  margin: 0;
+  padding: 0; }
+
+figure {
+  display: block;
+  margin-bottom: 100px;
+  clear: both; }
+
+figcation {
+  float: right;
+  width: 40%; }
+
+.fixed {
+  width: 300px; }
+
+.fluid {
+  width: 50%; }
+
+.fitted {
+  width: 50%;
+  height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover; }
