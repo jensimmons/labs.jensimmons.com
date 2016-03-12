@@ -1,28 +1,118 @@
 html {
   font-family: 'AdobeGaramondW01-Regula', georgia, serif;
-  font-size: 21px; }
+  font-size: 17px;
+  line-height: 1.5em; }
 
 htm, body {
   margin: 0;
   padding: 0; }
 
+header {
+  background: rgba(216, 223, 225, 0.8);
+  margin: 0;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center; }
+
 img {
-  float: left;
-  margin-right: 2em;
-  width: 50vw;
-  height: 100vh;
+  height: 85vh;
+  margin: 0;
+  padding: 0;
   -o-object-fit: cover;
      object-fit: cover; }
 
-div {
-  padding: 2em; }
+div.headlines {
+  padding-bottom: 1.6rem; }
 
 h1 {
-  margin-top: 0;
-  font-size: 6vw; }
+  font-size: 10vw;
+  color: #376893; }
 
-p {
-  font-size: 2vw; }
+h2 {
+  margin: 1.4em 0 0.8em;
+  color: #2c5375; }
+
+h4, h6 {
+  font-weight: normal; }
+
+h4 {
+  margin: 1.6em 0;
+  font-size: 3.5vw; }
+
+h6 {
+  margin: 0;
+  font-size: 2.5vw;
+  font-style: italic; }
+
+@media (min-width: 600px) {
+  header {
+    height: 100vh; }
+
+  img {
+    float: left;
+    height: 100vh;
+    width: 50vw; }
+
+  div.headlines {
+    float: right;
+    width: 50vw;
+    height: 100vh;
+    padding: 2vh 3vw;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    div.headlines div {
+      margin: auto; }
+
+  h1 {
+    margin-top: 0;
+    font-size: 5vw; }
+
+  h4 {
+    margin: 1.8em 0 6em;
+    font-size: 1.8vw; }
+
+  h6 {
+    margin: 0.5em 0;
+    font-size: 1.3vw;
+    font-style: italic; } }
+section {
+  clear: both;
+  padding: 2em 8vw 4em 17vw;
+  -webkit-columns: 300px;
+     -moz-columns: 300px;
+          columns: 300px;
+  -webkit-column-gap: 4em;
+     -moz-column-gap: 4em;
+          column-gap: 4em;
+  background-color: #fff; }
+
+@media (min-width: 600px) {
+  section {
+    padding-top: 5em; } }
+section p:first-child {
+  margin-top: 0; }
+@supports (initial-letter: 4) or (-webkit-initial-letter: 4) {
+  section p:first-child::first-letter {
+    color: #4b87bc;
+    font-weight: bold;
+    margin-right: 0.5em;
+    -webkit-initial-letter: 5;
+    initial-letter: 5; } }
+@supports (initial-letter: 2) or (-webkit-initial-letter: 2) {
+  section h2 > p::first-letter {
+    color: #4b87bc;
+    font-weight: bold;
+    margin-right: 0.5em;
+    -webkit-initial-letter: 2;
+    initial-letter: 2; } }
+
+.pullquote {
+  margin: 2.4rem 0 2.4rem;
+  color: #4b87bc;
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 1.2em; }
 
 footer {
   text-align: center; }

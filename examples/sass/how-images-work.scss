@@ -14,6 +14,10 @@ htm, body {
   padding: 0;
 }
 
+main {
+  margin: 4em 2em;
+}
+
 figure {
   display: block;
   margin-bottom: 100px;
@@ -32,7 +36,7 @@ figcation {
 }
 .fitted {
   width: 50%;
-  height: 50vh;
+  height: 400px;
   object-fit: cover;
 }
 
