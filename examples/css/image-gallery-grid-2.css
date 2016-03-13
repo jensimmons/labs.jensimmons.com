@@ -30,6 +30,7 @@ ul {
       grid-template-rows: repeat(4, minmax(1fr, max-content)); }
 
 li {
+  margin: 10px;
   border: 1px solid black; }
 
 li.highlight {
@@ -41,7 +42,8 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
   max-height: 50vh;
-  max-width: 80vw; }
+  max-width: 80vw;
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5); }
 
 .warning {
   color: red;

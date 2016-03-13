@@ -35,6 +35,7 @@ ul {
 }
 li {
 //  height: 100%;
+  margin: 10px;
   border: 1px solid black;
 }
 li.highlight {
@@ -46,16 +47,10 @@ img {
   object-fit: cover;
   max-height: 50vh;
   max-width: 80vw;
+  box-shadow: 1px 3px 8px rgba(0,0,0,0.5);
 //  height: 100%;
 }
 
-
-
-/// WHAT's NEW??
-
-// grid
-// object-fit
-// viewport units
 
 
 // Style a Warning Message. Remove if Grid works ---------------------------------------
