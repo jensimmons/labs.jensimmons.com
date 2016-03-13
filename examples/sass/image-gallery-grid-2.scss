@@ -28,10 +28,10 @@ li {
 
 ul {
   display: grid;
-  grid-template-columns: repeat(4, minmax(1fr,max-content));
-  grid-template-rows: repeat(4,minmax(1fr,max-content));
+  grid-template-columns: repeat(5, minmax(1fr,max-content));
+  grid-template-rows: repeat(5,minmax(1fr,max-content));
   //grid-auto-rows: minmax(1fr,max-content);  
-  //grid-auto-flow: dense;
+  grid-auto-flow: dense;
 }
 li {
 //  height: 100%;
@@ -45,8 +45,8 @@ li.highlight {
 img {
   display: block;
   object-fit: cover;
-  max-height: 50vh;
-  max-width: 80vw;
+  max-height: 33vh;
+  max-width: 60vw;
   box-shadow: 1px 3px 8px rgba(0,0,0,0.5);
 //  height: 100%;
 }

@@ -24,10 +24,11 @@ li {
 ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(1fr, max-content))[4];
-      grid-template-columns: repeat(4, minmax(1fr, max-content));
-  -ms-grid-rows: (minmax(1fr, max-content))[4];
-      grid-template-rows: repeat(4, minmax(1fr, max-content)); }
+  -ms-grid-columns: (minmax(1fr, max-content))[5];
+      grid-template-columns: repeat(5, minmax(1fr, max-content));
+  -ms-grid-rows: (minmax(1fr, max-content))[5];
+      grid-template-rows: repeat(5, minmax(1fr, max-content));
+  grid-auto-flow: dense; }
 
 li {
   margin: 10px;
@@ -41,8 +42,8 @@ img {
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
-  max-height: 50vh;
-  max-width: 80vw;
+  max-height: 33vh;
+  max-width: 60vw;
   box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5); }
 
 .warning {
