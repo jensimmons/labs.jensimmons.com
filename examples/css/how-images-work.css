@@ -2,7 +2,7 @@
   box-sizing: border-box; }
 
 html {
-  font-family: georgia, serif;
+  font-family: 'AdobeGaramondW01-Regula', georgia, serif;
   text-rendering: optimizeLegibility;
   -webkit-font-kerning: normal;
           font-kerning: normal;

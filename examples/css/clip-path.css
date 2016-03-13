@@ -1,0 +1,28 @@
+body, main {
+  font-family: 'AdobeGaramondW01-Regula', georgia, serif;
+  margin: 0;
+  padding: 0; }
+
+figure {
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh; }
+
+img {
+  margin: auto;
+  width: 33vw; }
+
+figcaption {
+  margin: auto; }
+
+figure:nth-child(2) img {
+  -webkit-clip-path: polygon(0% 0%, 100% 3%, 98% 99%, 3% 93%);
+          clip-path: polygon(0% 0%, 100% 3%, 98% 99%, 3% 93%); }
+
+figure:nth-child(3) img {
+  -webkit-clip-path: polygon(24% 3%, 98% 4%, 80% 79%, 98% 95%, 46% 100%, 3% 84%);
+          clip-path: polygon(24% 3%, 98% 4%, 80% 79%, 98% 95%, 46% 100%, 3% 84%); }
