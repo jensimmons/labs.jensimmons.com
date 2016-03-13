@@ -1,7 +1,5 @@
 // Code for the Styling --------------------------------------
-
 html {
-  font-family: 'AdobeGaramondW01-Regula', georgia, serif;
   font-size: 18px;
 }
 h1 {
@@ -15,10 +13,9 @@ h1 {
 }
 ul {
   padding: 0;
-  background: white;
 }
 li {
-  list-style-type:none;
+  list-style-type: none;
 }
 
 // Code for the Layout ---------------------------------------
@@ -41,7 +38,7 @@ li {
   margin-bottom: 1%;
 }
 img {
-  width: 300px;
+  width: 200px;
   height: 100%;
   display: block;
   object-fit: cover;
@@ -50,11 +47,3 @@ img {
   border: 1px solid black;
   box-shadow: 1px 3px 8px rgba(0,0,0,0.5);
 }
-
-
-
-/// WHAT's NEW-ish?? (aka, what do we need to think about support for across browsers)
-// flexbox
-// object-fit
-// viewport units
-// calc
