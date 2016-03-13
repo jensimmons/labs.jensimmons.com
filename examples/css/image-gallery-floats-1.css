@@ -2,9 +2,6 @@ html {
   font-family: 'AdobeGaramondW01-Regula', georgia, serif;
   font-size: 18px; }
 
-body {
-  background: black; }
-
 h1 {
   font-family: 'BauerBodoniW01-BoldDisp', georgia, serif;
   font-size: 2rem;
@@ -16,7 +13,6 @@ h1 {
 
 ul {
   padding: 0;
-  background: grey;
   *zoom: 1; }
   ul:before, ul:after {
     display: table;
@@ -30,8 +26,10 @@ li {
 
 li {
   float: left;
-  width: 25%;
-  border: 1px solid black; }
+  width: 23%;
+  margin: 1%;
+  border: 1px solid black;
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5); }
 
 img {
   display: block; }

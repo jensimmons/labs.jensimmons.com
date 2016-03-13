@@ -2,9 +2,6 @@ html {
   font-family: 'AdobeGaramondW01-Regula', georgia, serif;
   font-size: 18px; }
 
-body {
-  background: black; }
-
 h1 {
   font-family: 'BauerBodoniW01-BoldDisp', georgia, serif;
   font-size: 2rem;
@@ -49,11 +46,16 @@ li {
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  border: 1px solid black; }
+  margin-top: 1%;
+  margin-bottom: 1%; }
 
 img {
   width: 300px;
   height: 100%;
   display: block;
   -o-object-fit: cover;
-     object-fit: cover; }
+     object-fit: cover;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid black;
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5); }

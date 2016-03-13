@@ -4,9 +4,6 @@ html {
   font-family: 'AdobeGaramondW01-Regula', georgia, serif;
   font-size: 18px;
 }
-body {
-  background: black;
-}
 h1 {
   font-family: 'BauerBodoniW01-BoldDisp', georgia, serif;  
   font-size: 2rem;
@@ -33,13 +30,18 @@ ul {
 }
 li {
   flex-grow: 1;
-  border: 1px solid black;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 img {
   height: 300px;
   height: calc(25vh - 2px);
   display: block;
   object-fit: cover;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  box-shadow: 1px 3px 8px rgba(0,0,0,0.5);
 }
 
 

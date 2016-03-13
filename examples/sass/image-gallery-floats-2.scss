@@ -21,9 +21,6 @@ html {
   font-family: 'AdobeGaramondW01-Regula', georgia, serif;
   font-size: 18px;
 }
-body {
-  background: black;
-}
 h1 {
   font-family: 'BauerBodoniW01-BoldDisp', georgia, serif;  
   font-size: 2rem;
@@ -35,7 +32,6 @@ h1 {
 }
 ul {
   padding: 0;
-  background: grey;
   @include clearfix;
 }
 li {
@@ -57,31 +53,34 @@ img {
 }
 
 li {
-  width: 50%;
-  height: 50vw;
+  width: 48%;
+  height: 48vw;
+  margin: 1%;
+  border: 1px solid black;
+  box-shadow: 1px 3px 8px rgba(0,0,0,0.5);
 }
 @media (min-width: 500px) {
   li {
-    width: 33.33%;
-    height: 33.33vw;
+    width: 31.33%;
+    height: 31.33vw;
   }
 }
 @media (min-width: 700px) {
   li {
-    width: 25%;
-    height: 25vw;
+    width: 23%;
+    height: 23vw;
   }
 }
 @media (min-width: 900px) {
   li {
-    width: 20%;
-    height: 20vw;
+    width: 18%;
+    height: 18vw;
   }
 }
 @media (min-width: 1100px) {
   li {
-    width: 16.66%;
-    height: 16.66vw;
+    width: 14.66%;
+    height: 14.66vw;
   }
 }
 
