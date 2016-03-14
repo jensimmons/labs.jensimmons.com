@@ -59,7 +59,7 @@ p {
   color: white;  
 }
 .logo {
-  width: 300px;
+  width: 250px;
   margin-bottom: 20px
 }
 
@@ -94,14 +94,13 @@ li {
   // Ok, lets go Grid!
   
   // Outer Grid
-  
   main {
     display: grid;
-    grid-template-rows: repeat(12, 15vw);
-    grid-template-columns: repeat(7, 15vw);
+    grid-template-rows: repeat(8, 15vw);
+    grid-template-columns: repeat(6, 15vw);
   }
   .logo {
-    grid-row: 9 / 10;    
+    grid-row: 8 / 9;    
     img {
       width: 15vw;
     }
@@ -121,14 +120,15 @@ li {
     margin-top: 1em;  
   }
   ul {
-    grid-row: 2 / 10;    
+    grid-row: 2 / 9;  
+    grid-columns: 1 / 8; 
   }
   
   // Inner Grid
   ul {
     display: grid;
     grid-template-rows: repeat(5, 15vw);
-    grid-template-columns: repeat(7, 15vw);
+    grid-template-columns: repeat(5, 15vw);
   }
   li:nth-child(1) {
     grid-row: 1 / 2;
