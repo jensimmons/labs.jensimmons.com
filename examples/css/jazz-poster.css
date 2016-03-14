@@ -90,7 +90,10 @@ li {
         grid-template-columns: repeat(7, 15vw); }
 
   .logo {
-    grid-row: 9 / 10; }
+    grid-row: 9 / 10;
+    -webkit-align-self: end;
+        -ms-flex-item-align: end;
+            align-self: end; }
     .logo img {
       width: 15vw; }
 
