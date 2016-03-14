@@ -1,0 +1,163 @@
+right top.element-invisible {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); }
+
+html {
+  font-size: 18px;
+  background: url("../images/Wynton-Marsalis.jpg") no-repeat;
+  background-position: right top;
+  background-size: cover;
+  font-family: Avenir, Helvetica, georgia, serif; }
+
+body {
+  width: 90%;
+  margin: 3vh auto; }
+
+h1, h2 {
+  font-size: 1.4rem;
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 1.1em;
+  text-align: right; }
+
+ul {
+  padding: 0; }
+
+li {
+  list-style-type: none;
+  padding: 10px;
+  border-radius: 4px;
+  background: #D4759F;
+  line-height: 1.2; }
+
+h3 {
+  margin: 0;
+  font-size: 0.7em;
+  color: #FFD274; }
+
+h4 {
+  margin: 0;
+  font-size: 0.7em;
+  color: #fff;
+  background: #D4759F;
+  padding: 2px;
+  text-transform: uppercase; }
+
+h5 {
+  margin: 0;
+  font-size: 0.6em;
+  color: #FFD274; }
+
+p {
+  margin: 0;
+  font-size: 0.6em;
+  color: white; }
+
+.logo {
+  width: 300px;
+  margin-bottom: 20px; }
+
+li {
+  width: 300px;
+  float: left;
+  margin: 10px; }
+
+.ticketinfo {
+  width: 300px;
+  float: left;
+  margin: 10px;
+  margin-bottom: 100px; }
+  .ticketinfo p {
+    color: black;
+    margin-top: 5px; }
+
+@supports ((display: -ms-grid) or (display: grid)) {
+  li {
+    float: none;
+    height: auto;
+    width: auto;
+    margin: none; }
+
+  main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (15vw)[12];
+        grid-template-rows: repeat(12, 15vw);
+    -ms-grid-columns: (15vw)[7];
+        grid-template-columns: repeat(7, 15vw); }
+
+  .logo {
+    grid-row: 9 / 10; }
+    .logo img {
+      width: 15vw; }
+
+  header {
+    grid-row: 2 / 3;
+    grid-column: 1 / 4;
+    padding-top: 2em; }
+
+  .ticketinfo {
+    grid-row: 6 / 8;
+    grid-column: 5 / 6; }
+
+  .ticketinfo p {
+    color: #fff;
+    margin-top: 1em; }
+
+  ul {
+    grid-row: 2 / 10; }
+
+  ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (15vw)[5];
+        grid-template-rows: repeat(5, 15vw);
+    -ms-grid-columns: (15vw)[7];
+        grid-template-columns: repeat(7, 15vw); }
+
+  li:nth-child(1) {
+    grid-row: 1 / 2;
+    grid-column: 3 / 4; }
+
+  li:nth-child(2) {
+    grid-row: 2 / 3;
+    grid-column: 4 / 5; }
+
+  li:nth-child(3) {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2; }
+
+  li:nth-child(4) {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3; }
+
+  li:nth-child(5) {
+    grid-row: 4 / 5;
+    grid-column: 4 / 5; }
+
+  li:nth-child(6) {
+    grid-row: 5 / 6;
+    grid-column: 1 / 2; }
+
+  li:nth-child(7) {
+    grid-row: 5 / 6;
+    grid-column: 3 / 4; }
+
+  li:nth-child(8) {
+    grid-row: 6 / 7;
+    grid-column: 2 / 3; }
+
+  li:nth-child(9) {
+    grid-row: 7 / 8;
+    grid-column: 4 / 5; }
+
+  li:nth-child(10) {
+    grid-row: 8 / 9;
+    grid-column: 1 / 2; }
+
+  li:nth-child(11) {
+    grid-row: 9 / 10;
+    grid-column: 3 / 4; } }
