@@ -1,0 +1,98 @@
+//--------------------------------------------------
+// Style the Boxes 
+//--------------------------------------------------
+
+  div {
+    color: #fff;
+    background: black; 
+    display: flex;
+    p { margin: auto; }  
+  }
+
+
+//--------------------------------------------------
+// Flexbox Layout Attempt 1
+//--------------------------------------------------
+
+.pane-1 {
+  background: #b0dfe3;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 20vw;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+
+//--------------------------------------------------
+// Flexbox Layout Attempt 2 & 3
+//--------------------------------------------------
+
+@mixin stuff-thats-the-same-for-pane-2-and-pane-3 {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  div {
+    height: 20vh;
+    width: 20vw;
+  }
+}
+
+.pane-2 {
+  background: #e4e7ea;
+  @include stuff-thats-the-same-for-pane-2-and-pane-3;
+  justify-content: space-around;
+  align-content: space-around;
+  div {
+    margin: 10vh 10vw;
+  }
+}
+
+.pane-3 {
+  background: #b0dfe3;
+  @include stuff-thats-the-same-for-pane-2-and-pane-3;
+  div:nth-child(1) {
+    margin: 20vh 9.5vw 10vh 19.5vw;
+  }
+  div:nth-child(2) {
+    margin: 20vh 19.5vw 10vh 9.5vw;
+  }
+  div:nth-child(3) {
+    margin: 10vh 9.5vw 20vh 19.5vw;
+  }
+  div:nth-child(4) {
+    margin: 10vh 19.5vw 20vh 9.5vw;
+  }
+}
+
+
+//--------------------------------------------------
+// Grid Layout 
+//--------------------------------------------------
+
+.pane-4 {
+  background: #80b8f4;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(6, 20vh);  
+  grid-template-columns: repeat(6, 20vw);
+  // I keep making the mistake of assuming I should specify the number of tracks instead of the number of lines. But that's wrong. I need to specify six lines, not five tracks. This is a one of many differences between the 960-Grid mental model and how Grid Layout works. So it's repeat(6, *) to make five tracks.
+  div:nth-child(1) {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+  div:nth-child(2) {
+    grid-row: 2 / 3;
+    grid-column: 4 / 5;
+  }
+  div:nth-child(3) {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+  }
+  div:nth-child(4) {
+    grid-row: 4 / 5;
+    grid-column: 4 / 5;
+  }
+}
+

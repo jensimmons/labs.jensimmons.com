@@ -1,0 +1,40 @@
+//--------------------------------------------------
+// Style the Boxes 
+//--------------------------------------------------
+
+  div {
+    color: #fff;
+    background: black; 
+    display: flex;
+    p { margin: auto; }  
+  }
+
+//--------------------------------------------------
+// Grid Layout 
+//--------------------------------------------------
+
+.pane-1 {
+  background: #80b8f4;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(6, 20vh);  
+  grid-template-columns: repeat(6, 20vw);
+  // I keep making the mistake of assuming I should specify the number of tracks instead of the number of lines. But that's wrong. I need to specify six lines, not five tracks. This is a one of many differences between the 960-Grid mental model and how Grid Layout works. So it's repeat(6, *) to make five tracks.
+  div:nth-child(1) {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+  div:nth-child(2) {
+    grid-row: 2 / 3;
+    grid-column: 4 / 5;
+  }
+  div:nth-child(3) {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+  }
+  div:nth-child(4) {
+    grid-row: 4 / 5;
+    grid-column: 4 / 5;
+  }
+}
+
