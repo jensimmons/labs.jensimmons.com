@@ -24,7 +24,8 @@ h1, h2 {
   text-align: right; }
 
 ul {
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
 
 li {
   list-style-type: none;
