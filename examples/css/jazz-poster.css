@@ -75,7 +75,15 @@ li {
     color: black;
     margin-top: 5px; }
 
+.support-note {
+  margin-left: 1em;
+  max-width: 600px;
+  font-size: 80%; }
+
 @supports ((display: -ms-grid) or (display: grid)) {
+  .support-note {
+    display: none; }
+
   li {
     float: none;
     height: auto;
