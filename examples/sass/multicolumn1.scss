@@ -1,6 +1,7 @@
-htm, body {
-  margin: 0;
-  padding: 0 0 4em;
+html {
+  font-family: 'AdobeGaramondW01-Regula', georgia, serif;
+  font-size: 18px;
+  margin-bottom: 200px;
 }
 main {
   width: 80%;
@@ -9,18 +10,29 @@ main {
 section {
   margin: 100px 0;
 }
+article {
+  margin: 100px 0;
+}
 footer {
   text-align: center;
   margin: 3em 0 3em 0;
   clear: both;
 }
-
-article {
-  margin: 100px 0;
-}
-
 h1 {
-  display: none;
+  font-family: 'BauerBodoniW01-BoldDisp', georgia, serif;  
+  font-size: 3rem;
+  color: #6e8e21;
+  margin: 0 0 1em;
+  line-height: 1.1em;
+}
+h2 {
+  font-family: 'BauerBodoniW01-BoldDisp', georgia, serif;  
+  font-size: 2rem;
+  margin: 0;
+  line-height: 1.1em;
+}
+p {
+  line-height: 1.5em;
 }
 
 .typical-rwd {
