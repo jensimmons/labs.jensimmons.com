@@ -21,6 +21,14 @@ article p {
     initial-letter: 4; } }
 
 @supports (initial-letter: 4) or (-webkit-initial-letter: 4) {
+  article.one-alt p::first-letter {
+    color: #FE742F;
+    font-weight: bold;
+    margin-right: 0.5em;
+    -webkit-initial-letter: 4 3;
+    initial-letter: 4 3; } }
+
+@supports (initial-letter: 4) or (-webkit-initial-letter: 4) {
   article.two p::first-letter {
     color: #ae4ea5;
     font-family: 'Le Havre Hand W01 Crosshatch', 'Avenir';

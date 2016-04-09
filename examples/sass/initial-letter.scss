@@ -29,6 +29,19 @@ article.one {
   }
 }
 
+article.one-alt { 
+  @supports (initial-letter: 4) or
+    (-webkit-initial-letter: 4) {
+    p::first-letter {
+      color: #FE742F;
+      font-weight: bold;
+      margin-right: 0.5em;
+      -webkit-initial-letter: 4 3;
+      initial-letter: 4 3;
+    }
+  }
+}
+
 article.two { 
   @supports (initial-letter: 4 ) or
     (-webkit-initial-letter: 4 ) {
