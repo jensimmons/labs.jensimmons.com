@@ -59,11 +59,11 @@ h6 {
   img {
     float: left;
     height: 100vh;
-    width: 50vw;
+    width: 49vw;
   }
   div.headlines {
     float: right;
-    width: 50vw;
+    width: 49vw;
     height: 100vh;
     padding: 2vh 3vw;
     display: flex;  
@@ -93,13 +93,13 @@ h6 {
 section {
   clear: both;
   padding: 2em 8vw 4em 17vw;
-  columns: 300px;
-  column-gap: 4em;
+  columns: 260px;
+  column-gap: 3em;
   background-color: #fff;
 }
 @media (min-width: 600px) {
   section {
-    padding-top: 5em;
+    padding: 4em 6vw 4em 22vw;
   }
 }
 section { 
@@ -113,7 +113,7 @@ section {
       font-weight: bold;
       margin-right: 0.5em;
       -webkit-initial-letter: 5;
-      initial-letter: 5;
+      initial-letter: 5 4;
     }
   }
   @supports (initial-letter: 2 ) or
@@ -123,7 +123,7 @@ section {
       font-weight: bold;
       margin-right: 0.5em;
       -webkit-initial-letter: 2;
-      initial-letter: 2;
+      initial-letter: 2 1;
     }
   }
 }

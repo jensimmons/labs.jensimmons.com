@@ -50,11 +50,11 @@ h6 {
   img {
     float: left;
     height: 100vh;
-    width: 50vw; }
+    width: 49vw; }
 
   div.headlines {
     float: right;
-    width: 50vw;
+    width: 49vw;
     height: 100vh;
     padding: 2vh 3vw;
     display: -webkit-box;
@@ -79,17 +79,17 @@ h6 {
 section {
   clear: both;
   padding: 2em 8vw 4em 17vw;
-  -webkit-columns: 300px;
-     -moz-columns: 300px;
-          columns: 300px;
-  -webkit-column-gap: 4em;
-     -moz-column-gap: 4em;
-          column-gap: 4em;
+  -webkit-columns: 260px;
+     -moz-columns: 260px;
+          columns: 260px;
+  -webkit-column-gap: 3em;
+     -moz-column-gap: 3em;
+          column-gap: 3em;
   background-color: #fff; }
 
 @media (min-width: 600px) {
   section {
-    padding-top: 5em; } }
+    padding: 4em 6vw 4em 22vw; } }
 section p:first-child {
   margin-top: 0; }
 @supports (initial-letter: 4) or (-webkit-initial-letter: 4) {
@@ -98,14 +98,14 @@ section p:first-child {
     font-weight: bold;
     margin-right: 0.5em;
     -webkit-initial-letter: 5;
-    initial-letter: 5; } }
+    initial-letter: 5 4; } }
 @supports (initial-letter: 2) or (-webkit-initial-letter: 2) {
   section h2 > p::first-letter {
     color: #4b87bc;
     font-weight: bold;
     margin-right: 0.5em;
     -webkit-initial-letter: 2;
-    initial-letter: 2; } }
+    initial-letter: 2 1; } }
 
 .pullquote {
   margin: 2.4rem 0 2.4rem;
