@@ -1,0 +1,41 @@
+
+img {
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: 50%; 
+}
+
+p {
+  margin: 0;
+}
+
+section {
+  clear: both;
+}
+
+.second-example img {
+  -webkit-shape-outside: circle(); // will be supported in iOS8 with a webkit prefix
+  shape-outside: circle(); // is currently supported in Chrome 37+ 
+}
+
+.third-example img {
+  -webkit-shape-outside: elipse(50% 50%);
+  shape-outside:  ellipse(50% 50%);  
+}
+
+.fourth-example img {
+  border-radius: 100px;
+  -webkit-shape-outside: border-box;
+  -webkit-shape-margin: 30px;
+  shape-outside: border-box;
+  shape-margin: 30px;
+  
+}
+
+.fifth-example img {
+  width: 60%; 
+  -webkit-shape-outside: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  shape-outside: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
+

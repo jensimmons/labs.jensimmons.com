@@ -47,67 +47,111 @@ img {
   
 /* --------------------------------------------------------*/
   
+  
 body {
   font-family: 'AdobeGaramondW01-Regula', georgia, serif;
   font-size: 18px;
-  width: 80%;
-  margin: 4rem auto;
 }
-
 h1, h2, h3 {
   font-family: 'BauerBodoniW01-BoldDisp', georgia, serif;
   margin-top: 0;
 }
 a {
-  color: #297496;
+  color: #000;
   text-decoration: none;
 }
-  
-ul, ul > li {
+ul {
   list-style: none;
-  padding: 0 0 0 1em;
+  padding: 0;
+}
+ul > li {
+  padding: 0 1em;
 }
 ol {
-  padding: 0 0 0 1.5em;
+  padding: 0;
   margin: 0;  
 }
 
-.links {
+/* --------------------------------------------------------*/
+
+header {  
+  background: #1e7d98;
+  color: #fff;
+  min-height: 100vh;
+  padding: 3rem 5rem;
   display: flex;
-  li {
-    
+  text-align: center;
+  div {
+    margin: auto;
+  }
+  h1 {
+    font-size: 6.5vw;
   }
 }
-
-.demo-list {
+.demos {
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
-  
+  justify-content:space-between;
 }
-.demo-group {
-  padding: 2rem;
-  border: 1px solid #ccc;
-  background: #e8fafc;
-  border: 2px solid #19608D;
-  clip-path: polygon(4% 1%, 99% 0, 93% 97%, 1% 100%);    
-  margin: 0.5rem;
+section {
+  min-height: 50vh;
+  width: 100vw;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
+  h3 {
+    font-size: 3rem;
+    margin: 0.5em 0 0;
+    text-align: center;
+  }
+  li {
+    max-width: 20vw;
+    margin: 1em 0;
+    text-align: center;
+  }
+  img {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin-bottom: 1em;
+  }
 }
-
-.presentation-list {
-  margin-top: 3rem;
-  padding-top: 3rem;
-  border-top: 1px solid #000;
-  ul, figure, figcaption {
-    margin: 0;
-    padding: 0;
+section:nth-child(even) {
+  background: #fff;
+}
+section:nth-child(odd) {
+  background: #f7f8f9;
+}
+footer {  
+  background: #1e7d98;
+  color: #fff;
+  padding: 3rem;
+  text-align: center;
+  a {
+    color: #eee;
+    text-decoration: underline;
+  }
+  p {
+    margin-bottom: 0;
   }
   ul {
-    display: flex;
-    li.presentation {
-      width: 50%;
-    }
+    margin: 0;
   }
 }
+
+
+/* --------------------------------------------------------*/
+
+.demo-group {
+  padding: 2rem;
+  ul {
+    display: flex;
+    justify-content: center;
+  }
+}
+.demo-list {
+  li {
+    
+  
+  }
+}
+
 
 

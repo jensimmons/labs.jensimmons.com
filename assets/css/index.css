@@ -45,33 +45,44 @@ img {
 /* --------------------------------------------------------*/
 body {
   font-family: 'AdobeGaramondW01-Regula', georgia, serif;
-  font-size: 18px;
-  width: 80%;
-  margin: 4rem auto; }
+  font-size: 18px; }
 
 h1, h2, h3 {
   font-family: 'BauerBodoniW01-BoldDisp', georgia, serif;
   margin-top: 0; }
 
 a {
-  color: #297496;
+  color: #000;
   text-decoration: none; }
 
-ul, ul > li {
+ul {
   list-style: none;
-  padding: 0 0 0 1em; }
+  padding: 0; }
+
+ul > li {
+  padding: 0 1em; }
 
 ol {
-  padding: 0 0 0 1.5em;
+  padding: 0;
   margin: 0; }
 
-.links {
+/* --------------------------------------------------------*/
+header {
+  background: #1e7d98;
+  color: #fff;
+  min-height: 100vh;
+  padding: 3rem 5rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  text-align: center; }
+  header div {
+    margin: auto; }
+  header h1 {
+    font-size: 6.5vw; }
 
-.demo-list {
+.demos {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -79,28 +90,56 @@ ol {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  padding: 0; }
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
+section {
+  min-height: 50vh;
+  width: 100vw;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2); }
+  section h3 {
+    font-size: 3rem;
+    margin: 0.5em 0 0;
+    text-align: center; }
+  section li {
+    max-width: 20vw;
+    margin: 1em 0;
+    text-align: center; }
+  section img {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin-bottom: 1em; }
+
+section:nth-child(even) {
+  background: #fff; }
+
+section:nth-child(odd) {
+  background: #f7f8f9; }
+
+footer {
+  background: #1e7d98;
+  color: #fff;
+  padding: 3rem;
+  text-align: center; }
+  footer a {
+    color: #eee;
+    text-decoration: underline; }
+  footer p {
+    margin-bottom: 0; }
+  footer ul {
+    margin: 0; }
+
+/* --------------------------------------------------------*/
 .demo-group {
-  padding: 2rem;
-  border: 1px solid #ccc;
-  background: #e8fafc;
-  border: 2px solid #19608D;
-  -webkit-clip-path: polygon(4% 1%, 99% 0, 93% 97%, 1% 100%);
-          clip-path: polygon(4% 1%, 99% 0, 93% 97%, 1% 100%);
-  margin: 0.5rem; }
-
-.presentation-list {
-  margin-top: 3rem;
-  padding-top: 3rem;
-  border-top: 1px solid #000; }
-  .presentation-list ul, .presentation-list figure, .presentation-list figcaption {
-    margin: 0;
-    padding: 0; }
-  .presentation-list ul {
+  padding: 2rem; }
+  .demo-group ul {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex; }
-    .presentation-list ul li.presentation {
-      width: 50%; }
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
