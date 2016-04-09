@@ -57,7 +57,8 @@ a {
 
 ul {
   list-style: none;
-  padding: 0; }
+  padding: 0;
+  margin: 1em 0 0; }
 
 ul > li {
   padding: 0 1em; }
@@ -81,6 +82,15 @@ header {
     margin: auto; }
   header h1 {
     font-size: 6.5vw; }
+  header p {
+    margin: 2em 0 0; }
+  header ul {
+    margin: 0; }
+  header p,
+  header a {
+    color: #ddd; }
+  header a {
+    border-bottom: 1px solid rgba(169, 169, 169, 0.79); }
 
 .demos {
   display: -webkit-box;
@@ -100,7 +110,7 @@ section {
   width: 100vw;
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2); }
   section h3 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 0.5em 0 0;
     text-align: center; }
   section li {
