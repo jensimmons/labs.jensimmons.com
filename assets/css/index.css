@@ -105,6 +105,24 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
+.demo-group {
+  padding: 2rem; }
+  .demo-group ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+.codepenlink {
+  font-family: monospace;
+  font-size: 80%; }
+  .codepenlink a {
+    color: #666; }
+
 section {
   min-height: 50vh;
   width: 100vw;
@@ -142,14 +160,3 @@ footer {
     margin: 0; }
 
 /* --------------------------------------------------------*/
-.demo-group {
-  padding: 2rem; }
-  .demo-group ul {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center; }

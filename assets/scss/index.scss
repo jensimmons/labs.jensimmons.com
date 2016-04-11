@@ -107,6 +107,20 @@ header {
   flex-wrap: wrap;
   justify-content:space-between;
 }
+.demo-group {
+  padding: 2rem;
+  ul {
+    display: flex;
+    justify-content: center;
+  }
+}
+.codepenlink {
+  font-family: monospace;
+  font-size: 80%;
+  a {
+    color: #666;
+  }
+}
 section {
   min-height: 50vh;
   width: 100vw;
@@ -153,19 +167,8 @@ footer {
 
 /* --------------------------------------------------------*/
 
-.demo-group {
-  padding: 2rem;
-  ul {
-    display: flex;
-    justify-content: center;
-  }
-}
-.demo-list {
-  li {
-    
-  
-  }
-}
+
+
 
 
 
