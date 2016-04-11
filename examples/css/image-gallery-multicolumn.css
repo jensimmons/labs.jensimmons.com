@@ -1,0 +1,41 @@
+html {
+  font-family: 'AdobeGaramondW01-Regula', georgia, serif;
+  font-size: 18px; }
+
+body {
+  margin-bottom: 3rem; }
+
+h1 {
+  font-family: 'BauerBodoniW01-BoldDisp', georgia, serif;
+  font-size: 2rem;
+  color: #fff;
+  margin: 0;
+  padding: 0.75em 0.25em;
+  background: #2c2c2c;
+  line-height: 1.1em; }
+
+ul {
+  padding: 0; }
+
+li {
+  list-style-type: none; }
+
+ul {
+  -webkit-columns: 200px;
+     -moz-columns: 200px;
+          columns: 200px;
+  -webkit-column-break-inside: avoid;
+     page-break-inside: avoid;
+          break-inside: avoid;
+  margin-left: 20px;
+  margin-right: 20px; }
+
+img {
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5); }
