@@ -45,8 +45,10 @@ ol {
 
 /* --------------------------------------------------------*/
 
+$background: #23445c;
+
 header {  
-  background: #23445c;
+  background: $background;
   color: #fff;
   min-height: 100vh;
   padding: 5rem 5rem 2rem;
@@ -118,7 +120,7 @@ section:nth-child(odd) {
   background: #f7f8f9;
 }
 footer {  
-  background: #1e7d98;
+  background: $background;
   color: #fff;
   padding: 3rem;
   text-align: center;
