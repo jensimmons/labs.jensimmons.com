@@ -40,10 +40,10 @@ ol {
 
 /* --------------------------------------------------------*/
 header {
-  background: #1e7d98;
+  background: #23445c;
   color: #fff;
   min-height: 100vh;
-  padding: 3rem 5rem;
+  padding: 5rem 5rem 2rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -52,9 +52,11 @@ header {
   header div {
     margin: auto; }
   header h1 {
-    font-size: 6.5vw; }
+    font-size: 6.3vw;
+    margin: 1em 0; }
   header p {
-    margin: 2em 0 0; }
+    margin: 2em 0 0;
+    font-size: 1.2em; }
   header ul {
     margin: 0; }
   header p,
