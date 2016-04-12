@@ -1,37 +1,6 @@
-/*
-font-family:'Vere Dignum LT W01';
-font-family:'Le Havre Hand W01 Crosshatch';
-font-family:'Lexia Ad W01 Regular';
-font-family:'CaslonClassico W00 Bold';
-font-family:'BauerBodoniW01-Regular';
-font-family:'BauerBodoniW01-RegItali';
-font-family:'BauerBodoniW01-DemiBold';
-font-family:'BauerBodoniW01-DemiBdIt_927290';
-font-family:'Bauer Bodoni W01 Bold_927278';
-font-family:'BauerBodoniW01-BoldItal_927296';
-font-family:'BauerBodoniW01-RegDispl';
-font-family:'BauerBodoniW01-DisCapsR';
-font-family:'BauerBodoniW01-RegItalD';
-font-family:'BauerBodoniW01-DemiBdDi';
-font-family:'BauerBodoniW01-DemiBdIt_927287';
-font-family:'BauerBodoniW01-BoldDisp';
-font-family:'BauerBodoniW01-BdItalDi';
-font-family:'Bodoni W01 Poster691960';
-font-family:'BodoniW01-PosterItalic';
-font-family:'BodoniW01-PosterCompres';
-font-family:'EngraversGothicBTW01-Re';
-font-family:'AdobeGaramondW01-Regula';
-font-family:'Adobe Garamond W01 It';
-font-family:'Adobe Garamond W01 SmBd';
-font-family:'AdobeGaramondW01-SmBdIt';
-font-family:'Adobe Garamond W01 Bd';
-font-family:'AdobeGaramondW01-BdIt';
-*/
-
-
 * {
-  box-sizing: border-box; }
-
+  box-sizing: border-box; 
+}
 html {
   font-family: georgia, serif;
   text-rendering: optimizeLegibility;
@@ -39,10 +8,11 @@ html {
           font-kerning: normal;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
-          text-size-adjust: 100%; }
-
+          text-size-adjust: 100%; 
+}
 img {
-  width: 100%; }
+  width: 100%; 
+}
   
   
 /* --------------------------------------------------------*/
@@ -102,36 +72,23 @@ header {
     border-bottom: 1px solid rgba(169, 169, 169, 0.79);
   }
 }
-.demos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:space-between;
-}
-.demo-group {
-  padding: 2rem;
-  ul {
-    display: flex;
-    justify-content: center;
-  }
-}
-.codepenlink {
-  font-family: monospace;
-  font-size: 80%;
-  a {
-    color: #666;
-  }
-}
 section {
   min-height: 50vh;
-  width: 100vw;
+  padding: 2rem;
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
   h3 {
-  font-size: 2.5rem;
+    font-size: 2.5rem;
     margin: 0.5em 0 0;
     text-align: center;
   }
+  ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
   li {
-    max-width: 20vw;
+    flex: 0 1 200px;
+    min-width: 15vw;
     margin: 1em 0;
     text-align: center;
   }
@@ -139,6 +96,13 @@ section {
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
     display: block;
     margin-bottom: 1em;
+  }
+  .codepenlink {
+    font-family: monospace;
+    font-size: 80%;
+    a {
+      color: #666;
+    }
   }
 }
 section:nth-child(even) {
@@ -163,12 +127,3 @@ footer {
     margin: 0;
   }
 }
-
-
-/* --------------------------------------------------------*/
-
-
-
-
-
-
