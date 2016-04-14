@@ -29,19 +29,6 @@ article.one {
   }
 }
 
-article.one-alt { 
-  @supports (initial-letter: 4) or
-    (-webkit-initial-letter: 4) {
-    p::first-letter {
-      color: #FE742F;
-      font-weight: bold;
-      margin-right: 0.5em;
-      -webkit-initial-letter: 4 3;
-      initial-letter: 4 3;
-    }
-  }
-}
-
 article.two { 
   @supports (initial-letter: 4 ) or
     (-webkit-initial-letter: 4 ) {
@@ -57,6 +44,35 @@ article.two {
   }
   p {
     margin-left: 10em;
+  }
+}
+
+
+article.three { 
+  @supports (initial-letter: 4) or
+    (-webkit-initial-letter: 4) {
+    p::first-letter {
+      color: #FE742F;
+      font-weight: bold;
+      margin-right: 0.5em;
+      -webkit-initial-letter: 4 3;
+      initial-letter: 4 3;
+    }
+  }
+}
+
+
+article.four { 
+  @supports (initial-letter: 4) or
+    (-webkit-initial-letter: 4) {
+    p::first-letter {
+      color: #FE742F;
+      font-weight: bold;
+      margin-right: 0.5em;
+      margin-top: 1em;
+      -webkit-initial-letter: 4;
+      initial-letter: 4;
+    }
   }
 }
 
