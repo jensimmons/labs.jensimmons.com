@@ -20,6 +20,10 @@ progress/fonts/*
 *.zip
 *.tgz
 
+# Photoshop originals #
+############
+*.psd
+
 # Logs and databases #
 ######################
 *.log
