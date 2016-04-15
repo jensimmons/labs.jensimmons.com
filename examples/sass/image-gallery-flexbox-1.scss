@@ -1,7 +1,6 @@
 // Code for Header Styling & List Resets--------------------------------------
 
 html {
-  font-family: 'AdobeGaramondW01-Regula', georgia, serif;
   font-size: 18px;
 }
 h1 {
@@ -15,6 +14,7 @@ h1 {
 }
 ul {
   padding: 0;
+  margin: 10px 0;
 }
 li {
   list-style-type: none;
@@ -29,18 +29,15 @@ ul {
   align-content: stretch;
 }
 li {
-  margin-left: 1%;
-  margin-right: 1%;
+  margin: 10px;
   flex: 1 0 auto;
 }
 img {
-  height: 300px;
   width: 100%; // breaks layout in Safari and Chrome. Using width: auto works better in those browsers, but fails to stretch the images to the available space. 
+  height: 160px;
   height: 20vh;
   display: block;
   object-fit: cover;
-  margin-top: 10px;
-  margin-bottom: 10px;
   border: 1px solid black;
   box-shadow: 1px 3px 8px rgba(0,0,0,0.5);
 }
