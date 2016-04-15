@@ -36,7 +36,7 @@ ul {
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-  height: 100vh;
+  height: 98vh;
   margin: 0; }
 
 li {
