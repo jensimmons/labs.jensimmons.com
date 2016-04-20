@@ -25,12 +25,12 @@ li {
 ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-content: stretch;
 }
 li {
   margin: 10px;
-  flex: 1 0 auto;
+  flex: none;
 }
 img {
   width: auto;
