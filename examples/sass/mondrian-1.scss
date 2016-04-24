@@ -1,0 +1,135 @@
+html {
+  background: white; 
+  background-image: url('../images/transparentbackground.svg');
+  
+}
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr) 1.2fr 1.2fr 0.5fr;
+  grid-template-rows: 11vw repeat(5, 13vw) 11vw 6.5vw 6.5vw;
+  box-shadow: 1px 3px 8px rgba(0,0,0,0.5);
+}
+li {
+  height: 100%;
+  border: 1vw solid black;
+  background-size: cover;
+}
+li:nth-child(1) {
+  grid-column: span 2;
+  background-color: #E5EEEB; 
+  border-top: none;
+  border-left: none;
+}
+li:nth-child(2) {
+  grid-column: span 3;
+  background-color: #F2E7D5;
+  border-top: none;
+}
+li:nth-child(3) {
+  grid-column: span 2;
+  background-color: #F2C968;
+  border-top: none;
+}
+li:nth-child(4) {
+  grid-row: span 6;
+  background-color: #FCFDE7;
+  border-top: none;
+  border-right: none;
+}
+li:nth-child(5) {
+  grid-row: span 2;
+  background-color: #FBFDE7;
+  border-left: none;
+}
+li:nth-child(6) {
+  grid-column: span 4;
+  grid-row: span 4;
+  background-color: #D62D24; //red
+}
+li:nth-child(7) {
+  grid-row: span 2;
+  grid-column: span 2;
+  background-color: #EDCC6B;
+}
+li:nth-child(8) {
+  grid-row: span 3;
+  background-color: #E1EAE5;
+  border-left: none;
+}
+li:nth-child(9) {
+  grid-row: span 2;
+  background-color: #DFE5D0;
+}
+li:nth-child(10) {
+  grid-row: span 2;
+  background-color: #F2EEE2;
+}
+li:nth-child(11) {
+  grid-row: span 2;
+  grid-column: span 2;
+  background-color: #130409;
+}
+li:nth-child(12) {
+  grid-column: span 2;
+  background-color: #C0BFBA;
+}
+li:nth-child(13) {
+  grid-column: span 2;
+  background-color: #D6DEE0;
+}
+li:nth-child(14) {
+  grid-row: span 3;
+  background-color: #F4C65A;
+  border-left: none;
+  border-bottom: none;
+}
+li:nth-child(15) {
+  grid-column: span 2;
+  background-color: #DEE2D4;
+}
+li:nth-child(16) {
+  grid-row: span 2;
+  grid-column: span 2;
+  background-color: #241785;
+}
+li:nth-child(17) {
+  grid-row: span 3;
+  background-color: #D73630;
+  border-bottom: none;
+  border-right: none;
+}
+li:nth-child(18) {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: #E3DED9;
+  border-bottom: none;
+}
+li:nth-child(19) {
+  grid-column: span 2;
+  background-color: #0B0205;
+}
+li:nth-child(20) {
+  grid-column: span 4;
+  background-color: #E0E0DF;
+  border-bottom: none;
+}
+
+
+
+// Style a Warning Message. Remove if Grid works ---------------------------------------
+
+.warning {
+  color: red;
+  font-size: 200%; 
+}
+@supports (display: grid) {
+  .warning {
+    display: none;
+  }
+}
+
