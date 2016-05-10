@@ -1,0 +1,42 @@
+* {
+  box-model: border-box; 
+  margin: 0;
+  padding: 0; 
+}
+body {
+  color: #888;
+  font-family: Helvetica;
+}
+ul {
+  margin: 4vw auto;
+  width: 75vw;
+  list-style: none;
+}
+li {
+  width: 20vw; 
+  height: 18vw;
+  clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
+  float: left;
+  margin-right: 10vw;
+}
+li:nth-child(2n) {
+  margin: -9vw -5vw 0 -15vw;  
+}
+img {
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+h1 { 
+  margin: 7vw 10vw 0;
+  font-size: 3vw;
+}
+p {
+  font-size: 80%;
+  clear: both;
+  margin: 0 5vw 0 0;
+  text-align: right;
+}
+a {
+  color: #888;
+}
