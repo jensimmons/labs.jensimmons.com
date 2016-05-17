@@ -26,30 +26,87 @@ ul {
   list-style: none;
   display: grid;
 ////  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
-  grid-template-columns: unquote("[odd-start] 5vw [even-end] 5vw [odd-mid] 5vw [even-start] 5vw [odd-end] 5vw [even-mid]");
+  grid-template-columns: repeat(3, unquote("[odd-start] 50px [even-end] 50px [odd-mid] 50px [even-start] 50px [odd-end] 50px [even-mid] 50px"));
 // The unquote segment of this code is only here to deal with a bug in Sass 3.4. It can be removed once Sass 3.5 ships. Regular CSS should NOT have such code and instead should look like this:  
 //  grid-template-columns: repeat(4, [odd-start] [even-end] [odd-mid] [even-start] [odd-end] [even-mid]);
-  grid-template-rows: unquote("[even-start end-end] 9vw [odd-start odd-end] 9vw [even-start end-end] ");
+  grid-template-rows: repeat(4, unquote("[even-start even-end] 80px [odd-start odd-end] 80px"));
 }
 li {
-  width: 20vw; 
-  height: 18vw;
+  width: 200px; 
+  height: 160px;
   clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
   grid-area: span 2 / span 4;
 }
 
-li:nth-child(2n+1) { // odd
-  grid-column: odd-start / odd-end;
-  grid-row: odd-start / odd-end;
+
+li:nth-child(1) {
+  grid-column-start: odd-start 1;
+  grid-row-start: odd-start 1;
 }
-li:nth-child(2n) { // even
-  grid-column: even-start / even-end;
-  grid-row: even-start / even-end;
+li:nth-child(2) {
+  grid-column-start: even-start 1;
+  grid-row-start: even-start 1;
+}
+li:nth-child(3) {
+  grid-column-start: odd-start 2;
+  grid-row-start: odd-start 1;
+}
+li:nth-child(4) {
+  grid-column-start: even-start 2;
+  grid-row-start: even-start 1;
+}
+li:nth-child(5) {
+  grid-column-start: odd-start 3;
+  grid-row-start: odd-start 1;
 }
 
 
+li:nth-child(6) {
+  grid-column-start: odd-start 1;
+  grid-row-start: odd-start 2;
+}
+li:nth-child(7) {
+  grid-column-start: even-start 1;
+  grid-row-start: even-start 2;
+}
+li:nth-child(8) {
+  grid-column-start: odd-start 2;
+  grid-row-start: odd-start 2;
+}
+li:nth-child(9) {
+  grid-column-start: even-start 2;
+  grid-row-start: even-start 2;
+}
+li:nth-child(10) {
+  grid-column-start: odd-start 3;
+  grid-row-start: odd-start 2;
+}
 
+li:nth-child(11) {
+  grid-column-start: odd-start 1;
+  grid-row-start: odd-start 3;
+}
+li:nth-child(12) {
+  grid-column-start: even-start 1;
+  grid-row-start: even-start 3;
+}
+li:nth-child(13) {
+  grid-column-start: odd-start 2;
+  grid-row-start: odd-start 3;
+}
+li:nth-child(14) {
+  grid-column-start: even-start 2;
+  grid-row-start: even-start 3;
+}
+li:nth-child(15) {
+  grid-column-start: odd-start 3;
+  grid-row-start: odd-start 3;
+}
 
+li:nth-child(16) {
+  grid-column-start: even-start 1;
+  grid-row-start: even-start 4;
+}
 
 // Style a Warning Message. Remove if Grid works ---------------------------------------
 
