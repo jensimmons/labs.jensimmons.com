@@ -98,3 +98,16 @@ li:nth-child(16) {
   grid-row: 7;
   grid-column: 10;
 }
+
+
+// Style a Warning Message. Remove if Grid works ---------------------------------------
+
+.warning {
+  color: red;
+  font-size: 200%; 
+}
+@supports (display: grid) {
+  .warning {
+    display: none;
+  }
+}

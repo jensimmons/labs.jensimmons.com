@@ -133,3 +133,11 @@ li:nth-child(16) {
       grid-row: 7;
   -ms-grid-column: 10;
       grid-column: 10; }
+
+.warning {
+  color: red;
+  font-size: 200%; }
+
+@supports ((display: -ms-grid) or (display: grid)) {
+  .warning {
+    display: none; } }
