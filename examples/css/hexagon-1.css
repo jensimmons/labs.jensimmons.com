@@ -24,11 +24,7 @@ li:nth-child(2n) {
   margin: -9vw -5vw 0 -15vw; }
 
 img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 50% 50%;
-     object-position: 50% 50%; }
+  width: 100%; }
 
 h1 {
   margin: 7vw 10vw 0;
