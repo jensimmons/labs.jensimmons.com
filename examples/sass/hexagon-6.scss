@@ -16,7 +16,6 @@ h1 {
 }
 p {
   font-size: 80%;
-  clear: both;
   margin: 0 5vw 0 0;
   text-align: right;
 }
@@ -25,27 +24,17 @@ ul {
   margin: 0 auto;
   list-style: none;
   display: grid;
-////  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
-  grid-template-columns: unquote("[odd-start] 5vw [even-end] 5vw [odd-mid] 5vw [even-start] 5vw [odd-end] 5vw [even-mid]");
-// The unquote segment of this code is only here to deal with a bug in Sass 3.4. It can be removed once Sass 3.5 ships. Regular CSS should NOT have such code and instead should look like this:  
-//  grid-template-columns: repeat(4, [odd-start] [even-end] [odd-mid] [even-start] [odd-end] [even-mid]);
-  grid-template-rows: unquote("[even-start end-end] 9vw [odd-start odd-end] 9vw [even-start end-end] ");
+//  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); 
+  grid-template-columns: repeat(auto-fill, 50px); 
+  grid-auto-rows: 80px;
 }
 li {
-  width: 20vw; 
-  height: 18vw;
+  width: 200px; 
+  height: 160px;
   clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
   grid-area: span 2 / span 4;
 }
 
-li:nth-child(2n+1) { // odd
-  grid-column: odd-start / odd-end;
-  grid-row: odd-start / odd-end;
-}
-li:nth-child(2n) { // even
-  grid-column: even-start / even-end;
-  grid-row: even-start / even-end;
-}
 
 
 

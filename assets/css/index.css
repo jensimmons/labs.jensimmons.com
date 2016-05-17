@@ -117,6 +117,14 @@ section {
     section .codepenlink a {
       color: #999; }
 
+.note {
+  margin: 1em auto;
+  width: 80%;
+  font-size: 94%;
+  font-style: italic;
+  text-align: center;
+  opacity: 0.8; }
+
 section:nth-child(even) {
   background: #fff; }
 
