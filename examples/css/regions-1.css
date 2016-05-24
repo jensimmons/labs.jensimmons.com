@@ -1,0 +1,93 @@
+body {
+  width: 88%;
+  margin: 100px auto;
+  font-size: 16px; }
+
+h1 {
+  margin-top: 0; }
+
+p {
+  line-height: 1.5em; }
+
+p:first-child {
+  margin-top: 0; }
+
+.version-b article {
+  max-width: 32em;
+  margin: 0 auto; }
+
+.version-c article {
+  -webkit-columns: 14em;
+     -moz-columns: 14em;
+          columns: 14em;
+  -webkit-column-gap: 3em;
+     -moz-column-gap: 3em;
+          column-gap: 3em;
+  line-height: 1.4em; }
+
+.version-d {
+  background: #efefef; }
+  .version-d p {
+    line-height: 1.4em; }
+  .version-d article {
+    line-height: 1.4em;
+    -webkit-flow-into: article; }
+  .version-d .region {
+    -webkit-flow-from: article;
+    height: 90vh;
+    margin: 5vh 0;
+    background: white;
+    padding: 3em; }
+
+.version-e {
+  background: #efefef; }
+  .version-e p {
+    line-height: 1.4em; }
+  .version-e article {
+    -webkit-columns: 14em;
+       -moz-columns: 14em;
+            columns: 14em;
+    -webkit-column-gap: 3em;
+       -moz-column-gap: 3em;
+            column-gap: 3em;
+    line-height: 1.4em;
+    -webkit-flow-into: article; }
+  .version-e .region {
+    -webkit-flow-from: article;
+    height: 90vh;
+    margin: 5vh 0;
+    background: white;
+    padding: 3em; }
+
+.version-f {
+  background: #f7f7f7; }
+  .version-f p {
+    line-height: 1.4em; }
+  .version-f article {
+    -webkit-flow-into: article; }
+  .version-f .region-set {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap; }
+  .version-f .region {
+    -webkit-flow-from: article;
+    height: 80vh;
+    margin: 2vh 0;
+    background: white;
+    padding: 2em 2em 1em; }
+    @media (min-width: 500px) {
+      .version-f .region {
+        width: 50%; } }
+    @media (min-width: 800px) {
+      .version-f .region {
+        width: 33%; } }
+    @media (min-width: 1100px) {
+      .version-f .region {
+        width: 25%; } }
+    @media (min-width: 1400px) {
+      .version-f .region {
+        width: 20%; } }
