@@ -1,38 +1,30 @@
 body {
-  width: 72vw;
-  margin: 10vh 12vw 10vh 16vw;
   font-size: 16px;
 }
 header {
-  display: flexbox;
-  flex-flow: column nowrap;
-  color: #fff;
   background-image: url('../images/burks-article/covermag.jpg');
   background-size: cover;
   height: 100vh;
-  padding: 20vh 20vw;
-  h1 {
-  font-size: 4em;
+  div.wrapper {
+    background: rgba(0,0,0,0.5);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    color: #fff;
+    padding: 1vh 30vw 1vh 10vw;
+    justify-content: center;
+  }
+  div.wrapper2 {
     
   }
-  
+  h1 {
+    font-size: calc(0.8em + 2vh + 3vw);    
+  }
+  a {
+    color: #fff;
+  }
 }
-
-/*
-
-<header>
-  <h1 class="headline">Ruth Coker Burks, the cemetery angel</h1>
-  <p class="intro-graph">In the darkest hour of the AIDS epidemic, Ruth Coker Burks cared for hundreds of people whose families had abandoned them. Courage, love and the 30-year secret of one little graveyard in Hot Springs.</p>
-  <img src="images/burks-article/covermag.jpg">
-  <div>by David Koon, for <a href="http://www.arktimes.com/arkansas/ruth-coker-burks-the-cemetery-angel/Content?oid=3602959"><i>the Arkansas Times</i></a></div>
-  <time datetime="2015-01-08" pubdate="" class="date">January 08, 2015</time> 
-</header>
-
-
-*/
-
-
-
 h1, h2, h3 {
   margin-top: 0;
 }
@@ -56,15 +48,22 @@ p {
 p:first-child {
   margin-top: 0;
 }
+a {
+  color: #000;
+}
 @supports (initial-letter: 3 ) or
   (-webkit-initial-letter: 3 ) {
-  header + p::first-letter,
-  h3 + p::first-letter {
-    font-weight: bold;
-    margin-top: 1em; // only here to fix the bug in Safari 9.0
+  p.first-graph::first-letter {
+    -webkit-initial-letter: 5;
+    initial-letter: 5;
     margin-right: 0.2em;
+    margin-top: 1em; // only here to fix the bug in Safari 9.0
+  }
+  h3 + p::first-letter {
     -webkit-initial-letter: 3;
     initial-letter: 3;
+    margin-right: 0.3em;
+    margin-top: 1em; // only here to fix the bug in Safari 9.0
   }
 }
 .intro-graph {
@@ -75,10 +74,10 @@ figure {
   margin: 1em 0 0;
   break-inside: avoid;
   break-after: always;
-//  min-height: 75vh;
+  min-height: 75vh;
   img {
-//    min-height: 55vh;
-//    object-fit: cover;
+    min-height: 55vh;
+    object-fit: cover;
   } 
   figcaption {
     display: block;
@@ -99,12 +98,15 @@ figure {
 /* All the Stuff for Regions
 ------------------------------------- */
 
-article {
+.article-body {
   -webkit-flow-into: content-flow;
 }
 .region-set {
+  width: 72vw;
+  margin: 10vh 20vw 10vh 8vw;
   display: grid;
   grid-template-columns: 100%;
+
   @media (min-width: 800px) {
     grid-template-columns: 34vw 34vw; // needs to add up to 72vw
     grid-gap: 4vw;
@@ -118,14 +120,9 @@ article {
     grid-gap: 2.6666666vw;
   }
 }
-.region-header {
-  -webkit-flow-from: content-flow;
-  margin: -10vh -12vw 50px -16vw;
-  height: 100vh;
-  background: #999;  
-}
 .region {
   -webkit-flow-from: content-flow;
   max-height: 75vh;
   margin: 2vh 0 12vh;
 }
+

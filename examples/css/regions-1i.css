@@ -1,33 +1,32 @@
 body {
-  width: 72vw;
-  margin: 10vh 12vw 10vh 16vw;
   font-size: 16px; }
 
 header {
-  display: flexbox;
-  -webkit-flex-flow: column nowrap;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  color: #fff;
   background-image: url("../images/burks-article/covermag.jpg");
   background-size: cover;
-  height: 100vh;
-  padding: 20vh 20vw; }
+  height: 100vh; }
+  header div.wrapper {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    color: #fff;
+    padding: 1vh 30vw 1vh 10vw;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   header h1 {
-    font-size: 4em; }
+    font-size: calc(0.8em + 2vh + 3vw); }
+  header a {
+    color: #fff; }
 
-/*
-
-<header>
-  <h1 class="headline">Ruth Coker Burks, the cemetery angel</h1>
-  <p class="intro-graph">In the darkest hour of the AIDS epidemic, Ruth Coker Burks cared for hundreds of people whose families had abandoned them. Courage, love and the 30-year secret of one little graveyard in Hot Springs.</p>
-  <img src="images/burks-article/covermag.jpg">
-  <div>by David Koon, for <a href="http://www.arktimes.com/arkansas/ruth-coker-burks-the-cemetery-angel/Content?oid=3602959"><i>the Arkansas Times</i></a></div>
-  <time datetime="2015-01-08" pubdate="" class="date">January 08, 2015</time> 
-</header>
-
-
-*/
 h1, h2, h3 {
   margin-top: 0; }
 
@@ -55,14 +54,21 @@ p {
 p:first-child {
   margin-top: 0; }
 
+a {
+  color: #000; }
+
 @supports (initial-letter: 3) or (-webkit-initial-letter: 3) {
-  header + p::first-letter,
-  h3 + p::first-letter {
-    font-weight: bold;
-    margin-top: 1em;
+  p.first-graph::first-letter {
+    -webkit-initial-letter: 5;
+    initial-letter: 5;
     margin-right: 0.2em;
+    margin-top: 1em; }
+
+  h3 + p::first-letter {
     -webkit-initial-letter: 3;
-    initial-letter: 3; } }
+    initial-letter: 3;
+    margin-right: 0.3em;
+    margin-top: 1em; } }
 .intro-graph {
   font-size: 160%;
   font-style: italic; }
@@ -74,7 +80,12 @@ figure {
           break-inside: avoid;
   -webkit-column-break-after: always;
      page-break-after: always;
-          break-after: always; }
+          break-after: always;
+  min-height: 75vh; }
+  figure img {
+    min-height: 55vh;
+    -o-object-fit: cover;
+       object-fit: cover; }
   figure figcaption {
     display: block;
     font-style: italic;
@@ -89,10 +100,12 @@ figure {
 
 /* All the Stuff for Regions
 ------------------------------------- */
-article {
+.article-body {
   -webkit-flow-into: content-flow; }
 
 .region-set {
+  width: 72vw;
+  margin: 10vh 20vw 10vh 8vw;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 100%;
@@ -112,12 +125,6 @@ article {
       -ms-grid-columns: 16vw 16vw 16vw 16vw;
           grid-template-columns: 16vw 16vw 16vw 16vw;
       grid-gap: 2.6666666vw; } }
-
-.region-header {
-  -webkit-flow-from: content-flow;
-  margin: -10vh -12vw 50px -16vw;
-  height: 100vh;
-  background: #999; }
 
 .region {
   -webkit-flow-from: content-flow;
