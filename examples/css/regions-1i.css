@@ -1,6 +1,6 @@
 html {
-  font-family: 'AdobeGaramondW01-Regula', georgia, serif;
-  font-size: 18px; }
+  font-family: 'Adobe Caslon W01', georgia, serif;
+  font-size: 19px; }
 
 header {
   background-image: url("../images/burks-article/covermag.jpg");
@@ -24,30 +24,38 @@ header {
         -ms-flex-pack: center;
             justify-content: center; }
   header h1 {
-    font-size: calc(0.8em + 2vh + 3vw); }
+    font-size: calc(0.8em + 2vh + 3vw);
+    line-height: 1em;
+    margin: 0; }
   header a {
     color: #fff; }
 
 h1, h2, h3 {
-  margin-top: 0; }
+  margin-top: 0;
+  line-height: 1.2em; }
 
 h1 {
   font-size: 2.4em;
   margin: 0 0 0.5em; }
 
 h2 {
-  font-size: 2.1em;
+  font-size: 2.2em;
   margin: 0 0 0.5em; }
 
 h3 {
-  font-size: 1.8em;
-  margin: 0 0 0.33em;
+  font-size: 2em;
+  margin: 0 0 0.2em;
   -webkit-column-break-inside: avoid;
      page-break-inside: avoid;
           break-inside: avoid;
   -webkit-column-break-after: avoid;
      page-break-after: avoid;
-          break-after: avoid; }
+          break-after: avoid;
+  font-weight: 700;
+  color: rgba(97, 128, 148, 0.85); }
+
+h3 + p {
+  margin-top: 0; }
 
 p {
   line-height: 1.4em; }
@@ -63,13 +71,16 @@ a {
     -webkit-initial-letter: 5;
     initial-letter: 5;
     margin-right: 0.2em;
-    margin-top: 1em; }
+    margin-top: 1em;
+    color: rgba(97, 128, 148, 0.85); }
 
   h3 + p::first-letter {
     -webkit-initial-letter: 3;
     initial-letter: 3;
     margin-right: 0.3em;
-    margin-top: 1em; } }
+    margin-top: 1em;
+    font-weight: 500;
+    color: rgba(97, 128, 148, 0.85); } }
 .intro-graph {
   font-size: 160%;
   font-style: italic; }
@@ -91,7 +102,7 @@ figure {
     display: block;
     font-style: italic;
     margin-top: 0.25em;
-    color: #444; }
+    color: rgba(97, 128, 148, 0.85); }
   figure small {
     display: block;
     color: #aaa;
