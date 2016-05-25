@@ -77,20 +77,25 @@ article {
   -webkit-flow-into: content-flow; }
 
 .region-set {
-  display: -webkit-grid;
-  -webkit-grid-template-columns: 100%; }
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%; }
   @media (min-width: 800px) {
     .region-set {
-      -webkit-grid-template-columns: 34vw 34vw;
-      -webkit-grid-gap: 4vw; } }
+      -ms-grid-columns: 34vw 34vw;
+          grid-template-columns: 34vw 34vw;
+      grid-gap: 4vw; } }
   @media (min-width: 1100px) {
     .region-set {
-      -webkit-grid-template-columns: 22vw 22vw 22vw;
-      -webkit-grid-gap: 3vw; } }
+      -ms-grid-columns: 22vw 22vw 22vw;
+          grid-template-columns: 22vw 22vw 22vw;
+      grid-gap: 3vw; } }
   @media (min-width: 1400px) {
     .region-set {
-      -webkit-grid-template-columns: 16vw 16vw 16vw 16vw;
-      -webkit-grid-gap: 2.6666666vw; } }
+      -ms-grid-columns: 16vw 16vw 16vw 16vw;
+          grid-template-columns: 16vw 16vw 16vw 16vw;
+      grid-gap: 2.6666666vw; } }
 
 .region {
   -webkit-flow-from: content-flow;
