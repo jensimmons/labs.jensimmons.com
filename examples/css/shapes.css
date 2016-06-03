@@ -23,6 +23,9 @@ h1.egg {
 h1.tomato {
   color: #F23628; }
 
+h1.apples {
+  color: #A13A45; }
+
 h1, h2, h3, p {
   margin-left: 20vw; }
 
@@ -46,7 +49,10 @@ img.grapes {
           shape-outside: polygon(nonzero, 72.35% 83.95%, 45.5% 94.3%, 0% 100%, 0% 88.4%, 0% 23.7%, 38.7% 11.35%, 55% 11.1%, 63.5% 22.7%, 72.15% 20.75%, 79.1% 30.6%, 79.8% 34.55%, 87.6% 43.95%, 83.7% 57.3%, 89.15% 65.7%, 92.55% 72.1%, 91.15% 83.2%); }
 
 img.apples {
+  width: 60vw;
   -webkit-shape-outside: url("../images/apples-mask.png");
           shape-outside: url("../images/apples-mask.png");
-  -webkit-shape-image-threshold: 0.2;
-          shape-image-threshold: 0.2; }
+  -webkit-shape-margin: 0.8em;
+          shape-margin: 0.8em;
+  -webkit-shape-image-threshold: 0.5;
+          shape-image-threshold: 0.5; }
