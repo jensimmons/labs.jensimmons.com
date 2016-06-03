@@ -26,6 +26,9 @@ h1.tomato {
 h1.apples {
   color: #A13A45; }
 
+h1.blackberry {
+  color: #214095; }
+
 h1, h2, h3, p {
   margin-left: 20vw; }
 
@@ -52,6 +55,15 @@ img.apples {
   width: 60vw;
   -webkit-shape-outside: url("../images/apples-mask.png");
           shape-outside: url("../images/apples-mask.png");
+  -webkit-shape-margin: 0.8em;
+          shape-margin: 0.8em;
+  -webkit-shape-image-threshold: 0.5;
+          shape-image-threshold: 0.5; }
+
+img.blackberry {
+  width: 40vw;
+  -webkit-shape-outside: attr(src url);
+          shape-outside: attr(src url);
   -webkit-shape-margin: 0.8em;
           shape-margin: 0.8em;
   -webkit-shape-image-threshold: 0.5;
