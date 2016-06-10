@@ -168,7 +168,7 @@ img { width: 100%; }
   main {
     display: grid;
     grid-template-columns: repeat(5, 1fr 2fr);
-    grid-gap: 1.5em;    
+    grid-gap: 2em 0.5em;    
   }
   div:nth-child(4) {
     grid-column: 6 / 9;
