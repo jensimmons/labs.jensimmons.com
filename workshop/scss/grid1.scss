@@ -1,0 +1,251 @@
+* { box-sizing: border-box;}
+img { width: 100%; }
+
+// -----------------------------------------------------------------------------------------------------------------------------
+// Visual Styling for Set 1 Part 1
+// -----------------------------------------------------------------------------------------------------------------------------
+
+.set1-part1  {
+  background: #112233;
+  font-family: Helvetica;
+  main {
+    width: 940px;
+    margin: 2em auto;
+    background: white;
+  }
+  div {
+    background: #FFE5E5;
+    color: #333;
+    text-align: center;
+    padding: 2em 0;  
+    border: 1px solid #333;
+  }
+}
+
+// ------------------------------------------------------------------------------
+// Grid 1A
+// ------------------------------------------------------------------------------
+
+.grid-1A {
+  main {
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
+    grid-gap: 20px;
+  }
+}
+
+// ------------------------------------------------------------------------------
+// Grid 1B
+// ------------------------------------------------------------------------------
+
+.grid-1B {
+  main {
+    display: grid;
+    grid-template-columns: repeat(12, 60px);
+    grid-gap: 20px;
+  }
+}
+
+// ------------------------------------------------------------------------------
+// Grid 1C
+// ------------------------------------------------------------------------------
+
+.grid-1C { // the CSS is the same in this example, but we added many more <div> elements to the HTML
+  main {
+    display: grid;
+    grid-template-columns: repeat(12, 60px);
+    grid-gap: 20px;
+  }
+}
+
+
+// -----------------------------------------------------------------------------------------------------------------------------
+// Visual Styling for Set 1 Part 2
+// -----------------------------------------------------------------------------------------------------------------------------
+
+.set1-part2  {
+  background: #ccc;
+  font-family: Helvetica;
+  main {
+    width: 90%;
+    margin: 2em auto;
+    background: white;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
+  }
+  div {
+    background: #F8F5EA;
+    color: #333;
+    text-align: center;
+    padding: 2em 0;  
+    border: 1px solid #E9DFBA;
+  }
+}
+
+
+// ------------------------------------------------------------------------------
+// Grid 1D
+// ------------------------------------------------------------------------------
+
+.grid-1D {
+  main {
+    display: grid;
+    grid-template-columns: repeat(12, 7.41666666666666666%);
+    grid-gap: 1%;    
+  }
+}
+
+
+// ------------------------------------------------------------------------------
+// Grid 1E
+// ------------------------------------------------------------------------------
+
+.grid-1E {
+  main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1.5em;    
+  }
+}
+
+
+// ------------------------------------------------------------------------------
+// Grid 1F
+// ------------------------------------------------------------------------------
+
+.grid-1F {
+  main {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-gap: 1.5em;    
+  }
+  div:nth-child(4) {
+    grid-column-start: 6;
+    grid-column-end: 7;
+  }
+}
+
+
+// ------------------------------------------------------------------------------
+// Grid 1G
+// ------------------------------------------------------------------------------
+
+.grid-1G {
+  main {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-gap: 1.5em;    
+  }
+  div:nth-child(4) {
+    grid-column-start: 6;
+    grid-column-end: 9;
+  }
+  div:nth-child(7) {
+    grid-column: 3 / 4;
+  }
+  div:nth-child(8) {
+    grid-column: 10 / 12;
+  }
+  div:nth-child(14) {
+    grid-column: 6 / 7;
+  }
+  div:nth-child(25) {
+    grid-column: 6 / 9;
+  }
+  div:nth-child(26) {
+    grid-column: 6 / 9;
+  }
+  div:nth-child(27) {
+    grid-column: 6 / 9;
+  }  
+}
+  
+  
+// ------------------------------------------------------------------------------
+// Grid 1H
+// ------------------------------------------------------------------------------
+
+.grid-1H {
+  main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr 2fr);
+    grid-gap: 1.5em;    
+  }
+  div:nth-child(4) {
+    grid-column: 6 / 9;
+  }
+  div:nth-child(7) {
+    grid-column: 3 / 4;
+  }
+  div:nth-child(8) {
+    grid-column: 4 / 7;
+  }
+  div:nth-child(14) {
+    grid-column: 6 / 7;
+  }
+  div:nth-child(25) {
+    grid-column: 6 / 9;
+  }
+  div:nth-child(26) {
+    grid-column: 6 / 9;
+  }
+  div:nth-child(27) {
+    grid-column: 6 / 9;
+  }  
+} 
+  
+   
+// ------------------------------------------------------------------------------
+// Grid 1I
+// ------------------------------------------------------------------------------
+
+.grid-1I {
+  main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr 2fr);
+    grid-template-rows: repeat(6, 1fr 2fr);
+    grid-gap: 1.5em;    
+  }
+  div:nth-child(4) {
+    grid-column: 6 / span 4;
+    grid-row: 2 / span 1;
+  }
+  div:nth-child(7) {
+    grid-column: 3 / 4;
+    grid-row: 3 / span 3;
+  }
+  div:nth-child(8) {
+    grid-column: 4 / span 5;
+  }
+  div:nth-child(13) {
+    grid-column: 7;
+  }
+  div:nth-child(14) {
+    grid-column: 6 / span 2;
+  }
+  div:nth-child(25) {
+    grid-column: span 3 / 9;
+  }
+  div:nth-child(26) {
+    grid-column: 6 / span 1;
+    grid-row: span 3;
+  }
+  div:nth-child(27) {
+    grid-column: 6 / span 3;
+  }  
+} 
+
+// ------------------------------------------------------------------------------
+// Grid 1J
+// ------------------------------------------------------------------------------
+
+.grid-1J {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 3fr 5fr 8fr 13fr 21fr 34fr; // the Fibonacci Sequence
+    grid-template-rows: 1fr 1fr 2fr 3fr 5fr 8fr 13fr 21fr 34fr 55fr; 
+    grid-gap: 1.5em;    
+  }
+}   
+  
+  
+  
