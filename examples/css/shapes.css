@@ -14,7 +14,7 @@ h1 {
   margin: 0;
   line-height: 1.1em; }
 
-p {
+p, ul {
   line-height: 1.75em; }
 
 h1.egg {
@@ -28,6 +28,9 @@ h1.apples {
 
 h1.blackberry {
   color: #214095; }
+
+.orange h1 {
+  color: #ffa64a; }
 
 h1, h2, h3, p {
   margin-left: 20vw; }
@@ -68,3 +71,25 @@ img.blackberry {
           shape-margin: 0.8em;
   -webkit-shape-image-threshold: 0.5;
           shape-image-threshold: 0.5; }
+
+.orange article {
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2; }
+.orange h1 {
+  -webkit-column-span: all;
+     -moz-column-span: all;
+          column-span: all;
+  margin-bottom: 1.5rem; }
+.orange p {
+  margin-top: 0;
+  margin-left: 0; }
+.orange img {
+  -webkit-shape-outside: circle();
+          shape-outside: circle();
+  width: 50%;
+  float: left;
+  margin: 0 1em 1em 0; }
+.orange img.second {
+  width: 300px;
+  margin-left: -150px; }

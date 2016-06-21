@@ -14,7 +14,7 @@ h1 {
   margin: 0;
   line-height: 1.1em;
 }
-p {
+p, ul {
   line-height: 1.75em;
 }
 h1.egg {
@@ -28,6 +28,9 @@ h1.apples {
 }
 h1.blackberry {
   color: #214095;
+}
+.orange h1 {
+  color: #ffa64a;
 }
 h1, h2, h3, p {
   margin-left: 20vw;
@@ -60,3 +63,31 @@ img.blackberry {
   shape-margin: 0.8em;
   shape-image-threshold: 0.5;
 }
+
+// 
+
+.orange {
+  article {
+    column-count: 2;
+  } 
+  h1 {
+    column-span: all;
+    margin-bottom: 1.5rem;
+  }
+  p {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  img {
+    shape-outside: circle();
+    width: 50%;
+    float: left;
+    margin: 0 1em 1em 0;
+  }
+  img.second {
+    width: 300px;
+    margin-left: -150px;
+  }
+}
+
+
