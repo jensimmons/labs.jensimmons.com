@@ -32,6 +32,9 @@ h1.blackberry {
 .orange h1 {
   color: #ffa64a;
 }
+.plum h1 {
+  color: #A51029;
+}
 h1, h2, h3, p {
   margin-left: 20vw;
 }
@@ -64,8 +67,6 @@ img.blackberry {
   shape-image-threshold: 0.5;
 }
 
-// 
-
 .orange {
   article {
     column-count: 2;
@@ -90,4 +91,20 @@ img.blackberry {
   }
 }
 
-
+.plum {
+  h1 {
+    margin-bottom: 2rem;
+  }
+  img {
+    width: 72px;
+    float: none;
+    margin: 0;
+    border-radius: 50%;
+  }
+  img.big {
+    shape-outside: ellipse(155px 123px at 48.4% 53.6%);
+    shape-margin: 1em;
+    width: 40%;
+    float: left;
+  }
+}

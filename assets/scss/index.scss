@@ -76,7 +76,7 @@ header {
     border-bottom: 1px solid rgba(169, 169, 169, 0.79);
   }
 }
-section {
+main > section {
   min-height: 50vh;
   padding: 2rem;
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
@@ -112,6 +112,48 @@ section {
       color: #999;
     }
   }
+  > footer {
+    background: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2) inset;
+    margin: 2rem 3% 1rem;
+    padding: 1rem;
+    font-family: monospace;
+    font-size: 75%;
+    opacity: .7;
+    h4 {
+      font-weight: normal;
+      margin: 0.25em 0 .5em;
+      color: #666;
+      text-align: center;
+    }
+    ul {
+      margin: 0;
+    }
+    li {
+      margin: 0;
+    }
+    a {
+      color: #666;
+    }
+  }
+}
+nav {
+  background: #292929;
+  color: #bbb;
+  a {
+    color: #bbb;    
+  }
+  padding: 2em 2em 2em 6em;
+  ol {
+    columns: 180px;
+    column-gap: 4em;
+    li {
+      text-align: left;
+      margin: 0;
+      padding: 0.25em 0;
+      break-inside: avoid;
+    }
+  }
 }
 .note {
   margin: 1em auto;
@@ -127,7 +169,7 @@ section:nth-child(even) {
 section:nth-child(odd) {
   background: #f7f8f9;
 }
-footer {  
+main > footer {  
   background: $background;
   color: #fff;
   padding: 3rem;
