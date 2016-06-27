@@ -1,0 +1,144 @@
+html {
+  font-family: 'Adobe Caslon W01', georgia, serif;
+  font-size: 19px; }
+
+header {
+  background-image: url("../images/burks-article/covermag.jpg");
+  background-size: cover;
+  height: 100vh; }
+  header div.wrapper {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    color: #fff;
+    padding: 1vh 30vw 1vh 10vw;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  header h1 {
+    font-size: calc(0.8em + 2vh + 3vw);
+    line-height: 1em;
+    margin: 0; }
+  header a {
+    color: #fff; }
+
+h1, h2, h3 {
+  margin-top: 0;
+  line-height: 1.2em; }
+
+h1 {
+  font-size: 2.4em;
+  margin: 0 0 0.5em; }
+
+h2 {
+  font-size: 2.2em;
+  margin: 0 0 0.5em; }
+
+h3 {
+  font-size: 2em;
+  margin: 0 0 0.2em;
+  -webkit-column-break-inside: avoid;
+     page-break-inside: avoid;
+          break-inside: avoid;
+  -webkit-column-break-after: avoid;
+     page-break-after: avoid;
+          break-after: avoid;
+  font-weight: 700;
+  color: rgba(97, 128, 148, 0.85); }
+
+h3 + p {
+  margin-top: 0; }
+
+p {
+  line-height: 1.4em; }
+
+p:first-child {
+  margin-top: 0; }
+
+a {
+  color: #000; }
+
+@supports (initial-letter: 3) or (-webkit-initial-letter: 3) {
+  p.first-graph::first-letter {
+    -webkit-initial-letter: 5;
+    initial-letter: 5;
+    margin-right: 0.2em;
+    margin-top: 1em;
+    color: rgba(97, 128, 148, 0.85); }
+
+  h3 + p::first-letter {
+    -webkit-initial-letter: 3;
+    initial-letter: 3;
+    margin-right: 0.3em;
+    margin-top: 1em;
+    font-weight: 500;
+    color: rgba(97, 128, 148, 0.85); } }
+.intro-graph {
+  font-size: 160%;
+  font-style: italic; }
+
+figure {
+  margin: 1em 0 0;
+  -webkit-column-break-inside: avoid;
+     page-break-inside: avoid;
+          break-inside: avoid;
+  -webkit-column-break-after: always;
+     page-break-after: always;
+          break-after: always;
+  min-height: 75vh; }
+  figure img {
+    min-height: 55vh;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  figure figcaption {
+    display: block;
+    font-style: italic;
+    margin-top: 0.25em;
+    color: rgba(97, 128, 148, 0.85); }
+  figure small {
+    display: block;
+    color: #aaa;
+    text-transform: uppercase;
+    font-size: 60%;
+    margin-top: 0.333em; }
+
+/* All the Stuff for Regions
+------------------------------------- */
+.article-body {
+  -webkit-flow-into: content-flow; }
+
+.region-set {
+  width: 72vw;
+  margin: 10vh 20vw 10vh 8vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%; }
+  @media (min-width: 800px) {
+    .region-set {
+      -ms-grid-columns: 34vw 34vw;
+          grid-template-columns: 34vw 34vw;
+      grid-gap: 4vw; } }
+  @media (min-width: 1100px) {
+    .region-set {
+      -ms-grid-columns: 22vw 22vw 22vw;
+          grid-template-columns: 22vw 22vw 22vw;
+      grid-gap: 3vw; } }
+  @media (min-width: 1400px) {
+    .region-set {
+      -ms-grid-columns: 16vw 16vw 16vw 16vw;
+          grid-template-columns: 16vw 16vw 16vw 16vw;
+      grid-gap: 2.6666666vw; } }
+
+.region {
+  -webkit-flow-from: content-flow;
+  max-height: 75vh;
+  margin: 2vh 0 12vh; }

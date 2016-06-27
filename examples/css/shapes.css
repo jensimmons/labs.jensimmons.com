@@ -14,7 +14,7 @@ h1 {
   margin: 0;
   line-height: 1.1em; }
 
-p {
+p, ul {
   line-height: 1.75em; }
 
 h1.egg {
@@ -22,6 +22,18 @@ h1.egg {
 
 h1.tomato {
   color: #F23628; }
+
+h1.apples {
+  color: #A13A45; }
+
+h1.blackberry {
+  color: #214095; }
+
+.orange h1 {
+  color: #ffa64a; }
+
+.plum h1 {
+  color: #A51029; }
 
 h1, h2, h3, p {
   margin-left: 20vw; }
@@ -44,3 +56,64 @@ img.grapes {
   width: 50vw;
   -webkit-shape-outside: polygon(nonzero, 72.35% 83.95%, 45.5% 94.3%, 0% 100%, 0% 88.4%, 0% 23.7%, 38.7% 11.35%, 55% 11.1%, 63.5% 22.7%, 72.15% 20.75%, 79.1% 30.6%, 79.8% 34.55%, 87.6% 43.95%, 83.7% 57.3%, 89.15% 65.7%, 92.55% 72.1%, 91.15% 83.2%);
           shape-outside: polygon(nonzero, 72.35% 83.95%, 45.5% 94.3%, 0% 100%, 0% 88.4%, 0% 23.7%, 38.7% 11.35%, 55% 11.1%, 63.5% 22.7%, 72.15% 20.75%, 79.1% 30.6%, 79.8% 34.55%, 87.6% 43.95%, 83.7% 57.3%, 89.15% 65.7%, 92.55% 72.1%, 91.15% 83.2%); }
+
+img.apples {
+  width: 60vw;
+  -webkit-shape-outside: url("../images/apples-mask.png");
+          shape-outside: url("../images/apples-mask.png");
+  -webkit-shape-margin: 0.8em;
+          shape-margin: 0.8em;
+  -webkit-shape-image-threshold: 0.5;
+          shape-image-threshold: 0.5; }
+
+img.blackberry {
+  width: 40vw;
+  -webkit-shape-outside: attr(src url);
+          shape-outside: attr(src url);
+  -webkit-shape-margin: 0.8em;
+          shape-margin: 0.8em;
+  -webkit-shape-image-threshold: 0.5;
+          shape-image-threshold: 0.5; }
+
+.orange article {
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2; }
+.orange h1 {
+  -webkit-column-span: all;
+     -moz-column-span: all;
+          column-span: all;
+  margin-bottom: 1.5rem; }
+.orange p {
+  margin-top: 0;
+  margin-left: 0; }
+.orange img {
+  -webkit-shape-outside: circle();
+          shape-outside: circle();
+  width: 50%;
+  float: left;
+  margin: 0 1em 1em 0; }
+.orange img.second {
+  width: 300px;
+  margin-left: -150px; }
+
+.plum {
+  width: 800px; }
+  .plum h1 {
+    margin-bottom: 2rem; }
+  .plum img {
+    width: 72px;
+    float: none;
+    margin: 0;
+    border-radius: 50%; }
+  .plum .big {
+    -webkit-shape-outside: polygon(nonzero, -0.4% 20.3%, 5.2% 19.25%, 22.2% 37.8%, 60.2% 55.35%, 79.8% 70.5%, 64.2% 81.4%, 41.4% 81.6%, 30.8% 91.25%, 28% 99.8%, 0% 99.55%);
+            shape-outside: polygon(nonzero, -0.4% 20.3%, 5.2% 19.25%, 22.2% 37.8%, 60.2% 55.35%, 79.8% 70.5%, 64.2% 81.4%, 41.4% 81.6%, 30.8% 91.25%, 28% 99.8%, 0% 99.55%);
+    -webkit-shape-margin: 1em;
+            shape-margin: 1em;
+    width: 50%;
+    float: left;
+    font-size: 3vw;
+    font-size: 2rem;
+    margin-top: 100px;
+    margin-right: 100px; }

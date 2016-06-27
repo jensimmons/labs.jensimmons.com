@@ -1,0 +1,102 @@
+body {
+  width: 72vw;
+  margin: 10vh 12vw 10vh 16vw;
+  font-size: 16px;
+}
+header div {
+  font-family: monospace;
+  font-size: 80%;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+h1 {
+  font-size: 2.4em;
+  margin: 0 0 0.5em;
+}
+h2 {
+  font-size: 2.1em;
+  margin: 0 0 0.5em;
+}
+h3 {
+  font-size: 1.8em;
+  margin: 0 0 0.33em;
+  break-inside: avoid;
+  break-after: avoid;
+}
+p {
+  line-height: 1.4em;  
+}
+p:first-child {
+  margin-top: 0;
+}
+@supports (initial-letter: 3 ) or
+  (-webkit-initial-letter: 3 ) {
+  header + p::first-letter,
+  h3 + p::first-letter {
+    font-weight: bold;
+    margin-top: 1em; // only here to fix the bug in Safari 9.0
+    margin-right: 0.2em;
+    -webkit-initial-letter: 3;
+    initial-letter: 3;
+  }
+}
+.intro-graph {
+  font-size: 160%;
+  font-style: italic;
+}
+figure {
+  margin: 1em 0 0;
+  break-inside: avoid;
+  break-after: always;
+  min-height: 75vh;
+  img {
+    min-height: 55vh;
+    object-fit: cover;
+  } 
+  figcaption {
+    display: block;
+    font-style: italic;
+    margin-top: 0.25em;
+    color: #444;
+  }
+  small {
+    display: block;
+    color: #aaa;
+    text-transform: uppercase;
+    font-size: 60%;
+    margin-top: 0.333em;
+  }
+}
+
+
+/* All the Stuff for Regions
+------------------------------------- */
+
+article {
+  -webkit-flow-into: content-flow;
+}
+.region-set {
+  display: grid;
+  grid-template-columns: 100%;
+
+  @media (min-width: 800px) {
+    grid-template-columns: 34vw 34vw; // needs to add up to 72vw
+    grid-gap: 4vw;
+  }
+  @media (min-width: 1100px) {
+    grid-template-columns: 22vw 22vw 22vw;
+    grid-gap: 3vw;
+  }
+  @media (min-width: 1400px) {
+    grid-template-columns: 16vw 16vw 16vw 16vw;
+    grid-gap: 2.6666666vw;
+  }
+}
+.region {
+  -webkit-flow-from: content-flow;
+  max-height: 75vh;
+  margin: 2vh 0 12vh;
+}
+

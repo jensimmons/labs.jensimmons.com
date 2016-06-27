@@ -76,7 +76,7 @@ header {
     border-bottom: 1px solid rgba(169, 169, 169, 0.79);
   }
 }
-section {
+main > section {
   min-height: 50vh;
   padding: 2rem;
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
@@ -85,11 +85,10 @@ section {
     margin: 0.5em 0 0;
     text-align: center;
   }
-  ul {
+  > ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-  }
   li {
     flex: 0 1 200px;
     min-width: 15vw;
@@ -98,6 +97,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
   }
   img {
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
@@ -110,6 +110,51 @@ section {
     margin: 2em 0 0;
     a {
       color: #999;
+    }
+  }
+  > footer {
+    margin: 1rem 10% 1rem;
+    font-family: monospace;
+    font-size: 75%;
+    display: flex;
+    color: #999;
+    div {
+      flex: 1;      
+    }
+    h4 {
+      font-weight: normal;
+      margin: 0.25em 0;
+      text-decoration: underline;
+    }
+    ul {
+      margin: 0;
+      list-style: square;
+      padding: 0 0 0 1em;
+    }
+    li {
+      margin: 0;
+      padding: 0;
+    }
+    a {
+      color: inherit;
+    }
+  }
+}
+nav {
+  background: #292929;
+  color: #bbb;
+  a {
+    color: #bbb;    
+  }
+  padding: 2em 2em 2em 6em;
+  ol {
+    columns: 180px;
+    column-gap: 4em;
+    li {
+      text-align: left;
+      margin: 0;
+      padding: 0.25em 0;
+      break-inside: avoid;
     }
   }
 }
@@ -127,7 +172,7 @@ section:nth-child(even) {
 section:nth-child(odd) {
   background: #f7f8f9;
 }
-footer {  
+main > footer {  
   background: $background;
   color: #fff;
   padding: 3rem;

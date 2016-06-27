@@ -65,15 +65,15 @@ header {
   header a {
     border-bottom: 1px solid rgba(169, 169, 169, 0.79); }
 
-section {
+main > section {
   min-height: 50vh;
   padding: 2rem;
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2); }
-  section h3 {
+  main > section h3 {
     font-size: 2.5rem;
     margin: 0.5em 0 0;
     text-align: center; }
-  section ul {
+  main > section > ul {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -85,37 +85,85 @@ section {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
-  section li {
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 1 200px;
-        -ms-flex: 0 1 200px;
-            flex: 0 1 200px;
-    min-width: 15vw;
-    margin: 1em 0;
-    text-align: center;
+    main > section > ul li {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 1 200px;
+          -ms-flex: 0 1 200px;
+              flex: 0 1 200px;
+      min-width: 15vw;
+      margin: 1em 0;
+      text-align: center;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+  main > section img {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin-bottom: 1em; }
+  main > section .codepenlink {
+    font-family: monospace;
+    font-size: 75%;
+    margin: 2em 0 0; }
+    main > section .codepenlink a {
+      color: #999; }
+  main > section > footer {
+    margin: 1rem 10% 1rem;
+    font-family: monospace;
+    font-size: 75%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-  section img {
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
-    display: block;
-    margin-bottom: 1em; }
-  section .codepenlink {
-    font-family: monospace;
-    font-size: 75%;
-    margin: 2em 0 0; }
-    section .codepenlink a {
-      color: #999; }
+    color: #999; }
+    main > section > footer div {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
+    main > section > footer h4 {
+      font-weight: normal;
+      margin: 0.25em 0;
+      text-decoration: underline; }
+    main > section > footer ul {
+      margin: 0;
+      list-style: square;
+      padding: 0 0 0 1em; }
+    main > section > footer li {
+      margin: 0;
+      padding: 0; }
+    main > section > footer a {
+      color: inherit; }
+
+nav {
+  background: #292929;
+  color: #bbb;
+  padding: 2em 2em 2em 6em; }
+  nav a {
+    color: #bbb; }
+  nav ol {
+    -webkit-columns: 180px;
+       -moz-columns: 180px;
+            columns: 180px;
+    -webkit-column-gap: 4em;
+       -moz-column-gap: 4em;
+            column-gap: 4em; }
+    nav ol li {
+      text-align: left;
+      margin: 0;
+      padding: 0.25em 0;
+      -webkit-column-break-inside: avoid;
+         page-break-inside: avoid;
+              break-inside: avoid; }
 
 .note {
   margin: 1em auto;
@@ -131,15 +179,15 @@ section:nth-child(even) {
 section:nth-child(odd) {
   background: #f7f8f9; }
 
-footer {
+main > footer {
   background: #23445c;
   color: #fff;
   padding: 3rem;
   text-align: center; }
-  footer a {
+  main > footer a {
     color: #eee;
     text-decoration: underline; }
-  footer p {
+  main > footer p {
     margin-bottom: 0; }
-  footer ul {
+  main > footer ul {
     margin: 0; }

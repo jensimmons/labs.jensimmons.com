@@ -1,0 +1,15 @@
+// This file first loads regions-1i.css, to get all the CSS from the previous example
+
+
+body {
+  height: 100vh;
+  overflow-x: auto;
+  scroll-snap-type: proximity;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-destination: 0 0; 
+}
+
+.region {
+  height: 80vh;
+  margin: 5.75vh 0 15vh;
+}

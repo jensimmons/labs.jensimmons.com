@@ -23,8 +23,26 @@
     <li><a href="http://jensimmons.com/presentation/modern-layouts-getting-out-our-ruts">Modern Layouts: Getting Out of Our Ruts</a></li>    
   </ul>
 </p>
+<p>Follow <a href="http://twitter.com/jensimmons">@jensimmons</a> on Twitter for more as it happens.<br />Check out <a href="http://layout.land">Layout Land</a>, a place for us to show off new ideas for layout.</p>
 </div>
 </header>
+
+<nav class="index">
+  <ol>
+    <li><a href="#shapes">Shape Outside</a></li>
+    <li><a href="#clippath">Clip Path</a></li>
+    <li><a href="#initialletter">Initial Letter</a></li>
+    <li><a href="#objectfit">Object Fit</a></li>
+    <li><a href="#coversheet">Cover Sheet Demo</a></li>
+    <li><a href="#imagegallery">Image Gallery Study</a></li>
+    <li><a href="#jazzposter">Jazz Poster Grid Demo</a></li>
+    <li><a href="#mondrian">CSS Mondrian Grid</a></li>
+    <li><a href="#hexagon">Hexagon Layouts</a></li>
+    <li><a href="#regions1">A Study of Columns and the Need for Regions</a></li>
+    <li><a href="#multicolumn">Multicolumn</a></li>
+    <li><a href="#rotation">Rotation</a></li>
+  </ol>
+</nav>
 
 <section><a name="shapes"></a>
   <h3>Shape Outside</h3>
@@ -33,31 +51,34 @@
 </li>
     <li><a href="examples/shapes-2.html"><img src="assets/images/shape2.jpg" alt="screenshot of the Egg shape demo"> Egg: shape-outside: ellipse</a><p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/yOvgyp/?editors=1100">[on CodePen]</a></p></li>
     <li><a href="examples/shapes-3.html"><img src="assets/images/shape3.jpg" alt="screenshot of the Grapes shape demo"> Grapes: shape-outside: polygon</a><p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/reJjVr?editors=1100">[on CodePen]</a></p></li>
-  </ul>
+    <li><a href="examples/shapes-4.html"><img src="assets/images/shape4.jpg" alt="screenshot of the Apples shape demo"> Apples: shape-outside: url(mask.png)</a><p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/zBxVJg/?editors=1100">[on CodePen]</a></p></li>
+    <li><a href="examples/shapes-5.html"><img src="assets/images/shape5.jpg" alt="screenshot of the Blackberry shape demo"> Blackberry: shape-outside: attr(src url)</a><p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/bedqqQ?editors=1100">[on CodePen]</a></p></li>
+    <li><a href="examples/shapes-6.html"><img src="assets/images/shape6.jpg" alt="screenshot of the Orange shape demo"> Oranges: shape-outside combined with multicolumn</a></p></li>
+    <li><a href="examples/shapes-7.html"><img src="assets/images/shape7.jpg" alt="screenshot of the Plums shape demo"> Plums: images floating around an image</a></p></li>
+    </ul>
+    <footer>
+      <div>
+        <h4>Tickets for implementing <code>shape-outside</code>:</h4>
+        <ul><li><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1040714">Firefox</a></li>
+            <li><a href="https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/suggestions/6263716-shapes">Edge</a></li>
+            <li><a href="http://caniuse.com/#feat=css-shapes">Where CSS Shapes is currently supported<a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Tickets for implementing <code>attr()</code>:</h4>
+        <ul><li><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=435426">Firefox</a></li>
+            <li><a href="https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/suggestions/7671960-css-attr-as-defined-in-css-values-level-3">Edge</a></li>
+            <li><a href="https://bugs.chromium.org/p/chromium/issues/detail?id=246571">Chrome & Opera</a></li>
+            <li><a href="https://bugs.webkit.org/show_bug.cgi?id=26609">Safari & WebKit</a></li>
+        </ul>
+      </div>
+    </footer>
 </section>
 
 <section><a name="clippath"></a>
   <h3>Clip Path</h3>
   <ul>
     <li><a href="examples/clip-path.html"><img src="assets/images/simpleclippath.jpg" alt="screenshot of the Simple Clip Path demo"> Simple Image Cropped by Clip Path</a><p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/jqZyKx?editors=1100">[on CodePen]</a></p></li>
-  </ul>
-</section>
-
-<section><a name="hexagon"></a>
-  <h3>Hexagon Layouts</h3>
-  <p class="note"">I'm trying to figure out how to best do this layout. I want hexagons to nest, to be fluid, and I want them to automatically align themselves into different number of columns based on how much space there is. Sometimes 1 column, 2 col, 3col, 4col, 5col, etc. Hexagon 4 does this — alters the number of columns based on how much space there is. But I'm not sure how to get the hexagons to nuzzle up next to each other in Hexagon 4. I'm thinking named lines might help, which is why I used them in Hexagon 5, but that would only help if we could tell autoplacement to figure out what the next named line is in the available space. Something like "Hey go to the next line with this name" instead of "go to named line number 2". Of course, this could be done with a lot of long-hand specifiying and a bunch of media queries. Basically Hexagon 2 or 3 with lots more code for multiple breakpoints. Or maybe there's a completely new way to go at this. Hmmmm.</p>
-  <ul>
-    <li><a href="examples/hexagon-1.html"><img src="assets/images/hexagon1.jpg" alt=""> Hexagon 1: Clip-path + Floats + Negative Margins</a><p class="codepenlink"><a href="https://codepen.io/jensimmons/pen/ZbPrQJ?editors=1100">[on CodePen]</a></p></li>
-    <li><a href="examples/hexagon-2.html"><img src="assets/images/hexagon2.jpg" alt=""> Hexagon 2: Clip-path + Grid, fully-resizes</a><p class="codepenlink"><a href="https://codepen.io/jensimmons/pen/QNRMxm?editors=1100">[on CodePen]</a></p></li>
-    <li><a href="examples/hexagon-3.html"><img src="assets/images/hexagon3.jpg" alt=""> Hexagon 3: Clip-path + Grid, fully-resizes. Similar to #2, but using negative margins & nth-child for more efficient code.</a><p class="codepenlink"><a href="https://codepen.io/jensimmons/pen/BKemEK?editors=1100">[on CodePen]</a></p></li>
-    <li><a href="examples/hexagon-4.html"><img src="assets/images/hexagon4.jpg" alt=""> Hexagon 4: Clip-path + Grid. Adjusting by Auto Placement.</a><p class="codepenlink"><a href="https://codepen.io/jensimmons/pen/KzLZzy?editors=1100">[on CodePen]</a></p></li>
-    <li><a href="examples/hexagon-5.html"><img src="assets/images/hexagon5.jpg" alt=""> Hexagon 5: Clip-path + Grid. Using named lines. Fixed-width.</a><p class="codepenlink"><a href="https://codepen.io/jensimmons/pen/vGwpOY?editors=1100">[on CodePen]</a></p></li>    
-    <li><a href="examples/hexagon-6.html"><img src="assets/images/tba.gif" alt=""> Hexagon 6: ???</a><p class="codepenlink"><a href="https://codepen.io/jensimmons/pen/KzLZNZ?editors=1100">[on CodePen]</a></p></li>    
-     
-    
-    
-    
-    
   </ul>
 </section>
 
@@ -124,6 +145,61 @@
   </ul>
 </section>
 
+<section><a name="hexagon"></a>
+  <h3>Hexagon Layouts</h3>
+  <p class="note">I'm trying to figure out how to best do this layout. I want hexagons to nest, to be fluid, and I want them to automatically align themselves into different number of columns based on how much space there is. Sometimes 1 column, 2 col, 3col, 4col, 5col, etc. Hexagon 4 does this — alters the number of columns based on how much space there is. But I'm not sure how to get the hexagons to nuzzle up next to each other in Hexagon 4. I'm thinking named lines might help, which is why I used them in Hexagon 5, but that would only help if we could tell autoplacement to figure out what the next named line is in the available space. Something like "Hey go to the next line with this name" instead of "go to named line number 2". Of course, this could be done with a lot of long-hand specifiying and a bunch of media queries. Basically Hexagon 2 or 3 with lots more code for multiple breakpoints. Or maybe there's a completely new way to go at this. Hmmmm.</p>
+  <ul>
+    <li><a href="examples/hexagon-1.html"><img src="assets/images/hexagon1.jpg" alt=""> Hexagon 1: Clip-path + Floats + Negative Margins</a><p class="codepenlink"><a href="https://codepen.io/jensimmons/pen/ZbPrQJ?editors=1100">[on CodePen]</a></p></li>
+    <li><a href="examples/hexagon-2.html"><img src="assets/images/hexagon2.jpg" alt=""> Hexagon 2: Clip-path + Grid, fully-resizes</a><p class="codepenlink"><a href="https://codepen.io/jensimmons/pen/QNRMxm?editors=1100">[on CodePen]</a></p></li>
+    <li><a href="examples/hexagon-3.html"><img src="assets/images/hexagon3.jpg" alt=""> Hexagon 3: Clip-path + Grid, fully-resizes. Similar to #2, but using negative margins & nth-child for more efficient code.</a><p class="codepenlink"><a href="https://codepen.io/jensimmons/pen/BKemEK?editors=1100">[on CodePen]</a></p></li>
+    <li><a href="examples/hexagon-4.html"><img src="assets/images/hexagon4.jpg" alt=""> Hexagon 4: Clip-path + Grid. Adjusting by Auto Placement.</a><p class="codepenlink"><a href="https://codepen.io/jensimmons/pen/KzLZzy?editors=1100">[on CodePen]</a></p></li>
+    <li><a href="examples/hexagon-5.html"><img src="assets/images/hexagon5.jpg" alt=""> Hexagon 5: Clip-path + Grid. Using named lines. Fixed-width.</a><p class="codepenlink"><a href="https://codepen.io/jensimmons/pen/vGwpOY?editors=1100">[on CodePen]</a></p></li>    
+    <li><a href="examples/hexagon-6.html"><img src="assets/images/tba.gif" alt=""> Hexagon 6: ???</a><p class="codepenlink"><a href="https://codepen.io/jensimmons/pen/KzLZNZ?editors=1100">[on CodePen]</a></p></li>
+  </ul>
+</section>
+
+<section><a name="regions1"></a>
+  <h3>A Study of Columns and the Need for Regions, part 1</h3>
+  <p class="note">These demos (D–J) only work in Safari Technical Preview.</p> 
+  <ul>
+    <li><a href="examples/regions-1a.html"><img src="assets/images/region1A.jpg" alt=""> A: Fluid text, a la 1994</a></li>
+    <li><a href="examples/regions-1b.html"><img src="assets/images/region1B.jpg" alt=""> B: Responsive text, a la 2011</a></li>
+    <li><a href="examples/regions-1c.html"><img src="assets/images/region1C.jpg" alt=""> C: Multicolumn</a></li>
+    <li><a href="examples/regions-1d.html"><img src="assets/images/region1D.jpg" alt=""> D: Regions + Multicolumn — almost, but not</a></li>
+    <li><a href="examples/regions-1e.html"><img src="assets/images/region1E.jpg" alt=""> E: Regions + Multicolumn — what actually happens</a></li>
+    <li><a href="examples/regions-1f.html"><img src="assets/images/region1F.jpg" alt=""> F: Since Multicolumn fails, let's do columns with Flexbox + Regions</a></li>
+    <li><a href="examples/regions-1g.html"><img src="assets/images/region1G.jpg" alt=""> G: Let's Switch to Real Content, in Flexbox + Regions</a></li>
+    <li><a href="examples/regions-1h.html"><img src="assets/images/region1H.jpg" alt=""> H: Grid + Regions, simple layout of real content</a></li>
+    <li><a href="examples/regions-1i.html"><img src="assets/images/region1I.jpg" alt=""> I: Grid + Regions, with a Cover Sheet header</a></li>
+    <li><a href="examples/regions-1j.html"><img src="assets/images/region1J.jpg" alt=""> J: Adding Scroll Snap to see what that feels like</a></li>
+  </ul>
+</section>
+
+<section><a name="multicolumn"></a>
+  <h3>Multicolumn</h3>
+  <ul>
+    <li><a href="examples/multicolumn1.html"><img src="assets/images/multicolumn1.jpg" alt=""> Multicolumn 1</a></li>
+  </ul>
+  
+    <footer>
+      <div>
+        <h4>Multicolumn Bug tickets</h4>
+        <ul><li><a href="https://bugs.webkit.org/show_bug.cgi?id=14137">Drop shadows don't stay with content box in Webkit</a></li>
+        </ul>
+      </div>
+  
+  
+</section>
+
+<section><a name="rotation"></a>
+  <h3>Rotation</h3>
+  <ul>
+    <li><a href="examples/rotation1.html"><img src="assets/images/rotation1.jpg" alt=""> Rotation 1</a></li>
+    <li><a href="examples/rotation2.html"><img src="assets/images/rotation2.jpg" alt=""> Rotation 2</a></li>
+    <li><a href="examples/rotation3.html"><img src="assets/images/rotation3.jpg" alt=""> Rotation 3</a></li>
+    <li><a href="examples/rotation4.html"><img src="assets/images/rotation4.jpg" alt=""> Rotation 4</a></li>
+  </ul>
+</section>
 
 <section><a name="flexvgrid"></a>
   <h3>(Coming in the Future) A Study of Grid</h3>
@@ -134,29 +210,11 @@
   </ul>
 </section>
 
-
 <section><a name="flexvgrid"></a>
   <h3>A Study of Flexbox vs Grid</h3>
   <ul>
     <li><a href="examples/study-1.html"><img src="assets/images/flexboxvgrid1.jpg" alt=""> Study 1: A Grid of Boxes, 4 Ways</a></li>
     <li><a href="examples/study-2.html"><img src="assets/images/flexboxvgrid2.jpg" alt=""> Study 2: That Same Grid of Boxes in Just Grid</a></li>
-  </ul>
-</section>
-
-<section><a name="multicolumn"></a>
-  <h3>Multicolumn</h3>
-  <ul>
-    <li><a href="examples/multicolumn1.html"><img src="assets/images/multicolumn1.jpg" alt=""> Multicolumn 1</a></li>
-  </ul>
-</section>
-
-<section><a name="rotation"></a>
-  <h3>Rotation</h3>
-  <ul>
-    <li><a href="examples/rotation1.html"><img src="assets/images/rotation1.jpg" alt=""> Rotation 1</a></li>
-    <li><a href="examples/rotation2.html"><img src="assets/images/rotation2.jpg" alt=""> Rotation 2</a></li>
-    <li><a href="examples/rotation3.html"><img src="assets/images/rotation3.jpg" alt=""> Rotation 3</a></li>
-    <li><a href="examples/rotation4.html"><img src="assets/images/rotation4.jpg" alt=""> Rotation 4</a></li>
   </ul>
 </section>
 
