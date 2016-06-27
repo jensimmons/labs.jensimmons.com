@@ -60,21 +60,15 @@ p {
   width: 250px;
   margin-bottom: 20px; }
 
-@supports ((display: -ms-grid) or (display: grid)) {
+@supports (display: grid) {
+  /* autoprefixer: off */
   ul {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-rows: (15vw)[5];
-        grid-template-rows: repeat(5, 15vw);
-    -ms-grid-columns: (15vw)[5];
-        grid-template-columns: repeat(5, 15vw);
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg); }
+    grid-template-rows: repeat(5, 15vw);
+    grid-template-columns: repeat(5, 15vw);
+    transform: rotate(45deg); }
 
   li {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex; }
 
   h3 {

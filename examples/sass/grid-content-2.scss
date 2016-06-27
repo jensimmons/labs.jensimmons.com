@@ -70,7 +70,7 @@ ul {
 
 
 @supports (display:grid) {
-
+ /* autoprefixer: off */
   ul {
     display: grid;
     grid-template-rows: repeat(5, 15vw);
