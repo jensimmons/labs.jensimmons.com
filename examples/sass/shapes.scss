@@ -92,6 +92,7 @@ img.blackberry {
 }
 
 .plum {
+  width: 800px;
   h1 {
     margin-bottom: 2rem;
   }
@@ -101,10 +102,14 @@ img.blackberry {
     margin: 0;
     border-radius: 50%;
   }
-  img.big {
-    shape-outside: ellipse(155px 123px at 48.4% 53.6%);
+  .big {
+    shape-outside: polygon(nonzero, -0.4% 20.3%, 5.2% 19.25%, 22.2% 37.8%, 60.2% 55.35%, 79.8% 70.5%, 64.2% 81.4%, 41.4% 81.6%, 30.8% 91.25%, 28% 99.8%, 0% 99.55%);
     shape-margin: 1em;
-    width: 40%;
+    width: 50%;
     float: left;
+    font-size: 3vw;
+    font-size: 2rem;
+    margin-top: 100px;
+    margin-right: 100px;
   }
 }

@@ -97,17 +97,23 @@ img.blackberry {
   width: 300px;
   margin-left: -150px; }
 
-.plum h1 {
-  margin-bottom: 2rem; }
-.plum img {
-  width: 72px;
-  float: none;
-  margin: 0;
-  border-radius: 50%; }
-.plum img.big {
-  -webkit-shape-outside: ellipse(155px 123px at 48.4% 53.6%);
-          shape-outside: ellipse(155px 123px at 48.4% 53.6%);
-  -webkit-shape-margin: 1em;
-          shape-margin: 1em;
-  width: 40%;
-  float: left; }
+.plum {
+  width: 800px; }
+  .plum h1 {
+    margin-bottom: 2rem; }
+  .plum img {
+    width: 72px;
+    float: none;
+    margin: 0;
+    border-radius: 50%; }
+  .plum .big {
+    -webkit-shape-outside: polygon(nonzero, -0.4% 20.3%, 5.2% 19.25%, 22.2% 37.8%, 60.2% 55.35%, 79.8% 70.5%, 64.2% 81.4%, 41.4% 81.6%, 30.8% 91.25%, 28% 99.8%, 0% 99.55%);
+            shape-outside: polygon(nonzero, -0.4% 20.3%, 5.2% 19.25%, 22.2% 37.8%, 60.2% 55.35%, 79.8% 70.5%, 64.2% 81.4%, 41.4% 81.6%, 30.8% 91.25%, 28% 99.8%, 0% 99.55%);
+    -webkit-shape-margin: 1em;
+            shape-margin: 1em;
+    width: 50%;
+    float: left;
+    font-size: 3vw;
+    font-size: 2rem;
+    margin-top: 100px;
+    margin-right: 100px; }
