@@ -1,0 +1,45 @@
+body {
+  background: #F0F0F0;
+  font: 16px/1.5em Georgia, Times, serif;
+  color: #333; }
+
+h1 {
+  font-family: "fira_semibold", Verdana;
+  color: #cf8317;
+  font-size: .67em;
+  font-weight: 500;
+  margin: .65em 0 1.33em 1em;
+  line-height: 1.1em; }
+
+p {
+  display: none; }
+
+main {
+  /* autoprefixer: off */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+
+section {
+  color: #eee;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column; }
+  section img {
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+        -ms-flex-order: -1;
+            order: -1;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15); }
+
+.warning {
+  margin-left: 1em;
+  max-width: 600px;
+  font-size: 80%; }
+
+@supports ((display: -ms-grid) or (display: grid)) {
+  .warning {
+    display: none; } }
