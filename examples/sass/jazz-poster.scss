@@ -15,8 +15,8 @@ html {
   font-family: Avenir, Helvetica, georgia, serif;  
 }
 body {
-  width: 90%;
-  margin: 3vh auto;
+  width: 90vw;
+  margin: 3vh 5vw;
 }
 h1, h2 {
   font-size: 1.4rem;
@@ -63,6 +63,17 @@ p {
   width: 250px;
   margin-bottom: 20px
 }
+.ticketinfo {
+  h4 {
+    padding: 0.3em 1em 0.2em;
+  }
+  p {
+    margin-top: 0;
+    padding: 1em;
+    background: rgba(0,0,0,0.2);
+    border-radius: 0 0 5px 5px;
+  }
+}
 
 // Basic layout for non-Grid supporting browsers
 
@@ -76,10 +87,6 @@ li {
   float: left;
   margin: 10px;
   margin-bottom: 100px;
-  p {
-    color: black; 
-    margin-top: 5px;
-  }
 }
 .support-note {
   margin-left: 1em;
@@ -96,7 +103,7 @@ li {
     float: none;
     height: auto;
     width: auto;
-    margin: none;
+    margin: 0;
   }
   
   // Ok, lets go Grid!
@@ -104,29 +111,28 @@ li {
   // Outer Grid
   main {
     display: grid;
-    grid-template-rows: repeat(8, 15vw);
-    grid-template-columns: repeat(6, 15vw);
+    grid-template-columns: repeat(6, 14vw);
+    grid-template-rows: repeat(10, 14vw);
+    grid-gap: 1vw;
   }
   .logo {
-    grid-row: 8 / 9;    
+    grid-row: -1 / -2;    
     img {
-      width: 15vw;
+      width: 14vw;
     }
     align-self: end;
   }
   header {
-    grid-row: 2 / 3;
     grid-column: 1 / 4;
+    grid-row: 2 / 3;
     padding-top: 2em;
   }
   .ticketinfo {
+    width: auto;
+    margin: 0;
+    grid-column: 5 / 7;    
     grid-row: 6 / 8;
-    grid-column: 5 / 6;    
   }  
-  .ticketinfo p {
-    color: #fff;
-    margin-top: 1em;  
-  }
   ul {
     grid-row: 2 / 9;  
     grid-columns: 1 / 8; 
@@ -135,8 +141,12 @@ li {
   // Inner Grid
   ul {
     display: grid;
-    grid-template-rows: repeat(5, 15vw);
-    grid-template-columns: repeat(5, 15vw);
+    grid-template-columns: repeat(5, 14vw);
+//    grid-template-rows: repeat(5, 14vw);
+    grid-gap: 1vw;
+  }
+  li {
+    min-height: 14vw;
   }
   li:nth-child(1) {
     grid-row: 1 / 2;
