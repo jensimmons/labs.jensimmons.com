@@ -23,7 +23,6 @@ article p {
 @supports (initial-letter: 4) or (-webkit-initial-letter: 4) {
   article.two p::first-letter {
     color: #ae4ea5;
-    font-family: 'Le Havre Hand W01 Crosshatch', 'Avenir';
     font-weight: bold;
     margin-right: 0.5em;
     margin-left: -2em;
@@ -48,6 +47,17 @@ article.two p {
     margin-top: 1em;
     -webkit-initial-letter: 4;
     initial-letter: 4; } }
+
+@supports (initial-letter: 4) or (-webkit-initial-letter: 4) {
+  article.five p::first-letter {
+    color: #ffebb5;
+    font-weight: bold;
+    margin-right: 1em;
+    margin-top: 1em;
+    -webkit-initial-letter: 3 4;
+    initial-letter: 3 4;
+    background: #af0f21;
+    padding: 2em; } }
 
 .warning {
   color: red;
