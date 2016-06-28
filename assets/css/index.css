@@ -20,7 +20,8 @@ body {
 
 h1, h2, h3 {
   font-family: 'BauerBodoniW01-BoldDisp', georgia, serif;
-  margin-top: 0; }
+  margin-top: 0;
+  font-weight: 300; }
 
 a {
   color: #000;
@@ -40,7 +41,7 @@ ol {
 
 /* --------------------------------------------------------*/
 header {
-  background: #23445c;
+  background: #0b470e;
   color: #fff;
   min-height: 100vh;
   padding: 5rem 5rem 2rem;
@@ -180,7 +181,7 @@ section:nth-child(odd) {
   background: #f7f8f9; }
 
 main > footer {
-  background: #23445c;
+  background: #0b470e;
   color: #fff;
   padding: 3rem;
   text-align: center; }
