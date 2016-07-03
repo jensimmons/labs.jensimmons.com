@@ -1,4 +1,4 @@
-* {
+  * {
   box-sizing: border-box;
 }
 html {
@@ -8,13 +8,15 @@ html {
   text-size-adjust: 100%;
 }
 body {
-  background: #F0F0F0;
+  background: #ededed;
   color: #cf8317;
 }
 main {
  /* autoprefixer: off */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  width: 90%;
+  margin: 0 auto;
 }
 section {
   margin: 0;
