@@ -15,7 +15,18 @@ ul {
   padding: 0; }
 
 li {
-  list-style-type: none; }
+  list-style-type: none;
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 4rem;
+  position: relative; }
+
+span {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4); }
 
 ul {
   /* autoprefixer: off */
