@@ -1,5 +1,5 @@
 html {
-  font-family: 'AdobeGaramondW01-Regula', georgia, serif;
+  font-family: helvetica, sans-serif;
   font-size: 18px; }
 
 h1 {
@@ -16,7 +16,6 @@ ul {
 
 li {
   list-style-type: none;
-  font-family: helvetica;
   font-weight: bold;
   font-size: 4rem;
   position: relative; }
