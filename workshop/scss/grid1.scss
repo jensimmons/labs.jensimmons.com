@@ -22,36 +22,39 @@ img { width: 100%; }
   }
 }
 
+
 // ------------------------------------------------------------------------------
 // Grid 1A
 // ------------------------------------------------------------------------------
 
-.grid-1A {
-  main {
+.grid-1A { 
+  main { /* autoprefixer: off */
     display: grid;
     grid-template-columns: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
     grid-gap: 20px;
   }
 }
 
+
 // ------------------------------------------------------------------------------
 // Grid 1B
 // ------------------------------------------------------------------------------
 
-.grid-1B {
-  main {
+.grid-1B { 
+  main { /* autoprefixer: off */
     display: grid;
     grid-template-columns: repeat(12, 60px);
     grid-gap: 20px;
   }
 }
 
+
 // ------------------------------------------------------------------------------
 // Grid 1C
 // ------------------------------------------------------------------------------
 
 .grid-1C { // the CSS is the same in this example, but we added many more <div> elements to the HTML
-  main {
+  main { /* autoprefixer: off */
     display: grid;
     grid-template-columns: repeat(12, 60px);
     grid-gap: 20px;
@@ -87,7 +90,7 @@ img { width: 100%; }
 // ------------------------------------------------------------------------------
 
 .grid-1D {
-  main {
+  main { /* autoprefixer: off */
     display: grid;
     grid-template-columns: repeat(12, 7.41666666666666666%);
     grid-gap: 1%;    
@@ -100,7 +103,7 @@ img { width: 100%; }
 // ------------------------------------------------------------------------------
 
 .grid-1E {
-  main {
+  main { /* autoprefixer: off */
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 1.5em;    
@@ -113,7 +116,7 @@ img { width: 100%; }
 // ------------------------------------------------------------------------------
 
 .grid-1F {
-  main {
+  main { /* autoprefixer: off */
     display: grid;
     grid-template-columns: repeat(11, 1fr);
     grid-gap: 1.5em;    
@@ -130,7 +133,7 @@ img { width: 100%; }
 // ------------------------------------------------------------------------------
 
 .grid-1G {
-  main {
+  main { /* autoprefixer: off */
     display: grid;
     grid-template-columns: repeat(11, 1fr);
     grid-gap: 1.5em;    

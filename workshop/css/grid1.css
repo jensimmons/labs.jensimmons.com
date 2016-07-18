@@ -19,24 +19,21 @@ img {
     border: 1px solid #333; }
 
 .grid-1A main {
-  display: -ms-grid;
+  /* autoprefixer: off */
   display: grid;
-  -ms-grid-columns: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
-      grid-template-columns: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
+  grid-template-columns: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
   grid-gap: 20px; }
 
 .grid-1B main {
-  display: -ms-grid;
+  /* autoprefixer: off */
   display: grid;
-  -ms-grid-columns: (60px)[12];
-      grid-template-columns: repeat(12, 60px);
+  grid-template-columns: repeat(12, 60px);
   grid-gap: 20px; }
 
 .grid-1C main {
-  display: -ms-grid;
+  /* autoprefixer: off */
   display: grid;
-  -ms-grid-columns: (60px)[12];
-      grid-template-columns: repeat(12, 60px);
+  grid-template-columns: repeat(12, 60px);
   grid-gap: 20px; }
 
 .set1-part2 {
@@ -55,24 +52,21 @@ img {
     border: 1px solid #E9DFBA; }
 
 .grid-1D main {
-  display: -ms-grid;
+  /* autoprefixer: off */
   display: grid;
-  -ms-grid-columns: (7.4166666667%)[12];
-      grid-template-columns: repeat(12, 7.4166666667%);
+  grid-template-columns: repeat(12, 7.4166666667%);
   grid-gap: 1%; }
 
 .grid-1E main {
-  display: -ms-grid;
+  /* autoprefixer: off */
   display: grid;
-  -ms-grid-columns: (1fr)[12];
-      grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   grid-gap: 1.5em; }
 
 .grid-1F main {
-  display: -ms-grid;
+  /* autoprefixer: off */
   display: grid;
-  -ms-grid-columns: (1fr)[11];
-      grid-template-columns: repeat(11, 1fr);
+  grid-template-columns: repeat(11, 1fr);
   grid-gap: 1.5em; }
 .grid-1F div:nth-child(4) {
   -ms-grid-column: 6;
@@ -80,10 +74,9 @@ img {
   grid-column-end: 7; }
 
 .grid-1G main {
-  display: -ms-grid;
+  /* autoprefixer: off */
   display: grid;
-  -ms-grid-columns: (1fr)[11];
-      grid-template-columns: repeat(11, 1fr);
+  grid-template-columns: repeat(11, 1fr);
   grid-gap: 1.5em; }
 .grid-1G div:nth-child(4) {
   -ms-grid-column: 6;
