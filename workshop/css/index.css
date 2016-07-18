@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  font-family: georgia, serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  background: #eee; }
+
+body {
+  width: 90%;
+  max-width: 600px;
+  margin: 2em auto 3em; }
+
+img {
+  width: 100%; }
+
+/* --------------------------------------------------------*/
+body {
+  font-family: 'AdobeGaramondW01-Regula', georgia, serif;
+  font-size: 18px; }
+
+h1, h2, h3 {
+  font-family: 'BauerBodoniW01-BoldDisp', georgia, serif;
+  font-weight: 300;
+  margin: 1em 0 0; }
+
+section {
+  background: #fff;
+  padding: 0.5em 1em;
+  margin: 2em 0; }
