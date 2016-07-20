@@ -21,6 +21,7 @@ p {
   text-align: right;
 }
 ul {
+ /* autoprefixer: off */
   width: 75vw;
   margin: 0 auto;
   list-style: none;
@@ -28,7 +29,7 @@ ul {
 ////  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
   grid-template-columns: repeat(3, unquote("[odd-start] 50px [even-end] 50px [odd-mid] 50px [even-start] 50px [odd-end] 50px [even-mid] 50px"));
 // The unquote segment of this code is only here to deal with a bug in Sass 3.4. It can be removed once Sass 3.5 ships. Regular CSS should NOT have such code and instead should look like this:  
-//  grid-template-columns: repeat(4, [odd-start] [even-end] [odd-mid] [even-start] [odd-end] [even-mid]);
+//  grid-template-rows: repeat(4, even-start even-end] 80px [odd-start odd-end] 80px);
   grid-template-rows: repeat(4, unquote("[even-start even-end] 80px [odd-start odd-end] 80px"));
 }
 li {

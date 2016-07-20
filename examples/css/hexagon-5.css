@@ -21,15 +21,13 @@ p {
   text-align: right; }
 
 ul {
+  /* autoprefixer: off */
   width: 75vw;
   margin: 0 auto;
   list-style: none;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: ([odd-start] 50px [even-end] 50px [odd-mid] 50px [even-start] 50px [odd-end] 50px [even-mid] 50px)[3];
-      grid-template-columns: repeat(3, [odd-start] 50px [even-end] 50px [odd-mid] 50px [even-start] 50px [odd-end] 50px [even-mid] 50px);
-  -ms-grid-rows: ([even-start even-end] 80px [odd-start odd-end] 80px)[4];
-      grid-template-rows: repeat(4, [even-start even-end] 80px [odd-start odd-end] 80px); }
+  grid-template-columns: repeat(3, [odd-start] 50px [even-end] 50px [odd-mid] 50px [even-start] 50px [odd-end] 50px [even-mid] 50px);
+  grid-template-rows: repeat(4, [even-start even-end] 80px [odd-start odd-end] 80px); }
 
 li {
   width: 200px;
