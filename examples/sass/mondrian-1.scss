@@ -18,7 +18,7 @@ ul, li {
 }
 ul { /* autoprefixer: off */
   display: grid;
-  background: black;
+  background: #1C1B1B;
   grid-template-columns: repeat(5, 1fr) 1.2fr 1.2fr 0.5fr;
   grid-template-rows: 11vw repeat(5, 13vw) 11vw 6.5vw 6.5vw;
   grid-auto-flow: dense; 
