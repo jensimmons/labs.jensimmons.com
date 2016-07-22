@@ -7,14 +7,11 @@ ul, li {
   list-style: none; }
 
 ul {
-  display: -ms-grid;
+  /* autoprefixer: off */
   display: grid;
-  -ms-grid-columns: (1fr)[5] 1.2fr 1.2fr 0.5fr;
-      grid-template-columns: repeat(5, 1fr) 1.2fr 1.2fr 0.5fr;
-  -ms-grid-rows: 11vw (13vw)[5] 11vw 6.5vw 6.5vw;
-      grid-template-rows: 11vw repeat(5, 13vw) 11vw 6.5vw 6.5vw;
-  -ms-grid-rows: 11vh (13vh)[5] 11vh 6.5vh 6.5vh;
-      grid-template-rows: 11vh repeat(5, 13vh) 11vh 6.5vh 6.5vh; }
+  grid-template-columns: repeat(5, 1fr) 1.2fr 1.2fr 0.5fr;
+  grid-template-rows: 11vw repeat(5, 13vw) 11vw 6.5vw 6.5vw;
+  grid-template-rows: 11vh repeat(5, 13vh) 11vh 6.5vh 6.5vh; }
 
 li {
   height: 100%;

@@ -1,142 +1,102 @@
 html {
   background: white; 
-  background-image: url('../images/transparentbackground.svg');
-  
+}
+main {
+  width: 70%;
+  margin: 10vw auto;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.5);
+}
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
 }
 ul, li {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-ul {
+ul { /* autoprefixer: off */
   display: grid;
-  grid-template-columns: repeat(5, 1fr) 1.2fr 1.2fr 0.5fr;
-  grid-template-rows: 11vw repeat(5, 13vw) 11vw 6.5vw 6.5vw;
-  box-shadow: 1px 3px 8px rgba(0,0,0,0.5);
+  background: black;
+  // grid-template-columns: repeat(5, 1fr) 1.2fr 1.2fr 0.5fr;
+  // grid-template-rows: 11vw repeat(5, 13vw) 11vw 6.5vw 6.5vw; 
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  grid-auto-rows: 60px;
+  grid-auto-flow: dense; 
+}
+ul {
+  clip-path: polygon(10px 6px, calc(100% - 6px) 6px, calc(100% - 6px) calc(100% - 6px), 10px calc(100% - 6px));
 }
 li {
   height: 100%;
-  border: 1vw solid black;
-  background-size: cover;
+  border: 6px solid black;
 }
 li:nth-child(1) {
   grid-column: span 2;
-  background-color: #E5EEEB; 
-  background-image: url('../images/mondrian/01.jpg');
-  border-top: none;
-  border-left: none;
 }
 li:nth-child(2) {
   grid-column: span 3;
-  background-color: #F2E7D5;
-  background-image: url('../images/mondrian/02.jpg');
-  border-top: none;
 }
 li:nth-child(3) {
   grid-column: span 2;
-  background-color: #F2C968;
-  background-image: url('../images/mondrian/03.jpg');
-  border-top: none;
 }
 li:nth-child(4) {
   grid-row: span 6;
-  background-color: #FCFDE7;
-  background-image: url('../images/mondrian/04.jpg');
-  border-top: none;
-  border-right: none;
 }
 li:nth-child(5) {
   grid-row: span 2;
-  background-color: #FBFDE7;
-  background-image: url('../images/mondrian/05.jpg');
-  border-left: none;
 }
 li:nth-child(6) {
   grid-column: span 4;
   grid-row: span 4;
-  background-color: #D62D24; //red
-  background-image: url('../images/mondrian/06.jpg');
 }
 li:nth-child(7) {
   grid-row: span 2;
   grid-column: span 2;
-  background-color: #EDCC6B;
-  background-image: url('../images/mondrian/07.jpg');
 }
 li:nth-child(8) {
   grid-row: span 3;
-  background-color: #E1EAE5;
-  background-image: url('../images/mondrian/08.jpg');
-  border-left: none;
 }
 li:nth-child(9) {
   grid-row: span 2;
-  background-color: #DFE5D0;
-  background-image: url('../images/mondrian/09.jpg');
 }
 li:nth-child(10) {
   grid-row: span 2;
-  background-color: #F2EEE2;
-  background-image: url('../images/mondrian/10.jpg');
 }
 li:nth-child(11) {
   grid-row: span 2;
   grid-column: span 2;
-  background-color: #130409;
-  background-image: url('../images/mondrian/11.jpg');
 }
 li:nth-child(12) {
   grid-column: span 2;
-  background-color: #C0BFBA;
-  background-image: url('../images/mondrian/12.jpg');
 }
 li:nth-child(13) {
   grid-column: span 2;
-  background-color: #C7C8C4;
-  background-image: url('../images/mondrian/13.jpg');
 }
 li:nth-child(14) {
   grid-row: span 3;
-  background-color: #F4C65A;
-  background-image: url('../images/mondrian/14.jpg');
-  border-left: none;
-  border-bottom: none;
 }
 li:nth-child(15) {
   grid-column: span 2;
-  background-color: #DEE2D4;
-  background-image: url('../images/mondrian/15.jpg');
 }
 li:nth-child(16) {
   grid-row: span 2;
   grid-column: span 2;
-  background-color: #241785;
-  background-image: url('../images/mondrian/16.jpg');
 }
 li:nth-child(17) {
   grid-row: span 3;
-  background-color: #D73630;
-  background-image: url('../images/mondrian/17.jpg');
-  border-bottom: none;
-  border-right: none;
 }
 li:nth-child(18) {
   grid-column: span 2;
   grid-row: span 2;
-  background-color: #E3DED9;
-  background-image: url('../images/mondrian/18.jpg');
-  border-bottom: none;
 }
 li:nth-child(19) {
   grid-column: span 2;
-  background-color: #0B0205;
-  background-image: url('../images/mondrian/19.jpg');
 }
 li:nth-child(20) {
   grid-column: span 4;
-  background-color: #E0E0DF;
-  background-image: url('../images/mondrian/20.jpg');
-  border-bottom: none;
 }
 
 
