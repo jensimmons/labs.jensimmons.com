@@ -7,6 +7,9 @@ main {
   width: 80%;
   margin: 2em auto; }
 
+section {
+  margin: 100px 0; }
+
 article {
   margin: 100px 0; }
 
