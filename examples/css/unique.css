@@ -179,3 +179,19 @@ footer {
     margin: 0; }
   footer a {
     text-decoration: underline; }
+
+.warning {
+  color: #eee;
+  background: #bc0000;
+  padding: 3rem 4rem;
+  font-size: 150%;
+  line-height: 1.4;
+  text-align: left;
+  margin-bottom: 1em; }
+  .warning a {
+    color: white;
+    text-decoration: underline; }
+
+@supports ((-ms-grid-columns: (minmax(200px, 1fr))[auto-fit]) or (grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)))) {
+  .warning {
+    display: none; } }

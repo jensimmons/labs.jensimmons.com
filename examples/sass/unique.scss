@@ -162,3 +162,24 @@ footer {
     text-decoration: underline;
   }
 }
+
+
+// Style a Warning Message. Remove if Grid works ---------------------------------------
+.warning {
+  color: #eee;
+  background: rgb(188, 0, 0);
+  padding: 3rem 4rem;
+  font-size: 150%; 
+  line-height: 1.4;
+  text-align: left;
+  margin-bottom: 1em;
+  a {
+    color: white;
+    text-decoration: underline;
+  }
+}
+@supports (grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))) {
+  .warning {
+    display: none;
+  }
+}
