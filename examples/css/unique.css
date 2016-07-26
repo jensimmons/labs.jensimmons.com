@@ -192,6 +192,6 @@ footer {
     color: white;
     text-decoration: underline; }
 
-@supports ((-ms-grid-columns: (minmax(200px, 1fr))[auto-fit]) or (grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)))) {
+@supports ((display: -ms-grid) or (display: grid)) {
   .warning {
     display: none; } }

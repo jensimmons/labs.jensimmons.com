@@ -178,7 +178,7 @@ footer {
     text-decoration: underline;
   }
 }
-@supports (grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))) {
+@supports (display: grid) {
   .warning {
     display: none;
   }
