@@ -41,7 +41,7 @@ ol {
 
 /* --------------------------------------------------------*/
 header {
-  background: #1e4330;
+  background: #2b1e43;
   color: #fff;
   min-height: 100vh;
   padding: 5rem 5rem 2rem;
@@ -146,7 +146,7 @@ main > section {
       color: inherit; }
 
 nav {
-  background: #292929;
+  background: #222124;
   color: #bbb;
   padding: 2em 2em 2em 6em; }
   nav a {
@@ -181,7 +181,7 @@ section:nth-child(odd) {
   background: #f7f8f9; }
 
 main > footer {
-  background: #1e4330;
+  background: #2b1e43;
   color: #fff;
   padding: 3rem;
   text-align: center; }
