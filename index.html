@@ -30,7 +30,7 @@
 
 <nav class="index">
   <ol>
-    <li><a href="#shapes">Shape Outside</a></li>
+    <li><a href="#shapes">CSS Shapes</a></li>
     <li><a href="#clippath">Clip Path</a></li>
     <li><a href="#initialletter">Initial Letter</a></li>
     <li><a href="#multicolumn">Multicolumn</a></li>
@@ -48,7 +48,8 @@
 </nav>
 
 <section><a name="shapes"></a>
-  <h3>Shape Outside</h3>
+  <h3>CSS Shapes</h3>
+  <p class="note">Shapes <a href="http://caniuse.com/#feat=css-shapes">works in Safari and Chrome.</a> It’s currently being implemented in Firefox.</p> 
   <ul>
     <li><a href="examples/shapes-1.html"><img src="assets/images/shape1.jpg" alt="screenshot of the Tomato shape demo"> Tomato: shape-outside: circle</a><p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/dMdOrL?editors=1100">[on CodePen]</a></p>
 </li>
@@ -80,6 +81,7 @@
 
 <section><a name="clippath"></a>
   <h3>Clip Path</h3>
+  <p class="note">Clip Path (using CSS without a SVG file) <a href="http://caniuse.com/#feat=css-shapes">works in Safari and Chrome.</a> Coming soon in Firefox.</p> 
   <ul>
     <li><a href="examples/clip-path.html"><img src="assets/images/simpleclippath.jpg" alt="screenshot of the Simple Clip Path demo"> Simple Image Cropped by Clip Path</a><p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/jqZyKx?editors=1100">[on CodePen]</a></p></li>
   </ul>
@@ -87,6 +89,7 @@
 
 <section><a name="initialletter"></a>
   <h3>Initial Letter</h3>
+  <p class="note">Initial Letter works in Safari 9+. There's a bad bug in Safari 9 that requires a workaround (see examples). The bug is fixed in Safari Technical Preview, and is expected for Safari 10. Initial Letter is currently being implemented in Firefox.</a></p> 
   <ul>
     <li><a href="examples/initial-letter.html"><img src="assets/images/initial-letter-1.jpg" alt="screenshot of a almost-working dropped cap"> A Drop Cap</a><p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/EKQWyV?editors=1100">[on CodePen]</a></p></li>
     <li><a href="examples/initial-letter-2.html"><img src="assets/images/initial-letter-2.jpg" alt="screenshot of a working dropped cap"> A Raised Cap</a><p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/WwMpxY?editors=1100">[on CodePen]</a></p></li>
@@ -98,6 +101,8 @@
 
 <section><a name="multicolumn"></a>
   <h3>Multicolumn</h3> 
+  <p class="note">Multiple Column Layout works has <a href="http://caniuse.com/#feat=multicolumn">worked in browsers forever</a> — including IE10+. There are some remaining bugs however, and we need <code>break-before, break-after, break-inside</code> to accomplish many design ideas. With some care, though, we can use multicolumn today.</p>
+  
   <ul>
     <li><a href="examples/multicolumn-1.html"><img src="assets/images/multicolumn-1.jpg" alt=""> Multicolumn Basics Comparision</a></li>
     <li><a href="examples/multicolumn-2.html"><img src="assets/images/multicolumn-2.jpg" alt=""> Multicolumn Text Example</a></li>
@@ -116,6 +121,7 @@
 
 <section><a name="objectfit"></a>
   <h3>Object Fit</h3>
+  <p class="note">Object-fit has <a href="http://caniuse.com/#feat=object-fit">terrific support</a>. Object-position isn't supported in Safari 9, but will be in Safari 10. Mostly, we <a href="https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/suggestions/6263790-object-fit-and-object-position">need the Edge team to add both.</a></p>
   <ul>
     <li><a href="examples/object-fit-photos.html"><img src="assets/images/image-comparison.jpg" alt="a screenshot of the image comparision demo">How photos work: fixed v fluid v. object-fit</a><p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/jqKNxg?editors=1100">[on CodePen]</a></p></li>
     <li><a href="examples/object-fit.html"><img src="assets/images/image-demo-of-object-fit.jpg" alt="screensot of object-fit demo">Object Fit — comparing values</a><p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/ZWRzjQ?editors=1100">[on CodePen]</a></p></li>
@@ -124,6 +130,7 @@
 </section>
 <section><a name="coversheet"></a>
   <h3>“Cover sheet” Demo</h3>
+  <p class="note">This demo combines Viewport Units and Flexbox. It works in all browsers, just slightly differently in old version of IE.</p>
   <ul>
     <li><a href="examples/coversheet-1.html"><img src="assets/images/coversheet1.jpg" alt="">Typical Header with title & background, the height of the space needed</a> <p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/aNKory?editors=1100">[on CodePen]</a></p></li>
     <li><a href="examples/coversheet-2.html"><img src="assets/images/coversheet2.jpg" alt="">Cover Sheet Header, taking up 100% of viewport</a> <p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/RaJbme?editors=1100">[on CodePen]</a></p></li>
@@ -132,6 +139,7 @@
 </section>
 <section><a name="imagegallery"></a>
   <h3>Image Gallery Study</h3>
+  <p class="note">The CSS Grid examples require a browser that supports CSS Grid. It works best in <a href="https://nightly.mozilla.org/">Firefox Nightly</a>.</p>
   <ul>
     <li><a href="examples/image-gallery-no-layout.html"><img src="assets/images/gallery1.jpg" alt=""> Image Gallery, with no image layout</a> <p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/WwyLEE?editors=1100">[on CodePen]</a></p></li>
     <li><a href="examples/image-gallery-floats-1.html"><img src="assets/images/gallery2.jpg" alt=""> Image Gallery Old School Floats, Broken</a> <p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/JXZzdr?editors=1100">[on CodePen]</a></p></li>
@@ -148,6 +156,7 @@
 
 <section><a name="jazzposter"></a>
   <h3>Jazz Poster Grid Demo</h3>
+  <p class="note">These CSS Grid demos require a browser that supports CSS Grid.</p>
   <ul>
     <li><a href="reference/Jazz-at-Lincoln-Center-poster.pdf"><img src="assets/images/jazzposter-original.jpg" alt="">Original Poster</a></li>
     <li><a href="examples/grid-content-1.html"><img src="assets/images/jazzposter1.jpg" alt="">Jazz at Lincoln Center Poster</a><p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/PNaoqv?editors=1100">[on CodePen]</a></p></li>
@@ -157,6 +166,7 @@
 
 <section><a name="spices"></a>
   <h3>Spices</h3>
+  <p class="note">These CSS Grid demos require a browser that supports CSS Grid.</p>
   <ul>
     <li><a href="examples/spices-1.html"><img src="assets/images/spices-1.jpg" alt=""> Spice Layout 1</a></li>
     <li><a href="examples/spices-2.html"><img src="assets/images/spices-2.jpg" alt=""> Spice Layout 2</a></li>
@@ -166,6 +176,7 @@
 
 <section><a name="typical"></a>
   <h3>Typical Layouts We Do</h3>
+  <p class="note">This demo mixes Flexbox and Grid, requiring a browser that supports CSS Grid.</p>
   <ul>
     <li><a href="examples/unique.html"><img src="assets/images/unique.png" alt=""> We're Unique</a></li>
   </ul>
@@ -173,6 +184,7 @@
 
 <section><a name="mondrian"></a>
   <h3>CSS Mondrian Grid</h3>
+  <p class="note">These CSS Grid demos require a browser that supports CSS Grid. They work best in <a href="https://nightly.mozilla.org/">Firefox Nightly</a>.</p>
   <ul>
     <li><a href="reference/mondrian-original.jpg"><img src="assets/images/mondrian-original.jpg" alt="">Original Artwork</a></li>
     <li><a href="examples/mondrian-0.html"><img src="assets/images/mondrian-0.jpg" alt="">Deconstructed Mondrian</a></li>
@@ -184,6 +196,7 @@
 
 <section><a name="rotation"></a>
   <h3>Rotation</h3>
+  <p class="note">Rotation is a <a href="http://caniuse.com/#feat=transforms2d">2D Transformation, which doesn't work in IE8 & earlier, or in Opera Mini.</a> Oh well. Things can be straight in those browsers and rotated everyplace else.</p>
   <ul>
     <li><a href="examples/rotation1.html"><img src="assets/images/rotation1.jpg" alt=""> Rotation 1</a></li>
     <li><a href="examples/rotation2.html"><img src="assets/images/rotation2.jpg" alt=""> Rotation 2</a></li>
@@ -194,7 +207,8 @@
 
 <section><a name="hexagon"></a>
   <h3>Hexagon Layouts</h3>
-  <p class="note">I'm trying to figure out how to best do this layout. I want hexagons to nest, to be fluid, and I want them to automatically align themselves into different number of columns based on how much space there is. Sometimes 1 column, 2 col, 3col, 4col, 5col, etc. Hexagon 4 does this — alters the number of columns based on how much space there is. But I'm not sure how to get the hexagons to nuzzle up next to each other in Hexagon 4. I'm thinking named lines might help, which is why I used them in Hexagon 5, but that would only help if we could tell autoplacement to figure out what the next named line is in the available space. Something like "Hey go to the next line with this name" instead of "go to named line number 2". Of course, this could be done with a lot of long-hand specifiying and a bunch of media queries. Basically Hexagon 2 or 3 with lots more code for multiple breakpoints. Or maybe there's a completely new way to go at this. Hmmmm.</p>
+  <p class="note">I'm trying to figure out how to best do this layout. I want hexagons to nest, to be fluid, and I want them to automatically align themselves into different number of columns based on how much space there is. Sometimes 1 column, 2 col, 3col, 4col, 5col, etc. Hexagon 4 does this — alters the number of columns based on how much space there is. But I'm not sure how to get the hexagons to nuzzle up next to each other in Hexagon 4. I'm thinking named lines might help, which is why I used them in Hexagon 5, but that would only help if we could tell auto-placement to figure out what the next named line is in the available space. Something like "Hey go to the next line with this name" instead of "go to named line number 2". Of course, this could be done with a lot of long-hand specifying and a bunch of media queries. Basically Hexagon 2 or 3 with lots more code for multiple breakpoints. Or maybe there's a completely new way to go at this. Hmmmm.</p>
+    <p class="note">The CSS Grid versions require a browser that supports CSS Grid. You also need a browser that supports Clip Path. If you use <a href="https://nightly.mozilla.org/">Firefox Nightly</a>, flip the flag to turn on clip-path.</p>
   <ul>
     <li><a href="examples/hexagon-1.html"><img src="assets/images/hexagon1.jpg" alt=""> Hexagon 1: Clip-path + Floats + Negative Margins</a><p class="codepenlink"><a href="https://codepen.io/jensimmons/pen/ZbPrQJ?editors=1100">[on CodePen]</a></p></li>
     <li><a href="examples/hexagon-2.html"><img src="assets/images/hexagon2.jpg" alt=""> Hexagon 2: Clip-path + Grid, fully-resizes</a><p class="codepenlink"><a href="https://codepen.io/jensimmons/pen/QNRMxm?editors=1100">[on CodePen]</a></p></li>
@@ -207,7 +221,7 @@
 
 <section><a name="regions1"></a>
   <h3>A Study of Columns and the Need for Regions, part 1</h3>
-  <p class="note">These demos (D–J) only work in Safari Technical Preview.</p> 
+  <p class="note">These demos (D–J) only work in <a href="https://developer.apple.com/safari/technology-preview/">Safari Technical Preview</a>.</p> 
   <ul>
     <li><a href="examples/regions-1a.html"><img src="assets/images/region1A.jpg" alt=""> A: Fluid text, a la 1994</a></li>
     <li><a href="examples/regions-1b.html"><img src="assets/images/region1B.jpg" alt=""> B: Responsive text, a la 2011</a></li>
@@ -222,17 +236,19 @@
   </ul>
 </section>
 
-<section><a name="flexvgrid"></a>
-  <h3>(Coming in the Future) A Study of Grid</h3>
+
+<section>
+  <h3>New Order Movement (In Progress)</h3>
+  <p class="note">This CSS Grid demo requires a browser that supports CSS Grid.</p>
   <ul>
-    <li><a href="examples/grid-1.html"><img src="" alt=""> Grid Study 1</a></li>
-    <li><a href="examples/grid-2.html"><img src="" alt=""> Grid Study 2</a></li>
-    <li><a href="examples/grid-3.html"><img src="" alt=""> Grid Study 3</a></li>
+    <li><a href="examples/images/newordermovement.jpg"><img src="examples/images/newordermovement.jpg" alt=""> Original Album</a></li>
+    <li><a href="examples/neworder.html"><img src="assets/images/tba.gif" alt=""> New Order Movement</a></li>
   </ul>
 </section>
 
 <section><a name="flexvgrid"></a>
-  <h3>A Study of Flexbox vs Grid</h3>
+  <h3>A Study of Flexbox vs Grid (In Progress)</h3>
+  <p class="note">The CSS Grid demos require a browser that supports CSS Grid.</p>
   <ul>
     <li><a href="examples/study-1.html"><img src="assets/images/flexboxvgrid1.jpg" alt=""> Study 1: A Grid of Boxes, 4 Ways</a></li>
     <li><a href="examples/study-2.html"><img src="assets/images/flexboxvgrid2.jpg" alt=""> Study 2: That Same Grid of Boxes in Just Grid</a></li>
@@ -248,13 +264,6 @@
   </ul>
 </section>
 
-<section>
-  <h3>New Order Movement</h3>
-  <ul>
-    <li><a href="examples/images/newordermovement.jpg"><img src="examples/images/newordermovement.jpg" alt=""> Original Album</a></li>
-    <li><a href="examples/neworder.html"><img src="assets/images/tba.gif" alt=""> New Order Movement</a></li>
-  </ul>
-</section>
 
 <footer>
 <p>Want to <a href="https://github.com/jensimmons/labs.jensimmons.com">fork this on Github?</a> You can. All the code for the examples are in the /examples/ directory.</p>

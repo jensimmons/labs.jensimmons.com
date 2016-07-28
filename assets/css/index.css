@@ -173,6 +173,8 @@ nav {
   font-style: italic;
   text-align: center;
   opacity: 0.8; }
+  .note a {
+    border-bottom: 1px dotted #9C9C9C; }
 
 section:nth-child(even) {
   background: #fff; }
