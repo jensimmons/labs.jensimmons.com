@@ -78,7 +78,7 @@ p {
 // Basic layout for non-Grid supporting browsers
 
 li {
-  width: 300px;
+  width: 150px;
   float: left;
   margin: 10px;
 }
@@ -100,8 +100,7 @@ li {
   }
   // undo the basic layout for non-Grid-supporting browsers
   li {
-    float: none;
-    height: auto;
+//    float: none; // I actually don't need this, because Grid always deactivates floats anyway
     width: auto;
     margin: 0;
   }

@@ -70,7 +70,7 @@ p {
   border-radius: 0 0 5px 5px; }
 
 li {
-  width: 300px;
+  width: 150px;
   float: left;
   margin: 10px; }
 
@@ -90,8 +90,6 @@ li {
     display: none; }
 
   li {
-    float: none;
-    height: auto;
     width: auto;
     margin: 0; }
 
