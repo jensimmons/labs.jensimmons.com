@@ -1,42 +1,57 @@
+//colors
+$red: rgba(249, 66, 58, 1);
+$text: rgba(12, 12, 10, 0.8);
+$background: #f6f3ea;
+$page-margin: 5vw;
+
 * {
   box-sizing: border-box; 
 }
 html {
-  font-family: georgia, serif;
+  font-family: 'Futura W01', helvetica, san-serif;
+  font-size: 16px;
+  background: $background;
+  color: $text;
+  line-height: 1.3;
+  font-weight: 300;
   text-rendering: optimizeLegibility;
   -webkit-font-kerning: normal;
           font-kerning: normal;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
           text-size-adjust: 100%; 
-  background: #eee;
 }
+img {
+  width: 100%; 
+}
+
 body {
   width: 90%;
   max-width: 600px;
   margin: 2em auto 3em;
 }
-img {
-  width: 100%; 
-}
-  
+ 
   
 /* --------------------------------------------------------*/
   
-  
-body {
-  font-family: 'AdobeGaramondW01-Regula', georgia, serif;
-  font-size: 18px;
-}
+a {
+  color: darken($red, 10%);
+  text-decoration: none;
+}  
 h1, h2, h3 {
-  font-family: 'BauerBodoniW01-BoldDisp', georgia, serif;
-  font-weight: 300;
-  margin: 1em 0 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+h1 {
+  margin-bottom: 1rem;
+}
+ul {
+  margin: 1rem 0;
 }
 section {
-  background: #fff;
-  padding: 0.5em 1em;
-  margin: 2em 0;
+  padding: 1rem 0;
+  margin: 0;
+  border-top: 1rem solid $red;
 }
 
 
