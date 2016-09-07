@@ -6,27 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Layout Demos by Jen Simmons</title>
     
-    <script type="text/javascript" src="http://fast.fonts.net/jsapi/de7248fd-7276-4b96-a278-572b5e857522.js"></script>
+    <script type="text/javascript" src="//fast.fonts.net/jsapi/cab408fa-259b-4520-ba3f-eb8576ccec92.js"></script>
+
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/index.css">
   </head>
   <body>
 
 <main>
-<header><div>
-<h1>The Experimental Layout Lab of Jen Simmons</h1> 
-<p>Check back often. This will keep changing.</p>
-<p>Includes the demos for: 
-  <ul>
-    <li><a href="http://jensimmons.com/presentation/real-art-direction-web">Revolutionize Your Page: Real Art Direction on the Web</a></li>    
-    <li><a href="http://jensimmons.com/presentation/progressing-our-layouts">Progressing Our Layouts</a></li>
-    <li><a href="http://jensimmons.com/presentation/modern-layouts-getting-out-our-ruts">Modern Layouts: Getting Out of Our Ruts</a></li>    
-  </ul>
-</p>
-<p>Follow <a href="http://twitter.com/jensimmons">@jensimmons</a> on Twitter for more as it happens.<br />Sign up for <a href="http://layout.land">Layout Land</a>, a place for us to show off new ideas for layout.</p>
-<p><a href="/workshop">Workshop Examples</a></p>
+<header><div class="header-wrapper">
+<h1>The Experimental Layout Lab</h1><h1>of Jen Simmons</h1> 
+<p class="header-note">Check back often. This will keep changing.</p>
+<div class="demo-list">
+  <p>Includes examples for</p>
+    <ul>
+      <li><a href="http://jensimmons.com/presentation/real-art-direction-web">Revolutionize Your Page: Real Art Direction on the Web</a></li>    
+      <li><a href="http://jensimmons.com/presentation/progressing-our-layouts">Progressing Our Layouts</a></li>
+      <li><a href="http://jensimmons.com/presentation/modern-layouts-getting-out-our-ruts">Modern Layouts: Getting Out of Our Ruts</a></li>    
+    </ul>
 </div>
-</header>
+<p class="follow-links">Follow <a href="http://twitter.com/jensimmons">@jensimmons</a> on Twitter for more as it happens.<br />Sign up for <a href="http://layout.land">Layout Land</a>, a place for us to show off new ideas for layout.</p>
+<p class="workshop-link"><a href="/workshop">Workshop Examples</a></p>
+</div></header>
 
 <nav class="index">
   <ol>
@@ -47,7 +48,7 @@
   </ol>
 </nav>
 
-<section><a name="shapes"></a>
+<section id="shapes"><a name="shapes"></a>
   <h3>CSS Shapes</h3>
   <p class="note">Shapes <a href="http://caniuse.com/#feat=css-shapes">works in Safari and Chrome.</a> It’s currently being implemented in Firefox.</p> 
   <ul>
@@ -65,7 +66,7 @@
         <h4>Tickets for implementing <code>shape-outside</code>:</h4>
         <ul><li><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1040714">Firefox</a></li>
             <li><a href="https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/suggestions/6263716-shapes">Edge</a></li>
-            <li><a href="http://caniuse.com/#feat=css-shapes">Where CSS Shapes is currently supported<a></li>
+            <li><a href="http://caniuse.com/#feat=css-shapes">Where CSS Shapes is currently supported</a></li>
         </ul>
       </div>
       <div>
@@ -79,7 +80,7 @@
     </footer>
 </section>
 
-<section><a name="clippath"></a>
+<section id="clippath"><a name="clippath"></a>
   <h3>Clip Path</h3>
   <p class="note">Clip Path (using CSS without a SVG file) <a href="http://caniuse.com/#feat=css-shapes">works in Safari and Chrome.</a> Coming soon in Firefox.</p> 
   <ul>
@@ -87,7 +88,7 @@
   </ul>
 </section>
 
-<section><a name="initialletter"></a>
+<section id="initialletter"><a name="initialletter"></a>
   <h3>Initial Letter</h3>
   <p class="note">Initial Letter works in Safari 9+. There's a bad bug in Safari 9 that requires a workaround (see examples). The bug is fixed in Safari Technical Preview, and is expected for Safari 10. Initial Letter is currently being implemented in Firefox.</a></p> 
   <ul>
@@ -99,7 +100,7 @@
   </ul>
 </section>
 
-<section><a name="multicolumn"></a>
+<section id="multicolumn"><a name="multicolumn"></a>
   <h3>Multicolumn</h3> 
   <p class="note">Multiple Column Layout works has <a href="http://caniuse.com/#feat=multicolumn">worked in browsers forever</a> — including IE10+. There are some remaining bugs however, and we need <code>break-before, break-after, break-inside</code> to accomplish many design ideas. With some care, though, we can use multicolumn today.</p>
   
@@ -119,7 +120,7 @@
       </div>
 </section>
 
-<section><a name="objectfit"></a>
+<section id="objectfit"><a name="objectfit"></a>
   <h3>Object Fit</h3>
   <p class="note">Object-fit has <a href="http://caniuse.com/#feat=object-fit">terrific support</a>. Object-position isn't supported in Safari 9, but will be in Safari 10. Mostly, we <a href="https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/suggestions/6263790-object-fit-and-object-position">need the Edge team to add both.</a></p>
   <ul>
@@ -128,7 +129,8 @@
     <li><a href="examples/grace-hopper-page.html"><img src="assets/images/gh.jpg" alt="">Grace Hopper Cover Page demo</a><p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/wGXwNb?editors=1100">[on CodePen]</a></p></li>
   </ul>
 </section>
-<section><a name="coversheet"></a>
+
+<section id="coversheet"><a name="coversheet"></a>
   <h3>“Cover sheet” Demo</h3>
   <p class="note">This demo combines Viewport Units and Flexbox. It works in all browsers, just slightly differently in old version of IE.</p>
   <ul>
@@ -137,7 +139,8 @@
     <li><a href="examples/coversheet-3.html"><img src="assets/images/coversheet3.jpg" alt="">Cover Sheet Header, with tweaks for old IE</a> <p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/vGrBqz?editors=1100">[on CodePen]</a></p></li>
   </ul>
 </section>
-<section><a name="imagegallery"></a>
+
+<section id="imagegallery"><a name="imagegallery"></a>
   <h3>Image Gallery Study</h3>
   <p class="note">The CSS Grid examples require a browser that supports CSS Grid. It works best in <a href="https://nightly.mozilla.org/">Firefox Nightly</a>.</p>
   <ul>
@@ -154,7 +157,7 @@
 
 <!-- <p class="codepenlink"><a href="">[on CodePen]</a></p> -->
 
-<section><a name="jazzposter"></a>
+<section id="jazzposter"><a name="jazzposter"></a>
   <h3>Jazz Poster Grid Demo</h3>
   <p class="note">These CSS Grid demos require a browser that supports CSS Grid.</p>
   <ul>
@@ -164,7 +167,7 @@
   </ul>
 </section>
 
-<section><a name="spices"></a>
+<section id="spices"><a name="spices"></a>
   <h3>Spices</h3>
   <p class="note">These CSS Grid demos require a browser that supports CSS Grid.</p>
   <ul>
@@ -174,7 +177,7 @@
   </ul>
 </section>
 
-<section><a name="typical"></a>
+<section id="typical"><a name="typical"></a>
   <h3>Typical Layouts We Do</h3>
   <p class="note">This demo mixes Flexbox and Grid, requiring a browser that supports CSS Grid.</p>
   <ul>
@@ -182,7 +185,7 @@
   </ul>
 </section>
 
-<section><a name="mondrian"></a>
+<section id="mondrian"><a name="mondrian"></a>
   <h3>CSS Mondrian Grid</h3>
   <p class="note">These CSS Grid demos require a browser that supports CSS Grid. They work best in <a href="https://nightly.mozilla.org/">Firefox Nightly</a>.</p>
   <ul>
@@ -194,7 +197,7 @@
   </ul>
 </section>
 
-<section><a name="rotation"></a>
+<section id="rotation"><a name="rotation"></a>
   <h3>Rotation</h3>
   <p class="note">Rotation is a <a href="http://caniuse.com/#feat=transforms2d">2D Transformation, which doesn't work in IE8 & earlier, or in Opera Mini.</a> Oh well. Things can be straight in those browsers and rotated everyplace else.</p>
   <ul>
@@ -205,7 +208,7 @@
   </ul>
 </section>
 
-<section><a name="hexagon"></a>
+<section id="hexagon"><a name="hexagon"></a>
   <h3>Hexagon Layouts</h3>
   <p class="note">I'm trying to figure out how to best do this layout. I want hexagons to nest, to be fluid, and I want them to automatically align themselves into different number of columns based on how much space there is. Sometimes 1 column, 2 col, 3col, 4col, 5col, etc. Hexagon 4 does this — alters the number of columns based on how much space there is. But I'm not sure how to get the hexagons to nuzzle up next to each other in Hexagon 4. I'm thinking named lines might help, which is why I used them in Hexagon 5, but that would only help if we could tell auto-placement to figure out what the next named line is in the available space. Something like "Hey go to the next line with this name" instead of "go to named line number 2". Of course, this could be done with a lot of long-hand specifying and a bunch of media queries. Basically Hexagon 2 or 3 with lots more code for multiple breakpoints. Or maybe there's a completely new way to go at this. Hmmmm.</p>
     <p class="note">The CSS Grid versions require a browser that supports CSS Grid. You also need a browser that supports Clip Path. If you use <a href="https://nightly.mozilla.org/">Firefox Nightly</a>, flip the flag to turn on clip-path.</p>
@@ -219,7 +222,7 @@
   </ul>
 </section>
 
-<section><a name="regions1"></a>
+<section id="regions1"><a name="regions1"></a>
   <h3>A Study of Columns and the Need for Regions, part 1</h3>
   <p class="note">These demos (D–J) only work in <a href="https://developer.apple.com/safari/technology-preview/">Safari Technical Preview</a>.</p> 
   <ul>
@@ -246,7 +249,7 @@
   </ul>
 </section>
 
-<section><a name="flexvgrid"></a>
+<section id="flexvgrid"><a name="flexvgrid"></a>
   <h3>A Study of Flexbox vs Grid (In Progress)</h3>
   <p class="note">The CSS Grid demos require a browser that supports CSS Grid.</p>
   <ul>
@@ -266,7 +269,7 @@
 
 
 <footer>
-<p>Want to <a href="https://github.com/jensimmons/labs.jensimmons.com">fork this on Github?</a> You can. All the code for the examples are in the /examples/ directory.</p>
+<p>Want to <a href="https://github.com/jensimmons/labs.jensimmons.com">fork this on Github?</a> You can. All the code for these examples is in the /examples/ directory.</p>
 <p>All of these demos were made by <a href="http://jensimmons.com">Jen Simmons</a>.</p>
 </footer>
 
