@@ -61,6 +61,9 @@ header {
     border-bottom: 1px solid rgba(169, 169, 169, 0.79); }
 
 @supports ((display: -ms-grid) or (display: grid)) {
+  .support-note {
+    display: none; }
+
   header {
     display: -webkit-box;
     display: -webkit-flex;

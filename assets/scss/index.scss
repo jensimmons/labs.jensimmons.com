@@ -81,6 +81,9 @@ header {
 }
 
 @supports (display: grid) {
+  .support-note {
+    display: none;
+  }
   header {
       display: flex;
       margin: auto;
