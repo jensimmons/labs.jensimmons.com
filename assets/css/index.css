@@ -60,6 +60,11 @@ header {
   header a {
     border-bottom: 1px solid rgba(169, 169, 169, 0.79); }
 
+.support-note {
+  font-weight: 700;
+  max-width: 500px;
+  font-size: 0.8rem; }
+
 @supports ((display: -ms-grid) or (display: grid)) {
   .support-note {
     display: none; }
