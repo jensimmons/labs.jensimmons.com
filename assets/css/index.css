@@ -65,9 +65,7 @@ header {
     display: none; }
 
   header {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+    /* autoprefixer: off */
     display: flex;
     margin: auto;
     padding-top: 1rem;
@@ -191,7 +189,16 @@ header {
         grid-column: 1 / -1;
         -ms-grid-row: 5;
             grid-row: 5;
-        margin-left: 0; } } }
+        margin-left: 0; } }
+    @media (min-width: 1000px) {
+      header {
+        padding-bottom: 15rem; } }
+    @media (min-width: 1300px) {
+      header {
+        padding-bottom: 25rem; } }
+    @media (min-width: 1800px) {
+      header {
+        padding-bottom: 30rem; } } }
 nav {
   background: #f9423a;
   padding: 1.04rem 5vw 0.9rem calc(5vw + 1.2rem);

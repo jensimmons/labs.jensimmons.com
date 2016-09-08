@@ -84,11 +84,11 @@ header {
   .support-note {
     display: none;
   }
-  header {
-      display: flex;
-      margin: auto;
-      padding-top: 1rem;
-      padding-bottom: 12rem;
+  header {    /* autoprefixer: off */
+    display: flex;    
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 12rem;
     .header-wrapper {   /* autoprefixer: off */
       width: 66vw;
       display: grid; 
@@ -214,6 +214,15 @@ header {
         grid-row: 5;
         margin-left: 0;
       }
+    }
+    @media (min-width: 1000px) {
+      padding-bottom: 15rem;
+    }
+    @media (min-width: 1300px) {
+      padding-bottom: 25rem;
+    }
+    @media (min-width: 1800px) {
+      padding-bottom: 30rem;
     }
   }
 }
