@@ -74,3 +74,19 @@ footer {
     padding-right: 1px; }
   footer div p:last-child {
     text-transform: none; }
+
+.circle:nth-child(1) {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2; }
+
+.circle:nth-child(2) {
+  grid-column: 8 / 9;
+  grid-row: 1 / 2; }
+
+.circle:nth-child(3) {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4; }
+
+.circle:nth-child(4) {
+  grid-column: 8 / 9;
+  grid-row: 3 / 4; }
