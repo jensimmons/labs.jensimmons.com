@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'Battling';
+  src: url("../fonts/Battling1NPmed.otf") format("opentype"); }
+body {
+  background: #A1A990;
+  color: #3C4468; }
+
+main {
+  margin: 10vh 23vw;
+  height: 80vh;
+  width: 54vw;
+  max-width: 700px;
+  display: grid;
+  grid-template-rows: 2fr 25px 1fr 25px 1fr 25px 1fr 25px 1fr 25px 2fr;
+  grid-template-columns: 25px 1fr 25px 1fr 50px;
+  grid-gap: 1px; }
+
+h1, h2, h3 {
+  font-family: Battling, Helvetica, serif;
+  text-transform: uppercase;
+  align-self: center;
+  justify-self: center;
+  display: block;
+  font-size: 7.8vw;
+  margin: 0.15em 0 0;
+  padding: 0;
+  line-height: 0.7; }
+
+h1 {
+  grid-column: 1 / -1;
+  letter-spacing: 9px;
+  margin-left: 9px; }
+
+h2 {
+  grid-column: 1 / -1;
+  align-self: center;
+  justify-self: center;
+  letter-spacing: -2px;
+  margin-top: 13px; }
+
+h3.part1 {
+  grid-column: 1 / -1;
+  letter-spacing: -2px; }
+
+h3.part2 {
+  grid-column: 1 / -1; }
+
+sup {
+  font-size: 35%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -1.4em;
+  border-bottom: 0.3em solid; }
+
+.circle {
+  width: 50px;
+  height: 50px; }
+
+.rect {
+  background: #3C4468; }
+
+.rect1 {
+  grid-row: 1;
+  grid-column: 1; }
+
+.rect2 {
+  grid-row: 1;
+  grid-column: 3; }
+
+.rect3 {
+  grid-row: 2;
+  grid-column: 1 / -1; }
+
+.rect4 {
+  grid-row: 4;
+  grid-column: 1 / -1; }
+
+.rect5 {
+  grid-row: 6;
+  grid-column: 1 / -1; }
+
+.rect6 {
+  grid-row: 8;
+  grid-column: 1 / -1; }
+
+.rect7 {
+  grid-row: 10;
+  grid-column: 1 / -1; }
+
+.rect8 {
+  grid-row: 11;
+  grid-column: 3; }
+
+.circle1 {
+  grid-row: 1;
+  grid-column: 5; }
+
+.circle2 {
+  grid-row: 11;
+  grid-column: 5;
+  align-self: self-end; }
