@@ -1,0 +1,53 @@
+body {
+  width: 80%;
+  margin: 2rem auto;
+}
+section {
+  margin-bottom: 2rem;
+}
+
+header {
+  background: yellow;
+}
+main {
+  background: #eee;
+}
+  header, footer {
+    display: none;
+  }
+aside {
+  background: red;
+}
+footer {
+  background: #222121;
+  color: white;
+}
+
+img {
+  width: 100%;
+}
+figcaption {
+  font-size: 0.8rem;
+}
+
+.one {
+  display: flex;
+
+  main {
+    flex: 1 1 70%;
+  }
+  aside {
+    flex: 1 1 30%;    
+  }
+}
+
+
+.two {
+  display: flex;
+  main {
+    flex: 7;
+  }
+  aside {
+    flex: 3;    
+  }
+}

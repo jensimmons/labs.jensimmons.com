@@ -16,7 +16,7 @@ ul, li {
   padding: 0;
   list-style: none;
 }
-ul { /* autoprefixer: off */
+ul { 
   display: grid;
   background: #1C1B1B;
   grid-template-columns: repeat(5, 1fr) 1.2fr 1.2fr 0.5fr;
@@ -24,6 +24,7 @@ ul { /* autoprefixer: off */
   grid-auto-flow: dense; 
 }
 ul {
+  -webkit-clip-path: polygon(10px 8px, calc(100% - 8px) 8px, calc(100% - 8px) calc(100% - 8px), 10px calc(100% - 8px));
   clip-path: polygon(10px 8px, calc(100% - 8px) 8px, calc(100% - 8px) calc(100% - 8px), 10px calc(100% - 8px));
 }
 li {
@@ -96,10 +97,7 @@ li:nth-child(20) {
   grid-column: span 4;
 }
 
-
-
 // Style a Warning Message. Remove if Grid works ---------------------------------------
-
 .warning {
   color: red;
   font-size: 200%; 

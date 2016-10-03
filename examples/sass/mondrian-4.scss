@@ -1,10 +1,10 @@
-
 html {
   background: white; 
 }
 main {
   width: calc(90vw - 12px);
   margin: 10px auto;
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 img {
@@ -18,11 +18,9 @@ ul, li {
   padding: 0;
   list-style: none;
 }
-ul { /* autoprefixer: off */
+ul { 
   display: grid;
   background: #1C1B1B;
-  // grid-template-columns: repeat(5, 1fr) 1.2fr 1.2fr 0.5fr;
-  // grid-template-rows: 11vw repeat(5, 13vw) 11vw 6.5vw 6.5vw; 
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-auto-rows: 80px;
   grid-auto-flow: dense; 
@@ -31,6 +29,7 @@ ul { /* autoprefixer: off */
   margin: -6px 0 0 -6px;
 }
 ul {
+  -webkit-clip-path: polygon(10px 6px, calc(100% - 6px) 6px, 100% 100%, 10px 100%);
   clip-path: polygon(10px 6px, calc(100% - 6px) 6px, 100% 100%, 10px 100%);
 }
 li {
@@ -103,10 +102,7 @@ li:nth-child(20) {
   grid-column: span 4;
 }
 
-
-
 // Style a Warning Message. Remove if Grid works ---------------------------------------
-
 .warning {
   color: red;
   font-size: 200%; 

@@ -32,6 +32,10 @@ figcation {
 .fluid {
   width: 50%; }
 
+.twodirections {
+  width: 50%;
+  height: 400px; }
+
 .fitted {
   width: 50%;
   height: 400px;
