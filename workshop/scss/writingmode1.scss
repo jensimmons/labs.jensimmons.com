@@ -1,0 +1,46 @@
+* { box-sizing: border-box;}
+html {font-size: 100%;}
+
+main {
+  width: 80%;
+  max-width: 800px;
+  margin: 1em auto;
+}
+section {
+  background: rgb(255, 248, 235);
+  margin: 1em;
+  padding: 2em;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.3);  
+}
+
+.example1A {
+  writing-mode: horizontal-tb;
+}
+
+
+.example1B {
+  writing-mode: horizontal-tb;
+  p {
+    display: block;
+    margin: 1em 0;
+    border: 1px solid black;
+    padding: 1em;
+  }
+}
+
+
+.example1C {
+  p {
+    border: 1px solid black;
+    padding: 1em;
+  }
+  section:nth-child(1) {
+    writing-mode: horizontal-tb;  
+  }
+  section:nth-child(2) {
+    writing-mode: vertical-rl; 
+  }
+  section:nth-child(3) {
+    writing-mode: vertical-lr;  
+  }
+}

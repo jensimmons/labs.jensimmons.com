@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 100%; }
+
+main {
+  width: 80%;
+  max-width: 800px;
+  margin: 1em auto; }
+
+section {
+  background: #fff8eb;
+  margin: 1em;
+  padding: 2em;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3); }
+
+.example1A {
+  -webkit-writing-mode: horizontal-tb;
+      -ms-writing-mode: lr-tb;
+          writing-mode: horizontal-tb; }
+
+.example1B {
+  -webkit-writing-mode: horizontal-tb;
+      -ms-writing-mode: lr-tb;
+          writing-mode: horizontal-tb; }
+  .example1B p {
+    display: block;
+    margin: 1em 0;
+    border: 1px solid black;
+    padding: 1em; }
+
+.example1C p {
+  border: 1px solid black;
+  padding: 1em; }
+.example1C section:nth-child(1) {
+  -webkit-writing-mode: horizontal-tb;
+      -ms-writing-mode: lr-tb;
+          writing-mode: horizontal-tb; }
+.example1C section:nth-child(2) {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl; }
+.example1C section:nth-child(3) {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr; }
