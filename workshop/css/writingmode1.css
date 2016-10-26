@@ -15,7 +15,11 @@ section {
   padding: 2em;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3); }
 
+.underline-test {
+  text-decoration: underline; }
+
 .example1A {
+  direction: ltr;
   -webkit-writing-mode: horizontal-tb;
       -ms-writing-mode: lr-tb;
           writing-mode: horizontal-tb; }
@@ -30,18 +34,59 @@ section {
     border: 1px solid black;
     padding: 1em; }
 
-.example1C p {
-  border: 1px solid black;
-  padding: 1em; }
-.example1C section:nth-child(1) {
+.example1C {
+  direction: rtl;
   -webkit-writing-mode: horizontal-tb;
       -ms-writing-mode: lr-tb;
           writing-mode: horizontal-tb; }
-.example1C section:nth-child(2) {
+  .example1C p {
+    display: block;
+    margin: 1em 0;
+    border: 1px solid black;
+    padding: 1em; }
+
+.example1D p {
+  border: 1px solid black;
+  padding: 1em; }
+.example1D section {
+  margin: 2rem; }
+.example1D section:nth-child(1) {
+  -webkit-writing-mode: horizontal-tb;
+      -ms-writing-mode: lr-tb;
+          writing-mode: horizontal-tb; }
+.example1D section:nth-child(2) {
+  -webkit-writing-mode: horizontal-tb;
+      -ms-writing-mode: lr-tb;
+          writing-mode: horizontal-tb; }
+.example1D section:nth-child(3) {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl; }
-.example1C section:nth-child(3) {
+          writing-mode: vertical-rl;
+  max-height: 50vh; }
+.example1D section:nth-child(4) {
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr; }
+          writing-mode: vertical-lr;
+  max-height: 50vh; }
+.example1D section:nth-child(5) {
+  -webkit-writing-mode: sideways-rl;
+      -ms-writing-mode: sideways-rl;
+          writing-mode: sideways-rl;
+  max-height: 50vh; }
+.example1D section:nth-child(6) {
+  -webkit-writing-mode: sideways-lr;
+      -ms-writing-mode: sideways-lr;
+          writing-mode: sideways-lr;
+  max-height: 50vh; }
+.example1D section:nth-child(7) {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: upright;
+  max-height: 50vh; }
+.example1D section:nth-child(8) {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  text-orientation: upright;
+  max-height: 50vh; }

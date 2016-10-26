@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 100%; }
+
+main {
+  width: 80%;
+  max-width: 800px;
+  margin: 1em auto; }
+
+h1 {
+  color: #0473ea;
+  margin: 0;
+  font-size: 4rem; }
+
+.example2A h1, .example2A p {
+  border: 1px solid black; }
+
+.example2B h1 {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr; }
+.example2B h1, .example2B p {
+  border: 1px solid black; }
+
+.example2C h1:nth-child(1) {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl; }
+.example2C h1:nth-child(2) {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr; }
+.example2C h1 {
+  margin-bottom: 1rem; }
+.example2C h1, .example2C p {
+  border: 1px solid black; }
+
+.example2D h1:nth-child(1) {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl; }
+.example2D h1:nth-child(2) {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+.example2D h1 {
+  margin-bottom: 1rem; }
+.example2D h1, .example2D p {
+  border: 1px solid black; }
+
+.example2E h1, .example2E p {
+  border: 1px solid black; }
+
+.example2F h1 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg); }
+.example2F h1, .example2F p {
+  border: 1px solid black; }
+
+.example2G h1 {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+.example2G h1, .example2G p {
+  border: 1px solid black; }
+
+.example2H h1 {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  float: left; }
+.example2H h1, .example2H p {
+  border: 1px solid black; }
+
+.example2J h1 {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  float: left;
+  margin: 0 1rem 1rem 0; }

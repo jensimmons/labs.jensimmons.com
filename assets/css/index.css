@@ -3,7 +3,7 @@
 
 html {
   font-family: 'Futura W01', helvetica, san-serif;
-  font-size: 16px;
+  font-size: 100%;
   color: rgba(12, 12, 10, 0.8);
   font-weight: 300;
   text-rendering: optimizeLegibility;
@@ -145,7 +145,6 @@ header {
     @media (max-width: 820px) {
       header {
         display: -webkit-box;
-        display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
         margin: auto;
@@ -158,9 +157,8 @@ header {
           margin-top: -5px; }
         header .workshop-link {
           margin-left: 1rem;
-          -webkit-align-self: start;
-              -ms-flex-item-align: start;
-                  align-self: start; }
+          -ms-flex-item-align: start;
+              align-self: start; }
         header .follow-links {
           border-bottom: 20px solid #f9423a; } }
     @media (max-width: 700px) {
@@ -234,30 +232,24 @@ main > section {
     margin: 0; }
   main > section > ul {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: 1rem -1rem 0; }
     main > section > ul li {
       -webkit-box-flex: 0;
-      -webkit-flex: 0 1 180px;
           -ms-flex: 0 1 180px;
               flex: 0 1 180px;
       margin: 1rem;
       display: -webkit-box;
-      display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
           -ms-flex-direction: column;
               flex-direction: column;
       -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
               justify-content: space-between; }
   main > section img {
@@ -274,14 +266,12 @@ main > section {
       color: rgba(149, 149, 128, 0.8); }
   main > section > footer {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     color: rgba(149, 149, 128, 0.8);
     font-size: 0.85rem; }
     main > section > footer div {
       -webkit-box-flex: 1;
-      -webkit-flex: 1;
           -ms-flex: 1;
               flex: 1; }
     main > section > footer h4 {

@@ -12,8 +12,12 @@ section {
   padding: 2em;
   box-shadow: 0 1px 6px rgba(0,0,0,0.3);  
 }
+.underline-test {
+  text-decoration: underline;
+}
 
 .example1A {
+  direction: ltr;
   writing-mode: horizontal-tb;
 }
 
@@ -30,17 +34,56 @@ section {
 
 
 .example1C {
+  direction: rtl;
+  writing-mode: horizontal-tb;
+  p {
+    display: block;
+    margin: 1em 0;
+    border: 1px solid black;
+    padding: 1em;
+  }
+}
+
+
+.example1D {
   p {
     border: 1px solid black;
     padding: 1em;
+  }
+  section {
+    margin: 2rem;
   }
   section:nth-child(1) {
     writing-mode: horizontal-tb;  
   }
   section:nth-child(2) {
-    writing-mode: vertical-rl; 
+    writing-mode: horizontal-tb;
   }
   section:nth-child(3) {
+    writing-mode: vertical-rl; 
+    max-height: 50vh;
+  }
+  section:nth-child(4) {
     writing-mode: vertical-lr;  
+    max-height: 50vh;
+  }
+  section:nth-child(5) {
+    writing-mode: sideways-rl; 
+    max-height: 50vh;
+  }
+  section:nth-child(6) {
+    writing-mode: sideways-lr;  
+    max-height: 50vh;
+  }
+  section:nth-child(7) {
+    writing-mode: vertical-rl; 
+    text-orientation: upright;
+    max-height: 50vh;
+  }
+  section:nth-child(8) {
+    writing-mode: vertical-lr;  
+    text-orientation: upright;
+    max-height: 50vh;
   }
 }
+
