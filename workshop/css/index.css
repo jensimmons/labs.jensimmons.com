@@ -3,7 +3,7 @@
 
 html {
   font-family: 'Futura W01', helvetica, san-serif;
-  font-size: 16px;
+  font-size: 100%;
   background: #f6f3ea;
   color: rgba(12, 12, 10, 0.8);
   line-height: 1.3;
