@@ -85,8 +85,11 @@ section {
   text-orientation: upright;
   max-height: 50vh; }
 .example1D section:nth-child(8) {
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
   text-orientation: upright;
   max-height: 50vh; }
+.example1D figcaption {
+  text-align: center;
+  margin: -1rem 0 3rem; }

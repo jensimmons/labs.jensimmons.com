@@ -81,9 +81,13 @@ section {
     max-height: 50vh;
   }
   section:nth-child(8) {
-    writing-mode: vertical-lr;  
+    writing-mode: vertical-rl; 
     text-orientation: upright;
     max-height: 50vh;
+  }
+  figcaption {
+    text-align: center;    
+    margin: -1rem 0 3rem;  
   }
 }
 
