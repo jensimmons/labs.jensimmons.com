@@ -16,17 +16,18 @@ h1 {
   line-height: 0.8em; }
 
 .example3A h1 {
-  display: -ms-grid;
+  /* autoprefixer: off */
   display: grid;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start; }
+  justify-content: start; }
 .example3A h1 span {
   display: block; }
 .example3A h1 span:nth-child(1) {
+  /* autoprefixer: off */
   grid-area: 1 / 1 / 2 / 3; }
 .example3A h1 span:nth-child(2) {
-  grid-area: 2 / 1 / 3 / 2;
+  /* autoprefixer: off */
+  grid-area: 2 / 1 / 3 / 2; }
+.example3A h1 span:nth-child(2) {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -36,4 +37,5 @@ h1 {
   padding-top: 3px;
   letter-spacing: -0.3em; }
 .example3A h1 span:nth-child(3) {
+  /* autoprefixer: off */
   grid-area: 2 / 2 / 3 / 3; }
