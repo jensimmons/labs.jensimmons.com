@@ -6,10 +6,13 @@ main {
   max-width: 800px;
   margin: 1em auto;
 }
+figure {
+  margin: 3rem 0;
+}
 section {
   background: rgb(255, 248, 235);
-  margin: 1em;
-  padding: 2em;
+  padding: 2rem;
+  margin: 4rem 0;
   box-shadow: 0 1px 6px rgba(0,0,0,0.3);  
 }
 .underline-test {
@@ -17,77 +20,79 @@ section {
 }
 
 .example1A {
-  direction: ltr;
-  writing-mode: horizontal-tb;
-}
-
-
-.example1B {
-  writing-mode: horizontal-tb;
   p {
-    display: block;
-    margin: 1em 0;
-    border: 1px solid black;
+    border: 1px solid #d4c9a4;
     padding: 1em;
   }
-}
-
-
-.example1C {
-  direction: rtl;
-  writing-mode: horizontal-tb;
-  p {
-    display: block;
-    margin: 1em 0;
-    border: 1px solid black;
-    padding: 1em;
+  a {
+    text-decoration: underline;
   }
-}
-
-
-.example1D {
-  p {
-    border: 1px solid black;
-    padding: 1em;
+  figure {
+    margin: 4rem 1rem;
+    min-height: 750px;
   }
   section {
-    margin: 2rem;
-  }
-  section:nth-child(1) {
-    writing-mode: horizontal-tb;  
-  }
-  section:nth-child(2) {
-    writing-mode: horizontal-tb;
-  }
-  section:nth-child(3) {
-    writing-mode: vertical-rl; 
-    max-height: 50vh;
-  }
-  section:nth-child(4) {
-    writing-mode: vertical-lr;  
-    max-height: 50vh;
-  }
-  section:nth-child(5) {
-    writing-mode: sideways-rl; 
-    max-height: 50vh;
-  }
-  section:nth-child(6) {
-    writing-mode: sideways-lr;  
-    max-height: 50vh;
-  }
-  section:nth-child(7) {
-    writing-mode: vertical-rl; 
-    text-orientation: upright;
-    max-height: 50vh;
-  }
-  section:nth-child(8) {
-    writing-mode: vertical-rl; 
-    text-orientation: upright;
-    max-height: 50vh;
+    margin-bottom: 1rem;
   }
   figcaption {
+    font-family: Courier, monospace;
     text-align: center;    
-    margin: -1rem 0 3rem;  
+    margin: 0 0 3rem; 
+    font-size: 0.9rem;
+    color: rgba(0,0,0,0.35);
+    em {
+      font-weight: normal;
+      color: black;
+      font-style: normal;
+    }     
+  }
+  figure:nth-child(1) {
+    section {
+      writing-mode: horizontal-tb;  
+    }
+  }
+  figure:nth-child(2) {
+    section {
+      writing-mode: horizontal-tb;
+    }
+  }
+  figure:nth-child(3) {
+    section {
+      writing-mode: vertical-rl; 
+      max-height: 600px;
+    }
+  }
+  figure:nth-child(4) {
+    section {
+      writing-mode: vertical-lr;  
+      max-height: 600px;
+    }
+  }
+  figure:nth-child(5) {
+    section {
+      writing-mode: sideways-rl; 
+      max-height: 600px;
+    }
+  }
+  figure:nth-child(6) {
+    section {
+      writing-mode: sideways-lr;  
+      max-height: 600px;
+    }
+  }
+  figure:nth-child(7) {
+    section {
+      writing-mode: vertical-rl; 
+      text-orientation: upright;
+      max-height: 600px;
+    }
+  }
+  figure:nth-child(8) {
+    section {
+      writing-mode: vertical-lr; 
+      text-orientation: upright;
+      max-height: 500px;
+    }
   }
 }
 

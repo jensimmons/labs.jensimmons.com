@@ -11,16 +11,98 @@
   <body class="example1A">
     
     <main>
-      <section>
-        <h1>Basic writing mode defaults</h1>
-        <p>(1) Around 1040, the first known movable type system was created in China by Bi Sheng out of porcelain. Sheng used clay type, which broke easily, but Wang Zhen by 1298 had carved a more durable type from wood. </p>
-        <p>(2) Copper movable type printing originated in China at the beginning of the 12th century. It was used in large-scale printing of paper money issued by the Northern Song dynasty. Movable type spread to Korea during the Goryeo Dynasty.</p>
-        <p>(3) Around 1230, Koreans invented a metal type movable printing using bronze. The Jikji, published in 1377, is the earliest known metal printed book.</p>
-        <p>(4) Around 1450, Johannes Gutenberg introduced what is regarded as the first modern movable type system in Europe.</p>   
-      </section>
+      <figure>
+        <section>
+          <h1>Basic defaults</h1>
+          <p>(1) Around 1040, the first known movable type system was created in China by Bi Sheng out of porcelain. Sheng used clay type, which broke easily, but Wang Zhen by 1298 had carved a more durable type from wood. </p>
+          <p>(2) Copper movable type printing originated in China at the beginning of the 12th century. It was used in large-scale <span class="underline-test">printing of paper money issued by the Northern Song dynasty. Movable type spread to Korea</span> during the Goryeo Dynasty.</p>
+          <p>(3) Around 1230, Koreans invented a metal type movable printing using bronze. The Jikji, published in 1377, is the earliest known metal printed book.</p>
+          <p>(4) Around 1450, Johannes Gutenberg introduced what is regarded as the first modern movable type system in Europe.</p>   
+        </section>
+        <figcaption>direction: ltr; writing-mode: horizontal-tb; text-orientation: mixed;</figcaption>
+      </figure>
+      
+      <figure>
+        <section>
+          <bdo dir="rtl">
+          <h1>Set Direction to RTL</h1>
+          <p>(1) Around 1040, the first known movable type system was created in China by Bi Sheng out of porcelain. Sheng used clay type, which broke easily, but Wang Zhen by 1298 had carved a more durable type from wood. </p>
+          <p>(2) النحاس نوع المنقولة الطباعة نشأت في الصين في بداية القرن 12th. انه كان يستخدم في الطباعة على نطاق واسع من النقود الورقية التي تصدرها سلالة سونغ الشمالية. نوع المنقولة انتشار لكوريا خلال عصر مملكة كوريو.</p>
+          <p>(3) حول 1230، اخترع الكوريين الطباعة المنقولة نوع المعدن باستخدام البرونزية. وجيكجي، التي نشرت في 1377، هو أقرب المعادن طبع كتاب معروف.</p>
+          <p>(4) حوالي 1450، قدم يوهانس غوتنبرغ ما يعتبر أول نظام نوع المنقولة الحديثة في أوروبا.</p>  
+        </bdo></section>
+        <figcaption><em>direction: rtl;</em> writing-mode: horizontal-tb; text-orientation: mixed;</figcaption>
+      </figure>
+      
+      <figure>
+        <section>
+          <h1>Set Writing Mode to vertical-rl</h1>
+          <p>(1) Around 1040, the first known movable type system was created in China by Bi Sheng out of porcelain. Sheng used clay type, which broke easily, but Wang Zhen by 1298 had carved a more durable type from wood. </p>
+          <p>(2) Copper movable type printing originated in China at the beginning of the 12th century. It was used in large-scale <span class="underline-test">printing of paper money issued by the Northern Song dynasty. Movable type spread to Korea</span> during the Goryeo Dynasty.</p>
+          <p>(3) 大约1230年，韩国人发明了一种使用青铜的金属型可移动印刷。 吉吉，出版于1377年，是最早知道的金属印刷书。</p>
+          <p>(4) 约1450年左右，<span class="underline-test">约翰内斯·古登伯格介绍了被认为是欧洲第一个现代可移动式系统。</span></p>   
+        </section>
+        <figcaption>direction: ltr; <em>writing-mode: vertical-rl;</em> text-orientation: mixed;</figcaption>
+      </figure>
+
+      <figure>
+        <section>
+          <h1>Set Writing Mode to vertical-lr;</h1>
+          <p>(1) Around 1040, the first known movable type system was created in China by Bi Sheng out of porcelain. Sheng used clay type, which broke easily, but Wang Zhen by 1298 had carved a more durable type from wood. </p>
+          <p>(2) Copper movable type printing originated in China at the beginning of the 12th century. It was used in large-scale <span class="underline-test">printing of paper money issued by the Northern Song dynasty. Movable type spread to Korea</span> during the Goryeo Dynasty.</p>
+          <p>(3) Around 1230, Koreans invented a metal type movable printing using bronze. The Jikji, published in 1377, is the earliest known metal printed book.</p>
+          <p>(4) Around 1450, Johannes Gutenberg introduced what is regarded as the first modern movable type system in Europe.</p>   
+        </section>
+        <figcaption>direction: ltr; <em>writing-mode: vertical-lr;</em> text-orientation: mixed;</figcaption>
+      </figure>
+
+      <figure>
+        <section>
+          <h1>Set Writing Mode to sideways-rl</h1>
+          <p>(1) Around 1040, the first known movable type system was created in China by Bi Sheng out of porcelain. Sheng used clay type, which broke easily, but Wang Zhen by 1298 had carved a more durable type from wood. </p>
+          <p>(2) Copper movable type printing originated in China at the beginning of the 12th century. It was used in large-scale <span class="underline-test">printing of paper money issued by the Northern Song dynasty. Movable type spread to Korea</span> during the Goryeo Dynasty.</p>
+          <p>(3) 大约1230年，韩国人发明了一种使用青铜的金属型可移动印刷。 吉吉，出版于1377年，是最早知道的金属印刷书。</p>
+          <p>(4) Around 1450, Johannes Gutenberg introduced what is regarded as the first modern movable type system in Europe.</p>   
+        </section>
+        <figcaption>direction: ltr; <em>writing-mode: sideways-rl;</em> text-orientation: mixed;</figcaption>
+      </figure>
+
+      <figure>
+        <section>
+          <h1>Set Writing Mode to sideways-lr</h1>
+          <p>(1) Around 1040, the first known movable type system was created in China by Bi Sheng out of porcelain. Sheng used clay type, which broke easily, but Wang Zhen by 1298 had carved a more durable type from wood. </p>
+          <p>(2) Copper movable type printing originated in China at the beginning of the 12th century. It was used in large-scale <span class="underline-test">printing of paper money issued by the Northern Song dynasty. Movable type spread to Korea</span> during the Goryeo Dynasty.</p>
+          <p>(3) 大约1230年，韩国人发明了一种使用青铜的金属型可移动印刷。 吉吉，出版于1377年，是最早知道的金属印刷书。</p>
+          <p>(4) Around 1450, Johannes Gutenberg introduced what is regarded as the first modern movable type system in Europe.</p>
+        </section>
+        <figcaption>direction: ltr; <em>writing-mode: sideways-lr;</em> text-orientation: mixed;</figcaption>
+      </figure>
+
+      <figure>
+        <section>
+          <h1>Upright</h1>
+          <p>1 Around 1040, the first known movable type. </p>
+          <p>2 Copper movable type printing <span class="underline-test">originated in China.</span></p>
+          <p>3 1230左右，韩国人发明了一种金属型活动印刷</p>
+          <p>4 Around 1450, Johannes <a>Gutenberg</a>.</p>
+        </section>
+        <figcaption>direction: ltr; <em>writing-mode: vertical-rl; text-orientation: upright;</em></figcaption>
+      </figure>
+
+      <figure>
+        <section>
+          <h1>Upright</h1>
+          <p>1 Around 1040, the first known movable type. </p>
+          <p>2 Copper movable type printing <span class="underline-test">originated in China.</span></p>
+          <p>3 1230左右，韩国人发明了一种金属型活动印刷</p>
+          <p>4 Around 1450, Johannes <a>Gutenberg</a>.</p>
+        </section>
+        <figcaption>direction: ltr; <em>writing-mode: vertical-lr; text-orientation: upright;</em></figcaption>
+      </figure>
+
+      
     </main>
     
   </body>  
   
 </html>
-
