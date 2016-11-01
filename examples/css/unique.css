@@ -42,33 +42,27 @@ header {
   @media (min-width: 500px) {
     header {
       display: -webkit-box;
-      display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
               justify-content: space-between;
       -webkit-box-align: end;
-      -webkit-align-items: flex-end;
           -ms-flex-align: end;
               align-items: flex-end; }
       header h1 {
         margin: 0 1em 0 0; } }
   header nav ul {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 4px;
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between; }
   @media (min-width: 300px) {
     header nav li {
       -webkit-box-flex: 1;
-      -webkit-flex: auto;
           -ms-flex: auto;
               flex: auto;
       margin-right: 1em;
@@ -76,9 +70,8 @@ header {
       border-right: 1px solid #000; } }
   @media (min-width: 580px) {
     header nav ul {
-      -webkit-flex-wrap: wrap;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap; } }
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
   header nav li:last-child {
     border: none;
     margin-right: 0;
@@ -113,9 +106,8 @@ header {
     margin: 0;
     grid-column: 2 / 3;
     grid-row: 3 / 4;
-    -webkit-align-self: self-start;
-        -ms-flex-item-align: self-start;
-            align-self: self-start; }
+    -ms-flex-item-align: self-start;
+        align-self: self-start; }
     @media (max-width: 880px) {
       .hero h2 {
         grid-column: 2 / 4; } }
@@ -131,9 +123,8 @@ header {
   .hero p {
     grid-column: 1 / -1;
     grid-row: 4 / 5;
-    -webkit-align-self: center;
-        -ms-flex-item-align: center;
-            align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     width: 66%;
     justify-self: center;
     font-size: calc(0.75rem + 1vw);
@@ -160,7 +151,6 @@ header {
       font-size: 1.8rem; }
     .talking-points div img {
       -webkit-box-ordinal-group: 0;
-      -webkit-order: -1;
           -ms-flex-order: -1;
               order: -1;
       max-width: 100px; }
