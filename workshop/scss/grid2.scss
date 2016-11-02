@@ -38,7 +38,7 @@ img { width: 100%; }
 // ------------------------------------------------------------------------------
 
 .grid-2A {
-  ul {
+  ul { /* autoprefixer: off */
     display: grid;
     grid-template-columns: repeat(7,1fr);
     grid-template-rows: repeat(auto, 1fr);
@@ -52,7 +52,7 @@ img { width: 100%; }
 // ------------------------------------------------------------------------------
 
 .grid-2B {
-  ul {
+  ul { /* autoprefixer: off */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     grid-gap: 20px;
@@ -65,7 +65,7 @@ img { width: 100%; }
 // ------------------------------------------------------------------------------
 
 .grid-2C {
-  ul {
+  ul { /* autoprefixer: off */
     display: grid;
     grid-template-columns: repeat(2, 1fr 2fr 3fr 5fr);
     grid-gap: 20px;

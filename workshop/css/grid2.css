@@ -27,24 +27,20 @@ img {
     margin: 0 0 2em 5%; }
 
 .grid-2A ul {
-  display: -ms-grid;
+  /* autoprefixer: off */
   display: grid;
-  -ms-grid-columns: (1fr)[7];
-      grid-template-columns: repeat(7, 1fr);
-  -ms-grid-rows: (1fr)[auto];
-      grid-template-rows: repeat(auto, 1fr);
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
   grid-gap: 20px; }
 
 .grid-2B ul {
-  display: -ms-grid;
+  /* autoprefixer: off */
   display: grid;
-  -ms-grid-columns: (minmax(180px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   grid-gap: 20px; }
 
 .grid-2C ul {
-  display: -ms-grid;
+  /* autoprefixer: off */
   display: grid;
-  -ms-grid-columns: (1fr 2fr 3fr 5fr)[2];
-      grid-template-columns: repeat(2, 1fr 2fr 3fr 5fr);
+  grid-template-columns: repeat(2, 1fr 2fr 3fr 5fr);
   grid-gap: 20px; }
