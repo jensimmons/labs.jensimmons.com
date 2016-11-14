@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: black;
+  color: #FF0000;
+  margin: 0;
+  font-size: 81.25%;
+  background-image: url('../images/spacejam/bg_stars.gif');
+}
+main {
+  width: 80%;
+  margin: 2rem auto;
+}
+a {
+  color: #FF0000;
+}
+ul {
+  margin: 2rem 0;
+  list-style: none;
+}
+img {
+  display: block;
+}
+li {
+  margin: 2rem 0;
+  text-align: center;
+}
+li img {
+  margin: 0 auto;
+}
+footer {
+  text-align: center;
+}
+.element-invisible {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+}
+
+// Layout if CSS Grid is not supported
+//-------------------------------------------------------------
+
+ul {
+  columns: 150px;
+}
+.warning {
+  max-width: 600px;
+  background: #eee;
+  padding: 1em;
+  font-size: 120%;
+  margin: 3em auto;
+}
+
+// Layout using CSS Grid
+//-------------------------------------------------------------
+
+@supports (display:grid) {
+  ul {
+//    margin: 0;
+//    padding: 0;
+//    columns: auto;
+  }
+  li {
+    margin: 0;
+  }
+  li img {
+    margin: 0;
+  }
+  .warning {
+    display: none;
+  }
+
+
+
+
+  main {
+   /* autoprefixer: off */
+    display: grid;
+    grid-auto-columns: min-content;
+    grid-template-rows: 1fr 0.8fr 0.6fr 1.1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 2rem 1rem;
+    margin-top: 150px;
+  }
+  .logo {
+    grid-area: 2 / 2 / 4 / 5;
+  }
+  nav, ul {
+    display: contents;
+  }
+  li:nth-child(1) {
+    grid-area: 4 / 2 / 5 / 3; 
+    align-self: start;
+  }
+  li:nth-child(2) {
+    grid-area: 1 / 5 / 2 / 6;
+    align-self: end;
+  }
+  li:nth-child(3) {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  li:nth-child(4) {
+    grid-area: 4 / 4 / 5 / 5;   
+  }
+  li:nth-child(5) {
+    grid-area: 1 / 3 / 2 / 4;   
+  }
+  li:nth-child(6) {
+    grid-area: 1 / 4 / 2 / 5; 
+    align-self: start;  
+  }
+  li:nth-child(7) {
+    grid-area: 2 / 1 / 3 / 2;   
+    align-self: end;
+    justify-self: start;
+  }
+  li:nth-child(8) {
+    grid-area: 2 / 5 / 3 / 6;   
+    align-self: end;
+    justify-self: end;
+  }
+  li:nth-child(9) {
+    grid-area: 1 / 1 / 2 / 3; 
+    align-self: end;  
+  }
+  li:nth-child(10) {
+    grid-area: 3 / 5 / 5 / 6;   
+  }  
+  li:nth-child(11) {
+    grid-area: 4 / 3 / 5 / 4;   
+    align-self: end;
+  }
+  main > footer {
+    grid-area: 6 / 1 / 7 / 6;
+    align-self: end;
+  }
+  
+
+  
+  
+}
