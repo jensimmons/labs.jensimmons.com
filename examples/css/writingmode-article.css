@@ -3,10 +3,19 @@ h2 {
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   float: left;
+  position: sticky;
+  top: 0;
   margin: 1.5rem 0 0 -3.8rem;
   font-size: 1.8em;
   background: #96e5fb;
   padding: 8px 0; }
+
+h2 a {
+  color: inherit;
+  text-decoration: none; }
+
+h2 a:hover {
+  text-decoration: underline; }
 
 main {
   width: 80%;
