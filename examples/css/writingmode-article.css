@@ -10,6 +10,13 @@ h2 {
   background: #96e5fb;
   padding: 8px 0; }
 
+h2 a {
+  color: inherit;
+  text-decoration: none; }
+
+h2 a:hover {
+  text-decoration: underline; }
+
 main {
   width: 80%;
   max-width: 52ch;
