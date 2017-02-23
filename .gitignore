@@ -3,6 +3,7 @@ Ignore the following Git:
 #########################
 
 config.codekit
+config.codekit3
 
 progress/fonts
 progress/fonts/*
