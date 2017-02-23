@@ -1,0 +1,55 @@
+// Code for the Styling --------------------------------------
+
+html {
+  font-family: helvetica, sans-serif;
+  font-size: 18px;
+}
+h1 {
+  font-family: 'BauerBodoniW01-BoldDisp', georgia, serif;  
+  font-size: 2rem;
+  color: #fff;
+  margin: 0;
+  padding: 0.75em 0.25em;
+  background: #2c2c2c;
+  line-height: 1.1em;
+}
+ul {
+  padding: 0;
+}
+li {
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 4rem;
+  position: relative;  
+}
+
+
+// Code for the Layout ---------------------------------------
+
+.imagelist { /* autoprefixer: off */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  
+  grid-auto-rows: 200px;  
+  grid-gap: 1em;
+  margin: 1em;
+}
+img {
+  display: block;
+  border: 1px solid black;
+//  box-shadow: 1px 3px 8px rgba(0,0,0,0.5);
+//  object-fit: cover;
+//  height: 100%;
+}
+
+// Style a Warning Message. Remove if Grid works ---------------------------------------
+
+.warning {
+  color: red;
+  font-size: 200%; 
+}
+@supports (display: grid) {
+  .warning {
+    display: none;
+  }
+}
+

@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+html {
+//  writing-mode: vertical-rl;
+  font-family:'Frutiger Neue W01 Book';
+  font-family:'Tazugane Gothic StdN W50 Book';
+}
+body {
+  margin: 5rem;
+  color: #222;
+  font-size: 100%;
+}
+main {
+//  line-height: 1.4em;
+//  columns: 2;
+}
+h1 {
+  margin: 0; 
+  writing-mode: horizontal-tb; 
+}
+div {
+  max-height: 30em;
+  writing-mode: vertical-rl;
+}
+p {
+  margin: 0;
+}
+img {
+  display: block;
+  height: 50%;
+  margin: 0 0.35em 1rem;
+  float: left;
+}
+img.icon {
+  display: inline;
+  height: auto;
+  margin: 0;
+  float: none;
+  border: 1px solid #ccc;
+}

@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 160%;
+}
+main {
+  width: 80%;
+  margin: 2rem auto;
+}
+h2 {
+  margin-top: 2em;
+}
+ol li {
+  margin-top: 1em;
+}
+
+ol:nth-of-type(1) {
+  a {
+    color: #FF0000;
+  }  
+  li:nth-child(1) a {
+    text-decoration-line: none;
+  }
+  li:nth-child(2) a {
+    text-decoration-line: underline;
+  }
+  li:nth-child(3) span {
+    text-decoration-line: line-through;
+  }
+  li:nth-child(4) span {
+    text-decoration-line: overline;
+  }
+  li:nth-child(5) {
+    writing-mode: vertical-rl;
+    height: 10ch;
+    margin-top: 2em;
+    span:nth-child(1) {
+      text-decoration-line: underline;
+    }
+    span:nth-child(2) {
+      text-decoration-line: overline;
+    }
+  }
+
+  // There's a fifth value of 'blink', but many browser's don't support it, and it's been deprecated in favor of Animations.
+}
+
+ol:nth-of-type(2) {
+  a {
+    color: #1F9B92;
+  }  
+  li:nth-child(1) a {
+    text-decoration-color: #dedc4c;
+  }
+}
+
+
+ol:nth-of-type(3) {
+  a {
+    color: #0093FF;
+  }  
+  li:nth-child(1) a {
+    text-decoration-style: solid;
+  }
+  li:nth-child(2) a {
+    text-decoration-style: dotted;
+  }  
+  li:nth-child(3) a {
+    text-decoration-style: dashed;
+  }
+  li:nth-child(4) a {
+    text-decoration-style: double;
+  }
+  li:nth-child(5) a {
+    text-decoration-style: wavy;
+  }
+}
+
+
+ol:nth-of-type(4) {
+  img {
+    width: 20px;
+    display: inline;
+    margin: 0 0.3em;
+  }
+  a {
+    color: #0aa237;
+  }  
+  li:nth-child(1) a {
+    text-decoration-skip: none;
+  }
+  li:nth-child(2) a {
+    text-decoration-skip: ink;
+  }
+  li:nth-child(3) a {
+    text-decoration-skip: spaces;
+  }  
+  li:nth-child(3) a {
+    text-decoration-skip: edges;
+  }  
+  li:nth-child(4) a {
+    text-decoration-skip: objects;
+  }
+  li:nth-child(5) a {
+    text-decoration-skip: box-decoration;
+  }
+}
+  
