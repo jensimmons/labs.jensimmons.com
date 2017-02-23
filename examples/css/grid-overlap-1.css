@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #fff;
+  margin: 5em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr); }
+
+main {
+  /* autoprefixer: off */
+  background: #F0F0F0;
+  grid-column: 3/5;
+  grid-row: 1 / -1; }
+
+figure {
+  margin: 0; }
+
+img {
+  display: block;
+  width: 100%; }
+
+h3 {
+  margin-left: -1fr; }
+
+.warning {
+  margin-left: 1em;
+  max-width: 600px;
+  font-size: 80%;
+  color: red; }
+
+@supports ((display: -ms-grid) or (display: grid)) {
+  .warning {
+    display: none; } }
