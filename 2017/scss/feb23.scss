@@ -1,0 +1,101 @@
+* {box-sizing: border-box;}
+body { 
+  margin: 0;
+//  display: flex;
+}
+
+main {
+  margin: 100px auto;
+  width: 470px;
+}
+article { /* autoprefixer: off */
+  font-family: Avenir, Helvetica;
+  font-size: 76%;
+  line-height: 1.2;
+  background: #f0efeb;
+  display: grid;
+  grid-template-columns: repeat(8, 50px);
+  grid-template-rows: 50px 50px auto 50px 50px 50px;
+  grid-gap: 10px;
+  width: 420px;
+  margin: 0 -65px -65px;
+}
+
+blockquote { /* autoprefixer: off */
+  grid-row: 3 / 4;
+  grid-column: 4 / -2;
+  margin: 0.75em 0 0.5em;
+}
+cite {
+  display: block;
+}
+span {
+  display: block;
+  grid-column: 2 / -2;  
+}
+span:nth-child(10) { /* autoprefixer: off */
+  grid-row: 3;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+span:nth-child(11) { /* autoprefixer: off */
+  grid-row: 6;
+  border-bottom: 1px solid black;
+}
+small {
+  z-index: 3;
+  background: white;
+}
+small:nth-child(12) { /* autoprefixer: off */
+  grid-row: 1 / 8;
+  grid-column: 1 / span 1;
+}
+
+small:nth-child(13) { /* autoprefixer: off */
+  grid-row: 7 / span 1;
+  grid-column: 1 / -1;
+}
+
+div { 
+  z-index: 2;
+  border-radius: 50%;
+  background: rgba(0, 100, 255, 0.5); // blue
+  height: 110px;
+  width: 110px;
+}
+div:nth-child(odd) {
+  background: rgba(255, 0, 200, 0.5); // pink
+  z-index: 1;
+}
+div:nth-child(2) { /* autoprefixer: off */
+  grid-row: 1 / span 2;
+  grid-column: 3 / span 2;
+}
+div:nth-child(3) { /* autoprefixer: off */
+  grid-row: 1 / span 2;
+  grid-column: 5 / span 2;
+}
+div:nth-child(4) { /* autoprefixer: off */
+  grid-row: 4 / span 2;
+  grid-column: 1 / span 2;
+}
+div:nth-child(5) { /* autoprefixer: off */
+  grid-row: 4 / span 2;
+  grid-column: 2 / span 2;
+}
+div:nth-child(6) { /* autoprefixer: off */
+  grid-row: 4 / span 2;
+  grid-column: 3 / span 2;
+}
+div:nth-child(7) { /* autoprefixer: off */
+  grid-row: 4 / span 2;
+  grid-column: 5 / span 2;
+}
+div:nth-child(8) { /* autoprefixer: off */
+  grid-row: 4 / span 2;
+  grid-column: 6 / span 2;
+}
+div:nth-child(9) { /* autoprefixer: off */
+  grid-row: 6 / span 2;
+  grid-column: 5 / span 2;
+}
