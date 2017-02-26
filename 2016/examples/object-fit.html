@@ -1,0 +1,110 @@
+---
+redirect_from: "/examples/object-fit.html"
+---
+<!doctype html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Progressing Our Layouts | Jen Simmons</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+      <script type="text/javascript" src="//fast.fonts.net/jsapi/de7248fd-7276-4b96-a278-572b5e857522.js"></script>
+
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/universal.css">
+      <link rel="stylesheet" href="css/object-fit.css">
+
+  </head>
+  
+  <body>
+    
+    <main>
+
+    <h1>A Demo of the Object Fit Property</h1>
+    <p>The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit">object-fit property</a> alters the way images get resized as their containing box is resized. Note: these are images in the HTML, not background images called by CSS.</p>
+            
+      <footer class="warning">This demo only works in browsers that support object-fit. If you can see this message, then your browser doesn't support the object-fit property. <p class="ciu_embed" data-feature="object-fit" data-periods="future_1,current,past_1,past_2">   <a href="http://caniuse.com/#feat=object-fit">Can I Use object-fit?</a> Data on support for the object-fit feature across the major browsers from caniuse.com. </p></footer>
+
+      <ol>  
+        <h2>An image that’s larger than its box</h2>    
+        <li>
+          <h4>original image (1920x1080px)</h4>
+          <img class="original-image" src="images/testscreen-large.jpg">
+        </li>
+        
+        <li>
+          <h4>object-fit: fill</h4>
+          <img class="object-fit-fill" src="images/testscreen-large.jpg">
+        </li>
+        
+        <li>
+          <h4>object-fit: contain</h4>
+          <img class="object-fit-contain" src="images/testscreen-large.jpg">
+        </li>
+        
+        <li>
+          <h4>object-fit: cover</h4>
+          <img class="object-fit-cover" src="images/testscreen-large.jpg">
+        </li>
+        
+        <li>
+          <h4>object-fit: none</h4>
+          <img class="object-fit-none" src="images/testscreen-large.jpg">
+        </li>
+        
+        <li>
+          <h4>object-fit: scale-down</h4>
+          <img class="object-fit-scale" src="images/testscreen-large.jpg">
+        </li>
+      </ol>
+    
+      <ol class="smaller-test-image">  
+        <h2>An image that’s smaller than its box</h2>    
+        <li>
+          <h4>original image (267x150px)</h4>
+          <img class="original-image" src="images/testscreen-small.jpg">
+        </li>
+        
+        <li>
+          <h4>object-fit: fill</h4>
+          <img class="object-fit-fill" src="images/testscreen-small.jpg">
+        </li>
+        
+        <li>
+          <h4>object-fit: contain</h4>
+          <img class="object-fit-contain" src="images/testscreen-small.jpg">
+        </li>
+        
+        <li>
+          <h4>object-fit: cover</h4>
+          <img class="object-fit-cover" src="images/testscreen-small.jpg">
+        </li>
+        
+        <li>
+          <h4>object-fit: none</h4>
+          <img class="object-fit-none" src="images/testscreen-small.jpg">
+        </li>
+        
+        <li>
+          <h4>object-fit: scale-down</h4>
+          <img class="object-fit-none" src="images/testscreen-small.jpg">
+        </li>
+      </ol>
+      
+    </main>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-423984-20', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+
+</html>
