@@ -1,0 +1,319 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Layout Demos by Jen Simmons</title>
+    
+    <script type="text/javascript" src="//fast.fonts.net/jsapi/cab408fa-259b-4520-ba3f-eb8576ccec92.js"></script>
+
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+  </head>
+  <body>
+
+<main>
+<header><div class="header-wrapper">
+<h1>The Experimental Layout Lab</h1><h1>of Jen Simmons</h1> 
+<p class="header-note">Check back often. This will keep changing.</p>
+<div class="demo-list">
+  <p>Includes examples for</p>
+    <ul>
+      <li><a href="http://jensimmons.com/presentation/real-art-direction-web">Revolutionize Your Page: Real Art Direction on the Web</a></li>    
+      <li><a href="http://jensimmons.com/presentation/progressing-our-layouts">Progressing Our Layouts</a></li>
+      <li><a href="http://jensimmons.com/presentation/modern-layouts-getting-out-our-ruts">Modern Layouts: Getting Out of Our Ruts</a></li>    
+    </ul>
+</div>
+<p class="follow-links">Follow <a href="http://twitter.com/jensimmons">@jensimmons</a> on Twitter for more as it happens.<br />Sign up for <a href="http://layout.land">Layout Land</a>, a place for us to show off new ideas for layout.</p>
+<p class="workshop-link"><a href="/workshop">Workshop Examples</a></p>
+<p class="support-note">The header of this page is <a href="https://twitter.com/jensimmons/status/773850377548693504">much more interesting</a> in a browser that supports CSS Grid. Try <a href="https://nightly.mozilla.org/">Firefox Nightly</a>, Safari Technical Preview, or Chrome Canary (where you need to turn Grid on manually</a>). (It doesn't quite work in Chrome 54 because not enough of Grid is implemented.)</p> 
+</div></header>
+
+<nav class="index">
+  <ol>
+    <li><a href="#shapes">CSS Shapes</a></li>
+    <li><a href="#clippath">Clip Path</a></li>
+    <li><a href="#initialletter">Initial Letter</a></li>
+    <li><a href="#multicolumn">Multicolumn</a></li>
+    <li><a href="#objectfit">Object Fit</a></li>
+    <li><a href="#coversheet">Cover Sheet Demo</a></li>
+    <li><a href="#imagegallery">Image Gallery Study</a></li>
+    <li><a href="#jazzposter">Jazz Poster Grid Demo</a></li>
+    <li><a href="#spices">Spices</a></li>
+    <li><a href="#typical">Typical Layouts</a></li>
+    <li><a href="#mondrian">CSS Mondrian Grid</a></li>
+    <li><a href="#writing-modes">Writing Modes</a></li>
+    <li><a href="#spacejam">Space Jam</a></li>
+    <li><a href="#futurismo">Futurismo Posters</a></li>
+    <li><a href="#rotation">Rotation</a></li>
+    <li><a href="#hexagon">Hexagon Layouts</a></li>
+    <li><a href="#regions1">A Study of Columns and the Need for Regions</a></li>
+  </ol>
+</nav>
+
+<section id="shapes"><a name="shapes"></a>
+  <h3>CSS Shapes</h3>
+  <p class="note">Shapes <a href="http://caniuse.com/#feat=css-shapes">works in Safari and Chrome.</a> It’s currently being implemented in Firefox.</p> 
+  <ul>
+    <li><a href="examples/shapes-1.html"><img src="assets/images/shape1.jpg" alt="screenshot of the Tomato shape demo"> Tomato: shape-outside: circle</a><p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/dMdOrL?editors=1100">[on CodePen]</a></p>
+</li>
+    <li><a href="examples/shapes-2.html"><img src="assets/images/shape2.jpg" alt="screenshot of the Egg shape demo"> Egg: shape-outside: ellipse</a><p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/yOvgyp/?editors=1100">[on CodePen]</a></p></li>
+    <li><a href="examples/shapes-3.html"><img src="assets/images/shape3.jpg" alt="screenshot of the Grapes shape demo"> Grapes: shape-outside: polygon</a><p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/reJjVr?editors=1100">[on CodePen]</a></p></li>
+    <li><a href="examples/shapes-4.html"><img src="assets/images/shape4.jpg" alt="screenshot of the Apples shape demo"> Apples: shape-outside: url(mask.png)</a><p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/zBxVJg/?editors=1100">[on CodePen]</a></p></li>
+    <li><a href="examples/shapes-5.html"><img src="assets/images/shape5.jpg" alt="screenshot of the Blackberry shape demo"> Blackberry: shape-outside: attr(src url)</a><p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/bedqqQ?editors=1100">[on CodePen]</a></p></li>
+    <li><a href="examples/shapes-6.html"><img src="assets/images/shape6.jpg" alt="screenshot of the Orange shape demo"> Oranges: shape-outside combined with multicolumn</a></p></li>
+    <li><a href="examples/shapes-7.html"><img src="assets/images/shape7.jpg" alt="screenshot of the Plums shape demo"> Plums: images floating around an image</a></p></li>
+    </ul>
+    <footer>
+      <div>
+        <h4>Tickets for implementing <code>shape-outside</code>:</h4>
+        <ul><li><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1040714">Firefox</a></li>
+            <li><a href="https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/suggestions/6263716-shapes">Edge</a></li>
+            <li><a href="http://caniuse.com/#feat=css-shapes">Where CSS Shapes is currently supported</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Tickets for implementing <code>attr()</code>:</h4>
+        <ul><li><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=435426">Firefox</a></li>
+            <li><a href="https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/suggestions/7671960-css-attr-as-defined-in-css-values-level-3">Edge</a></li>
+            <li><a href="https://bugs.chromium.org/p/chromium/issues/detail?id=246571">Chrome & Opera</a></li>
+            <li><a href="https://bugs.webkit.org/show_bug.cgi?id=26609">Safari & WebKit</a></li>
+        </ul>
+      </div>
+    </footer>
+</section>
+
+<section id="clippath"><a name="clippath"></a>
+  <h3>Clip Path</h3>
+  <p class="note">Clip Path (using CSS without a SVG file) <a href="http://caniuse.com/#feat=css-shapes">works in Safari and Chrome.</a> Coming soon in Firefox.</p> 
+  <ul>
+    <li><a href="examples/clip-path.html"><img src="assets/images/simpleclippath.jpg" alt="screenshot of the Simple Clip Path demo"> Simple Image Cropped by Clip Path</a><p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/jqZyKx?editors=1100">[on CodePen]</a></p></li>
+  </ul>
+</section>
+
+<section id="initialletter"><a name="initialletter"></a>
+  <h3>Initial Letter</h3>
+  <p class="note">Initial Letter works in Safari 9+. There's a bad bug in Safari 9 that requires a workaround (see examples). The bug is fixed in Safari Technical Preview, and is expected for Safari 10. Initial Letter is currently being implemented in Firefox.</a></p> 
+  <ul>
+    <li><a href="examples/initial-letter.html"><img src="assets/images/initial-letter-1.jpg" alt="screenshot of a almost-working dropped cap"> A Drop Cap</a><p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/EKQWyV?editors=1100">[on CodePen]</a></p></li>
+    <li><a href="examples/initial-letter-2.html"><img src="assets/images/initial-letter-2.jpg" alt="screenshot of a working dropped cap"> A Raised Cap</a><p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/WwMpxY?editors=1100">[on CodePen]</a></p></li>
+    <li><a href="examples/initial-letter-3.html"><img src="assets/images/initial-letter-3.jpg" alt="screenshot of a working raised cap"> Bug-fix 1</a><p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/wGyJWx?editors=1100">[on CodePen]</a></p></li>
+    <li><a href="examples/initial-letter-4.html"><img src="assets/images/initial-letter-4.jpg" alt="screenshot of a working raised cap"> Bug-fix 2</a><p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/ONvdYL?editors=1100">[on CodePen]</a></p></li>
+    <li><a href="examples/initial-letter-5.html"><img src="assets/images/initial-letter-5.jpg" alt="screenshot of a working block cap"> Block Cap</a><p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/mEWPze?editors=1100">[on CodePen]</a></p></li>
+  </ul>
+</section>
+
+<section id="multicolumn"><a name="multicolumn"></a>
+  <h3>Multicolumn</h3> 
+  <p class="note">Multiple Column Layout works has <a href="http://caniuse.com/#feat=multicolumn">worked in browsers forever</a> — including IE10+. There are some remaining bugs however, and we need <code>break-before, break-after, break-inside</code> to accomplish many design ideas. With some care, though, we can use multicolumn today.</p>
+  
+  <ul>
+    <li><a href="examples/multicolumn-1.html"><img src="assets/images/multicolumn-1.jpg" alt=""> Multicolumn Basics Comparision</a></li>
+    <li><a href="examples/multicolumn-2.html"><img src="assets/images/multicolumn-2.jpg" alt=""> Multicolumn Text Example</a></li>
+    <li><a href="examples/multicolumn-3.html"><img src="assets/images/multicolumn-3.jpg" alt=""> Multicolumn Card Layout</a></li>
+    <li><a href="examples/multicolumn-3-bug-demo.html"><img src="assets/images/multicolumn-3.jpg" alt=""> Multicolumn Bug Demo</a></li>
+    <li><a href="examples/image-gallery-multicolumn.html"><img src="assets/images/multicolumn-4.jpg" alt=""> Image Gallery in Multicolumn Layout</a> <p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/BKPGov?editors=1100">[on CodePen]</a></p></li>
+  </ul>  
+    <footer>
+      <div>
+        <h4>Multicolumn Bug tickets</h4>
+        <ul>
+          <li><a href="https://bugs.webkit.org/show_bug.cgi?id=14137">Drop shadows don't stay with content box in Webkit</a></li>
+        </ul>
+      </div>
+</section>
+
+<section id="objectfit"><a name="objectfit"></a>
+  <h3>Object Fit</h3>
+  <p class="note">Object-fit has <a href="http://caniuse.com/#feat=object-fit">terrific support</a>. Object-position isn't supported in Safari 9, but will be in Safari 10. Mostly, we <a href="https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/suggestions/6263790-object-fit-and-object-position">need the Edge team to add both.</a></p>
+  <ul>
+    <li><a href="examples/object-fit-photos.html"><img src="assets/images/image-comparison.jpg" alt="a screenshot of the image comparision demo">How photos work: fixed v fluid v. object-fit</a><p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/jqKNxg?editors=1100">[on CodePen]</a></p></li>
+    <li><a href="examples/object-fit.html"><img src="assets/images/image-demo-of-object-fit.jpg" alt="screensot of object-fit demo">Object Fit — comparing values</a><p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/ZWRzjQ?editors=1100">[on CodePen]</a></p></li>
+    <li><a href="examples/grace-hopper-page.html"><img src="assets/images/gh.jpg" alt="">Grace Hopper Cover Page demo</a><p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/wGXwNb?editors=1100">[on CodePen]</a></p></li>
+  </ul>
+</section>
+
+<section id="coversheet"><a name="coversheet"></a>
+  <h3>“Cover sheet” Demo</h3>
+  <p class="note">This demo combines Viewport Units and Flexbox. It works in all browsers, just slightly differently in old version of IE.</p>
+  <ul>
+    <li><a href="examples/coversheet-1.html"><img src="assets/images/coversheet1.jpg" alt="">Typical Header with title & background, the height of the space needed</a> <p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/aNKory?editors=1100">[on CodePen]</a></p></li>
+    <li><a href="examples/coversheet-2.html"><img src="assets/images/coversheet2.jpg" alt="">Cover Sheet Header, taking up 100% of viewport</a> <p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/RaJbme?editors=1100">[on CodePen]</a></p></li>
+    <li><a href="examples/coversheet-3.html"><img src="assets/images/coversheet3.jpg" alt="">Cover Sheet Header, with tweaks for old IE</a> <p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/vGrBqz?editors=1100">[on CodePen]</a></p></li>
+  </ul>
+</section>
+
+<section id="imagegallery"><a name="imagegallery"></a>
+  <h3>Image Gallery Study</h3>
+  <p class="note">The CSS Grid examples require a browser that supports CSS Grid. It works best in <a href="https://nightly.mozilla.org/">Firefox Nightly</a>.</p>
+  <ul>
+    <li><a href="examples/image-gallery-no-layout.html"><img src="assets/images/gallery1.jpg" alt=""> Image Gallery, with no image layout</a> <p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/WwyLEE?editors=1100">[on CodePen]</a></p></li>
+    <li><a href="examples/image-gallery-floats-1.html"><img src="assets/images/gallery2.jpg" alt=""> Image Gallery Old School Floats, Broken</a> <p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/JXZzdr?editors=1100">[on CodePen]</a></p></li>
+    <li><a href="examples/image-gallery-floats-2.html"><img src="assets/images/gallery3.jpg" alt=""> Image Gallery Old School Floats, Squares</a> <p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/KzeEaV?editors=1100">[on CodePen]</a></p></li>
+    <li><a href="examples/image-gallery-flexbox-1.html"><img src="assets/images/gallery4.jpg" alt=""> Image Gallery in Flexbox Rows (only works in Firefox, img {width: 100%})</a> <p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/YqvgZO?editors=1100">[on CodePen]</a></p></li>
+    <li><a href="examples/image-gallery-flexbox-2.html"><img src="assets/images/gallery5.jpg" alt=""> Image Gallery in Flexbox Columns</a> <p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/XdBxav?editors=1100">[on CodePen]</a></p></li>
+    <li><a href="examples/image-gallery-multicolumn.html"><img src="assets/images/gallery8.jpg" alt=""> Image Gallery in Multicolumn Layout</a> <p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/BKPGov?editors=1100">[on CodePen]</a></p></li>
+    <li><a href="examples/image-gallery-grid-1.html"><img src="assets/images/gallery6.jpg" alt=""> Image Gallery in CSS Grid: 7-column Symmetrical</a> <p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/grjQwB?editors=1100">[on CodePen]</a></p></li>
+
+  </ul>
+</section>
+
+<!-- <p class="codepenlink"><a href="">[on CodePen]</a></p> -->
+
+<section id="jazzposter"><a name="jazzposter"></a>
+  <h3>Jazz Poster Grid Demo</h3>
+  <p class="note">These CSS Grid demos require a browser that supports CSS Grid.</p>
+  <ul>
+    <li><a href="reference/Jazz-at-Lincoln-Center-poster.pdf"><img src="assets/images/jazzposter-original.jpg" alt="">Original Poster</a></li>
+    <li><a href="examples/grid-content-1.html"><img src="assets/images/jazzposter1.jpg" alt="">Jazz at Lincoln Center Poster</a><p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/PNaoqv?editors=1100">[on CodePen]</a></p></li>
+    <li><a href="examples/grid-content-1-rotated.html"><img src="assets/images/jazzposter-rotated.jpg" alt=""> Rotated boxes</a></li>    
+  </ul>
+</section>
+
+<section id="spices"><a name="spices"></a>
+  <h3>Spices</h3>
+  <p class="note">These CSS Grid demos require a browser that supports CSS Grid.</p>
+  <ul>
+    <li><a href="examples/spices-1.html"><img src="assets/images/spices-1.jpg" alt=""> Spice Layout 1</a></li>
+    <li><a href="examples/spices-2.html"><img src="assets/images/spices-2.jpg" alt=""> Spice Layout 2</a></li>
+    <li><a href="examples/spices-3.html"><img src="assets/images/spices-3.jpg" alt=""> Spice Layout 3</a></li>
+  </ul>
+</section>
+
+<section id="typical"><a name="typical"></a>
+  <h3>Typical Layouts We Do</h3>
+  <p class="note">This demo mixes Flexbox and Grid, requiring a browser that supports CSS Grid.</p>
+  <ul>
+    <li><a href="examples/unique.html"><img src="assets/images/unique.png" alt=""> We're Unique</a></li>
+  </ul>
+</section>
+
+<section id="mondrian"><a name="mondrian"></a>
+  <h3>CSS Mondrian Grid</h3>
+  <p class="note">These CSS Grid demos require a browser that supports CSS Grid. They work best in <a href="https://nightly.mozilla.org/">Firefox Nightly</a>.</p>
+  <ul>
+    <li><a href="reference/mondrian-original.jpg"><img src="assets/images/mondrian-original.jpg" alt="">Original Artwork</a></li>
+    <li><a href="examples/mondrian-0.html"><img src="assets/images/mondrian-0.jpg" alt="">Deconstructed Mondrian</a></li>
+    <li><a href="examples/mondrian-1.html"><img src="assets/images/mondrian-1.jpg" alt="">Fixed-width Mondrian</a></li>
+    <li><a href="examples/mondrian-2.html"><img src="assets/images/mondrian-2.jpg" alt="">Responsive Mondrian</a></li>    
+    <li><a href="examples/mondrian-3.html"><img src="assets/images/mondrian-2.jpg" alt="">Responsive Mondrian — maintaining aspect ratio</a></li>    
+    <li><a href="examples/mondrian-4.html"><img src="assets/images/mondrian-4.jpg" alt="">Diamond Mondrian</a></li>    
+  </ul>
+</section>
+
+<section id="spacejam"><a name="spacejam"></a>
+  <h3>Space Jam</h3>
+  <p class="note">This CSS Grid demo requires a browser that supports CSS Grid.</p>
+  <ul>
+    <li><a href="examples/spacejam.html"><img src="assets/images/spacejam.jpg" alt=""> Space Jam</a></li>
+  </ul>
+</section>
+
+<section id="futurismo"><a name="futurismo"></a>
+  <h3>Futurismo Posters</h3>
+  <p class="note">These CSS Grid demo requires a browser that supports CSS Grid.</p>
+  <ul>
+    <li><a href="reference/trentino_1932.png"><img src="assets/images/trentino_1932.jpg" alt="">Futurismo Trentino Poster (1932)</a> <a href="https://fontsinuse.com/uses/10169/futurismo-trentino-exhibition-poster">(about)</a></li>    
+    <li><a href="examples/futurismo-1.html"><img src="assets/images/trentino_1932.jpg" alt=""> Futurismo Trentino</a></li>    
+    <li><a href="reference/neworder-album.jpg"><img src="assets/images/neworder-album.gif" alt=""> New Order Movement Album (1981)</a> <a href="https://fontsinuse.com/uses/10168/movement-by-new-order">(about)</a></li>    
+    <li><a href="examples/futurismo-2.html"><img src="assets/images/neworder-album.jpg" alt=""> New Order Movement</a></li>
+  </ul>
+</section>
+
+<section id="writing-modes"><a name="writing-modes"></a>
+  <h3>Writing Modes</h3>
+  <p class="note"></p>
+  <ul>
+    <li><a href="examples/writingmode-headline.html"><img src="assets/images/writingmode-headline.png" alt=""> Vertical Headline</a><p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/KNJgmP?editors=1100">[on CodePen]</a></p></li>    
+    <li><a href="examples/writingmode-article.html"><img src="assets/images/writingmode-article.png" alt=""> Article w/ Vertical Subheadlines</a><p class="codepenlink"><a href="http://codepen.io/jensimmons/pen/ZBmwLo?editors=1100">[on CodePen]</a></p></li>
+    <li><a href="workshop/writingmode-1A.html"><img src="assets/images/writingmode-1a.png" alt=""> Writing Mode 1</a></li>
+    <li><a href="workshop/writingmode-2C.html"><img src="assets/images/writingmode-2c.png" alt=""> Writing Mode 2C</a></li>
+    <li><a href="workshop/writingmode-3A.html"><img src="assets/images/writingmode-3a.png" alt=""> Writing Mode 3A</a></li>
+    <li><a href="workshop/writingmode-4A.html"><img src="assets/images/writingmode-4a.png" alt=""> Writing Mode 4A</a></li>
+    <li><a href="workshop/writingmode-4B.html"><img src="assets/images/writingmode-4b.png" alt=""> Writing Mode 4B</a></li>
+    <li><a href="workshop/writingmode-4C.html"><img src="assets/images/writingmode-4c.png" alt=""> Writing Mode 4C</a></li>
+    <li><a href="workshop/writingmode-4D.html"><img src="assets/images/writingmode-4d.png" alt=""> Writing Mode 4D</a></li>
+  </ul>
+</section>
+
+<section id="rotation"><a name="rotation"></a>
+  <h3>Rotation</h3>
+  <p class="note">Rotation is a <a href="http://caniuse.com/#feat=transforms2d">2D Transformation, which doesn't work in IE8 & earlier, or in Opera Mini.</a> Oh well. Things can be straight in those browsers and rotated everyplace else.</p>
+  <ul>
+    <li><a href="examples/rotation1.html"><img src="assets/images/rotation1.jpg" alt=""> Rotation 1</a></li>
+    <li><a href="examples/rotation2.html"><img src="assets/images/rotation2.jpg" alt=""> Rotation 2</a></li>
+    <li><a href="examples/rotation3.html"><img src="assets/images/rotation3.jpg" alt=""> Rotation 3</a></li>
+    <li><a href="examples/rotation4.html"><img src="assets/images/rotation4.jpg" alt=""> Rotation 4</a></li>
+  </ul>
+</section>
+
+<section id="hexagon"><a name="hexagon"></a>
+  <h3>Hexagon Layouts</h3>
+  <p class="note">I'm trying to figure out how to best do this layout. I want hexagons to nest, to be fluid, and I want them to automatically align themselves into different number of columns based on how much space there is. Sometimes 1 column, 2 col, 3col, 4col, 5col, etc. Hexagon 4 does this — alters the number of columns based on how much space there is. But I'm not sure how to get the hexagons to nuzzle up next to each other in Hexagon 4. I'm thinking named lines might help, which is why I used them in Hexagon 5, but that would only help if we could tell auto-placement to figure out what the next named line is in the available space. Something like "Hey go to the next line with this name" instead of "go to named line number 2". Of course, this could be done with a lot of long-hand specifying and a bunch of media queries. Basically Hexagon 2 or 3 with lots more code for multiple breakpoints. Or maybe there's a completely new way to go at this. Hmmmm.</p>
+    <p class="note">The CSS Grid versions require a browser that supports CSS Grid. You also need a browser that supports Clip Path. If you use <a href="https://nightly.mozilla.org/">Firefox Nightly</a>, flip the flag to turn on clip-path.</p>
+  <ul>
+    <li><a href="examples/hexagon-1.html"><img src="assets/images/hexagon1.jpg" alt=""> Hexagon 1: Clip-path + Floats + Negative Margins</a><p class="codepenlink"><a href="https://codepen.io/jensimmons/pen/ZbPrQJ?editors=1100">[on CodePen]</a></p></li>
+    <li><a href="examples/hexagon-2.html"><img src="assets/images/hexagon2.jpg" alt=""> Hexagon 2: Clip-path + Grid, fully-resizes</a><p class="codepenlink"><a href="https://codepen.io/jensimmons/pen/QNRMxm?editors=1100">[on CodePen]</a></p></li>
+    <li><a href="examples/hexagon-3.html"><img src="assets/images/hexagon3.jpg" alt=""> Hexagon 3: Clip-path + Grid, fully-resizes. Similar to #2, but using negative margins & nth-child for more efficient code.</a><p class="codepenlink"><a href="https://codepen.io/jensimmons/pen/BKemEK?editors=1100">[on CodePen]</a></p></li>
+    <li><a href="examples/hexagon-4.html"><img src="assets/images/hexagon4.jpg" alt=""> Hexagon 4: Clip-path + Grid. Adjusting by Auto Placement.</a><p class="codepenlink"><a href="https://codepen.io/jensimmons/pen/KzLZzy?editors=1100">[on CodePen]</a></p></li>
+    <li><a href="examples/hexagon-5.html"><img src="assets/images/hexagon5.jpg" alt=""> Hexagon 5: Clip-path + Grid. Using named lines. Fixed-width.</a><p class="codepenlink"><a href="https://codepen.io/jensimmons/pen/vGwpOY?editors=1100">[on CodePen]</a></p></li>    
+    <li><a href="examples/hexagon-6.html"><img src="assets/images/tba.gif" alt=""> Hexagon 6: ???</a><p class="codepenlink"><a href="https://codepen.io/jensimmons/pen/KzLZNZ?editors=1100">[on CodePen]</a></p></li>
+  </ul>
+</section>
+
+<section id="regions1"><a name="regions1"></a>
+  <h3>A Study of Columns and the Need for Regions, part 1</h3>
+  <p class="note">These demos (D–J) only work in <a href="https://developer.apple.com/safari/technology-preview/">Safari Technical Preview</a>.</p> 
+  <ul>
+    <li><a href="examples/regions-1a.html"><img src="assets/images/region1A.jpg" alt=""> A: Fluid text, a la 1994</a></li>
+    <li><a href="examples/regions-1b.html"><img src="assets/images/region1B.jpg" alt=""> B: Responsive text, a la 2011</a></li>
+    <li><a href="examples/regions-1c.html"><img src="assets/images/region1C.jpg" alt=""> C: Multicolumn</a></li>
+    <li><a href="examples/regions-1d.html"><img src="assets/images/region1D.jpg" alt=""> D: Regions + Multicolumn — almost, but not</a></li>
+    <li><a href="examples/regions-1e.html"><img src="assets/images/region1E.jpg" alt=""> E: Regions + Multicolumn — what actually happens</a></li>
+    <li><a href="examples/regions-1f.html"><img src="assets/images/region1F.jpg" alt=""> F: Since Multicolumn fails, let's do columns with Flexbox + Regions</a></li>
+    <li><a href="examples/regions-1g.html"><img src="assets/images/region1G.jpg" alt=""> G: Let's Switch to Real Content, in Flexbox + Regions</a></li>
+    <li><a href="examples/regions-1h.html"><img src="assets/images/region1H.jpg" alt=""> H: Grid + Regions, simple layout of real content</a></li>
+    <li><a href="examples/regions-1i.html"><img src="assets/images/region1I.jpg" alt=""> I: Grid + Regions, with a Cover Sheet header</a></li>
+    <li><a href="examples/regions-1j.html"><img src="assets/images/region1J.jpg" alt=""> J: Adding Scroll Snap to see what that feels like</a></li>
+  </ul>
+</section>
+
+<section id="flexvgrid"><a name="flexvgrid"></a>
+  <h3>A Study of Flexbox vs Grid (In Progress)</h3>
+  <p class="note">The CSS Grid demos require a browser that supports CSS Grid.</p>
+  <ul>
+    <li><a href="examples/study-1.html"><img src="assets/images/flexboxvgrid1.jpg" alt=""> Study 1: A Grid of Boxes, 4 Ways</a></li>
+    <li><a href="examples/study-2.html"><img src="assets/images/flexboxvgrid2.jpg" alt=""> Study 2: That Same Grid of Boxes in Just Grid</a></li>
+  </ul>
+</section>
+
+<section>
+  <h3>Under Construction Ideas</h3>
+  <ul>
+    <li><a href="examples/scroll-snap-points.html"><img src="assets/images/tba.gif" alt=""> Simple Vertical Scroll Snap</a></li>
+    <li><a href="examples/article-on-grid-1.html"><img src="assets/images/tba.gif" alt=""> TBA: Article Experiment 1</a></li>
+    <li><a href="examples/album-cover.html"><img src="assets/images/tba.gif" alt=""> Combining Shapes + Clip-path</a></li>
+  </ul>
+</section>
+
+
+<footer>
+<p>Want to <a href="https://github.com/jensimmons/labs.jensimmons.com">fork this on Github?</a> You can. All the code for these examples is in the /examples/ directory.</p>
+<p>All of these demos were made by <a href="http://jensimmons.com">Jen Simmons</a>.</p>
+</footer>
+
+</main>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-423984-20', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
