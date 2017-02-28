@@ -91,7 +91,8 @@ ul {
     /* autoprefixer: off */
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    grid-gap: 0 2rem; }
+    grid-gap: 0 2rem;
+    align-items: end; }
     .demo-list li {
       max-width: none; }
     @media (min-width: 680px) {
