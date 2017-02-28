@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5 {
 
 h4 {
   font-size: 1.25rem;
-  margin-bottom: 0.5em; }
+  margin: 0.6em 0 0.4em 0; }
 
 p {
   font-size: 0.6rem;
@@ -70,27 +70,53 @@ ul {
   padding: 0;
   list-style: none; }
 
-.demo-list li {
-  max-width: 200px;
-  margin: 2rem 0;
-  background: #ffed00; }
-
-.demo-list img {
-  border: 4px solid black;
-  background: white;
-  background: -webkit-linear-gradient(top, white 0px, white 16px, black 16px, black 32px);
-  background: linear-gradient(to bottom, white 0px, white 16px, black 16px, black 32px);
-  padding-top: 20px; }
-
-.demo-list a {
-  border-bottom: none;
-  color: black; }
+.demo-list {
+  margin-top: 2rem; }
+  .demo-list li {
+    max-width: 200px;
+    margin: 1rem 0;
+    background: white; }
+  .demo-list img {
+    border: 4px solid black;
+    background: white;
+    background: -webkit-linear-gradient(top, white 0px, white 16px, black 16px, black 32px);
+    background: linear-gradient(to bottom, white 0px, white 16px, black 16px, black 32px);
+    padding-top: 20px; }
+  .demo-list a {
+    border-bottom: none;
+    color: black; }
 
 @supports ((display: -ms-grid) or (display: grid)) {
   .demo-list {
     /* autoprefixer: off */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    grid-gap: 2rem; }
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-gap: 0 2rem; }
     .demo-list li {
-      max-width: none; } }
+      max-width: none; }
+    @media (min-width: 680px) {
+      .demo-list li {
+        margin: 0; }
+      .demo-list li:nth-child(1) {
+        -ms-grid-row: 1;
+            grid-row: 1;
+        -ms-grid-column: 1;
+            grid-column: 1; }
+      .demo-list li:nth-child(2) {
+        -ms-grid-row: 2;
+            grid-row: 2;
+        -ms-grid-column: 2;
+            grid-column: 2; }
+      .demo-list li:nth-child(3) {
+        -ms-grid-row: 3;
+            grid-row: 3;
+        -ms-grid-column: 3;
+            grid-column: 3; }
+      .demo-list li:nth-child(4) {
+        -ms-grid-row: 4;
+            grid-row: 4;
+        -ms-grid-column: 2;
+            grid-column: 2; }
+      .demo-list li:nth-child(5) {
+        -ms-grid-row: 4;
+            grid-row: 4; } } }

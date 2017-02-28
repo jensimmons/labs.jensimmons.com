@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5 {
 }
 h4 {
   font-size: 1.25rem;
-  margin-bottom: 0.5em;
+  margin: 0.6em 0 0.4em 0;
 }
 p {
 //  font-family: $body-font;
@@ -67,10 +67,11 @@ ul {
   list-style: none;
 }
 .demo-list {
+  margin-top: 2rem;
   li {
     max-width: 200px;
-    margin: 2rem 0;
-    background: $mozilla-yellow;
+    margin: 1rem 0;
+    background: white;
   }
   img {
     border: 4px solid black;
@@ -86,11 +87,36 @@ ul {
 @supports (display: grid) {
   .demo-list { /* autoprefixer: off */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-gap: 0 2rem;
     li {
       max-width: none;
     }
+    @media (min-width: 680px) {
+      li {
+        margin: 0;
+      }
+      li:nth-child(1) {
+        grid-row: 1;
+        grid-column: 1;
+      }
+      li:nth-child(2) {
+        grid-row: 2;
+        grid-column: 2;
+      }
+      li:nth-child(3) {
+        grid-row: 3;
+        grid-column: 3;
+      }
+      li:nth-child(4) {
+        grid-row: 4;
+        grid-column: 2;
+      }
+      li:nth-child(5) {
+        grid-row: 4;
+      }
+    }
+
   }
   
 }
