@@ -41,7 +41,7 @@ img {
 body {
   font-family: "print_char_21medium", Courier, monospace;
   color: black;
-  background: #d7ffff; }
+  background: #ccffff; }
 
 main {
   width: 80%;
@@ -73,7 +73,7 @@ ul {
 .demo-list li {
   max-width: 200px;
   margin: 2rem 0;
-  background: yellow; }
+  background: #ffed00; }
 
 .demo-list img {
   border: 4px solid black;

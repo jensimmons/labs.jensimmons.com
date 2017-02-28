@@ -20,10 +20,22 @@ $alt3-font: Courier, monospace;
 
 $text-color: black;
 
+//Mozilla Brand Colors.
+$mozilla-blue: #82d1f5; // As of Feb 2017, this color is named "Cyan" in the Mozilla branding guidelines. But it's NOT cyan. So I renamed it.
+$mozilla-coral: #ff8c8e;
+$mozilla-yellow: #ffed00;
+$mozilla-lilac: #b0b2e9;
+$mozilla-orange: #faba00;
+$mozilla-lime: #b6d806;
+$mozilla-neon-blue: #0ff; // This is actually cyan. Which makes Mozilla's names confusing.
+$mozilla-neon-blue-light: lighten($mozilla-neon-blue, 40%); // I made this up
+$mozilla-neon-pink: #fa8cff;
+$mozilla-neon-green: #abff10;
+
 body {
   font-family: $base-font;
   color: $text-color;
-  background: #d7ffff;
+  background: $mozilla-neon-blue-light;
 }
 main {
   width: 80%;
@@ -58,7 +70,7 @@ ul {
   li {
     max-width: 200px;
     margin: 2rem 0;
-    background: yellow;
+    background: $mozilla-yellow;
   }
   img {
     border: 4px solid black;
