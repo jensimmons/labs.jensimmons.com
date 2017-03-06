@@ -24,7 +24,7 @@ img {
 body {
   font-family: "print_char_21medium", Courier, monospace;
   color: black;
-  background: #aeffff;
+  background: #eff;
   margin: 0; }
 
 nav {
@@ -91,7 +91,6 @@ ul {
       width: -moz-min-content;
       width: min-content;
       text-align: right;
-      background: white;
       margin-left: 0;
       padding: 0 0.8rem 0 1.2rem;
       z-index: 2;
@@ -138,8 +137,32 @@ ul {
       .demo-list li:nth-child(6) {
         /* autoprefixer: off */
         grid-row: 4;
-        grid-column: 3; }
+        grid-column: 5; }
       .demo-list li:nth-child(7) {
         /* autoprefixer: off */
         grid-row: 5;
-        grid-column: 1; } } }
+        grid-column: 1; }
+      .demo-list li:nth-child(8) {
+        /* autoprefixer: off */
+        grid-row: 5;
+        grid-column: 3; }
+      .demo-list li:nth-child(9) {
+        /* autoprefixer: off */
+        grid-row: 6;
+        grid-column: 2; }
+      .demo-list li:nth-child(10) {
+        /* autoprefixer: off */
+        grid-row: 6;
+        grid-column: 4; }
+      .demo-list li:nth-child(11) {
+        /* autoprefixer: off */
+        grid-row: 7;
+        grid-column: 1; }
+      .demo-list li:nth-child(12) {
+        /* autoprefixer: off */
+        grid-row: 7;
+        grid-column: 3; }
+      .demo-list li:nth-child(12) {
+        /* autoprefixer: off */
+        grid-row: 7;
+        grid-column: 5; } } }

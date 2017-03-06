@@ -35,7 +35,7 @@ $mozilla-neon-green: #abff10;
 body {
   font-family: $base-font;
   color: $text-color;
-  background: #aeffff;
+  background: #eff;
   margin: 0;
 }
 nav {
@@ -110,7 +110,6 @@ ul {
          width: -moz-min-content;
              width: min-content;
       text-align: right;
-      background: white;
       margin-left: 0;
       padding: 0 0.8rem 0 1.2rem;
       z-index: 2;
@@ -162,11 +161,35 @@ ul {
       }
       li:nth-child(6) { /* autoprefixer: off */
         grid-row: 4;
-        grid-column: 3;
+        grid-column: 5;
       }
       li:nth-child(7) { /* autoprefixer: off */
         grid-row: 5;
         grid-column: 1;
+      }
+      li:nth-child(8) { /* autoprefixer: off */
+        grid-row: 5;
+        grid-column: 3;
+      }
+      li:nth-child(9) { /* autoprefixer: off */
+        grid-row: 6;
+        grid-column: 2;
+      }
+      li:nth-child(10) { /* autoprefixer: off */
+        grid-row: 6;
+        grid-column: 4;
+      }
+      li:nth-child(11) { /* autoprefixer: off */
+        grid-row: 7;
+        grid-column: 1;
+      }
+      li:nth-child(12) { /* autoprefixer: off */
+        grid-row: 7;
+        grid-column: 3;
+      }
+      li:nth-child(12) { /* autoprefixer: off */
+        grid-row: 7;
+        grid-column: 5;
       }
     }
   }
