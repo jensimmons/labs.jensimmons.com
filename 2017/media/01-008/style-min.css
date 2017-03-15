@@ -1,0 +1,244 @@
+/*
+Theme Name: mp_wp
+Theme URI: http://michaelpollan.com/
+Description: A custom theme for Wordpress for Michael Pollan designed by <a href="http://squonkstudios.com/">Flax Media</a> and built by <a href="http://squonkstudios.com/">Squonk Studios</a>.
+Version: 1.0
+Author: Matt Glaser and Emily Coven
+Author URI: http://squonkstudios.com/
+*/
+/* Main Typography */
+body {
+  font-family: georgia,'times new roman',times,serif;
+  font-size: 15px;
+  background-color: #ffffff;
+  color: #000000;
+  margin: 0; }
+
+img#printheader {
+  display: none; }
+
+p {
+  line-height: 1.5em;
+  margin-top: 0;
+  margin-bottom: 0.667em; }
+
+.copyright {
+  color: #666666;
+  font-family: verdana,helvetica,arial,sans-serif;
+  font-size: 0.7333em; }
+
+a:link, a:visited {
+  color: #2C7D61;
+  text-decoration: none; }
+
+a:hover, li.current_page_item > a, li.current_page_parent > a {
+  text-decoration: none;
+  color: #932a29; }
+
+#main p a:link, #main p a:visited {
+  text-decoration: underline; }
+
+#main p a:hover {
+  text-decoration: underline; }
+
+.byline {
+  color: #666666;
+  font-family: verdana,helvetica,arial,sans-serif;
+  font-size: 0.8em;
+  font-weight: normal;
+  margin: 0; }
+
+.morelink {
+  color: #666666;
+  font-family: verdana,helvetica,arial,sans-serif;
+  font-size: 0.8em;
+  font-weight: normal; }
+
+/* containers n' stuff */
+#container {
+  width: 920px;
+  margin: auto;
+  padding: 0 25px;
+  position: relative; }
+
+#header {
+  position: relative;
+  height: 193px;
+  clear: both;
+  display: block; }
+
+div#header-images {
+  width: 180px;
+  height: 125px;
+  background-image: url("/images/sprite_header_images.jpg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  /* was 1px */
+  right: 0;
+  background-position: 0 -125px; }
+
+div#header-promo {
+  width: 211px;
+  height: 118px;
+  position: absolute;
+  top: 5px;
+  left: 0; }
+
+div.fronthead {
+  height: 505px !important; }
+
+#nav, #menu-primary-nav {
+  list-style-type: none;
+  padding: 17px 0;
+  margin: 0;
+  font-family: verdana,helvetica,arial,sans-serif;
+  font-size: 0.8em;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: 20px; }
+
+body.page-template-tpl_home-php #nav {
+  /*	bottom: 60px;	*/ }
+
+#nav li, #menu-primary-nav li {
+  float: left;
+  margin: 0;
+  border-right: 1px solid #000;
+  height: 12px;
+  line-height: 12px; }
+
+#nav li a, #menu-primary-nav li a {
+  margin: 0 23px; }
+
+#nav li.page-item-531 a, #menu-primary-nav li#menu-item-2848 a {
+  margin-left: 0 !important; }
+
+#nav li.page-item-539 a, #menu-primary-nav li#menu-item-2855 a {
+  margin-right: 0 !important; }
+
+#nav li.page-item-539, #menu-primary-nav li#menu-item-2855 {
+  border-right: 0 !important; }
+
+#nav li ul, #menu-primary-nav li ul {
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+  position: absolute;
+  border-bottom: 1px solid #cfcfcf;
+  border-left: 1px solid #cfcfcf;
+  border-right: 1px solid #cfcfcf;
+  border-top: 3px solid #932a29;
+  background-image: url(/images/bg_widget.gif);
+  background-repeat: repeat-x;
+  top: 35px;
+  text-transform: none;
+  width: 190px;
+  z-index: 199;
+  display: none;
+  /* doesn't degrade nicely */ }
+
+#nav li ul li, #menu-primary-nav li ul li {
+  padding: 0;
+  margin: 0 0 10px 0;
+  float: none;
+  border: 0;
+  height: auto; }
+
+#nav li ul li a, #menu-primary-nav li ul li a {
+  padding: 0;
+  margin: 0; }
+
+#content {
+  width: 590px;
+  float: left;
+  display: block; }
+
+div#footer {
+  height: 75px;
+  background-image: url(/images/bg_footer.jpg);
+  background-repeat: repeat-x;
+  text-align: center;
+  color: #666666;
+  font-family: verdana,helvetica,arial,sans-serif;
+  font-size: 0.733em;
+  font-weight: normal; }
+
+div#bottomnav {
+  padding: 18px 0 12px 0; }
+
+div.post {
+  margin: 0 0 20px 0;
+  border-bottom: 1px solid #aeb0b3;
+  padding: 0 0 25px 0; }
+
+form#thesearch {
+  margin: 0 0 15px 0; }
+
+input#searchform {
+  border: 1px solid #cecece;
+  width: 270px;
+  color: #93958c;
+  font-size: 12px;
+  padding: 3px 2px; }
+
+/* global elements */
+img {
+  border: 0; }
+
+.clearfix {
+  display: block;
+  width: 100%;
+  clear: both;
+  height: 1px; }
+
+a.logo {
+  display: block;
+  width: 382px;
+  height: 27px;
+  background-image: url(/images/logo.png);
+  background-repeat: no-repeat;
+  position: relative;
+  margin: auto;
+  top: 82px; }
+
+div.homehouse {
+  display: block;
+  width: 271px;
+  height: 325px;
+  background-image: url(/images/homehouse.jpg);
+  background-repeat: no-repeat;
+  margin: 20px auto; }
+
+div.homehouse-promo {
+  display: block;
+  width: 546px;
+  height: 379px;
+  margin: 20px auto; }
+
+div.homeeat {
+  display: block;
+  width: 321px;
+  height: 379px;
+  background-image: url(/images/home-eat-food.jpg);
+  background-repeat: no-repeat;
+  margin: 20px auto; }
+
+img.single-header {
+  clear: both;
+  margin: 0 0 25px 0; }
+
+div.navigation {
+  clear: both;
+  margin: 20px 0;
+  text-align: center;
+  font-family: verdana,helvetica,arial,sans-serif;
+  font-size: 0.8em;
+  font-weight: normal; }
+
+div.subpage-item {
+  padding-bottom: 25px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #aeb0b3; }
