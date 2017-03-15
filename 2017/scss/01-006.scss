@@ -35,6 +35,8 @@ article {
     margin: 0;
     font-size: 3rem;
     text-align: center;
-    mix-blend-mode: screen;
+    mix-blend-mode: difference;
+    // see http://codepen.io/SaraSoueidan/pen/887433527fac4e926e84b613be483bfc?editors=1100
+    // and https://sarasoueidan.com/blog/compositing-and-blending-in-css/
   }
 }

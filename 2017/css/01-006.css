@@ -35,4 +35,4 @@ article {
     margin: 0;
     font-size: 3rem;
     text-align: center;
-    mix-blend-mode: screen; }
+    mix-blend-mode: difference; }
