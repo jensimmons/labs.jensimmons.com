@@ -161,7 +161,19 @@ ul {
         /* autoprefixer: off */
         grid-row: 7;
         grid-column: 3; }
-      .demo-list li:nth-child(12) {
+      .demo-list li:nth-child(13) {
         /* autoprefixer: off */
-        grid-row: 7;
+        grid-row: 8;
+        grid-column: 2; }
+      .demo-list li:nth-child(14) {
+        /* autoprefixer: off */
+        grid-row: 8;
+        grid-column: 4; }
+      .demo-list li:nth-child(15) {
+        /* autoprefixer: off */
+        grid-row: 9;
+        grid-column: 5; }
+      .demo-list li:nth-child(16) {
+        /* autoprefixer: off */
+        grid-row: 10;
         grid-column: 5; } } }

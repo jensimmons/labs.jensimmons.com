@@ -187,10 +187,25 @@ ul {
         grid-row: 7;
         grid-column: 3;
       }
-      li:nth-child(12) { /* autoprefixer: off */
-        grid-row: 7;
+      li:nth-child(13) { /* autoprefixer: off */
+        grid-row: 8;
+        grid-column: 2;
+      }
+      li:nth-child(14) { /* autoprefixer: off */
+        grid-row: 8;
+        grid-column: 4;
+      }
+
+      li:nth-child(15) { /* autoprefixer: off */
+        grid-row: 9;
         grid-column: 5;
       }
+
+      li:nth-child(16) { /* autoprefixer: off */
+        grid-row: 10;
+        grid-column: 5;
+      }
+
     }
   }
   
