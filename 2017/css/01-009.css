@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 80%;
+  background: #ccc; }
+
+img {
+  width: 100%; }
+
+article {
+  padding: 20px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  background: #fff; }
+
+.A main {
+  width: 960px;
+  margin: 2rem auto; }
+
+.A article {
+  width: 250px;
+  margin-bottom: 20px; }
+
+.B,
+.C {
+  /* Here, I'm coding like it's 2009. Not a good idea for 2015. Don't do this.*/ }
+  .B main,
+  .C main {
+    width: 960px;
+    margin: 2rem auto; }
+  .B article,
+  .C article {
+    float: left;
+    width: 250px;
+    margin-right: 20px;
+    margin-bottom: 20px; }
+
+.D {
+  margin: 4em; }
+  .D h1 {
+    margin-top: 0;
+    margin-left: 0.75rem; }
+  .D main {
+    -webkit-columns: 250px;
+       -moz-columns: 250px;
+            columns: 250px;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px; }
+  .D article {
+    -webkit-column-break-inside: avoid;
+       page-break-inside: avoid;
+            break-inside: avoid-column;
+    margin-bottom: 1rem; }
+
+.E {
+  margin: 3em; }
+  .E h1 {
+    margin-left: 0.75rem; }
+  .E main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .E article {
+    margin-right: 1rem; }
+
+.F,
+.G,
+.H,
+.I {
+  margin: 4em; }
+  .F h1,
+  .G h1,
+  .H h1,
+  .I h1 {
+    margin-top: 0;
+    margin-left: 0.75rem; }
+  .F main,
+  .G main,
+  .H main,
+  .I main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(220px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 1rem; }
+
+.G main {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start; }
+
+.H main {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end; }
+
+.I main {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.J,
+.K {
+  margin: 4em; }
+  .J h1,
+  .K h1 {
+    margin-top: 0;
+    margin-left: 0.75rem; }
+  .J main,
+  .K main {
+    /* autoprefixer: off */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-gap: 1rem; }
+  .J article:nth-child(1),
+  .J article:nth-child(6),
+  .J article:nth-child(10),
+  .K article:nth-child(1),
+  .K article:nth-child(6),
+  .K article:nth-child(10) {
+    /* autoprefixer: off */
+    grid-row: span 2;
+    grid-column: span 2; }
+
+.K main {
+  /* autoprefixer: off */
+  grid-auto-flow: dense; }
+
+.L {
+  margin: 4em; }
+  .L h1 {
+    margin-top: 0;
+    margin-left: 0.75rem; }
+  .L main {
+    /* autoprefixer: off */
+    display: grid;
+    grid-template-columns: repeat(8, minmax(110px, 1fr));
+    grid-auto-rows: 1fr;
+    grid-gap: 1rem;
+    align-items: start; }
+  .L article:nth-child(1) {
+    /* autoprefixer: off */
+    grid-row: 2 / span 3;
+    grid-column: 2 / span 2; }
+  .L article:nth-child(2) {
+    /* autoprefixer: off */
+    grid-row: 1 / span 3;
+    grid-column: 5 / span 2; }
+  .L article:nth-child(3) {
+    /* autoprefixer: off */
+    grid-row: 3 / span 3;
+    grid-column: 4 / span 2; }
+  .L article:nth-child(4) {
+    /* autoprefixer: off */
+    grid-row: 4 / span 3;
+    grid-column: 6 / span 2; }
+  .L article:nth-child(5) {
+    /* autoprefixer: off */
+    grid-row: 5 / span 3;
+    grid-column: 1 / span 2; }
+  .L article:nth-child(6) {
+    /* autoprefixer: off */
+    grid-row: 6 / span 3;
+    grid-column: 3 / span 2; }
+  .L article:nth-child(7) {
+    /* autoprefixer: off */
+    grid-row: 7 / span 3;
+    grid-column: 6 / span 2; }
+  .L article:nth-child(8) {
+    /* autoprefixer: off */
+    grid-row: 8 / span 3;
+    grid-column: 1 / span 2; }
+  .L article:nth-child(9) {
+    /* autoprefixer: off */
+    grid-row: 9 / span 3;
+    grid-column: 4 / span 2; }
+  .L article:nth-child(10) {
+    /* autoprefixer: off */
+    grid-row: 11 / span 3;
+    grid-column: 2 / span 2; }
+  .L article:nth-child(11) {
+    /* autoprefixer: off */
+    grid-row: 10 / span 3;
+    grid-column: 6 / span 2; }
+  .L article:nth-child(12) {
+    /* autoprefixer: off */
+    grid-row: 12 / span 3;
+    grid-column: 4 / span 2; }
