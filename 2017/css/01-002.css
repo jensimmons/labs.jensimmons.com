@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: Avenir, Helvetica;
+  font-size: 100%;
+}
+
 body {
   margin: 0;
 }
@@ -13,7 +18,6 @@ main {
 
 article {
   /* autoprefixer: off */
-  font-family: Avenir, Helvetica;
   font-size: 76%;
   line-height: 1.2;
   background: #f0efeb;

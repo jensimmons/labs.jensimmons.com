@@ -1,6 +1,5 @@
-body{
-  font-family: Avenir, Heveltica, sans-serif;
-}  
+* {box-sizing: border-box;}
+html { font-family: Avenir, Helvetica; font-size: 100%;}  
 ul {
   display: grid;
   grid-template-columns: repeat(5, 10vw);

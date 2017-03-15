@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box; }
 
+html {
+  font-family: Helvetica;
+  font-size: 100%; }
+
 .fixed ul {
   display: grid;
   grid-template-columns: repeat(4, 100px);
