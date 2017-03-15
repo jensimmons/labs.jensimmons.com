@@ -1,8 +1,9 @@
-*{box-sizing: border-box;}
+* { box-sizing: border-box; }
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 80%;
   background: #ccc;
+  line-height: 1.2;
 }
 img {
   width: 100%;
@@ -13,6 +14,53 @@ article {
   border-radius: 5px;
   background: #fff;
 }
+
+.index {
+  background: white;
+  margin: 3rem;
+  ul {
+    width: 960px;
+    margin: 2rem auto;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  li {
+    float: left;
+    width: 250px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 0.85rem;
+    font-weight: normal;
+    margin: 0.5rem 0 0;
+  }
+  img {
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    border: 1px solid #aaa;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+@supports (display: grid) {
+  .index {
+    ul { /* autoprefixer: off */
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      grid-gap: 2rem;
+      width: auto;
+    }
+    li {
+      width: auto;
+      margin: 0;
+    }
+  }
+}
+
+// Flow -------------------------------------------
+
 .A {
   main {
     width: 960px;
