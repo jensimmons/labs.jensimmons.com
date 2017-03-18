@@ -1,17 +1,86 @@
-#container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  height: 100vh; }
+body {
+  font-family: georgia, 'times new roman', times, serif;
+  font-size: 100%;
+  background-color: #fff;
+  color: #43453A;
+  margin: 0;
+  text-align: center; }
 
-#header {
-  margin-top: 0; }
+header {
+  margin: 6rem auto; }
+
+a {
+  display: block;
+  color: #2C7D61;
+  text-decoration: none; }
+
+a:hover {
+  color: #932a29; }
+
+h1 {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 2.4rem;
+  letter-spacing: 3px;
+  color: #575A4A;
+  line-height: 1em; }
+
+nav ul {
+  list-style-type: none;
+  font-family: verdana, helvetica, arial, sans-serif;
+  font-size: 0.72em;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 0;
+  margin: 0.3rem 0;
+  display: inline-block;
+  text-align: center; }
+
+nav li {
+  float: left;
+  border-right: 1px solid #000;
+  padding: 0 1.25rem;
+  line-height: 0.75rem;
+  height: 0.75rem;
+  margin: 0.2rem 0; }
+
+nav li:last-child {
+  border-right: none; }
+
+.A header {
+  width: 920px; }
+
+.B {
+  margin: 0 1.5rem; }
+
+@supports ((display: -ms-grid) or (display: grid)) {
+  .C header {
+    /* autoprefixer: off */
+    margin: 0 1rem;
+    display: grid;
+    grid-template-rows: auto min-content 1fr 10vh;
+    justify-items: center; }
+  @media (max-height: 980px) {
+    .C {
+      height: 100vh; } }
+  .C img {
+    /* autoprefixer: off */
+    align-self: end; }
+  .C h1 {
+    /* autoprefixer: off */
+    align-self: center; }
+  .C nav {
+    /* autoprefixer: off */
+    align-self: start; }
+  .C ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .C li {
+    float: none; } }
