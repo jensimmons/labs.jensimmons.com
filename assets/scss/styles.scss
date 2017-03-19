@@ -86,17 +86,11 @@ ul {
     display: block;
   }
   p {
-    margin: 0.8rem 0;
+    margin: 0;
   }
   p a {
     background: $mozilla-yellow;  
     display: inline;  
-  }
-  .codepenlink {
-//    text-transform: uppercase;
-  }
-  .requirements {
-    margin-bottom: 0.33rem;
   }
 }
 @supports (display: grid) {
@@ -132,80 +126,32 @@ ul {
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     grid-gap: 1rem;
     align-items: end;
+    span:nth-child(1) { /* autoprefixer: off */
+      grid-column: -2;
+      grid-row: 1;
+    }
+    span:nth-child(2) { /* autoprefixer: off */
+      grid-column: 1;
+      grid-row: 2;
+    }
+    span:nth-child(3) { /* autoprefixer: off */
+      grid-column: -3;
+      grid-row: 3;
+    }
+    span:nth-child(4) { /* autoprefixer: off */
+      grid-column: -2;
+      grid-row: 3;
+    }
     li {
       max-width: none;
+    }
+    a + p {
+      margin-top: 0.75rem;
     }
     @media (min-width: 680px) {
       li {
         margin: 0;
       }
-      li:nth-child(1) { /* autoprefixer: off */
-        grid-row: 1;
-        grid-column: 1;
-      }
-      li:nth-child(2) { /* autoprefixer: off */
-        grid-row: 2 / span 3;
-        grid-column: 2;
-      }
-      li:nth-child(3) { /* autoprefixer: off */
-        grid-row: 2;
-        grid-column: 4;
-      }
-      li:nth-child(4) { /* autoprefixer: off */
-        grid-row: 3;
-        grid-column: 3;
-      }
-      li:nth-child(5) { /* autoprefixer: off */
-        grid-row: 4;
-        grid-column: 1;
-      }
-      li:nth-child(6) { /* autoprefixer: off */
-        grid-row: 4;
-        grid-column: 5;
-      }
-      li:nth-child(7) { /* autoprefixer: off */
-        grid-row: 5;
-        grid-column: 1;
-      }
-      li:nth-child(8) { /* autoprefixer: off */
-        grid-row: 5;
-        grid-column: 3;
-      }
-      li:nth-child(9) { /* autoprefixer: off */
-        grid-row: 6;
-        grid-column: 2;
-      }
-      li:nth-child(10) { /* autoprefixer: off */
-        grid-row: 6;
-        grid-column: 4;
-      }
-      li:nth-child(11) { /* autoprefixer: off */
-        grid-row: 7;
-        grid-column: 1;
-      }
-      li:nth-child(12) { /* autoprefixer: off */
-        grid-row: 7;
-        grid-column: 3;
-      }
-      li:nth-child(13) { /* autoprefixer: off */
-        grid-row: 8;
-        grid-column: 2;
-      }
-      li:nth-child(14) { /* autoprefixer: off */
-        grid-row: 8;
-        grid-column: 4;
-      }
-
-      li:nth-child(15) { /* autoprefixer: off */
-        grid-row: 9;
-        grid-column: 5;
-      }
-
-      li:nth-child(16) { /* autoprefixer: off */
-        grid-row: 10;
-        grid-column: 5;
-      }
-
     }
   }
   
