@@ -117,10 +117,9 @@ article {
   .G main,
   .H main,
   .I main {
-    display: -ms-grid;
+    /* autoprefixer: off */
     display: grid;
-    -ms-grid-columns: (minmax(220px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     grid-gap: 1rem; }
 
 .G main {

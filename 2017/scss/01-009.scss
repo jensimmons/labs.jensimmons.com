@@ -131,7 +131,7 @@ article {
     margin-top: 0;
     margin-left: 0.75rem;
   }
-  main {
+  main { /* autoprefixer: off */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     grid-gap: 1rem;
