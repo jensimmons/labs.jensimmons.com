@@ -17,14 +17,18 @@ html {
 body {
   margin: 0; }
 
-header h1 {
+header {
   padding: 1rem; }
   @media (min-width: 600px) {
-    header h1 {
+    header {
       padding: 2rem; } }
   @media (min-width: 900px) {
-    header h1 {
+    header {
       padding: 3rem; } }
+  header h1 {
+    margin-bottom: 0.25rem; }
+  header p {
+    margin: 0; }
 
 section {
   height: 100vh; }

@@ -33,8 +33,12 @@ body {
 }
 
 header {
+  @include section-padding;
   h1 {
-    @include section-padding;
+    margin-bottom: 0.25rem;
+  }
+  p {
+    margin: 0;
   }
 }
 section {
