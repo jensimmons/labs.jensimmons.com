@@ -20,10 +20,8 @@ article {
   background: white;
   margin: 3rem; }
   .index ul {
-    width: 960px;
     margin: 2rem auto;
     padding: 0;
-    margin: 0;
     list-style: none; }
   .index li {
     float: left;
