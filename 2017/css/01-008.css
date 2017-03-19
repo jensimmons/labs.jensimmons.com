@@ -48,6 +48,9 @@ nav li {
 nav li:last-child {
   border-right: none; }
 
+.intro {
+  margin: 3rem; }
+
 .A header {
   width: 920px; }
 
@@ -60,7 +63,8 @@ nav li:last-child {
     margin: 0 1rem;
     display: grid;
     grid-template-rows: auto min-content 1fr 10vh;
-    justify-items: center; }
+    justify-items: center;
+    min-height: 100vh; }
   @media (max-height: 980px) {
     .C {
       height: 100vh; } }
@@ -78,9 +82,6 @@ nav li:last-child {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+        flex-wrap: wrap; }
   .C li {
     float: none; } }

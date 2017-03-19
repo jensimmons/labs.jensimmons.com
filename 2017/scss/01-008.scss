@@ -50,7 +50,9 @@ nav {
     border-right: none;
   }
 }
-
+.intro {
+  margin: 3rem;
+}
 .A {
   header {
     width: 920px;
@@ -69,7 +71,7 @@ nav {
       display: grid;
       grid-template-rows: auto min-content 1fr 10vh;
       justify-items: center;
-//      min-height: 100vh;
+      min-height: 100vh;
     }
     @media (max-height: 980px) {
   //    min-height: auto;
@@ -87,7 +89,6 @@ nav {
     ul {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
     }
     li {
       float: none;
