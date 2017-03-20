@@ -54,6 +54,7 @@ h1 {
   text-align: center;
   padding: 5rem 1.0rem 4rem;
   line-height: 1.2;
+  max-width: 300px;
 }
 h4 {
   font-size: 1rem;
@@ -61,7 +62,7 @@ h4 {
 }
 nav {
   padding: 1.6rem 2rem 1.5rem;
-  clip-path: polygon(0% 0%, 100% 14%, 100% 100%, 6% 74%);
+  clip-path: polygon(0% 0%, 100% 14%, 100% 100%, 2rem 75%);
   background: #d6ff0a;
   margin: 2rem 0;
   margin-right: -1rem;
@@ -112,7 +113,7 @@ ul {
 header {  
   margin: 0 1rem;
 }
-@media (min-width: 600px) {
+@media (min-width: 880px) {
   header {  
     width: 50%;
     float: left;
@@ -150,40 +151,42 @@ header {
       width: 50%;
     }
   }
-  .demo-list { /* autoprefixer: off */
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    grid-gap: 2rem;
-    align-items: end;
-    span:nth-child(1) { /* autoprefixer: off */
-      grid-column: -2;
-      grid-row: 1;
-    }
-    span:nth-child(2) { /* autoprefixer: off */
-      grid-column: 1;
-      grid-row: 2;
-    }
-    span:nth-child(3) { /* autoprefixer: off */
-      grid-column: -3;
-      grid-row: 3;
-    }
-    span:nth-child(4) { /* autoprefixer: off */
-      grid-column: -2;
-      grid-row: 3;
-    }
-    span:nth-child(5) { /* autoprefixer: off */
-      grid-column: 1;
-      grid-row: 4;
-    }
-    span:nth-child(6) { /* autoprefixer: off */
-      grid-column: -2;
-      grid-row: 4;
-    }
-    li {
-      max-width: none;
-    }
-    a + p {
-      margin-top: 0.75rem;
-    }
-  } 
+  @media (min-width: 440px) {
+    .demo-list { /* autoprefixer: off */
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      grid-gap: 2rem;
+      align-items: end;
+      span:nth-child(1) { /* autoprefixer: off */
+        grid-column: -2;
+        grid-row: 1;
+      }
+      span:nth-child(2) { /* autoprefixer: off */
+        grid-column: 1;
+        grid-row: 2;
+      }
+      span:nth-child(3) { /* autoprefixer: off */
+        grid-column: -3;
+        grid-row: 3;
+      }
+      span:nth-child(4) { /* autoprefixer: off */
+        grid-column: -2;
+        grid-row: 3;
+      }
+      span:nth-child(5) { /* autoprefixer: off */
+        grid-column: 1;
+        grid-row: 4;
+      }
+      span:nth-child(6) { /* autoprefixer: off */
+        grid-column: -2;
+        grid-row: 4;
+      }
+      li {
+        max-width: none;
+      }
+      a + p {
+        margin-top: 0.75rem;
+      }
+    } 
+  }
 }
