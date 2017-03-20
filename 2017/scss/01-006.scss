@@ -2,6 +2,7 @@
 body {
   font-family: Avenir, Heveltica, sans-serif;
   margin: 0;
+  background: #000;
 }
 img {
   width: 100%;
@@ -11,13 +12,14 @@ img {
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
-  margin: 1rem;
+  grid-auto-rows: 25vh;
+  margin: 0 4px;
 }
 article {
-  border: 5px solid black;
+  border: 4px solid black;
   display: grid;
   align-items: center;
+  grid-row: span 2;
   img {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
@@ -29,14 +31,21 @@ article {
     flex-direction: column-reverse;
     text-decoration: none;
     color: white;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.55);
   }
   h3 {
     margin: 0;
     font-size: 3rem;
+    font-size: calc(2rem + 4vw);
     text-align: center;
     mix-blend-mode: difference;
     // see http://codepen.io/SaraSoueidan/pen/887433527fac4e926e84b613be483bfc?editors=1100
     // and https://sarasoueidan.com/blog/compositing-and-blending-in-css/
   }
+}
+article:nth-child(6),
+article:nth-child(9),
+article:nth-child(13),
+article:nth-child(14) {
+  grid-row: span 1;
 }
