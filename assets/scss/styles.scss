@@ -21,13 +21,13 @@ $alt3-font: Courier, monospace;
 $text-color: black;
 
 //Mozilla Brand Colors.
-$mozilla-blue: #82d1f5; // As of Feb 2017, this color is named "Cyan" in the Mozilla branding guidelines. But it's NOT cyan. So I renamed it.
+$mozilla-blue: #82d1f5;
 $mozilla-coral: #ff8c8e;
 $mozilla-yellow: #ffed00;
 $mozilla-lilac: #b0b2e9;
 $mozilla-orange: #faba00;
 $mozilla-lime: #b6d806;
-$mozilla-neon-blue: #0ff; // This is actually cyan. Which makes Mozilla's names confusing.
+$mozilla-neon-blue: #0ff; // This is actually cyan
 $mozilla-neon-blue-light: lighten($mozilla-neon-blue, 35%); // I made this up
 $mozilla-neon-pink: #fa8cff;
 $mozilla-neon-green: #abff10;
@@ -37,21 +37,38 @@ body {
   color: $text-color;
   background: #eff;
   margin: 0;
-}
-nav {
-  margin: 2rem 0;
+  hyphens: manual;
 }
 main {
   width: 80%;
   margin: 1rem auto;
 }
-
 h1, h2, h3, h4, h5 {
   font-family: $heading-font;
+}
+h1 {
+  font-size: 1.6rem;
+  padding: 1rem 1rem 0.75rem 4rem;
+  background: #98ffd7;
+  border-radius: 50%;
+  text-align: center;
+  padding: 5rem 1.0rem 4rem;
+  line-height: 1.2;
 }
 h4 {
   font-size: 1rem;
   margin: 0.6em 0 0.4em 0;
+}
+nav {
+  padding: 1.6rem 2rem 1.5rem;
+  clip-path: polygon(0% 0%, 100% 14%, 100% 100%, 6% 74%);
+  background: #d6ff0a;
+  margin: 2rem 0;
+  margin-right: -1rem;
+  a {
+    border-bottom: none;
+    color: black;
+  }
 }
 p {
   font-size: 0.6rem;
@@ -71,7 +88,6 @@ ul {
   li {
     max-width: 200px;
     margin: 1rem 0;
-//    background: white;
     padding: 4px;
   }
   img {
@@ -93,25 +109,36 @@ ul {
     display: inline;  
   }
 }
+header {  
+  margin: 0 1rem;
+}
+@media (min-width: 600px) {
+  header {  
+    width: 50%;
+    float: left;
+    margin: 0 2rem 0 1rem;
+  }
+}
+@media (min-width: 880px) {
+  header { 
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    width: -webkit-min-content;
+       width: -moz-min-content;
+           width: min-content;
+    background: none;
+    text-align: right;
+    margin-left: 0;
+    padding: 0 0.8rem 0 1.2rem;
+    z-index: 2;
+    align-self: start;
+  }
+}
+
 @supports (display: grid) {
   @media (min-width: 880px) {
-    header { /* autoprefixer: off */
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 400px;
-      width: -webkit-min-content;
-         width: -moz-min-content;
-             width: min-content;
-      text-align: right;
-      margin-left: 0;
-      padding: 0 0.8rem 0 1.2rem;
-      z-index: 2;
-      align-self: start;
-    }
-    h1 {
-      font-size: 2.2rem;
-    }
     main { /* autoprefixer: off */
       grid-column: 1 / -1;
       grid-row: 1 / -1;
@@ -120,7 +147,6 @@ ul {
       width: 50%;
     }
   }
-  
   .demo-list { /* autoprefixer: off */
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
@@ -142,8 +168,6 @@ ul {
       grid-column: -2;
       grid-row: 3;
     }
-
-
     span:nth-child(5) { /* autoprefixer: off */
       grid-column: 1;
       grid-row: 4;
@@ -152,19 +176,11 @@ ul {
       grid-column: -2;
       grid-row: 4;
     }
-
-
     li {
       max-width: none;
     }
     a + p {
       margin-top: 0.75rem;
     }
-    @media (min-width: 680px) {
-      li {
-        margin: 0;
-      }
-    }
-  }
-  
+  } 
 }

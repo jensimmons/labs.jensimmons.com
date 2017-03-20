@@ -25,10 +25,10 @@ body {
   font-family: "print_char_21medium", Courier, monospace;
   color: black;
   background: #eff;
-  margin: 0; }
-
-nav {
-  margin: 2rem 0; }
+  margin: 0;
+  -webkit-hyphens: manual;
+      -ms-hyphens: manual;
+          hyphens: manual; }
 
 main {
   width: 80%;
@@ -37,9 +37,29 @@ main {
 h1, h2, h3, h4, h5 {
   font-family: "print_char_21medium", Georgia, serif; }
 
+h1 {
+  font-size: 1.6rem;
+  padding: 1rem 1rem 0.75rem 4rem;
+  background: #98ffd7;
+  border-radius: 50%;
+  text-align: center;
+  padding: 5rem 1.0rem 4rem;
+  line-height: 1.2; }
+
 h4 {
   font-size: 1rem;
   margin: 0.6em 0 0.4em 0; }
+
+nav {
+  padding: 1.6rem 2rem 1.5rem;
+  -webkit-clip-path: polygon(0% 0%, 100% 14%, 100% 100%, 6% 74%);
+          clip-path: polygon(0% 0%, 100% 14%, 100% 100%, 6% 74%);
+  background: #d6ff0a;
+  margin: 2rem 0;
+  margin-right: -1rem; }
+  nav a {
+    border-bottom: none;
+    color: black; }
 
 p {
   font-size: 0.6rem;
@@ -76,24 +96,35 @@ ul {
     background: #ffed00;
     display: inline; }
 
+header {
+  margin: 0 1rem; }
+
+@media (min-width: 600px) {
+  header {
+    width: 50%;
+    float: left;
+    margin: 0 2rem 0 1rem; } }
+
+@media (min-width: 880px) {
+  header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    background: none;
+    text-align: right;
+    margin-left: 0;
+    padding: 0 0.8rem 0 1.2rem;
+    z-index: 2;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start; } }
+
 @supports ((display: -ms-grid) or (display: grid)) {
   @media (min-width: 880px) {
-    header {
-      /* autoprefixer: off */
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 400px;
-      width: -webkit-min-content;
-      width: -moz-min-content;
-      width: min-content;
-      text-align: right;
-      margin-left: 0;
-      padding: 0 0.8rem 0 1.2rem;
-      z-index: 2;
-      align-self: start; }
-    h1 {
-      font-size: 2.2rem; }
     main {
       /* autoprefixer: off */
       grid-column: 1 / -1;
@@ -133,7 +164,4 @@ ul {
     .demo-list li {
       max-width: none; }
     .demo-list a + p {
-      margin-top: 0.75rem; }
-    @media (min-width: 680px) {
-      .demo-list li {
-        margin: 0; } } }
+      margin-top: 0.75rem; } }
