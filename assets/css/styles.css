@@ -121,7 +121,10 @@ header {
     z-index: 2;
     -ms-flex-item-align: start;
         -ms-grid-row-align: start;
-        align-self: start; } }
+        align-self: start; }
+  .intro {
+    /* autoprefixer: off */
+    width: 50%; } }
 
 @supports ((display: -ms-grid) or (display: grid)) {
   @media (min-width: 880px) {

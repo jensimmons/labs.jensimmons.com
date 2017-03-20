@@ -135,6 +135,9 @@ header {
     z-index: 2;
     align-self: start;
   }
+  .intro { /* autoprefixer: off */
+    width: 50%;
+  }
 }
 
 @supports (display: grid) {
