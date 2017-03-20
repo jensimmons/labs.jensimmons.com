@@ -104,7 +104,7 @@ ul {
     /* autoprefixer: off */
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     align-items: end; }
     .demo-list span:nth-child(1) {
       /* autoprefixer: off */
@@ -122,6 +122,14 @@ ul {
       /* autoprefixer: off */
       grid-column: -2;
       grid-row: 3; }
+    .demo-list span:nth-child(5) {
+      /* autoprefixer: off */
+      grid-column: 1;
+      grid-row: 4; }
+    .demo-list span:nth-child(6) {
+      /* autoprefixer: off */
+      grid-column: -2;
+      grid-row: 4; }
     .demo-list li {
       max-width: none; }
     .demo-list a + p {

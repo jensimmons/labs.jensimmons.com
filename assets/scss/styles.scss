@@ -124,7 +124,7 @@ ul {
   .demo-list { /* autoprefixer: off */
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     align-items: end;
     span:nth-child(1) { /* autoprefixer: off */
       grid-column: -2;
@@ -142,6 +142,18 @@ ul {
       grid-column: -2;
       grid-row: 3;
     }
+
+
+    span:nth-child(5) { /* autoprefixer: off */
+      grid-column: 1;
+      grid-row: 4;
+    }
+    span:nth-child(6) { /* autoprefixer: off */
+      grid-column: -2;
+      grid-row: 4;
+    }
+
+
     li {
       max-width: none;
     }
