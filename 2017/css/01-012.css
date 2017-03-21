@@ -11,6 +11,16 @@ main {
   font-family: monospace;
   margin: 1rem 3rem 3rem; }
 
+img {
+  display: block;
+  width: 100%; }
+
+h2 {
+  background: black;
+  color: white;
+  padding: 1rem;
+  margin: 0; }
+
 ul {
   /* autoprefixer: off */
   display: grid;
@@ -18,25 +28,30 @@ ul {
   grid-auto-rows: min-content;
   grid-gap: 1rem;
   align-items: start;
-  margin: 0;
+  margin: 3rem 0;
   padding: 0;
   list-style: none; }
 
-li {
+.cards-in-grid li {
   /* autoprefixer: off */
   display: grid;
   align-items: end; }
 
-img {
-  display: block;
-  width: 100%;
+.cards-in-grid img {
+  /* autoprefixer: off */
   grid-column: 1 / 2;
   grid-row: 1 / 2; }
 
-h2 {
-  background: black;
-  color: white;
+.cards-in-grid h2 {
+  /* autoprefixer: off */
   grid-column: 1 / 2;
-  grid-row: 1 / 2;
-  padding: 1rem;
-  margin: 0; }
+  grid-row: 1 / 2; }
+
+.cards-in-flexbox li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.cards-in-flexbox img {
+  -o-object-fit: cover;
+     object-fit: cover; }
