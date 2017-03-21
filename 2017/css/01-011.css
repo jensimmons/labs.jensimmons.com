@@ -42,7 +42,7 @@ a {
   border: 1px solid #aaa; }
 
 .index .original img {
-  margin-top: 15px; }
+  margin-top: 10px; }
 
 @supports ((display: -ms-grid) or (display: grid)) {
   .index ul {
