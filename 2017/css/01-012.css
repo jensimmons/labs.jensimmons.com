@@ -69,3 +69,33 @@ ul {
 .cards-in-flexbox-2 img {
   -o-object-fit: cover;
      object-fit: cover; }
+
+.cards-in-grid-bug-1 li {
+  /* autoprefixer: off */
+  display: grid;
+  align-items: end; }
+
+.cards-in-grid-bug-1 img {
+  /* autoprefixer: off */
+  grid-column: 1 / 2;
+  grid-row: 1 / 2; }
+
+.cards-in-grid-bug-1 h2 {
+  /* autoprefixer: off */
+  grid-column: 1 / 2;
+  grid-row: 1 / 2; }
+
+.cards-in-grid-bug-2 li {
+  /* autoprefixer: off */
+  display: grid; }
+
+.cards-in-grid-bug-2 img {
+  /* autoprefixer: off */
+  grid-column: 1 / 2;
+  grid-row: 1 / 2; }
+
+.cards-in-grid-bug-2 h2 {
+  /* autoprefixer: off */
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  align-self: end; }

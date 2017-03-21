@@ -58,3 +58,40 @@ ul {  /* autoprefixer: off */
   }
 }
 
+//---------------------------------------------------------------------
+// Isolated CSS To show interop bug
+//---------------------------------------------------------------------
+
+.cards-in-grid-bug-1 {
+  li { /* autoprefixer: off */
+    display: grid;
+    align-items: end;
+  }
+  img { /* autoprefixer: off */
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  h2 { /* autoprefixer: off */
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+}
+
+.cards-in-grid-bug-2 {
+  li { /* autoprefixer: off */
+    display: grid;
+  }
+  img { /* autoprefixer: off */
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  h2 { /* autoprefixer: off */
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    align-self: end;
+  }
+}
+
+
+
+

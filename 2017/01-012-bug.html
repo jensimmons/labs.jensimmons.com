@@ -1,0 +1,42 @@
+<!doctype html>
+<html dir="ltr" lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Labs | Jen Simmons</title>
+    <link rel="stylesheet" href="css/01-012.css">
+  </head>
+  <body>
+    <main>
+      <h1>Simple card layout — CSS Grid is applied to the UL. All works. Image is in cell. Caption follows.</h1>
+      <ul class="">
+        <li><img src="media/01-001/brooklynmuseum-o170i000-98.14_SL1.jpg" alt=""><h2>Lorem ipsum dolor sit amet</h2></li>
+        <li><img src="media/01-001/brooklynmuseum-o397i000-32.10_SL1.jpg" alt=""><h2>Consectetur adipiscing</h2></li>
+        <li><img src="media/01-001/brooklynmuseum-o4266i000-86.226.18_SL1.jpg" alt=""><h2>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</h2></li>
+      </ul>
+      
+      <h1>Now I want to apply a second Grid formatting context, this time to the LI, and layout the image and h2 inside, on top of each other. With the h2 aligned to the bottom. I've applied 'align-items: end` to the container.</h1>
+      <ul class="cards-in-grid-bug-1">
+        <li><img src="media/01-001/brooklynmuseum-o170i000-98.14_SL1.jpg" alt=""><h2>Lorem ipsum dolor sit amet</h2></li>
+        <li><img src="media/01-001/brooklynmuseum-o397i000-32.10_SL1.jpg" alt=""><h2>Consectetur adipiscing</h2></li>
+        <li><img src="media/01-001/brooklynmuseum-o4266i000-86.226.18_SL1.jpg" alt=""><h2>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</h2></li>
+      </ul>
+
+      <h1>Same goal, second attempt. Instead I'll apply `align-self: end` to the h2. Which should have the same affect. Also buggy, in a different way.</h1>
+      <ul class="cards-in-grid-bug-2">
+        <li><img src="media/01-001/brooklynmuseum-o170i000-98.14_SL1.jpg" alt=""><h2>Lorem ipsum dolor sit amet</h2></li>
+        <li><img src="media/01-001/brooklynmuseum-o397i000-32.10_SL1.jpg" alt=""><h2>Consectetur adipiscing</h2></li>
+        <li><img src="media/01-001/brooklynmuseum-o4266i000-86.226.18_SL1.jpg" alt=""><h2>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</h2></li>
+      </ul>
+
+    </main>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-423984-20', 'auto');
+    ga('send', 'pageview');
+  </script>
+  </body>
+</html>
