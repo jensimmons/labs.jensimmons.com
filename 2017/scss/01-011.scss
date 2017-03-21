@@ -50,6 +50,9 @@ a {
   .original img {
     margin-top: 10px;
   }
+  a {
+    display: block;
+  }
   @supports (display: grid) {
     ul { /* autoprefixer: off */
       display: grid;
