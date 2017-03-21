@@ -16,7 +16,6 @@ h2 {
   margin: 0;
 }
 ul {  /* autoprefixer: off */
-  background: #b8e4e4;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-auto-rows: min-content;
@@ -58,10 +57,13 @@ ul {  /* autoprefixer: off */
   }
 }
 
-//---------------------------------------------------------------------
-// Isolated CSS To show interop bug
-//---------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------
+// Isolated CSS To show interop bug, reported at: https://bugzilla.mozilla.org/show_bug.cgi?id=1349320
+//-----------------------------------------------------------------------------------------------------
 
+.bugreport ul {  /* autoprefixer: off */
+  background: #b8e4e4;
+}
 .cards-in-grid-bug-1 {
   li { /* autoprefixer: off */
     display: grid;
