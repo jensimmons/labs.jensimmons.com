@@ -156,64 +156,66 @@ a {
     width:80%;
     margin: 4vw auto;
   }
-  ul {  /* autoprefixer: off */
+  ul { /* autoprefixer: off */
     display: grid;
     grid-auto-flow: dense; 
     grid-template-columns: repeat(1, calc(80vw/1));
     grid-template-rows: repeat(1, calc(80vw/1)); 
+    max-width: 880px;
+    margin: 0 auto;
   }
   @media (min-width: 300px) {
-    ul {
+    ul { /* autoprefixer: off */
       grid-template-columns: repeat(2, calc(80vw/2));
       grid-template-rows: repeat(2, calc(80vw/2)); 
     }
   }
   @media (min-width: 400px) {
-    ul {
+    ul { /* autoprefixer: off */
       grid-template-columns: repeat(3, calc(80vw/3));
       grid-template-rows: repeat(3, calc(80vw/3)); 
     }
   }
   @media (min-width: 500px) {
-    ul {
+    ul { /* autoprefixer: off */
       grid-template-columns: repeat(4, calc(80vw/4));
       grid-template-rows: repeat(4, calc(80vw/4)); 
     }
   }
   @media (min-width: 600px) {
-    ul {
+    ul { /* autoprefixer: off */
       grid-template-columns: repeat(5, calc(80vw/5));
       grid-template-rows: repeat(5, calc(80vw/5)); 
     }
   }
   @media (min-width: 700px) {
-    ul {
+    ul { /* autoprefixer: off */
       grid-template-columns: repeat(6, calc(80vw/6));
       grid-template-rows: repeat(6, calc(80vw/6)); 
     }
   }
   @media (min-width: 800px) {
-    ul {
+    ul { /* autoprefixer: off */
       grid-template-columns: repeat(7, calc(80vw/7));
       grid-template-rows: repeat(7, calc(80vw/7)); 
     }
   }
   @media (min-width: 900px) {
-    ul {
+    ul { /* autoprefixer: off */
       grid-template-columns: repeat(8, calc(80vw/8));
       grid-template-rows: repeat(8, calc(80vw/8)); 
     }
   }
   @media (min-width: 1000px) {
-    ul {
+    ul { /* autoprefixer: off */
       grid-template-columns: repeat(9, calc(80vw/9));
       grid-template-rows: repeat(9, calc(80vw/9)); 
     }
   }
   @media (min-width: 1100px) {
-    ul {
-      grid-template-columns: repeat(10, calc(80vw/10));
-      grid-template-rows: repeat(10, calc(80vw/10)); 
+    ul { /* autoprefixer: off */
+      grid-template-columns: repeat(9, calc(880px/9));
+      grid-template-rows: repeat(9, calc(880px/9)); 
     }
   }
 }
