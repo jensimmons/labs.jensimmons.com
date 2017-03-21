@@ -16,7 +16,7 @@ img {
   width: 100%; }
 
 h2 {
-  background: black;
+  background: rgba(0, 0, 0, 0.5);
   color: white;
   padding: 1rem;
   margin: 0; }
@@ -118,8 +118,7 @@ ul {
 .cards-in-grid-bug-3 h2 {
   /* autoprefixer: off */
   grid-column: 1 / 2;
-  grid-row: 1 / 2;
-  background: rgba(0, 0, 0, 0.5); }
+  grid-row: 1 / 2; }
 
 .no-grandparent-grid {
   display: block;
