@@ -23,6 +23,7 @@ h2 {
 
 ul {
   /* autoprefixer: off */
+  background: #ffffbf;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-auto-rows: min-content;
@@ -47,11 +48,24 @@ ul {
   grid-column: 1 / 2;
   grid-row: 1 / 2; }
 
-.cards-in-flexbox li {
+.cards-in-flexbox-1 li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-.cards-in-flexbox img {
+.cards-in-flexbox-1 img {
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.cards-in-flexbox-2 li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.cards-in-flexbox-2 img {
   -o-object-fit: cover;
      object-fit: cover; }

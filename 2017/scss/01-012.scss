@@ -16,6 +16,7 @@ h2 {
   margin: 0;
 }
 ul {  /* autoprefixer: off */
+  background: #ffffbf;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-auto-rows: min-content;
@@ -39,9 +40,18 @@ ul {  /* autoprefixer: off */
     grid-row: 1 / 2;
   }
 }
-.cards-in-flexbox {
+.cards-in-flexbox-1 {
   li {
     display: flex;
+  }
+  img {
+    object-fit: cover;
+  }
+}
+.cards-in-flexbox-2 {
+  li {
+    display: flex;
+    flex-direction: column;
   }
   img {
     object-fit: cover;
