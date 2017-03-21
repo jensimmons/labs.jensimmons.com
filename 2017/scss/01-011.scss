@@ -31,8 +31,36 @@ a {
 
 .index {
   main {
-    width: 600px;
-    margin: 3rem auto;
+    margin: 3rem;
+  }
+  ul {
+    margin: 2rem auto;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+  img {
+    width: 100%;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    border: 1px solid #aaa;
+  }
+  .original img {
+    margin-top: 15px;
+  }
+  @supports (display: grid) {
+    ul { /* autoprefixer: off */
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      grid-gap: 2rem;
+      width: auto;
+    }
+    li {
+      width: auto;
+      margin: 0;
+    }
   }
 }
 
@@ -117,7 +145,7 @@ a {
 }
 
 // ------------------------------------------------------------
-//
+// Responsive Mondrian, keeping aspect ratio
 // ------------------------------------------------------------
 
 .D {
@@ -188,7 +216,7 @@ a {
 }
 
 // ------------------------------------------------------------
-//
+// Responsive Diamond Mondrian
 // ------------------------------------------------------------
 
 .E {

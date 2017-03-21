@@ -25,8 +25,35 @@ a {
   text-decoration: none; }
 
 .index main {
-  width: 600px;
-  margin: 3rem auto; }
+  margin: 3rem; }
+
+.index ul {
+  margin: 2rem auto;
+  padding: 0;
+  list-style: none; }
+
+.index li {
+  max-width: 300px;
+  margin-bottom: 20px; }
+
+.index img {
+  width: 100%;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  border: 1px solid #aaa; }
+
+.index .original img {
+  margin-top: 15px; }
+
+@supports ((display: -ms-grid) or (display: grid)) {
+  .index ul {
+    /* autoprefixer: off */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-gap: 2rem;
+    width: auto; }
+  .index li {
+    width: auto;
+    margin: 0; } }
 
 .A main {
   width: 70%;
