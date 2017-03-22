@@ -1,0 +1,35 @@
+main {
+  margin: 3rem;
+  border: 1px solid black;
+}
+h1 {
+  font-family: helvetica;
+  font-size: 2rem;
+  margin: 1em;
+}
+p {
+  margin: 1em;
+}
+img {
+  width: 100%;
+}
+
+main {  /* autoprefixer: off */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  h1 {  /* autoprefixer: off */
+    
+  }
+  img.hero {  /* autoprefixer: off */
+    
+  }
+  img.extra {  /* autoprefixer: off */
+    
+  }
+  p.first {  /* autoprefixer: off */
+    
+  }
+  p.second {  /* autoprefixer: off */
+    
+  }
+}
