@@ -69,26 +69,28 @@ nav {
     header {  /* autoprefixer: off */
       margin: 0 1rem; 
       display: grid;
-      grid-template-rows: auto min-content 1fr 10vh;
+      grid-template-rows: 3fr minmax(100px, 350px) max-content auto 1fr;      
       justify-items: center;
-      min-height: 100vh;
+      height: 100vh;
     }
     @media (max-height: 980px) {
   //    min-height: auto;
       height: 100vh;      
     }
     img {  /* autoprefixer: off */
-      align-self: end;
+      grid-row: 2;
+      height: 100%;
     }
     h1 {  /* autoprefixer: off */
-      align-self: center;
+      grid-row: 3;
     }
     nav {  /* autoprefixer: off */
-      align-self: start;
+      grid-row: 4;
     }
     ul {
       display: flex;
       flex-wrap: wrap;
+      margin-bottom: 3em;
     }
     li {
       float: none;
