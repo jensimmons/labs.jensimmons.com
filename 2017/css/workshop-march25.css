@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  font-family: 'Futura W01', helvetica, san-serif;
+  line-height: 1.3;
+  font-size: 100%;
+  color: #3C3C3B;
+  font-weight: 300;
+  background: white; }
+
+body {
+  margin: 0; }
+
+main {
+  margin: 2rem auto;
+  max-width: 500px; }
+
+img {
+  display: block; }
+
+a {
+  color: rebeccapurple;
+  text-decoration: none; }
+
+section {
+  border-top: 1px solid #444;
+  padding: 2rem 1rem; }
+
+h1, h2, h3 {
+  font-family: 'Viva Beautiful W01 Regu5374909';
+  margin: 0; }
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 0; }
+
+ol {
+  margin: 0; }
