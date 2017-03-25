@@ -61,6 +61,8 @@ nav {
   nav a {
     border-bottom: none;
     color: black; }
+  nav li {
+    margin: 0.5rem 0; }
 
 p {
   font-size: 0.6rem;
