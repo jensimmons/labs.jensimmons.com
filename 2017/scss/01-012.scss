@@ -56,7 +56,11 @@ ul {  /* autoprefixer: off */
     object-fit: cover;
   }
 }
-
+.bugfree {
+  img{
+    width: 300px; // needed to fix image sizing bug in Firefox
+  }
+}
 //-----------------------------------------------------------------------------------------------------
 // Isolated CSS To show interop bug, reported at: https://bugzilla.mozilla.org/show_bug.cgi?id=1349320
 //-----------------------------------------------------------------------------------------------------
