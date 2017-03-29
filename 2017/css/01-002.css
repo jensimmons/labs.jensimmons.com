@@ -12,8 +12,8 @@ body {
 }
 
 main {
-  margin: 100px auto;
-  width: 470px;
+  margin: 160px auto;
+  width: 710px;
 }
 
 article {
@@ -22,11 +22,11 @@ article {
   line-height: 1.2;
   background: #f0efeb;
   display: grid;
-  grid-template-columns: repeat(8, 50px);
-  grid-template-rows: 50px 50px auto 50px 50px 50px;
+  grid-template-columns: repeat(8, 80px);
+  grid-template-rows: 80px 80px auto 80px 80px 80px;
   grid-gap: 10px;
-  width: 420px;
-  margin: 0 -65px -65px;
+  width: 630px;
+  margin: 0;
 }
 
 blockquote {
@@ -79,8 +79,8 @@ div {
   z-index: 2;
   border-radius: 50%;
   background: rgba(0, 100, 255, 0.5);
-  height: 110px;
-  width: 110px;
+  height: 170px;
+  width: 170px;
 }
 
 div:nth-child(odd) {

@@ -5,20 +5,23 @@ body {
 //  display: flex;
 }
 
+$unit: 80px;
+$gap: 10px;
+
 main {
-  margin: 100px auto;
-  width: 470px;
+  margin: ($unit * 2) auto;
+  width: ($unit * 8) + (7 * $gap);
 }
 article { /* autoprefixer: off */
   font-size: 76%;
   line-height: 1.2;
   background: #f0efeb;
   display: grid;
-  grid-template-columns: repeat(8, 50px);
-  grid-template-rows: 50px 50px auto 50px 50px 50px;
-  grid-gap: 10px;
-  width: 420px;
-  margin: 0 -65px -65px;
+  grid-template-columns: repeat(8, $unit);
+  grid-template-rows: $unit $unit auto $unit $unit $unit;
+  grid-gap: $gap;
+  width: ($unit * 8) + (7 * $gap) -  $unit;
+  margin: 0;
 }
 
 blockquote { /* autoprefixer: off */
@@ -60,8 +63,8 @@ div {
   z-index: 2;
   border-radius: 50%;
   background: rgba(0, 100, 255, 0.5); // blue
-  height: 110px;
-  width: 110px;
+  height: ($unit * 2) + $gap;
+  width: ($unit * 2) + $gap;
 }
 div:nth-child(odd) {
   background: rgba(255, 0, 200, 0.5); // pink
