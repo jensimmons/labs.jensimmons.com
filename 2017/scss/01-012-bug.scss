@@ -2,10 +2,7 @@
 // To show interop bug, reported at: https://bugzilla.mozilla.org/show_bug.cgi?id=1349320
 //-----------------------------------------------------------------------------------------------------
 * { box-sizing: border-box; }
-html { font-size: 100%;}
-body {margin: 0;}
 main {
-  font-family: monospace;
   margin: 1rem 3rem 3rem;
 }
 img {
