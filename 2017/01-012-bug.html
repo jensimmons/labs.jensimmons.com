@@ -6,43 +6,13 @@
     <title>Labs | Jen Simmons</title>
     <link rel="stylesheet" href="css/01-012.css">
   </head>
-  <body class="bugreport">
+  <body class="">
     <main>
-      <h1>Simple card layout — CSS Grid is applied to the UL. All works. Image is in cell. Caption follows.</h1>
-      <ul class="">
+      <ul class="cards-in-grid">
         <li><img src="media/01-001/brooklynmuseum-o170i000-98.14_SL1.jpg" alt=""><h2>Lorem ipsum dolor sit amet</h2></li>
         <li><img src="media/01-001/brooklynmuseum-o397i000-32.10_SL1.jpg" alt=""><h2>Consectetur adipiscing</h2></li>
         <li><img src="media/01-001/brooklynmuseum-o4266i000-86.226.18_SL1.jpg" alt=""><h2>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</h2></li>
       </ul>
-      
-      <h1>Now I want to apply a second Grid formatting context, this time to the LI, and layout the image and h2 inside, on top of each other. With the h2 aligned to the bottom. I've applied 'align-items: end` to the container.</h1>
-      <ul class="cards-in-grid-bug-1">
-        <li><img src="media/01-001/brooklynmuseum-o170i000-98.14_SL1.jpg" alt=""><h2>Lorem ipsum dolor sit amet</h2></li>
-        <li><img src="media/01-001/brooklynmuseum-o397i000-32.10_SL1.jpg" alt=""><h2>Consectetur adipiscing</h2></li>
-        <li><img src="media/01-001/brooklynmuseum-o4266i000-86.226.18_SL1.jpg" alt=""><h2>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</h2></li>
-      </ul>
-
-      <h1>Same goal, second attempt. Instead I'll apply `align-self: end` to the h2. Which should have the same affect. Also buggy, in a different way.</h1>
-      <ul class="cards-in-grid-bug-2">
-        <li><img src="media/01-001/brooklynmuseum-o170i000-98.14_SL1.jpg" alt=""><h2>Lorem ipsum dolor sit amet</h2></li>
-        <li><img src="media/01-001/brooklynmuseum-o397i000-32.10_SL1.jpg" alt=""><h2>Consectetur adipiscing</h2></li>
-        <li><img src="media/01-001/brooklynmuseum-o4266i000-86.226.18_SL1.jpg" alt=""><h2>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</h2></li>
-      </ul>
-
-      <h1>The above examples have two things going on. Let's simplify. And remove the grandparent Grid formatting context. It seems the problem is still here. And maybe it's really about the heights on the LIs. Not at all about the nested Grid context.</h1>
-      <ul class="no-grandparent-grid">
-        <li><img src="media/01-001/brooklynmuseum-o170i000-98.14_SL1.jpg" alt=""><h2>Lorem ipsum dolor sit amet</h2></li>
-        <li><img src="media/01-001/brooklynmuseum-o397i000-32.10_SL1.jpg" alt=""><h2>Consectetur adipiscing</h2></li>
-        <li><img src="media/01-001/brooklynmuseum-o4266i000-86.226.18_SL1.jpg" alt=""><h2>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</h2></li>
-      </ul>
-      
-      <h1>Now that it seems to be a problem of heights, not the grandparent grid, let me see what happens if I remove all of the align end stuff. Oh look — it's really that the height of the content is wrong when I'm putting two items in the same cell.</h1>
-      <ul class="cards-in-grid-bug-3">
-        <li><img src="media/01-001/brooklynmuseum-o170i000-98.14_SL1.jpg" alt=""><h2>Lorem ipsum dolor sit amet</h2></li>
-        <li><img src="media/01-001/brooklynmuseum-o397i000-32.10_SL1.jpg" alt=""><h2>Consectetur adipiscing</h2></li>
-        <li><img src="media/01-001/brooklynmuseum-o4266i000-86.226.18_SL1.jpg" alt=""><h2>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</h2></li>
-      </ul>
-      
     </main>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
