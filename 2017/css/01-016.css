@@ -34,6 +34,10 @@ h1 {
   font-size: 3.6rem;
   line-height: 1.1; }
 
+@media (max-width: 970px) {
+  h1 {
+    font-size: calc(2rem + 2.5vw); } }
+
 .article-body {
   /* autoprefixer: off */
   grid-row: 2 / 5;
