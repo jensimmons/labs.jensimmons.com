@@ -26,6 +26,13 @@ main {
   grid-template-rows: min-content 4rem 8rem auto;
   grid-gap: 1rem; }
 
+@media (max-width: 670px) {
+  main {
+    margin: 4rem 2rem;
+    -ms-grid-columns: 1fr 1fr 1fr minmax(24ch, 40ch) 1fr;
+        grid-template-columns: 1fr 1fr 1fr minmax(24ch, 40ch) 1fr;
+    grid-gap: 0; } }
+
 h1 {
   /* autoprefixer: off */
   grid-row: 1;
