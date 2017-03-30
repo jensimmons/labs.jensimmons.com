@@ -145,3 +145,5 @@ input[type=checkbox]:checked ~ ul li:nth-child(13) span {
 @supports (display: grid) {
   .note {
     display: none; } }
+
+/*# sourceMappingURL=01-005.css.map */
