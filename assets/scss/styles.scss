@@ -87,8 +87,16 @@ ul {
   padding: 0;
   list-style: none;
 }
-.demo-list {
+section {
   margin-top: 2rem;
+}
+section:nth-child(2) {
+
+}
+h2 {
+  margin-bottom: 0;
+}
+.demo-list {
   li {
     max-width: 200px;
     margin: 1rem 0;
