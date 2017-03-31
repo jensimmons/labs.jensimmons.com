@@ -1,0 +1,78 @@
+
+
+.credit {
+    font-size: 10px;
+    font-size: 0.625rem;
+    line-height: 12px;
+    line-height: 0.75rem;
+    font-weight: 500;
+    font-style: normal;
+    font-family: "nyt-franklin",arial,helvetica,sans-serif;
+    margin-top: 2px;
+    color: #b3b3b3;
+    text-transform: uppercase;
+}
+
+
+.headline {
+    color: #333;
+    font-feature-settings: 'kern';
+    margin: 0 0 7px;
+    font-size: 26px;
+    font-size: 1.625rem;
+    line-height: 28px;
+    line-height: 1.75rem;
+    font-weight: 200;
+    font-style: normal;
+    font-family: "nyt-cheltenham",georgia,"times new roman",times,serif;
+}
+
+.kicker {  
+    font-size: 0.6875rem;
+    line-height: 0.75rem;
+    font-weight: 500;
+    font-style: normal;
+    font-family: "nyt-franklin",arial,helvetica,sans-serif;
+    color: #333;
+    margin: 0 0 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+
+.summary {
+    font-size: 15px;
+    font-size: 0.9375rem;
+    line-height: 22px;
+    line-height: 1.375rem;
+    font-weight: 500;
+    font-style: normal;
+    font-family: georgia,"times new roman",times,serif;
+    margin-bottom: 0;
+}
+
+
+.byline {
+    font-size: 11px;
+    font-size: 0.6875rem;
+    line-height: 12px;
+    line-height: 0.75rem;
+    font-weight: 500;
+    font-style: normal;
+    font-family: "nyt-franklin",arial,helvetica,sans-serif;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 3px;
+    color: #999;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}

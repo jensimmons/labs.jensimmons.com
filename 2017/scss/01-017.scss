@@ -1,0 +1,17 @@
+* {box-sizing: border-box;}
+html {
+  font-family:'Adobe Caslon W01', Georgia, serif;
+  line-height: 1.4;
+  font-size: 100%;
+  color: #222;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  -webkit-font-kerning: normal;
+          font-kerning: normal;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%; 
+}
+img {
+  width: 500px;
+}
