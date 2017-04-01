@@ -22,6 +22,7 @@ main { /* autoprefixer: off */
   margin: 4rem;
   display: grid;
   grid-template-columns: 100px 1fr 1fr minmax(40ch, 65ch) 1fr;
+  grid-template-rows: -webkit-min-content 4rem 8rem auto; // Safari needs prefix for min-content still, fix on it's way — trac.webkit.org/changeset/213831/webkit 
   grid-template-rows: min-content 4rem 8rem auto;
   grid-gap: 1rem;
 }

@@ -19,6 +19,7 @@ article {
   /* autoprefixer: off */
   display: grid;
   grid-template-columns: 275px 1fr 2fr;
+  grid-template-rows: minmax(100px, 5fr) -webkit-min-content 2fr;
   grid-template-rows: minmax(100px, 5fr) min-content 2fr;
   max-width: 60rem; }
 
