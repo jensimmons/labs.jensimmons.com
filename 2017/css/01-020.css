@@ -23,49 +23,49 @@ main {
       grid-template-rows: 200px 200px 100px 400px 200px 600px 200px 150px 150px 200px 300px 100px 200px;
   grid-gap: 2rem 1rem; }
 
-div:nth-of-type(1) {
+b:nth-of-type(1) {
   -ms-grid-row: 2;
       grid-row: 2;
   -ms-grid-column: 4;
       grid-column: 4;
   background: #CA9AC4; }
 
-div:nth-of-type(2) {
+b:nth-of-type(2) {
   -ms-grid-row: 2;
       grid-row: 2;
   -ms-grid-column: 4;
       grid-column: 4;
   background: #BE7AA7; }
 
-div:nth-of-type(3) {
+b:nth-of-type(3) {
   -ms-grid-row: 3;
       grid-row: 3;
   -ms-grid-column: 3;
       grid-column: 3;
   background: #DA89C7; }
 
-div:nth-of-type(4) {
+b:nth-of-type(4) {
   -ms-grid-row: 4;
       grid-row: 4;
   -ms-grid-column: 5;
       grid-column: 5;
   background: #67365E; }
 
-div:nth-of-type(5) {
+b:nth-of-type(5) {
   -ms-grid-row: 6;
       grid-row: 6;
   -ms-grid-column: 2;
       grid-column: 2;
   background: #B680AD; }
 
-div:nth-of-type(6) {
+b:nth-of-type(6) {
   -ms-grid-row: 7;
       grid-row: 7;
   -ms-grid-column: 4;
       grid-column: 4;
   background: #D899B3; }
 
-div:nth-of-type(7) {
+b:nth-of-type(7) {
   -ms-grid-row-span: 2;
   -ms-grid-row: 7;
       grid-row: 7 / span 2;
@@ -73,14 +73,14 @@ div:nth-of-type(7) {
       grid-column: 4;
   background: #D695A1; }
 
-div:nth-of-type(8) {
+b:nth-of-type(8) {
   -ms-grid-row: 8;
       grid-row: 8;
   -ms-grid-column: 6;
       grid-column: 6;
   background: #E8CAD9; }
 
-div:nth-of-type(9) {
+b:nth-of-type(9) {
   -ms-grid-row-span: 2;
   -ms-grid-row: 8;
       grid-row: 8 / span 2;
@@ -88,14 +88,14 @@ div:nth-of-type(9) {
       grid-column: 9;
   background: #D7B0B8; }
 
-div:nth-of-type(10) {
+b:nth-of-type(10) {
   -ms-grid-row: 10;
       grid-row: 10;
   -ms-grid-column: 7;
       grid-column: 7;
   background: #CCA2B2; }
 
-div:nth-of-type(11) {
+b:nth-of-type(11) {
   -ms-grid-row-span: 2;
   -ms-grid-row: 10;
       grid-row: 10 / span 2;
@@ -103,14 +103,14 @@ div:nth-of-type(11) {
       grid-column: 6;
   background: #E9D0D4; }
 
-div:nth-of-type(12) {
+b:nth-of-type(12) {
   -ms-grid-row: 11;
       grid-row: 11;
   -ms-grid-column: 5;
       grid-column: 5;
   background: #A48493; }
 
-div:nth-of-type(13) {
+b:nth-of-type(13) {
   -ms-grid-row: 12;
       grid-row: 12;
   -ms-grid-column: 2;
