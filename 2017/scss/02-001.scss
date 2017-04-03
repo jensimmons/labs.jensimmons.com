@@ -17,6 +17,8 @@ main {
   grid-template-columns: repeat(3, 140px); // 280px / 2 = 140
   grid-auto-rows: 120px; // 240px / 2 = 120
   grid-gap: 0.5rem;
+  font-family:'Neue Haas Grotesk W01 Disp',Helvetica, sans-serif;
+  font-weight: 600;
 }
 $yellow: #FCF536;
 $red: #F53F1E;
@@ -28,7 +30,7 @@ p {
   font-size: 32rem;
   z-index: 2;
   line-height: 1;
-  margin: -2rem 0 0;
+  margin: -4rem 0 0;
   padding: 0;
 }
 img {

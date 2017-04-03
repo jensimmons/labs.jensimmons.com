@@ -20,14 +20,16 @@ main {
   -ms-grid-columns: (140px)[3];
       grid-template-columns: repeat(3, 140px);
   grid-auto-rows: 120px;
-  grid-gap: 0.5rem; }
+  grid-gap: 0.5rem;
+  font-family: 'Neue Haas Grotesk W01 Disp',Helvetica, sans-serif;
+  font-weight: 600; }
 
 p {
   grid-area: 2 / 1 / 5 / 3;
   font-size: 32rem;
   z-index: 2;
   line-height: 1;
-  margin: -2rem 0 0;
+  margin: -4rem 0 0;
   padding: 0; }
 
 img {
