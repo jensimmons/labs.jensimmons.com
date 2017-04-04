@@ -39,34 +39,39 @@ img {
       -ms-grid-row-align: end;
       align-self: end; }
 
+b {
+  background-image: url(../media/02-001/noise.png);
+  background-blend-mode: multiply;
+  background-repeat: repeat; }
+
 b:nth-of-type(1) {
-  background: #FCF536;
+  background-color: #FCF536;
   grid-area: 1 / 1; }
 
 b:nth-of-type(2) {
-  background: #F53F1E;
+  background-color: #F53F1E;
   grid-area: 1 / 2; }
 
 b:nth-of-type(3) {
-  background: #4CA4E1;
+  background-color: #4CA4E1;
   grid-area: 2 / 1; }
 
 b:nth-of-type(4) {
-  background: #4CA4E1;
+  background-color: #4CA4E1;
   grid-area: 2 / 2; }
 
 b:nth-of-type(5) {
-  background: #FCF536;
+  background-color: #FCF536;
   grid-area: 2 / 3; }
 
 b:nth-of-type(6) {
-  background: #76A621;
+  background-color: #76A621;
   grid-area: 3 / 3; }
 
 b:nth-of-type(7) {
-  background: #76A621;
+  background-color: #76A621;
   grid-area: 4 / 1; }
 
 b:nth-of-type(8) {
-  background: #F53F1E;
+  background-color: #F53F1E;
   grid-area: 5 / 3; }
