@@ -15,10 +15,8 @@ html {
   text-size-adjust: 100%; }
 
 main {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (140px)[3];
-      grid-template-columns: repeat(3, 140px);
+  grid-template-columns: repeat(3, 140px);
   grid-auto-rows: 120px;
   grid-gap: 0.5rem;
   font-family: 'Neue Haas Grotesk W01 Disp',Helvetica, sans-serif;
@@ -35,9 +33,7 @@ p {
 img {
   grid-area: 4 / 3;
   width: 100%;
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end; }
+  align-self: end; }
 
 b {
   background-image: url(../media/02-001/noise.png);
