@@ -22,6 +22,7 @@ body {
 main {
   display: -ms-grid;
   display: grid;
+  grid-template-columns: -webkit-max-content -webkit-max-content minmax(-webkit-min-content, 1fr) -webkit-min-content;
   -ms-grid-columns: max-content max-content minmax(min-content, 1fr) min-content;
       grid-template-columns: max-content max-content minmax(min-content, 1fr) min-content;
   -ms-grid-rows: 12vw auto auto auto auto;
