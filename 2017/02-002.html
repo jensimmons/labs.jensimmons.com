@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demo | Jen Simmons Labs</title>
+    <script type="text/javascript" src="//fast.fonts.net/jsapi/fa766215-bea4-443f-8854-5d407c2e68af.js"></script>
+    <link rel="stylesheet" href="css/02-002.css">
+  </head>
+  
+  <!-- on CodePen at http://codepen.io/jensimmons/pen/dvEoaz?editors=1100 --> 
+  
+  <body>
+    <main>
+      <h1>This is a test of the br in Grid</h1>
+      <p>What happens to HTML elements that don't have content?</p>
+      <p>This is a paragraph.</p>
+      <br>
+      <p>The item before this item is a br.</p>
+      <p>What did that do?</p>
+      <p>What about this next item, a wbr?</p>
+      <wbr>
+      <p>What does a hr do? Let's find out by putting an hr in</p>
+      <hr>
+      <p>And what about other weird things?</p>
+      <p>Any other elements that don't take content?</p>
+      <p>The hr above this box becomes a vertical line. Hillarious! Why? Because it has `margin: 0.5em auto;` on it. And once it's a Grid Item, the stretch stretch collapses the box to 1px in the inline direction (where it's auto), and stretches the block direction (`margin-block-start: 0.5em; margin-block-end: 0,5em;`) almost the full height of the box.</p>
+      <hr class="alt">
+      <p>If we change the hr's margin to be 0, the hr expands into a box that's the full size of the cell. See to the left.</p>
+      <p>If you want an hr line that's a horizontal line, you can change the margin to `margin: 0;` and the alignment to `align-self: center`. See next box:</p>
+      <hr class="alt2">
+      <p>Ta da! Meanwhile, we can't mess around with the `br`, because it can't be targeted with any CSS selectors. So it can't be placed elsewhere on the Grid. It can only live where it's autoplaced. It can't be styled in any way.</p>
+    </main>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-423984-20', 'auto');
+    ga('send', 'pageview');
+  </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  font-family: 'Neue Haas Grotesk W01 Disp',Helvetica, sans-serif;
+  line-height: 1;
+  font-size: 100%;
+  color: #222;
+  font-weight: 600;
+  text-rendering: optimizeLegibility;
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%; }
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (120px)[3];
+      grid-template-columns: repeat(3, 120px);
+  grid-gap: 1rem;
+  margin: 2rem; }
+
+main > * {
+  background: #eee; }
+
+h1, p {
+  margin: 0; }
+
+hr.alt {
+  margin: 0;
+  background: white; }
+
+hr.alt2 {
+  margin: 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; }
