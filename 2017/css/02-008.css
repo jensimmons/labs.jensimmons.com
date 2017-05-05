@@ -25,10 +25,17 @@ div {
   border: 2px solid black; }
 
 h1 {
-  font-size: 3rem; }
+  font-size: 2rem;
+  margin-left: 1rem; }
 
 h2 {
-  margin: 2rem 1rem 0.5rem; }
+  font-size: 1rem;
+  margin: 1rem 1rem 0.5rem; }
+
+section {
+  border-bottom: 5px solid black;
+  padding-bottom: 5rem;
+  margin-bottom: 2rem; }
 
 .grid {
   display: none;
@@ -48,10 +55,16 @@ h2 {
 .wrap {
   flex-wrap: wrap; }
 
-div img {
-  flex: initial;
-  flex: auto;
-  flex: none;
+.initial img {
+  flex: initial; }
+
+.auto img {
+  flex: auto; }
+
+.none img {
+  flex: none; }
+
+.one img {
   flex: 1; }
 
 .all {
