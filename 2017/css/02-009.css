@@ -2,7 +2,7 @@
   box-sizing: border-box; }
 
 body {
-  background: yellow; }
+  background: #faf639 url("../media/02-009/tile1.png"); }
 
 main {
   display: grid;
