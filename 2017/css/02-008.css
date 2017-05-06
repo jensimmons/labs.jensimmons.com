@@ -36,6 +36,9 @@ section {
   padding-bottom: 5rem;
   margin-bottom: 2rem; }
 
+section.one {
+  border: none; }
+
 .grid {
   display: none;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
