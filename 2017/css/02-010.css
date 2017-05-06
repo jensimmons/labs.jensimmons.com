@@ -2,7 +2,7 @@
   box-sizing: border-box; }
 
 body {
-  background: #faf639 url("../media/02-009/tile1.png"); }
+  background: #faf639 url("../media/02-010/tile1.png"); }
 
 main {
   display: grid;
@@ -25,3 +25,5 @@ b:nth-of-type(1) {
 
 b:nth-of-type(2) {
   grid-area: 2 / 4; }
+
+/*# sourceMappingURL=02-010.css.map */
