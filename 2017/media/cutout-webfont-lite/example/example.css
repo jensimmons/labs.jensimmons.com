@@ -1,0 +1,55 @@
+/* YouWorkForThem */
+/* Good Design Needs Good Fonts */
+
+/* WebFont Example Template Design */
+body { background-color:#fff;padding:20px 0;margin:0;font-size: 11px;font-family:Helvetica, Arial, sans-serif; }
+#wrapper { max-width:900px;margin:0 auto; background-color:#ffffff;border:1px solid #efefef;border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px;overflow:hidden;}
+.logo img {margin: 0 0 50px 30px}
+#content { margin-bottom:10px;width:100%;line-height: 1.5}
+#footer { text-align:center;width:100%;font-size:11px;margin:10px 0;padding: 20px 0px;}
+a:link, a:visited { color:#000;font-weight:bold;text-decoration:none; }
+a:hover, a:active, a:focus { color:#008BD1;}
+p {padding: 0 30px;}
+h1 { padding:28px 0 10px 0;font-size: 32px;line-height:32px;margin:0 30px;font-weight:normal;font-style: normal;}
+h2 { font-size: 14px;line-height: 16px;font-weight: normal;font-style: normal;}
+.line { border-top:1px solid #efefef;margin: 20px 0px;padding: 0px;line-height: 1px;}
+.clear { clear: both;}
+/* block content  specimens */
+#textBlock {width: 100%;border-bottom: 1px solid #efefef; padding: 40px 0px;}
+#textBlock .textBlockA, #textBlock .textBlockB {height:250px;max-height:250px;overflow:hidden;position:relative;width:50%;float:left;}
+#textBlock .textBlockFade { position: absolute; bottom:0;z-index:99}
+#content .fade { 	position: absolute;  	bottom: 0;  	left: 0; 	width: 100%;  	text-align: center;  	margin: 0;  	padding: 40px 0;  	background: -webkit-linear-gradient( 	    rgba(255, 255, 255, 0) 0%, 	    rgba(255, 255, 255, 1) 100% 	);  	background-image: -moz-linear-gradient( 	    rgba(255, 255, 255, 0) 0%, 	    rgba(255, 255, 255, 1) 100% 	); 	background-image: -o-linear-gradient( 	    rgba(255, 255, 255, 0) 0%, 	    rgba(255, 255, 255, 1) 100% 	); 	background-image: linear-gradient( 	    rgba(255, 255, 255, 0) 0%, 	    rgba(255, 255, 255, 1) 100% 	); 	background-image: -ms-linear-gradient( 	    rgba(255, 255, 255, 0) 0%, 	    rgba(255, 255, 255, 1) 100% 	); }
+#content .altcolor .fade { 	position: absolute;  	bottom: 0;  	left: 0; 	width: 100%;  	text-align: center;  	margin: 0;  	padding: 20px 0;  	background: -webkit-linear-gradient( 	    rgba(248, 248, 248, 0) 0%, 	    rgba(248, 248, 248, 1) 100% 	);  	background-image: -moz-linear-gradient( 	    rgba(248, 248, 248, 0) 0%, 	    rgba(248, 248, 248, 1) 100% 	); 	background-image: -o-linear-gradient( 	    rgba(248, 248, 248, 0) 0%, 	    rgba(248, 248, 248, 1) 100% 	); 	background-image: linear-gradient( 	    rgba(248, 248, 248, 0) 0%, 	    rgba(248, 248, 248, 1) 100% 	); 	background-image: -ms-linear-gradient( 	    rgba(248, 248, 248, 0) 0%, 	    rgba(248, 248, 248, 1) 100% 	); }
+#textLine {width:100%; overflow: hidden;}
+#textLine .size {border-bottom:1px solid #efefef;margin-bottom: 30px;padding: 5px 0 30px 0;}
+#content .altcolor {background-color: #f8f8f8;}
+/* single line specimens */
+#content .s64{font-size: 64px;line-height: 1.5em; }
+#content .s32{font-size: 32px;line-height: 1.5em; }
+#content .s24{font-size: 24px;line-height: 1.5em; }
+#content .s22{font-size: 22px;line-height: 1.5em; }
+#content .s18{font-size: 18px;line-height: 1.5em; }
+#content .s16{font-size: 16px;line-height: 1.5em; }
+#content .s12{font-size: 12px;line-height: 1.5em; }
+#content .s11{font-size: 11px;line-height: 1.5em; }
+#content .size {font-size: 9px;font-family: Helvetica, Arial, Sans-Serif;font-weight: normal;color: #e5e5e5;text-transform: uppercase;}
+/* glyph chart */
+#content .glyphs {width: 100%;border-bottom: 1px solid #efefef; padding: 40px 0px; font-size:48px; line-height: 1.5em; background-color: #fff !important; color:#000}
+#content .glyphs-alt { background-color: #000000 !important; color:#fff !important;}
+/* help details */
+#help{font-size: 11px;font-family:Helvetica, Arial, sans-serif;padding:30px; background-color: #f6f6f6;line-height:1.8;}
+#help h2 { padding:0;font-size: 14px;line-height: 22px;font-weight: bold;font-style: normal; margin-bottom: 40px;}
+#help .helpBlock {margin-bottom: 40px; clear:both; }
+#help .number {border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;background-color: black;color: white;float: left;padding:20px;font-size: 11px; line-height:11px; font-weight:normal;margin: 0 15px 15px 0;
+}
+#help .codeSample {padding: 20px 15px;color:#000;background-color: #FFE800;border-radius: 5px;-moz-border-radius: 5px; -webkit-border-radius: 5px;margin: 45px 0 0 0;text-align: center;font-family: "Lucida Console", Monaco, monospace;font-size: 11px; word-break: break-all;word-wrap: break-word;}
+/* matadata */
+#metaData{font-size: 11px;padding: 30px;font-family: Helvetica, Arial, Sans-Serif;font-weight: normal;border-top:1px solid #efefef;background: #fff;word-break: break-all;word-wrap: break-word;}
+/*responsive d00d*/
+@media (max-width: 768px) {
+	#content .glyphs {font-size: 24px !important;}
+	#wrapper { border: none !important; border-bottom:1px solid #efefef !important;border-radius:0px !important;-moz-border-radius:0px !important;-webkit-border-radius:0px !important;}
+	body { padding: 0px !important; margin: 0px;}
+	#textBlock .textBlockA, #textBlock .textBlockB {width:100%;float:none;}
+	#textBlock .textBlockA {margin-bottom: 30px;}
+}

@@ -1,0 +1,25 @@
+* {box-sizing: border-box;}
+body { background: yellow;  
+}
+main {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-gap: 2rem;
+  align-items: center;
+  margin: 3rem;
+}
+h1 {
+  display: grid;
+  grid-template-columns: min-content min-content min-content min-content;
+  color: #ff209f;
+  font-family: 'Cutout-Regular', Helvetica, Arial, Sans-Serif; 
+  font-size: 12rem;
+  line-height: .6;
+  justify-items: center;
+}
+b:nth-of-type(1) {
+  grid-area: 1 / 4;
+}
+b:nth-of-type(2) {
+  grid-area: 2 / 4;
+}
