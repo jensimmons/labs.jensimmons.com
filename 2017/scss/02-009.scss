@@ -45,16 +45,10 @@ section.one {
   border: none;
   
 }
-
-.grid {
-  display: none;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  grid-template-columns: repeat(12, min-content);  
-  grid-template-columns: repeat(auto-fit, min-content);
-  align-items: center;
-  justify-items: center;
-  li {
-    background: none;
+article {
+  border: 1px solid black;
+  img {
+    width: 100%;
   }
 }
 
@@ -67,22 +61,16 @@ section.one {
   flex-wrap: wrap;
 }
 
-.initial img {
+.initial p {
   flex: initial;
 }
-.auto img {
+.auto p {
   flex: auto;
 }
-.none img {
+.none p {
   flex: none;
 }
-.one img {
+.one p {
   flex: 1;
 }
 
-
-
-
-.all {
-  display: none;
-}
