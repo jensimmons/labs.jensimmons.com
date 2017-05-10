@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 100%; }
+
+main {
+  width: 80%;
+  max-width: 800px;
+  margin: 1em auto; }
+
+figure {
+  margin: 3rem 0; }
+
+section {
+  background: #fff8eb;
+  padding: 2rem;
+  margin: 4rem 0;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3); }
+
+.underline-test {
+  text-decoration: underline; }
+
+.example1 p {
+  border: 1px solid #d4c9a4;
+  padding: 1em; }
+.example1 a {
+  text-decoration: underline; }
+.example1 figure {
+  margin: 4rem 1rem;
+  min-height: 750px; }
+.example1 section {
+  margin-bottom: 1rem; }
+.example1 figcaption {
+  font-family: Courier, monospace;
+  text-align: center;
+  margin: 0 0 3rem;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.35); }
+  .example1 figcaption em {
+    font-weight: normal;
+    color: black;
+    font-style: normal; }
+.example1 figure:nth-child(1) section {
+  -webkit-writing-mode: horizontal-tb;
+      -ms-writing-mode: lr-tb;
+          writing-mode: horizontal-tb; }
+.example1 figure:nth-child(2) section {
+  -webkit-writing-mode: horizontal-tb;
+      -ms-writing-mode: lr-tb;
+          writing-mode: horizontal-tb; }
+.example1 figure:nth-child(3) section {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  max-height: 600px; }
+.example1 figure:nth-child(4) section {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  max-height: 600px; }
+.example1 figure:nth-child(5) section {
+  -webkit-writing-mode: sideways-rl;
+      -ms-writing-mode: sideways-rl;
+          writing-mode: sideways-rl;
+  max-height: 600px; }
+.example1 figure:nth-child(6) section {
+  -webkit-writing-mode: sideways-lr;
+      -ms-writing-mode: sideways-lr;
+          writing-mode: sideways-lr;
+  max-height: 600px; }
+.example1 figure:nth-child(7) section {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: upright;
+  max-height: 600px; }
+.example1 figure:nth-child(8) section {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  text-orientation: upright;
+  max-height: 500px; }

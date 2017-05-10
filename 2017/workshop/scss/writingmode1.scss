@@ -1,0 +1,98 @@
+* { box-sizing: border-box;}
+html {font-size: 100%;}
+
+main {
+  width: 80%;
+  max-width: 800px;
+  margin: 1em auto;
+}
+figure {
+  margin: 3rem 0;
+}
+section {
+  background: rgb(255, 248, 235);
+  padding: 2rem;
+  margin: 4rem 0;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.3);  
+}
+.underline-test {
+  text-decoration: underline;
+}
+
+.example1 {
+  p {
+    border: 1px solid #d4c9a4;
+    padding: 1em;
+  }
+  a {
+    text-decoration: underline;
+  }
+  figure {
+    margin: 4rem 1rem;
+    min-height: 750px;
+  }
+  section {
+    margin-bottom: 1rem;
+  }
+  figcaption {
+    font-family: Courier, monospace;
+    text-align: center;    
+    margin: 0 0 3rem; 
+    font-size: 0.9rem;
+    color: rgba(0,0,0,0.35);
+    em {
+      font-weight: normal;
+      color: black;
+      font-style: normal;
+    }     
+  }
+  figure:nth-child(1) {
+    section {
+      writing-mode: horizontal-tb;  
+    }
+  }
+  figure:nth-child(2) {
+    section {
+      writing-mode: horizontal-tb;
+    }
+  }
+  figure:nth-child(3) {
+    section {
+      writing-mode: vertical-rl; 
+      max-height: 600px;
+    }
+  }
+  figure:nth-child(4) {
+    section {
+      writing-mode: vertical-lr;  
+      max-height: 600px;
+    }
+  }
+  figure:nth-child(5) {
+    section {
+      writing-mode: sideways-rl; 
+      max-height: 600px;
+    }
+  }
+  figure:nth-child(6) {
+    section {
+      writing-mode: sideways-lr;  
+      max-height: 600px;
+    }
+  }
+  figure:nth-child(7) {
+    section {
+      writing-mode: vertical-rl; 
+      text-orientation: upright;
+      max-height: 600px;
+    }
+  }
+  figure:nth-child(8) {
+    section {
+      writing-mode: vertical-lr; 
+      text-orientation: upright;
+      max-height: 500px;
+    }
+  }
+}
+

@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  font-family: georgia, serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-kerning: normal;
+          font-kerning: normal;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%; }
+
+img {
+  width: 100%; }
+
+.element-invisible {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); }

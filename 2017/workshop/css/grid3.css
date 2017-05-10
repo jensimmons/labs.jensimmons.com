@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  font-family: 'Futura W01', helvetica, san-serif;
+  font-size: 14px;
+  background: #f6f3ea;
+  color: rgba(12, 12, 10, 0.8);
+  line-height: 1.3;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%; }
+
+img {
+  max-width: 100%; }
+
+main {
+  margin: 3rem auto;
+  padding: 1rem;
+  background: white;
+  border: 5px solid black;
+  box-shadow: 0px 0px 4px rbga(0, 0, 0, 0.2); }
+
+h1 {
+  margin-bottom: 0; }
+
+p {
+  margin: 0.5em 0; }
+
+.grid-3A main {
+  width: 500px; }
+
+.grid-3B main {
+  width: 500px; }
+.grid-3B img {
+  float: left;
+  width: 40%;
+  margin-right: 5%; }
+
+.grid-3C main {
+  width: 80%; }
+.grid-3C img {
+  float: left;
+  width: 40%;
+  margin-right: 5%; }
+.grid-3C div:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.grid-3D main {
+  width: 80%; }
+.grid-3D .media {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  align-items: start;
+  grid-gap: 1rem; }
+.grid-3D img {
+  object-fit: none;
+  grid-row: span 2; }
+.grid-3D h1 {
+  margin: 0; }
