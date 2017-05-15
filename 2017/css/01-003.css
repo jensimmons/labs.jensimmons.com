@@ -67,7 +67,7 @@ html {
 
 .overlapping ul {
   display: grid;
-  grid-template-columns: 0.8fr 0.4fr 0.4fr 0.6fr 1.2fr;
+  grid-template-columns: 4fr 2fr 2fr 3fr 6fr;
   max-width: 600px; }
 
 .overlapping li:nth-child(1) {
