@@ -43,6 +43,9 @@ main {
   max-width: 800px;
   margin: 5vw;
 }
+.header-link {
+  display: block;
+}
 header, b {
   grid-row: 2 / 4;
   padding: 2rem;
