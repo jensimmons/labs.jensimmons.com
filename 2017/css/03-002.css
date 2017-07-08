@@ -1,0 +1,36 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box; }
+
+p {
+  font-family: georgia;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  max-width: 400px;
+  margin: 8rem auto; }
+
+@supports (initial-letter: 2) or (-webkit-initial-letter: 2) {
+  p:first-letter {
+    -webkit-initial-letter: 4;
+    initial-letter: 4;
+    border: 1px solid black;
+    padding: 1.6rem;
+    margin: 0 1rem 0 0; } }
+
+cite {
+  display: block;
+  margin-left: 2rem; }
+
+cite:before {
+  content: '— '; }
+
+footer {
+  max-width: 400px;
+  margin: 8rem auto;
+  color: #444;
+  font-family: avenir, roboto, helvetica, san-serif;
+  font-size: 0.8em; }
+
+a {
+  text-decoration: none;
+  color: #34b4c5; }

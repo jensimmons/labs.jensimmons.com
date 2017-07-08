@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: avenir, roboto, helvetica, sans-serif;
+  margin: 5rem; }
+
+section {
+  margin-bottom: 4rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid pink; }
+
+ul {
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(4rem, 1fr))[5];
+      grid-template-columns: repeat(5, minmax(4rem, 1fr));
+  grid-gap: 1rem; }
+
+li {
+  display: block;
+  padding: 1rem 2rem;
+  border: 1px solid black;
+  background: #eee; }
+
+.vertical-lr {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr; }
+  .vertical-lr li {
+    text-orientation: upright; }
+
+.vertical-rl {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl; }
+  .vertical-rl li {
+    text-orientation: upright; }
+
+.sideways-lr {
+  -webkit-writing-mode: sideways-lr;
+      -ms-writing-mode: sideways-lr;
+          writing-mode: sideways-lr; }
+
+.sideways-rl {
+  -webkit-writing-mode: sideways-rl;
+      -ms-writing-mode: sideways-rl;
+          writing-mode: sideways-rl; }

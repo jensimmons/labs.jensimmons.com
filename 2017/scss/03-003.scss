@@ -1,0 +1,36 @@
+* {box-sizing: border-box;}
+body { 
+  font-family: avenir, roboto, helvetica, sans-serif;
+  margin: 5rem;
+}
+section {
+  margin-bottom: 4rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid pink;
+}
+ul {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(4rem, 1fr));
+  grid-gap: 1rem;
+}
+li {
+  display: block;
+  padding: 1rem 2rem;
+  border: 1px solid black;
+  background: #eee;
+}
+.vertical-lr {
+  writing-mode: vertical-lr;
+  li { text-orientation: upright;}
+}
+.vertical-rl {
+  writing-mode: vertical-rl;
+  li { text-orientation: upright;}
+}
+.sideways-lr {
+  writing-mode: sideways-lr;
+}
+.sideways-rl {
+  writing-mode: sideways-rl;
+}
