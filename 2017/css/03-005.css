@@ -1,0 +1,26 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh; }
+
+main {
+  width: 80%;
+  font-family: 'Cormorant Infant', serif;
+  margin: auto; }
+
+h1 {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-writing-mode: sideways-lr;
+      -ms-writing-mode: sideways-lr;
+          writing-mode: sideways-lr;
+  font-size: 7vw;
+  float: left;
+  margin: 0; }
+
+img {
+  display: block;
+  width: 85%; }
+/*# sourceMappingURL=03-005.css.map */
