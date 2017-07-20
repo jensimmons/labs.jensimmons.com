@@ -1,10 +1,36 @@
 * {
   box-sizing: border-box;
 }
+body {
+  padding: 1rem;
+}
+
+// Just for the fallback layout
+
+main {
+  max-width: 500px;
+  margin: 0 auto;
+}
+article {
+  margin: 1rem 0;
+}
+
+@supports (display: grid) {
+  main { 
+    max-width: 10000px;
+    margin: 0;
+  }
+  article {
+    margin: 0;
+  }
+  .deals {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+  }
+}
+  
 .deals {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 1rem;
   font-family: Avenir, Roboto, Helvetica, san-serif; 
   font-size: 80%;
 }
