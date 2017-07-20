@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+.deals {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+  font-family: Avenir, Roboto, Helvetica, san-serif; 
+  font-size: 80%;
+}
+.sale-item {
+  display: flex;
+  flex-flow: column;
+  border:  1px solid black;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+.sale-item > h1 {
+  margin: 1rem 1rem 0;
+}
+.sale-item > ul {
+  margin: 0 0 1rem;
+}
+.sale-item > p {
+  margin: 0.25em 1rem 1rem;
+}
+.sale-item > img {
+  order: -1;
+  align-self: center;
+}
+.sale-item > button {
+  margin-top: auto; 
+  background: teal;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+}

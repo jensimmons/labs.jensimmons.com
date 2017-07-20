@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box; }
+
+.deals {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+  font-family: Avenir, Roboto, Helvetica, san-serif;
+  font-size: 80%; }
+
+.sale-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 2rem; }
+
+.sale-item > h1 {
+  margin: 1rem 1rem 0; }
+
+.sale-item > ul {
+  margin: 0 0 1rem; }
+
+.sale-item > p {
+  margin: 0.25em 1rem 1rem; }
+
+.sale-item > img {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; }
+
+.sale-item > button {
+  margin-top: auto;
+  background: teal;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.2rem; }
