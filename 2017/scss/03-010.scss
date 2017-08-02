@@ -1,0 +1,185 @@
+* {box-sizing:border-box;}
+
+a:focus {
+  border: 4px solid yellow;
+}
+html {
+  font-family: helvetica, san-serif;
+  line-height: 1.3em;
+  text-rendering: optimizeLegibility;
+  font-kerning: normal;
+  text-size-adjust: 100%;
+}
+body {
+//  width: 90%;
+  margin: 5vw auto;
+  text-align: center;
+}
+h1 {
+  line-height: 1.2;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header { /* autoprefixer: off */
+  width: 90%;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  text-transform: uppercase;
+  h1 {
+    margin: 0 0 0.5em;
+    font-size: 1.8rem;
+  }
+  @media (min-width: 500px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    h1 {
+      margin: 0 1em 0 0;
+    }
+  }
+  nav ul {
+    display: flex;
+    margin-bottom: 4px;
+    justify-content: space-between;
+  }    
+  @media (min-width: 300px) {
+    nav li {
+      flex: auto;
+      margin-right: 1em;
+      padding-right: 1em; 
+      border-right: 1px solid #000;
+    }
+  }
+  @media (min-width: 580px) {
+    nav ul {
+      flex-wrap: wrap;
+    }
+  }
+  nav li:last-child {
+    border: none;
+    margin-right: 0;
+    padding-right: 0;
+  }
+}
+.hero { /* autoprefixer: off */
+  display: grid;
+  @media (max-width: 880px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+  }
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 2em;
+  margin: 2rem 0;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    text-transform: uppercase;
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;  
+    font-size: calc(2.2rem + 3vw); 
+    margin-left: 1rem; 
+    margin-right: 1rem; 
+  }
+  h2 {
+    text-transform: uppercase;
+    border: 1px solid black;
+    background: rgba(255,255,255,0.6);
+    padding: 1rem 0.5rem 0.6rem;
+    font-size: 1.2rem;
+    margin: 0;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;    
+    align-self: self-start; 
+    @media (max-width: 880px) {
+      grid-column: 2 / 4;
+    }
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    grid-column: 1 / -1;
+    grid-row: 1 / 4;
+    object-fit: fill;
+    opacity: 0.6;
+  }
+  p {
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;   
+    align-self: center;
+    width: 66%; 
+    justify-self: center;
+    font-size: calc(0.75rem + 1vw);
+    line-height: 1.5;
+    margin: 0;
+  }
+}
+.talking-points { /* autoprefixer: off */
+  background: #191919;
+  color: #efefef;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 2rem;
+  div { /* autoprefixer: off */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 5% 1em;
+    padding: 0 1rem;
+    h2 {
+      margin: 1em 0 0.25em;
+      font-size: 1.8rem;
+    }
+    img {
+      order: -1;
+      max-width: 100px;
+    }
+    p {
+      font-size: 0.9rem;
+      margin-bottom: 0;
+    }
+  }
+}
+footer {
+  width: 90%;
+  margin-top: 1rem;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  padding: 1rem;
+  font-size: 0.8em;
+  p {
+    margin: 0;
+  }
+  a {
+    text-decoration: underline;
+  }
+}
+
+
+// Style a Warning Message. Remove if Grid works ---------------------------------------
+.warning {
+  color: #eee;
+  background: rgb(188, 0, 0);
+  padding: 3rem 4rem;
+  font-size: 150%; 
+  line-height: 1.4;
+  text-align: left;
+  margin-bottom: 1em;
+  a {
+    color: white;
+    text-decoration: underline;
+  }
+}
+@supports (display: grid) {
+  .warning {
+    display: none;
+  }
+}
