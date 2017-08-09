@@ -5,7 +5,8 @@ html {
   background: black;
   color: #FF0000;
   margin: 0;
-  font-size: 81.25%; }
+  font-size: 81.25%;
+  background-image: url("../media/02-015/bg_stars.gif"); }
 
 body {
   width: 80%;
@@ -43,7 +44,6 @@ footer {
 
 ul {
   -webkit-columns: 150px;
-     -moz-columns: 150px;
           columns: 150px; }
 
 .warning {
