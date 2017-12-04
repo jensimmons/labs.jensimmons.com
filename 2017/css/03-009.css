@@ -1,8 +1,8 @@
-* {
+*, *:before, *:after {
   box-sizing: border-box; }
 
 body {
-  padding: 1rem; }
+  padding: 2rem; }
 
 main {
   max-width: 500px;
@@ -13,40 +13,44 @@ article {
 
 @supports (display: grid) {
   main {
-    max-width: 10000px;
+    max-width: none;
     margin: 0; }
   article {
     margin: 0; }
-  .deals {
+  main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1rem; } }
 
-.deals {
-  font-family: Avenir, Roboto, Helvetica, san-serif;
-  font-size: 80%; }
-
-.sale-item {
+article {
   display: flex;
-  flex-flow: column;
-  border: 1px solid black;
-  border-radius: 1rem;
-  padding: 2rem; }
+  flex-flow: column; }
 
-.sale-item > h1 {
-  margin: 1rem 1rem 0; }
-
-.sale-item > ul {
-  margin: 0 0 1rem; }
-
-.sale-item > p {
-  margin: 0.25em 1rem 1rem; }
-
-.sale-item > img {
+article > img {
   order: -1;
   align-self: center; }
 
-.sale-item > button {
+article {
+  padding: 2rem; }
+
+article > h1 {
+  margin: 1rem 1rem 0; }
+
+article > ul {
+  margin: 0 0 1rem; }
+
+article > p {
+  margin: 0.25em 1rem 1rem; }
+
+main {
+  font-family: Avenir, Roboto, Helvetica, san-serif;
+  font-size: 80%; }
+
+article {
+  border: 1px solid black;
+  border-radius: 1rem; }
+
+article > button {
   margin-top: auto;
   background: teal;
   color: white;

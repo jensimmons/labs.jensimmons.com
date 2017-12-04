@@ -1,12 +1,11 @@
-* {
-  box-sizing: border-box;
-}
+*, *:before, *:after { box-sizing: border-box; }
+
 body {
-  padding: 1rem;
+  padding: 2rem;
 }
 
-// Just for the fallback layout
-
+// Here is the fallback layout. It works in every browser,
+// even those that don't understand `@supports`.
 main {
   max-width: 500px;
   margin: 0 auto;
@@ -15,46 +14,63 @@ article {
   margin: 1rem 0;
 }
 
+
+// Now let's create a layout for browsers that understand CSS Grid (and @supports).
 @supports (display: grid) {
+// Undo the fallback layout.
   main { 
-    max-width: 10000px;
+    max-width: none;
     margin: 0;
   }
   article {
     margin: 0;
   }
-  .deals {
+
+// Create the Grid-based layout.
+  main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1rem;
   }
 }
-  
-.deals {
-  font-family: Avenir, Roboto, Helvetica, san-serif; 
-  font-size: 80%;
-}
-.sale-item {
+
+
+// Create Flexbox-based layout of content inside each card
+article {
   display: flex;
   flex-flow: column;
-  border:  1px solid black;
-  border-radius: 1rem;
-  padding: 2rem;
 }
-.sale-item > h1 {
-  margin: 1rem 1rem 0;
-}
-.sale-item > ul {
-  margin: 0 0 1rem;
-}
-.sale-item > p {
-  margin: 0.25em 1rem 1rem;
-}
-.sale-item > img {
+article > img {
   order: -1;
   align-self: center;
 }
-.sale-item > button {
+
+
+// Adjust the spacing to make things look good
+article {
+  padding: 2rem;
+}
+article > h1 {
+  margin: 1rem 1rem 0;
+}
+article > ul {
+  margin: 0 0 1rem;
+}
+article > p {
+  margin: 0.25em 1rem 1rem;
+}
+
+
+// Visual styling, including Typography and Button 
+main {
+  font-family: Avenir, Roboto, Helvetica, san-serif; 
+  font-size: 80%;
+}
+article {
+  border:  1px solid black;
+  border-radius: 1rem;
+}
+article > button {
   margin-top: auto; 
   background: teal;
   color: white;
