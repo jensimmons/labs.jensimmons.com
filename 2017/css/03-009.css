@@ -11,7 +11,7 @@ main {
 article {
   margin: 1rem 0; }
 
-@supports (display: gggggggrid) {
+@supports (display: grid) {
   main {
     max-width: 10000px;
     margin: 0; }
