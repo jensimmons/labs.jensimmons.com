@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+}
+
+// Just for the fallback layout
+
+header {
+  
+}
+main {
+
+}
+article {
+
+}
+
+@supports (display: grid) {
+  main { 
+    max-width: 10000px;
+    margin: 0;
+  }
+  article {
+    margin: 0;
+  }
+  .deals {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+  }
+}
+  
+body {
+  font-family: Avenir, Roboto, Helvetica, san-serif; 
+  font-size: 80%;
+}

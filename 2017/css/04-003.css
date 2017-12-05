@@ -1,0 +1,106 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 35px;
+  height: 0;
+  overflow: hidden; }
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.A {
+  background: black; }
+  .A body {
+    background: #c0c0c0;
+    font-family: Times;
+    width: 640px;
+    margin: 0 auto;
+    padding: 2em; }
+
+.B {
+  background: white;
+  font-size: 100%;
+  font-family: Arial; }
+
+.C {
+  background: white;
+  font-size: 120%;
+  font-family: Georgia;
+  line-height: 1.58;
+  letter-spacing: -.003em; }
+  .C main {
+    margin: 2rem auto;
+    max-width: 740px; }
+
+.D html {
+  background: white; }
+
+.D body {
+  font-family: Georgia, serif;
+  font-size: 105%;
+  line-height: 1.6;
+  background: #fcfaf2;
+  margin: 2rem;
+  padding: 3rem;
+  -webkit-box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1); }
+
+.D main {
+  max-width: 30rem;
+  margin: 0 auto; }
+
+.D h1 {
+  margin: 0;
+  padding: 2rem 0 1.2rem;
+  border-top: 1px solid black; }
+
+.D p {
+  margin-top: 0; }
+
+.D cite {
+  text-align: right; }
+
+.D div {
+  display: flow-root; }
+
+@supports (initial-letter: 4) or (-webkit-initial-letter: 4) {
+  .D p:first-letter {
+    -webkit-initial-letter: 4 3;
+    initial-letter: 4 3;
+    margin-right: 0.5rem; } }
+
+.D img {
+  max-width: 100%; }
+
+@media (min-width: 500px) {
+  .D img {
+    float: right;
+    width: 50%;
+    margin: 0 0 0.5rem 1rem;
+    border-radius: 50%;
+    -webkit-shape-outside: border-box;
+            shape-outside: border-box;
+    -webkit-shape-margin: 1rem;
+            shape-margin: 1rem; } }
+
+@supports (display: grid) {
+  .D main {
+    max-width: inherit;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr 5fr 3fr 2fr; }
+  .D main > header {
+    grid-column: 1 / -1; }
+  .D main > div {
+    grid-column: 3 / 5; }
+  .D main > cite {
+    grid-column: 1 / 2; } }
