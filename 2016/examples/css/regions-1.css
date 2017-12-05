@@ -18,10 +18,8 @@ p:first-child {
 
 .version-c article {
   -webkit-columns: 14em;
-     -moz-columns: 14em;
           columns: 14em;
   -webkit-column-gap: 3em;
-     -moz-column-gap: 3em;
           column-gap: 3em;
   line-height: 1.4em; }
 
@@ -45,10 +43,8 @@ p:first-child {
     line-height: 1.4em; }
   .version-e article {
     -webkit-columns: 14em;
-       -moz-columns: 14em;
             columns: 14em;
     -webkit-column-gap: 3em;
-       -moz-column-gap: 3em;
             column-gap: 3em;
     line-height: 1.4em;
     -webkit-flow-into: article; }
@@ -67,10 +63,10 @@ p:first-child {
     -webkit-flow-into: article; }
   .version-f .region-set {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap; }
   .version-f .region {

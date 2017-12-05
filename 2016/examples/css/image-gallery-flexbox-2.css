@@ -23,26 +23,21 @@ header {
 
 ul {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   height: 98vh;
   margin: 0; }
 
 li {
   -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   margin: 10px; }
@@ -54,4 +49,5 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
   border: 1px solid black;
-  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5); }
+  -webkit-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5); }

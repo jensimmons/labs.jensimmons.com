@@ -29,32 +29,26 @@ figcaption {
 
 .one {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
   .one main {
     -webkit-box-flex: 1;
-    -webkit-flex: 1 1 70%;
         -ms-flex: 1 1 70%;
             flex: 1 1 70%; }
   .one aside {
     -webkit-box-flex: 1;
-    -webkit-flex: 1 1 30%;
         -ms-flex: 1 1 30%;
             flex: 1 1 30%; }
 
 .two {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
   .two main {
     -webkit-box-flex: 7;
-    -webkit-flex: 7;
         -ms-flex: 7;
             flex: 7; }
   .two aside {
     -webkit-box-flex: 3;
-    -webkit-flex: 3;
         -ms-flex: 3;
             flex: 3; }

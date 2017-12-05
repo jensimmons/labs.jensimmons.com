@@ -1,13 +1,12 @@
 * {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 body {
   background: #fff;
   margin: 5em;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr); }
+  grid-template-columns: repeat(5, 1fr); }
 
 main {
   /* autoprefixer: off */
@@ -31,6 +30,6 @@ h3 {
   font-size: 80%;
   color: red; }
 
-@supports ((display: -ms-grid) or (display: grid)) {
+@supports (display: grid) {
   .warning {
     display: none; } }

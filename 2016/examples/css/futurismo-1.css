@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'Battling';
   src: url("../fonts/Battling1NPmed.otf") format("opentype"); }
+
 body {
   background: #A1A990;
   color: #3C4468; }
@@ -59,6 +60,7 @@ sup {
 @supports (display: grid) {
   .rect {
     display: block; } }
+
 .circle {
   width: 50px;
   height: 50px; }

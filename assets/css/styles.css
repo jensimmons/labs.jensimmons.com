@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 html {
   font-size: 100%;
@@ -91,7 +92,6 @@ h2 {
 .demo-list img {
   border: 4px solid black;
   background: white;
-  background: -webkit-linear-gradient(top, white 0px, white 16px, black 16px, black 32px);
   background: linear-gradient(to bottom, white 0px, white 16px, black 16px, black 32px);
   padding-top: 20px; }
 
@@ -131,13 +131,12 @@ header {
     padding: 0 0.8rem 0 1.2rem;
     z-index: 2;
     -ms-flex-item-align: start;
-        -ms-grid-row-align: start;
         align-self: start; }
   .intro {
     /* autoprefixer: off */
     width: 50%; } }
 
-@supports ((display: -ms-grid) or (display: grid)) {
+@supports (display: grid) {
   @media (min-width: 880px) {
     main {
       /* autoprefixer: off */

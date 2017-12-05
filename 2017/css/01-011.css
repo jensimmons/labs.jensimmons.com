@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 html {
   font-family: 'Futura W01', helvetica, san-serif;
@@ -38,7 +39,8 @@ a {
 
 .index img {
   width: 100%;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   border: 1px solid #aaa; }
 
 .index .original img {
@@ -47,7 +49,7 @@ a {
 .index a {
   display: block; }
 
-@supports ((display: -ms-grid) or (display: grid)) {
+@supports (display: grid) {
   .index ul {
     /* autoprefixer: off */
     display: grid;

@@ -29,38 +29,47 @@ ul {
   ul {
     grid-template-columns: repeat(2, calc(80vw/2));
     grid-template-rows: repeat(2, calc(80vw/2)); } }
+
 @media (min-width: 400px) {
   ul {
     grid-template-columns: repeat(3, calc(80vw/3));
     grid-template-rows: repeat(3, calc(80vw/3)); } }
+
 @media (min-width: 500px) {
   ul {
     grid-template-columns: repeat(4, calc(80vw/4));
     grid-template-rows: repeat(4, calc(80vw/4)); } }
+
 @media (min-width: 600px) {
   ul {
     grid-template-columns: repeat(5, calc(80vw/5));
     grid-template-rows: repeat(5, calc(80vw/5)); } }
+
 @media (min-width: 700px) {
   ul {
     grid-template-columns: repeat(6, calc(80vw/6));
     grid-template-rows: repeat(6, calc(80vw/6)); } }
+
 @media (min-width: 800px) {
   ul {
     grid-template-columns: repeat(7, calc(80vw/7));
     grid-template-rows: repeat(7, calc(80vw/7)); } }
+
 @media (min-width: 900px) {
   ul {
     grid-template-columns: repeat(8, calc(80vw/8));
     grid-template-rows: repeat(8, calc(80vw/8)); } }
+
 @media (min-width: 1000px) {
   ul {
     grid-template-columns: repeat(9, calc(80vw/9));
     grid-template-rows: repeat(9, calc(80vw/9)); } }
+
 @media (min-width: 1100px) {
   ul {
     grid-template-columns: repeat(10, calc(80vw/10));
     grid-template-rows: repeat(10, calc(80vw/10)); } }
+
 ul {
   -webkit-clip-path: polygon(10px 6px, calc(100% - 7px) 6px, calc(100% - 7px) calc(100% - 6px), 10px calc(100% - 6px));
   clip-path: polygon(10px 6px, calc(100% - 7px) 6px, calc(100% - 7px) calc(100% - 6px), 10px calc(100% - 6px)); }

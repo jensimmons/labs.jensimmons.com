@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 html {
   font-family: Helvetica, sans-serif;
@@ -12,7 +13,8 @@ html {
   font-kerning: normal;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%; }
+  -moz-text-size-adjust: 100%;
+       text-size-adjust: 100%; }
 
 body {
   margin: 0;
@@ -74,9 +76,7 @@ img:nth-of-type(7) {
   grid-column: 3 / span 2; }
 
 section {
-  -ms-grid-column-span: 2;
-  -ms-grid-column: 1;
-      grid-column: 1 / span 2; }
+  grid-column: 1 / span 2; }
 
 section:nth-of-type(1) {
   /* autoprefixer: off */

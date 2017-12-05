@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 html {
   font-family: 'Neue Haas Grotesk W01 Disp',Helvetica, sans-serif;
@@ -12,13 +13,12 @@ html {
   font-kerning: normal;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%; }
+  -moz-text-size-adjust: 100%;
+       text-size-adjust: 100%; }
 
 main {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (120px)[3];
-      grid-template-columns: repeat(3, 120px);
+  grid-template-columns: repeat(3, 120px);
   grid-gap: 1rem;
   margin: 2rem; }
 
@@ -35,5 +35,4 @@ hr.alt {
 hr.alt2 {
   margin: 0;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center; }

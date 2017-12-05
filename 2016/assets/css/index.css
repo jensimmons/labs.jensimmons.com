@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 html {
   font-family: 'Futura W01', helvetica, san-serif;
@@ -11,7 +12,8 @@ html {
   font-kerning: normal;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%; }
+  -moz-text-size-adjust: 100%;
+       text-size-adjust: 100%; }
 
 img {
   width: 100%; }
@@ -65,10 +67,9 @@ header {
   max-width: 500px;
   font-size: 0.8rem; }
 
-@supports ((display: -ms-grid) or (display: grid)) {
+@supports (display: grid) {
   .support-note {
     display: none; }
-
   header {
     /* autoprefixer: off */
     display: flex;
@@ -175,23 +176,19 @@ header {
       header h1:nth-child(1) {
         grid-column: 1 / -1; }
       header h1:nth-child(2) {
-        -ms-grid-column: 5;
-            grid-column: 5;
+        grid-column: 5;
         grid-row: 2 / 4;
         margin-right: -5px; }
       header .follow-links {
         grid-column: 1 / 4;
-        -ms-grid-row: 3;
-            grid-row: 3;
+        grid-row: 3;
         border-bottom: 10px solid #f9423a; }
       header .demo-list {
         grid-column: 1 / -1;
-        -ms-grid-row: 4;
-            grid-row: 4; }
+        grid-row: 4; }
       header .workshop-link {
         grid-column: 1 / -1;
-        -ms-grid-row: 5;
-            grid-row: 5;
+        grid-row: 5;
         margin-left: 0; } }
     @media (min-width: 1000px) {
       header {
@@ -202,6 +199,7 @@ header {
     @media (min-width: 1800px) {
       header {
         padding-bottom: 30rem; } } }
+
 nav {
   background: #f9423a;
   padding: 1.04rem 5vw 0.9rem calc(5vw + 1.2rem);
@@ -211,17 +209,14 @@ nav {
   font-size: 0.85rem; }
   nav ol {
     -webkit-columns: 180px;
-       -moz-columns: 180px;
             columns: 180px;
     -webkit-column-gap: 4rem;
-       -moz-column-gap: 4rem;
             column-gap: 4rem; }
     nav ol li {
       text-align: left;
       margin: 0;
       padding: 0;
       -webkit-column-break-inside: avoid;
-         page-break-inside: avoid;
               break-inside: avoid; }
 
 main > section {
@@ -253,7 +248,8 @@ main > section {
           -ms-flex-pack: justify;
               justify-content: space-between; }
   main > section img {
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
     display: block;
     margin-bottom: 1rem;
     height: 180px;
@@ -308,11 +304,13 @@ main > section {
 
 section:nth-child(even) {
   background: #f0efeb;
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3); }
+  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3); }
 
 section:nth-child(odd) {
   background: #fbf9f6;
-  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2); }
+  -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2); }
 
 .note {
   margin: 0.3rem 0 0;

@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 a:focus {
   border: 4px solid yellow; }
@@ -11,6 +12,7 @@ html {
   -webkit-font-kerning: normal;
           font-kerning: normal;
   -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
           text-size-adjust: 100%; }
 
@@ -88,8 +90,7 @@ header {
   align-items: center; }
   @media (max-width: 880px) {
     .hero {
-      -ms-grid-columns: 1fr 1fr 1fr 1fr;
-          grid-template-columns: 1fr 1fr 1fr 1fr; } }
+      grid-template-columns: 1fr 1fr 1fr 1fr; } }
   .hero h1 {
     text-transform: uppercase;
     grid-column: 1 / -1;
@@ -107,7 +108,6 @@ header {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
     -ms-flex-item-align: self-start;
-        -ms-grid-row-align: self-start;
         align-self: self-start; }
     @media (max-width: 880px) {
       .hero h2 {
@@ -125,7 +125,6 @@ header {
     grid-column: 1 / -1;
     grid-row: 4 / 5;
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
         align-self: center;
     width: 66%;
     justify-self: center;
@@ -184,7 +183,7 @@ footer {
     color: white;
     text-decoration: underline; }
 
-@supports ((display: -ms-grid) or (display: grid)) {
+@supports (display: grid) {
   .warning {
     display: none; } }
 /*# sourceMappingURL=03-010.css.map */

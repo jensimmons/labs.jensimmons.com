@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 html {
   font-size: 100%; }
@@ -41,10 +42,8 @@ ul {
   grid-gap: 4px;
   margin-top: 134px; }
   ul li {
-    -ms-grid-column: span 2;
-        grid-column: span 2;
-    -ms-grid-row: span 2;
-        grid-row: span 2; }
+    grid-column: span 2;
+    grid-row: span 2; }
 
 input[type=checkbox]:checked ~ ul {
   /* autoprefixer: off */
@@ -52,10 +51,8 @@ input[type=checkbox]:checked ~ ul {
   grid-gap: 4px;
   margin-top: 152px; }
   input[type=checkbox]:checked ~ ul li {
-    -ms-grid-column: span 2;
-        grid-column: span 2;
-    -ms-grid-row: span 2;
-        grid-row: span 2; }
+    grid-column: span 2;
+    grid-row: span 2; }
   input[type=checkbox]:checked ~ ul img {
     border-radius: 50%; }
   @media (min-width: 392px) {
@@ -68,9 +65,7 @@ input[type=checkbox]:checked ~ ul {
     input[type=checkbox]:checked ~ ul li:nth-child(12),
     input[type=checkbox]:checked ~ ul li:nth-child(15),
     input[type=checkbox]:checked ~ ul li:nth-child(18) {
-      -ms-grid-column-span: 2;
-      -ms-grid-column: 2;
-          grid-column: 2 / span 2; } }
+      grid-column: 2 / span 2; } }
   @media (min-width: 404px) {
     input[type=checkbox]:checked ~ ul li:nth-child(3),
     input[type=checkbox]:checked ~ ul li:nth-child(6),
@@ -78,166 +73,110 @@ input[type=checkbox]:checked ~ ul {
     input[type=checkbox]:checked ~ ul li:nth-child(12),
     input[type=checkbox]:checked ~ ul li:nth-child(15),
     input[type=checkbox]:checked ~ ul li:nth-child(18) {
-      -ms-grid-column-span: 2;
-      -ms-grid-column: auto;
-          grid-column: auto / span 2; }
+      grid-column: auto / span 2; }
     input[type=checkbox]:checked ~ ul li:nth-child(3),
     input[type=checkbox]:checked ~ ul li:nth-child(7),
     input[type=checkbox]:checked ~ ul li:nth-child(11),
     input[type=checkbox]:checked ~ ul li:nth-child(15),
     input[type=checkbox]:checked ~ ul li:nth-child(19) {
-      -ms-grid-column-span: 2;
-      -ms-grid-column: 2;
-          grid-column: 2 / span 2; } }
+      grid-column: 2 / span 2; } }
   @media (min-width: 468px) {
     input[type=checkbox]:checked ~ ul li:nth-child(3),
     input[type=checkbox]:checked ~ ul li:nth-child(7),
     input[type=checkbox]:checked ~ ul li:nth-child(11),
     input[type=checkbox]:checked ~ ul li:nth-child(15),
     input[type=checkbox]:checked ~ ul li:nth-child(19) {
-      -ms-grid-column-span: 2;
-      -ms-grid-column: auto;
-          grid-column: auto / span 2; }
+      grid-column: auto / span 2; }
     input[type=checkbox]:checked ~ ul li:nth-child(4),
     input[type=checkbox]:checked ~ ul li:nth-child(9),
     input[type=checkbox]:checked ~ ul li:nth-child(14),
     input[type=checkbox]:checked ~ ul li:nth-child(19) {
-      -ms-grid-column-span: 2;
-      -ms-grid-column: 2;
-          grid-column: 2 / span 2; } }
+      grid-column: 2 / span 2; } }
   @media (min-width: 532px) {
     input[type=checkbox]:checked ~ ul li:nth-child(4),
     input[type=checkbox]:checked ~ ul li:nth-child(9),
     input[type=checkbox]:checked ~ ul li:nth-child(14),
     input[type=checkbox]:checked ~ ul li:nth-child(19) {
-      -ms-grid-column-span: 2;
-      -ms-grid-column: auto;
-          grid-column: auto / span 2; }
+      grid-column: auto / span 2; }
     input[type=checkbox]:checked ~ ul li:nth-child(4),
     input[type=checkbox]:checked ~ ul li:nth-child(10),
     input[type=checkbox]:checked ~ ul li:nth-child(16) {
-      -ms-grid-column-span: 2;
-      -ms-grid-column: 2;
-          grid-column: 2 / span 2; } }
+      grid-column: 2 / span 2; } }
   @media (min-width: 770px) {
     input[type=checkbox]:checked ~ ul li:nth-child(4),
     input[type=checkbox]:checked ~ ul li:nth-child(10),
     input[type=checkbox]:checked ~ ul li:nth-child(16) {
-      -ms-grid-column-span: 2;
-      -ms-grid-column: auto;
-          grid-column: auto / span 2; }
+      grid-column: auto / span 2; }
     input[type=checkbox]:checked ~ ul li:nth-child(5),
     input[type=checkbox]:checked ~ ul li:nth-child(13) {
-      -ms-grid-column-span: 2;
-      -ms-grid-column: 2;
-          grid-column: 2 / span 2; } }
+      grid-column: 2 / span 2; } }
   @media (min-width: 898px) {
     input[type=checkbox]:checked ~ ul li:nth-child(5),
     input[type=checkbox]:checked ~ ul li:nth-child(13) {
-      -ms-grid-column-span: 2;
-      -ms-grid-column: auto;
-          grid-column: auto / span 2; }
+      grid-column: auto / span 2; }
     input[type=checkbox]:checked ~ ul li:nth-child(4),
     input[type=checkbox]:checked ~ ul li:nth-child(10),
     input[type=checkbox]:checked ~ ul li:nth-child(16) {
-      -ms-grid-column-span: 2;
-      -ms-grid-column: 2;
-          grid-column: 2 / span 2; } }
+      grid-column: 2 / span 2; } }
   @media (min-width: 920px) {
     input[type=checkbox]:checked ~ ul li:nth-child(4),
     input[type=checkbox]:checked ~ ul li:nth-child(10),
     input[type=checkbox]:checked ~ ul li:nth-child(16) {
-      -ms-grid-column-span: 2;
-      -ms-grid-column: auto;
-          grid-column: auto / span 2; }
+      grid-column: auto / span 2; }
     input[type=checkbox]:checked ~ ul li:nth-child(5),
     input[type=checkbox]:checked ~ ul li:nth-child(13) {
-      -ms-grid-column-span: 2;
-      -ms-grid-column: 2;
-          grid-column: 2 / span 2; } }
+      grid-column: 2 / span 2; } }
   @media (min-width: 1048px) {
     input[type=checkbox]:checked ~ ul li:nth-child(5),
     input[type=checkbox]:checked ~ ul li:nth-child(13) {
-      -ms-grid-column-span: 2;
-      -ms-grid-column: auto;
-          grid-column: auto / span 2; }
+      grid-column: auto / span 2; }
     input[type=checkbox]:checked ~ ul li:nth-child(6),
     input[type=checkbox]:checked ~ ul li:nth-child(16) {
-      -ms-grid-column-span: 2;
-      -ms-grid-column: 2;
-          grid-column: 2 / span 2; } }
+      grid-column: 2 / span 2; } }
   @media (min-width: 1176px) {
     input[type=checkbox]:checked ~ ul li:nth-child(6),
     input[type=checkbox]:checked ~ ul li:nth-child(16) {
-      -ms-grid-column-span: 2;
-      -ms-grid-column: auto;
-          grid-column: auto / span 2; }
+      grid-column: auto / span 2; }
     input[type=checkbox]:checked ~ ul li:nth-child(7),
     input[type=checkbox]:checked ~ ul li:nth-child(19) {
-      -ms-grid-column-span: 2;
-      -ms-grid-column: 2;
-          grid-column: 2 / span 2; } }
+      grid-column: 2 / span 2; } }
   @media (min-width: 1280px) {
     input[type=checkbox]:checked ~ ul li:nth-child(7),
     input[type=checkbox]:checked ~ ul li:nth-child(19) {
-      -ms-grid-column-span: 2;
-      -ms-grid-column: auto;
-          grid-column: auto / span 2; }
+      grid-column: auto / span 2; }
     input[type=checkbox]:checked ~ ul li:nth-child(7),
     input[type=checkbox]:checked ~ ul li:nth-child(18) {
-      -ms-grid-column-span: 2;
-      -ms-grid-column: 2;
-          grid-column: 2 / span 2; } }
+      grid-column: 2 / span 2; } }
   @media (min-width: 1326px) {
     input[type=checkbox]:checked ~ ul li:nth-child(7),
     input[type=checkbox]:checked ~ ul li:nth-child(18) {
-      -ms-grid-column-span: 2;
-      -ms-grid-column: auto;
-          grid-column: auto / span 2; }
+      grid-column: auto / span 2; }
     input[type=checkbox]:checked ~ ul li:nth-child(7),
     input[type=checkbox]:checked ~ ul li:nth-child(19) {
-      -ms-grid-column-span: 2;
-      -ms-grid-column: 2;
-          grid-column: 2 / span 2; } }
+      grid-column: 2 / span 2; } }
   @media (min-width: 1400px) {
     input[type=checkbox]:checked ~ ul li:nth-child(7),
     input[type=checkbox]:checked ~ ul li:nth-child(19) {
-      -ms-grid-column-span: 2;
-      -ms-grid-column: auto;
-          grid-column: auto / span 2; }
+      grid-column: auto / span 2; }
     input[type=checkbox]:checked ~ ul li:nth-child(8),
     input[type=checkbox]:checked ~ ul li:nth-child(21) {
-      -ms-grid-column-span: 2;
-      -ms-grid-column: 2;
-          grid-column: 2 / span 2; } }
+      grid-column: 2 / span 2; } }
   @media (min-width: 1518px) {
     input[type=checkbox]:checked ~ ul li:nth-child(8),
     input[type=checkbox]:checked ~ ul li:nth-child(21) {
-      -ms-grid-column-span: 2;
-      -ms-grid-column: auto;
-          grid-column: auto / span 2; }
+      grid-column: auto / span 2; }
     input[type=checkbox]:checked ~ ul li:nth-child(9) {
-      -ms-grid-column-span: 2;
-      -ms-grid-column: 2;
-          grid-column: 2 / span 2; } }
+      grid-column: 2 / span 2; } }
   @media (min-width: 1646px) {
     input[type=checkbox]:checked ~ ul li:nth-child(9) {
-      -ms-grid-column-span: 2;
-      -ms-grid-column: auto;
-          grid-column: auto / span 2; }
+      grid-column: auto / span 2; }
     input[type=checkbox]:checked ~ ul li:nth-child(10) {
-      -ms-grid-column-span: 2;
-      -ms-grid-column: 2;
-          grid-column: 2 / span 2; } }
+      grid-column: 2 / span 2; } }
   @media (min-width: 1838px) {
     input[type=checkbox]:checked ~ ul li:nth-child(10) {
-      -ms-grid-column-span: 2;
-      -ms-grid-column: auto;
-          grid-column: auto / span 2; }
+      grid-column: auto / span 2; }
     input[type=checkbox]:checked ~ ul li:nth-child(11) {
-      -ms-grid-column-span: 2;
-      -ms-grid-column: 2;
-          grid-column: 2 / span 2; } }
+      grid-column: 2 / span 2; } }
 
 label {
   cursor: pointer; }

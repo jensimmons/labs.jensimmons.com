@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 html {
   font-size: 100%; }
@@ -15,7 +16,8 @@ html {
   font-kerning: normal;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%; }
+  -moz-text-size-adjust: 100%;
+       text-size-adjust: 100%; }
 
 main {
   width: 80%;
@@ -29,35 +31,39 @@ h1 {
   line-height: 1.0em; }
 
 .example2B main {
-  display: -ms-grid;
   display: grid;
   grid-gap: 2em; }
+
 .example2B h1:nth-child(1) {
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
   grid-column: 1 / 2; }
+
 .example2B h1:nth-child(2) {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   grid-column: 3 / 4; }
+
 .example2B h1 {
   margin-bottom: 1rem; }
+
 .example2B p {
   grid-column: 2 / 3;
   grid-row: 1 / 2; }
 
 .example2C main {
-  display: -ms-grid;
   display: grid;
   grid-gap: 3rem; }
+
 .example2C h1:nth-child(1) {
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
   grid-column: 1 / 2;
   color: #aaa; }
+
 .example2C h1:nth-child(2) {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
@@ -65,21 +71,24 @@ h1 {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   grid-column: 2 / 3; }
+
 .example2C h1:nth-child(3) {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   grid-column: 4 / 5; }
+
 .example2C h1 {
   margin-bottom: 1rem; }
+
 .example2C p {
   grid-column: 3 / 4;
   grid-row: 1 / 2; }
 
 .example2D main {
-  display: -ms-grid;
   display: grid;
   grid-gap: 1rem; }
+
 .example2D h1 {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
@@ -88,15 +97,16 @@ h1 {
           transform: rotate(180deg);
   grid-column: 1 / 2;
   margin: 0 1rem 1rem 0; }
+
 .example2D p {
   grid-column: 3 / 4;
   grid-row: 1 / 2;
   margin: 0; }
 
 .example2E main {
-  display: -ms-grid;
   display: grid;
   grid-gap: 1rem; }
+
 .example2E h1 {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
@@ -106,6 +116,7 @@ h1 {
   grid-column: 1 / 2;
   margin: 0 1rem 1rem 0;
   text-align: right; }
+
 .example2E p {
   grid-column: 3 / 4;
   grid-row: 1 / 2;

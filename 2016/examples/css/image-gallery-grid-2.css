@@ -40,12 +40,13 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
   border: 1px solid black;
-  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5); }
+  -webkit-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5); }
 
 .warning {
   color: red;
   font-size: 200%; }
 
-@supports ((display: -ms-grid) or (display: grid)) {
+@supports (display: grid) {
   .warning {
     display: none; } }
