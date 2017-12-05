@@ -2,7 +2,6 @@ div {
   color: #fff;
   background: black;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
   div p {
@@ -11,12 +10,9 @@ div {
 .pane-1 {
   background: #80b8f4;
   height: 100vh;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (20vh)[6];
-      grid-template-rows: repeat(6, 20vh);
-  -ms-grid-columns: (20vw)[6];
-      grid-template-columns: repeat(6, 20vw); }
+  grid-template-rows: repeat(6, 20vh);
+  grid-template-columns: repeat(6, 20vw); }
   .pane-1 div:nth-child(1) {
     grid-row: 2 / 3;
     grid-column: 2 / 3; }

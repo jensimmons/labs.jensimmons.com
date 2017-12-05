@@ -22,7 +22,6 @@ h1 {
   margin: 0 0 1em;
   line-height: 1.1em;
   -webkit-column-span: all;
-     -moz-column-span: all;
           column-span: all; }
 
 h2 {
@@ -36,13 +35,10 @@ p {
 
 article {
   -webkit-column-width: 200px;
-     -moz-column-width: 200px;
           column-width: 200px;
   -webkit-column-gap: 2em;
-     -moz-column-gap: 2em;
           column-gap: 2em;
   -webkit-column-rule: 1px solid #444;
-     -moz-column-rule: 1px solid #444;
           column-rule: 1px solid #444; }
   article img {
     width: 100%;
@@ -50,7 +46,6 @@ article {
     display: block; }
   article figure {
     -webkit-column-span: all;
-       -moz-column-span: all;
             column-span: all;
     margin: 1em 0;
     font-style: italic;
@@ -58,10 +53,8 @@ article {
 
 ul {
   -webkit-columns: 250px;
-     -moz-columns: 250px;
           columns: 250px;
   -webkit-column-break-inside: avoid;
-     page-break-inside: avoid;
           break-inside: avoid;
   margin: 0;
   padding: 0;
@@ -77,14 +70,12 @@ ul {
 
 section {
   -webkit-column-width: 300px;
-     -moz-column-width: 300px;
           column-width: 300px; }
   section div {
     border: 1px solid black;
     margin: 0 10px 20px;
     padding-bottom: 1rem;
     -webkit-column-break-inside: avoid;
-       page-break-inside: avoid;
             break-inside: avoid; }
   section h2, section p {
     margin: 0 1rem;

@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 html {
   font-family: 'Londrina Shadow', helvetica, san-serif; }
@@ -19,16 +20,20 @@ h1 {
   /* autoprefixer: off */
   display: grid;
   justify-content: start; }
+
 .example3A h1 span {
   display: block; }
+
 .example3A h1 span:nth-child(1) {
   /* autoprefixer: off */
   grid-column: 1 / 3;
   grid-row: 1 / 2; }
+
 .example3A h1 span:nth-child(2) {
   /* autoprefixer: off */
   grid-column: 1 / 2;
   grid-row: 2 / 3; }
+
 .example3A h1 span:nth-child(2) {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
@@ -38,6 +43,7 @@ h1 {
   margin: 0 -22px;
   padding-top: 3px;
   letter-spacing: -0.3em; }
+
 .example3A h1 span:nth-child(3) {
   /* autoprefixer: off */
   grid-column: 2 / 3;

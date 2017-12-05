@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 html {
   font-family: 'Futura W01', helvetica, san-serif;
@@ -13,7 +14,8 @@ html {
   font-kerning: normal;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%; }
+  -moz-text-size-adjust: 100%;
+       text-size-adjust: 100%; }
 
 img {
   width: 100%; }

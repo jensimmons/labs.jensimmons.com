@@ -22,10 +22,8 @@ h3 {
   font-size: 1.8em;
   margin: 0 0 0.33em;
   -webkit-column-break-inside: avoid;
-     page-break-inside: avoid;
           break-inside: avoid;
   -webkit-column-break-after: avoid;
-     page-break-after: avoid;
           break-after: avoid; }
 
 p {
@@ -42,6 +40,7 @@ p:first-child {
     margin-right: 0.2em;
     -webkit-initial-letter: 3;
     initial-letter: 3; } }
+
 .intro-graph {
   font-size: 160%;
   font-style: italic; }
@@ -49,10 +48,8 @@ p:first-child {
 figure {
   margin: 1em 0 0;
   -webkit-column-break-inside: avoid;
-     page-break-inside: avoid;
           break-inside: avoid;
   -webkit-column-break-after: always;
-     page-break-after: always;
           break-after: always;
   min-height: 75vh; }
   figure img {
@@ -77,24 +74,19 @@ article {
   -webkit-flow-into: content-flow; }
 
 .region-set {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 100%;
-      grid-template-columns: 100%; }
+  grid-template-columns: 100%; }
   @media (min-width: 800px) {
     .region-set {
-      -ms-grid-columns: 34vw 34vw;
-          grid-template-columns: 34vw 34vw;
+      grid-template-columns: 34vw 34vw;
       grid-gap: 4vw; } }
   @media (min-width: 1100px) {
     .region-set {
-      -ms-grid-columns: 22vw 22vw 22vw;
-          grid-template-columns: 22vw 22vw 22vw;
+      grid-template-columns: 22vw 22vw 22vw;
       grid-gap: 3vw; } }
   @media (min-width: 1400px) {
     .region-set {
-      -ms-grid-columns: 16vw 16vw 16vw 16vw;
-          grid-template-columns: 16vw 16vw 16vw 16vw;
+      grid-template-columns: 16vw 16vw 16vw 16vw;
       grid-gap: 2.6666666vw; } }
 
 .region {

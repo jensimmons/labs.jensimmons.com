@@ -1,6 +1,7 @@
 @charset "UTF-8";
 * {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 p {
   font-family: georgia;

@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 body {
   background: #F0F0F0;
@@ -16,7 +17,8 @@ figure {
 img {
   display: block;
   width: 100%;
-  box-shadow: -1px 0px 0px rgba(0, 0, 0, 0.06); }
+  -webkit-box-shadow: -1px 0px 0px rgba(0, 0, 0, 0.06);
+          box-shadow: -1px 0px 0px rgba(0, 0, 0, 0.06); }
 
 .warning {
   margin-left: 1em;
@@ -24,6 +26,6 @@ img {
   font-size: 80%;
   color: red; }
 
-@supports ((display: -ms-grid) or (display: grid)) {
+@supports (display: grid) {
   .warning {
     display: none; } }

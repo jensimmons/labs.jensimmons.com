@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 html {
   font-family: 'Futura W01', helvetica, san-serif;
@@ -12,7 +13,8 @@ html {
   font-kerning: normal;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+       text-size-adjust: 100%;
   background: #D58F75; }
 
 body {
@@ -22,12 +24,9 @@ main {
   overflow: hidden; }
 
 article {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 2fr 2fr 1fr 1fr;
-      grid-template-rows: 2fr 2fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 2fr 1fr 1fr;
   grid-column-gap: 0.5rem;
   width: 200vw;
   background: #1C1C4B;
@@ -44,7 +43,6 @@ h1 {
   font-size: 8vw;
   justify-self: center;
   -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
       align-self: end;
   margin-bottom: 1rem;
   margin-left: 5rem;

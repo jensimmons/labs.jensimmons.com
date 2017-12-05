@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0; }
 
@@ -23,10 +24,8 @@ ul {
   width: 75vw;
   margin: 0 auto;
   list-style: none;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(50px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
   grid-auto-rows: 80px; }
 
 li {
@@ -40,6 +39,6 @@ li {
   color: red;
   font-size: 200%; }
 
-@supports ((display: -ms-grid) or (display: grid)) {
+@supports (display: grid) {
   .warning {
     display: none; } }

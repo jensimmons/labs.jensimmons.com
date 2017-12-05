@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0; }
 
@@ -24,12 +25,9 @@ ul {
   width: 75vw;
   margin: -5vw auto 0;
   list-style: none;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (5vw)[16];
-      grid-template-columns: repeat(16, 5vw);
-  -ms-grid-rows: (9vw)[9];
-      grid-template-rows: repeat(9, 9vw); }
+  grid-template-columns: repeat(16, 5vw);
+  grid-template-rows: repeat(9, 9vw); }
 
 li {
   width: 20vw;
@@ -54,6 +52,6 @@ li:nth-child(4n+4) {
   color: red;
   font-size: 200%; }
 
-@supports ((display: -ms-grid) or (display: grid)) {
+@supports (display: grid) {
   .warning {
     display: none; } }

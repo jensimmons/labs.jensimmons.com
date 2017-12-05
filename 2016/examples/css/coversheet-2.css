@@ -1,7 +1,6 @@
 @import url("coversheet-1.css");
 header {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   height: 100vh; }

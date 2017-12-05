@@ -57,7 +57,7 @@ nav li:last-child {
 .B {
   margin: 0 1.5rem; }
 
-@supports ((display: -ms-grid) or (display: grid)) {
+@supports (display: grid) {
   .C header {
     /* autoprefixer: off */
     margin: 0 1rem;

@@ -2,7 +2,6 @@ div {
   color: #fff;
   background: black;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
   div p {
@@ -12,39 +11,30 @@ div {
   background: #b0dfe3;
   height: 100vh;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 20vw;
       -ms-flex: 1 1 20vw;
           flex: 1 1 20vw;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-  -webkit-align-content: space-around;
-      -ms-flex-line-pack: distribute;
-          align-content: space-around; }
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around; }
 
 .pane-2 {
   background: #e4e7ea;
   height: 100vh;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-  -webkit-align-content: space-around;
-      -ms-flex-line-pack: distribute;
-          align-content: space-around; }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around; }
   .pane-2 div {
     height: 20vh;
     width: 20vw; }
@@ -55,12 +45,10 @@ div {
   background: #b0dfe3;
   height: 100vh;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
   .pane-3 div {
     height: 20vh;
     width: 20vw; }
@@ -76,12 +64,9 @@ div {
 .pane-4 {
   background: #80b8f4;
   height: 100vh;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (20vh)[6];
-      grid-template-rows: repeat(6, 20vh);
-  -ms-grid-columns: (20vw)[6];
-      grid-template-columns: repeat(6, 20vw); }
+  grid-template-rows: repeat(6, 20vh);
+  grid-template-columns: repeat(6, 20vw); }
   .pane-4 div:nth-child(1) {
     grid-row: 2 / 3;
     grid-column: 2 / 3; }

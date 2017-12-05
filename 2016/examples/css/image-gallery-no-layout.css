@@ -28,7 +28,8 @@ li {
   width: 33%;
   border: 1px solid black;
   margin: 20px;
-  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5); }
+  -webkit-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5); }
 
 img {
   display: block; }

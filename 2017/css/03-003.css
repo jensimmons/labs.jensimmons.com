@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 body {
   font-family: avenir, roboto, helvetica, sans-serif;
@@ -12,10 +13,8 @@ section {
 
 ul {
   padding: 0;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(4rem, 1fr))[5];
-      grid-template-columns: repeat(5, minmax(4rem, 1fr));
+  grid-template-columns: repeat(5, minmax(4rem, 1fr));
   grid-gap: 1rem; }
 
 li {

@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 html {
   font-family: 'Adobe Caslon W01', Georgia, serif;
@@ -12,7 +13,8 @@ html {
   font-kerning: normal;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%; }
+  -moz-text-size-adjust: 100%;
+       text-size-adjust: 100%; }
 
 body {
   margin: 0;
@@ -30,8 +32,7 @@ main {
 @media (max-width: 670px) {
   main {
     margin: 4rem 2rem;
-    -ms-grid-columns: 1fr 1fr 1fr minmax(24ch, 40ch) 1fr;
-        grid-template-columns: 1fr 1fr 1fr minmax(24ch, 40ch) 1fr;
+    grid-template-columns: 1fr 1fr 1fr minmax(24ch, 40ch) 1fr;
     grid-gap: 0; } }
 
 h1 {
