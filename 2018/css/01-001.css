@@ -1,0 +1,24 @@
+*, ::before, ::after { box-sizing: border-box; }
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-weight: 500;
+  overflow: hidden;
+  margin: 0;
+}
+.intro {
+  background: #E9AFA8;
+  display: grid;
+  grid-template-columns: 1fr auto 3fr;  
+  grid-template-rows: 20vh minmax(80vh, min-content);
+}
+img {
+  display: block;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  height: 100%;
+}
+header {
+  display: grid;
+  background: green;
+}
