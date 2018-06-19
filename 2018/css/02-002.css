@@ -112,28 +112,21 @@ h5.euclid {
 .alternatives {
   font-feature-settings: "ss04" 1, "ss07" 1;
 }
-.dlig {
-    font-feature-settings: "dlig" 1;
-}
-.alternatives.dlig {
-  font-feature-settings: "ss04" 1, "ss07" 1, "dlig" 1;	
-}
-@supports (font-variant-alternates: styleset(dots)) and (font-variant-ligatures: discretionary-ligatures) {
+@supports (font-variant-alternates: styleset(dots)) {
   .alternatives {
   	font-feature-settings: normal;
 		font-variant-alternates: styleset(dots, chomp);
   }
+}
+.dlig {
+    font-feature-settings: "dlig" 1;
+}
+@supports (font-variant-ligatures: discretionary-ligatures) {
   .dlig {
     font-feature-settings: normal;
     font-variant-ligatures: discretionary-ligatures;
   }
-  .alternatives.dlig {
-    font-feature-settings: normal;
- 		font-variant-alternates: styleset(dots, chomp);
-    font-variant-ligatures: discretionary-ligatures;
-  }
 }
-
 .all-caps {
 	text-transform: uppercase;
 }
