@@ -14,9 +14,21 @@ body {
 .avenir {
   font-family: "Avenir Variable";
   font-size: 4rem;
+}
+.avenir1 {
   font-weight: 680;  
   font-stretch: 75%; 
 }
+.avenir2 {
+  font-weight: 400;  
+  font-stretch: 75%; 
+}
+.avenir3 {
+  font-weight: 900;  
+  font-stretch: 100%; 
+}
+
+
 
 /* --------    Euclid Flex    -------- */
 
