@@ -1,5 +1,24 @@
 * { box-sizing: border-box; }
 
+body {
+  margin: 3rem;
+}
+
+/* --------   Avenir Variable -------- */
+
+@font-face {
+  font-family: 'Avenir Variable';
+  src: url('/2018/fonts/AvenirNext_Variable.ttf') format('truetype');
+}
+
+.avenir {
+  font-family: "Avenir Variable";
+  font-size: 4rem;
+  font-weight: 500;   
+}
+
+/* --------    Euclid Flex    -------- */
+
 @font-face {
 	font-family: 'Euclid Flex';
   src: url("../fonts/EuclidFlex/EuclidFlex-Ultralight-WebXL.woff2") format("woff2");
@@ -29,8 +48,6 @@
   src: url("../fonts/EuclidFlex/EuclidFlex-Bold-WebXL.woff2") format("woff2");
 	font-weight: 800;
 }
-
-
 @font-face {
 	font-family: 'Euclid Flex';
   src: url("../fonts/EuclidFlex/EuclidFlex-UltralightItalic-WebXL.woff2") format("woff2");
@@ -61,26 +78,35 @@
 	font-weight: 800;
 	font-style: italic;
 }
-
-
-@font-face {
-  font-family: 'Avenir Variable';
-  src: url('/2018/fonts/AvenirNext_Variable.ttf') format('truetype');
+@font-feature-values 'Euclid Flex' {
+  @styleset { boxy: 1; dots: 4; chomp: 7;}
 }
-
-
-body {
-  margin: 3rem;
-}
-
-h1.euclid {
-  font-family: "Euclid Flex";
+.euclid {
+  font-family: 'Euclid Flex';
   font-size: 4rem;
   font-weight: 400;  
 }
-
-h1.avenir {
-  font-family: "Avenir Variable";
-  font-size: 4rem;
-  font-weight: 500;   
+.alternatives {
+  font-feature-settings: "ss04" 1, "ss07" 1;
+}
+@supports (font-variant-alternates: styleset(dots)) {
+  .alternatives {
+  	font-feature-settings: normal;
+		font-variant-alternates: styleset(dots, chomp);
+  }
+}
+.dlig {
+    font-feature-settings: "dlig" 1;
+}
+@supports (font-variant-ligatures: discretionary-ligatures) {
+  .dlig {
+    font-feature-settings: normal;
+    font-variant-ligatures: discretionary-ligatures;
+  }
+}
+.alternatives.dlig {
+  font-feature-settings: "ss04" 1, "ss07" 1, "dlig" 1;	
+}
+.all-caps {
+	text-transform: uppercase;
 }
