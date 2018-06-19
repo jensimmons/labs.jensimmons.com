@@ -87,6 +87,10 @@ body {
   font-size: 4rem;
   font-weight: 400;  
 }
+h5.euclid {
+  font-size: 1.8rem;
+	margin: -2rem 0;
+}
 .alternatives {
   font-feature-settings: "ss04" 1, "ss07" 1;
 }
