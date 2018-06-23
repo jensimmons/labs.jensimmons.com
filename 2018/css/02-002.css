@@ -8,10 +8,10 @@ body {
 
 @font-face {
   font-family: 'Avenir Variable';
-  src: url('/2018/fonts/AvenirNext_Variable.ttf') format('truetype');
+  src: url('/2018/fonts/AvenirNext/AvenirNext_Variable.ttf') format('truetype');
 }
 .avenir {
-  font-family: "Avenir Variable";
+  font-family: 'Avenir Variable', Avenir, Helvetica, san-serif;
   font-size: 4rem;
 }
 .avenir1 {
