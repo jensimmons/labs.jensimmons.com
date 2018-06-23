@@ -1,0 +1,53 @@
+* { box-sizing: border-box; }
+
+@font-face {
+  font-family: 'Roslindale';
+  src: url('/2018/fonts/Roslindale/RoslindaleVariableDisplay-VF.woff2') format('woff2');
+}
+
+body {
+  margin: 3rem;
+  font-family: 'Roslindale', Georgia, serif;
+  font-stretch: 120%;
+}
+a {
+	color:#2680b7;
+	text-decoration: none;
+}
+h1 {
+	font-size: 8rem;
+	line-height: 1.2;
+	margin: 0;
+}
+h2 {
+	font-size: 6rem;
+	line-height: 1.2;
+	margin: 0;
+}
+h3 {
+	font-size: 4rem;
+	font-weight: 550;
+	line-height: 1.2;
+	margin: 0;
+}
+.intro {
+	font-size: 280%;
+	font-weight: 300;
+}
+
+article {
+	display: grid;
+	grid-template-columns: 1fr 1fr minmax(40ch, 75ch) 2fr 2fr;
+}
+h1, h2, h3 {
+	grid-column: 1 / -1;
+}
+p {
+	grid-column: 3;
+	margin-bottom: 0.5rem;
+	text-indent: 1rem;
+}
+.intro {
+	grid-column: 3 / -2;
+	text-indent: 0;
+}
