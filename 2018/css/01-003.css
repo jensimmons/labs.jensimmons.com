@@ -1,0 +1,16 @@
+h1, p, img { border: solid 4px #c429c4;}
+div { border: solid 4px #ffb53e;}
+
+.column-1 {
+  float: right;
+  width: 20%;
+  font-size: 80%;
+}
+.column-2 {
+  float: left;
+  width: 75%;
+}
+img {
+  width: 450px;
+  height: 282px;
+}

@@ -1,0 +1,51 @@
+*, *:before, *:after { box-sizing: border-box; }
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-weight: 500;
+  overflow: hidden;
+  margin: 0;
+}
+main {
+  display: grid;
+}
+p {
+  grid-area: 1 / 1;
+  place-content: center;
+  transform: rotate(45deg);
+  z-index: 2;
+  display: none;
+}
+h1 {
+  grid-area: 1 / 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  font-size: 140vh;
+  margin: 0 -0.1em;
+  line-height: 0.9;
+}
+h1 span {
+  grid-area: 1 / 1;
+}
+
+h1 span:nth-of-type(1) {
+  color: rgba(0, 160, 247, 0.7);  
+}
+h1 span:nth-of-type(2) {
+  color: rgba(255, 0, 112, 0.7);  
+  margin-left: 0.1em; 
+}
+h1 span:nth-of-type(3) {
+  color: rgba(255, 255, 0, 0.7);  
+  text-align: center;
+}
+h1 span:nth-of-type(4) {
+  color: rgba(255, 0, 112, 0.7);
+  text-align: right; 
+  margin-right: 0.1em; 
+}
+h1 span:nth-of-type(5) {
+  color: rgba(0, 160, 247, 0.7);
+  text-align: right;  
+}

@@ -1,0 +1,14 @@
+h1, p, img { border: solid 4px #c429c4; }
+div { border: solid 4px #ffb53e; }
+h1:nth-of-type(2) { text-align:center; }
+
+.column-1 {
+  float: left;
+  width: 45%;
+}
+.column-2 {
+  float: right;
+  width: 45%;
+}
+
+img { display: none;}

@@ -1,0 +1,37 @@
+* {box-sizing: border-box;} 
+h1, h2, p, img { border: solid 4px #c429c4;}
+main { border: solid 4px #20a0ca; }
+article, aside { border: solid 4px #ffb53e; font-family: "Avenir Next";}
+h1 {font-family: "Avenir Next Condensed"; font-weight: 200; font-size: 3.6rem; line-height: 1.1; margin: 0 0 0.5em;}
+h2 {text-align:center; margin-top: 0;}
+
+img {
+  width: 100%;
+}
+main {
+  width: 94%;
+  max-width: 960px;
+  margin: 2rem auto;
+}
+@media (min-width:600px) {
+  article {
+    float: left;
+    width: 70%;
+    margin-right: 5%;
+  }
+  aside {
+    font-size: 80%;
+    float: left;
+    width: 25%;
+  }
+}
+
+/* cleafix hack */
+main:before,
+main:after {
+  content: ".";    
+  display: block;    
+  height: 0;    
+  overflow: hidden;	
+}
+main:after {clear: both;}

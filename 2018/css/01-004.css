@@ -1,0 +1,31 @@
+h1, h2, p, img { border: solid 4px #c429c4;}
+.article, .sidebar { border: solid 4px #ffb53e;}
+.wrapper { border: solid 4px #20a0ca;
+  width: 960px;
+  margin: 1em auto;
+  font-family: Arial;
+}
+.article {
+  float: left;
+  width: 700px;
+}
+.sidebar {
+  float: right;
+  width: 220px;
+  font-size: 80%;
+}
+h1, h2 {
+  margin-top: 0;
+}
+
+
+/* -- clearfix hack, cheating because it wasn't used in the era of fixed-width designs, that was before it's time, but I need it to be able to put the blue border on the wrapper div -- */
+/* cleafix hack */
+.wrapper:before,
+.wrapper:after {
+  content: ".";    
+  display: block;    
+  height: 0;    
+  overflow: hidden;	
+}
+.wrapper:after {clear: both;}
