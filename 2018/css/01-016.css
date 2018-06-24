@@ -1,0 +1,10 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 3vw;
+  font-family: Avenir, Helvetica, san-serif;
+	font-size: 5.7vw;
+	line-height: 1.4;
+}
+
+
