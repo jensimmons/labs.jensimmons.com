@@ -1,0 +1,24 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Avenir, Helvetica, san-serif;
+	font-size: 5.7vw;
+	line-height: 1.4;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+article {
+	width: 200px;
+	height: 200px;
+	background: #B7E1F1;
+}
+
+

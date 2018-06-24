@@ -1,0 +1,33 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Avenir, Helvetica, san-serif;
+	font-size: 5.7vw;
+	line-height: 1.4;
+}
+
+main {
+/*	display: flex;
+	justify-content: center;
+	align-items: center;*/
+	width: 100vw;
+	height: 100vh;
+}
+main > div {
+	padding: 20px;
+	background: #F4FEA6;
+	width: 280px;
+}
+main > div > div {
+	padding: 20px;
+	background: #A59DDE;
+	width: 240px;
+}
+article {
+	width: 200px;
+	height: 200px;
+	background: #B7E1F1;
+}
+
+
