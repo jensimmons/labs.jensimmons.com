@@ -1,0 +1,3 @@
+[submodule "2018/fonts/DJR"]
+	path = 2018/fonts/DJR
+	url = git@github.com:djrrb/variable-font-demos.git
