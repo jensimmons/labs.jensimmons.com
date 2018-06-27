@@ -23,7 +23,7 @@ a {
 }
 h1 {
 	font-family: 'Roslindale Variable Display', Georgia, serif;
-	font-size: calc(2rem + 12vw);
+	font-size: calc(2rem + 10vw + 5vh);
 	line-height: 1.2;
 	margin: 0 0 2rem;
 }
@@ -52,8 +52,8 @@ time {
 	margin: 3.14rem 0 0;
 }
 footer p {
-	
-	
+	font-weight: 300;
+	font-variation-settings: "opsz" 14;
 	font-size: 80%;
 	text-indent: 0;
 	line-height: 1.5;
@@ -63,9 +63,9 @@ footer p {
 footer img {
 	width: 40%;
 	margin-inline-end: 1rem;
-	
-	
-	
+	float: left;
+	clip-path: polygon(28px -19px, 97.65% 1.4%, 93.53% 80.72%, 0px 100%);
+	shape-outside: polygon(28px -19px, 105.56% 0.23%, 89.58% 87.76%, 0px 95.31%);
 }
 
 
@@ -83,15 +83,15 @@ p {
 	grid-column: 3;
 }
 time {
-	grid-column: 5;
+	grid-column: 2;
 }
 .intro {
 	grid-column: 3;
 	grid-row: 3;
 }
 footer {
-
-
+	grid-column: 4;
+	grid-row: 4 / 7;
 }
 
 
