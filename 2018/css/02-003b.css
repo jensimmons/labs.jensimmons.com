@@ -1,8 +1,9 @@
-* { box-sizing: border-box; }
-
 @font-face {
   font-family: 'Roslindale Variable Beta';
   src: url('../fonts/DJR/fonts/RoslindaleVariableBeta-VF.woff2') format('woff2');
+  /* font-weight: 1 999; */
+  /* font-oblique: ____; */
+  /* font-stretch: 50% 200%; */
 }
 @font-face {
   font-family: 'Roslindale Variable Display';
@@ -23,7 +24,7 @@ a {
 }
 h1 {
 	font-family: 'Roslindale Variable Display', Georgia, serif;
-	font-size: calc(2rem + 10vw + 5vh);
+	font-size: calc(2rem + 12vw);
 	line-height: 1.2;
 	margin: 0 0 2rem;
 }
