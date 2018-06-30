@@ -11,7 +11,7 @@
 
 body {
   font-family: 'Roslindale Variable Beta', Georgia, serif;
-  font-stretch: 130%;
+
   line-height: 1.6;
   margin: 3rem;
 }
@@ -28,17 +28,19 @@ h1 {
 h3 {
 	font-family: 'Roslindale Variable Display', Georgia, serif;
 	font-size: calc(2rem + 3.5vw);
-	font-weight: 650;
 	line-height: 1.2;
+
+
 	margin: 0;
 }
 p {
 	margin-bottom: 0.5rem;
 	text-indent: 1rem;
+	font-size: 120%;
 }
 .intro {
-	font-size: 180%;
-	font-weight: 300;
+	font-size: 200%;
+
 	text-indent: 0;
 	margin: 2rem 0 0;
 }
@@ -61,9 +63,12 @@ footer p {
 footer img {
 	width: 40%;
 	margin-inline-end: 1rem;
+	circle(70px at 33.10% 23.71%)
 	
 	
-	
+}
+p:last-of-type {
+	font-family: georgia;
 }
 
 
@@ -88,8 +93,8 @@ time {
 	grid-row: 3;
 }
 footer {
-
-
+	grid-column: 4;
+	grid-row: 4 / 7;
 }
 
 
