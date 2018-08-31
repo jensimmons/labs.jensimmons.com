@@ -1,0 +1,19 @@
+* {box-sizing: border-box;}
+
+body { 
+  font-family: georgia, serif; 
+  font-size: 105%; 
+  line-height: 1.5; 
+  margin-left: 5%;
+  margin-top: 4rem;
+}
+article {
+  width: 80%;
+}
+img {
+  width: 60%;
+  float: left;
+  margin-right: 1em;
+  shape-outside: polygon(44.4% 0.8%, 55% 7%, 58% 18%, 65% 26%, 80% 33%, 88% 45%, 87% 55%, 71% 56%, 67% 59%, 70% 67%, 67% 76%, 72% 81%, 100% 82%, 100% 100%, 0% 100%, 0% 0%);
+  shape-margin: 0.75em;
+}
