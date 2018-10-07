@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'Roslindale Variable Beta';
-  src: url('../fonts/DJR/fonts/RoslindaleVariableBeta-VF.woff2') format('woff2');
+  src: url('../fonts/Roslindale/RoslindaleVariableBeta-VF.woff2') format('woff2');
   /* font-weight: 1 999; */
   /* font-oblique: ____; */
   /* font-stretch: 50% 200%; */
 }
 @font-face {
   font-family: 'Roslindale Variable Display';
-  src: url('../fonts/DJR/fonts/RoslindaleVariableDisplay-VF.woff2') format('woff2');
+  src: url('../fonts/Roslindale/RoslindaleVariableDisplay-VF.woff2') format('woff2');
 }
 
 /* --- Typography --- */

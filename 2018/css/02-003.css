@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'Roslindale Variable Beta';
-  src: url('../fonts/DJR/fonts/RoslindaleVariableBeta-VF.woff2') format('woff2');
+  src: url('../fonts/Roslindale/RoslindaleVariableBeta-VF.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Roslindale Variable Display';
-  src: url('../fonts/DJR/fonts/RoslindaleVariableDisplay-VF.woff2') format('woff2');
+  src: url('../fonts/Roslindale/RoslindaleVariableDisplay-VF.woff2') format('woff2');
 }
 
 /* --- Typography --- */
