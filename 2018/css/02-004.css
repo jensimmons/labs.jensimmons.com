@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Roslindale Variable Display';
-  src: url('../fonts/Roslindale/RoslindaleVariableDisplay-VF.woff2') format('woff2');
+  src: url('/fonts/Roslindale/RoslindaleVariableDisplay-VF.woff2') format('woff2');
 }
 
 /* --- Typography --- */
@@ -50,7 +50,7 @@ h1.two {
 
 @font-face {
   font-family: 'Avenir Variable';
-  src: url('/2018/fonts/AvenirNext/AvenirNext_Variable.ttf') format('truetype');
+  src: url('/fonts/AvenirNext/AvenirNext_Variable.ttf') format('truetype');
 }
 h1.three {
 	font-family: 'Avenir Variable', Avenir, Heveltica;

@@ -8,7 +8,7 @@ body {
 
 @font-face {
   font-family: 'Avenir Variable';
-  src: url('/2018/fonts/AvenirNext/AvenirNext_Variable.ttf') format('truetype');
+  src: url('/fonts/AvenirNext/AvenirNext_Variable.ttf') format('truetype');
 }
 .avenir {
   font-family: 'Avenir Variable', Avenir, Helvetica, san-serif;
@@ -33,67 +33,67 @@ body {
 
 @font-face {
 	font-family: 'Euclid Flex';
-  src: url("../fonts/EuclidFlex/EuclidFlex-Ultralight-WebXL.woff2") format("woff2");
+  src: url("/fonts/EuclidFlex/EuclidFlex-Ultralight-WebXL.woff2") format("woff2");
 	font-weight: 200;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Euclid Flex';
-  src: url("../fonts/EuclidFlex/EuclidFlex-Light-WebXL.woff2") format("woff2");
+  src: url("/fonts/EuclidFlex/EuclidFlex-Light-WebXL.woff2") format("woff2");
 	font-weight: 300;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Euclid Flex';
-  src: url("../fonts/EuclidFlex/EuclidFlex-Regular-WebXL.woff2") format("woff2");
+  src: url("/fonts/EuclidFlex/EuclidFlex-Regular-WebXL.woff2") format("woff2");
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Euclid Flex';
-  src: url("../fonts/EuclidFlex/EuclidFlex-Medium-WebXL.woff2") format("woff2");
+  src: url("/fonts/EuclidFlex/EuclidFlex-Medium-WebXL.woff2") format("woff2");
 	font-weight: 500;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Euclid Flex';
-  src: url("../fonts/EuclidFlex/EuclidFlex-Bold-WebXL.woff2") format("woff2");
+  src: url("/fonts/EuclidFlex/EuclidFlex-Bold-WebXL.woff2") format("woff2");
 	font-weight: 800;
 }
 @font-face {
 	font-family: 'Euclid Flex';
-  src: url("../fonts/EuclidFlex/EuclidFlex-UltralightItalic-WebXL.woff2") format("woff2");
+  src: url("/fonts/EuclidFlex/EuclidFlex-UltralightItalic-WebXL.woff2") format("woff2");
 	font-weight: 200;
 	font-style: italic;
 }
 @font-face {
 	font-family: 'Euclid Flex';
-  src: url("../fonts/EuclidFlex/EuclidFlex-LightItalic-WebXL.woff2") format("woff2");
+  src: url("/fonts/EuclidFlex/EuclidFlex-LightItalic-WebXL.woff2") format("woff2");
 	font-weight: 300;
 	font-style: italic;
 }
 @font-face {
 	font-family: 'Euclid Flex';
-  src: url("../fonts/EuclidFlex/EuclidFlex-RegularItalic-WebXL.woff2") format("woff2");
+  src: url("/fonts/EuclidFlex/EuclidFlex-RegularItalic-WebXL.woff2") format("woff2");
 	font-weight: 400;
 	font-style: italic;
 }
 @font-face {
 	font-family: 'Euclid Flex';
-  src: url("../fonts/EuclidFlex/EuclidFlex-MediumItalic-WebXL.woff2") format("woff2");
+  src: url("/fonts/EuclidFlex/EuclidFlex-MediumItalic-WebXL.woff2") format("woff2");
 	font-weight: 500;
 	font-style: italic;
 }
 @font-face {
 	font-family: 'Euclid Flex';
-  src: url("../fonts/EuclidFlex/EuclidFlex-BoldItalic-WebXL.woff2") format("woff2");
+  src: url("/fonts/EuclidFlex/EuclidFlex-BoldItalic-WebXL.woff2") format("woff2");
 	font-weight: 800;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: 'Euclid Flex';
-  src: url("../fonts/EuclidFlex/EuclidFlex-Regular-WebXL.woff2") format("woff2");
+  src: url("/fonts/EuclidFlex/EuclidFlex-Regular-WebXL.woff2") format("woff2");
 	font-weight: 400;
 	font-style: normal;
 }

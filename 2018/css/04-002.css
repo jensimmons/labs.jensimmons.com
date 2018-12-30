@@ -1,13 +1,13 @@
+* {
+  box-sizing: border-box; 
+}
 @font-face {
   font-family: 'Agrandir Variable';
-  src: url('../fonts/AgrandirVariable/AgrandirVariable.woff2') format('woff2');
+  src: url('/fonts/AgrandirVariable/AgrandirVariable.woff2') format('woff2');
 }
 @font-face {
 	font-family: 'Mistral';
-  src: url('../fonts/Mistral/Mistral.woff') format('woff');
-}
-* {
-  box-sizing: border-box; 
+  src: url('/fonts/Mistral/Mistral.woff') format('woff');
 }
 html {
   font-family: 'Agrandir Variable', Helvetica;

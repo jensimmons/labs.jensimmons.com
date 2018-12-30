@@ -54,7 +54,7 @@ b {
 
 @font-face {
   font-family: 'Venn';
-  src: url('../fonts/Venn/VennVF_W.woff2') format('woff2');
+  src: url('/fonts/Venn/VennVF_W.woff2') format('woff2');
 }
 body { 
   font-family: 'Venn', 'Helvetica Neue', Helvetica, Avenir, sans-serif;
