@@ -1,0 +1,119 @@
+/*  Remedy
+------------------------------------------------------------- */
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+
+
+/*  Layout 
+------------------------------------------------------------- */
+
+body {
+	background: #eee7d9;
+}
+main {
+	box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+	max-width: 540px;
+	margin: 0 auto;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+blockquote {
+	max-width: 540px;
+	background-color: #c28e21;
+	color: white;
+	margin: 0;
+	padding: 5rem 4rem 4rem;
+	text-align: center;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+@media (min-width: 700px) {
+@supports (display: grid) {
+
+	html {
+		margin: 4vh auto;	
+	}
+	body {
+		display: grid;
+		place-items: center;
+		min-height: 92vh;
+	}	
+	main {
+		max-width: none;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin: 0 8vw;
+	}
+	img {
+		grid-column: 2 / 3;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: 58% 50%;
+	}
+	blockquote {
+		max-width: none;
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+	}
+}
+}
+
+
+/*  Typography 
+------------------------------------------------------------- */
+
+@font-face {
+  font-family: 'Roslindale Variable Display';
+  src: url('/fonts/Roslindale/RoslindaleVariableDisplay-VF.woff2') format('woff2');
+}
+
+blockquote p {	
+	margin-top: 0;
+	font-family: 'Roslindale Variable Display', Georgia, serif;
+	font-size: calc(1.2rem + 1.2vw);
+	line-height: 1.1;
+	font-weight: 300;
+	font-style: italic;
+}
+blockquote cite {
+	font-family: Avenir, Heveltica, sans-serif;
+	font-size: 1.2rem;
+	font-weight: 200;
+	font-style: normal;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+
+/*  Borders 
+------------------------------------------------------------- */
+
+blockquote::before {
+	content: " ";
+	position: absolute;
+	z-index: 1;
+	top: 16px;
+	left: 10px;
+	right: 10px;
+	bottom: 8px;
+	border: 3px solid #3a2100;
+}
+blockquote::after {
+	content: " ";
+	position: absolute;
+	z-index: 1;
+	top: 23px;
+	left: 17px;
+	right: 17px;
+	bottom: 14px;
+	border: 1.5px solid #6e4d0d;
+}
+
