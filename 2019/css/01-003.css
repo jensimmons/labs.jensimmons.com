@@ -1,0 +1,48 @@
+/*  Remedy
+------------------------------------------------------------- */
+* { box-sizing: border-box; }
+body { margin: 0; }
+
+
+/*  Layout & block styling
+------------------------------------------------------------- */
+
+body {
+	font-family: Avenir, Heveltica, sans-serif;
+	background: gray;
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+}
+main {
+	display: grid;
+	background: white;
+}
+header {
+	grid-row: 2 / 3;
+	background: black;
+	color: white;
+	padding: 1rem 4rem;
+	border-top: 24px solid white;
+	border-image: url("../media/01-003/stripe.gif") 24 0 repeat; 
+}
+figure {
+	grid-row: 1 / 2;
+	margin: 0;
+}
+img {
+	vertical-align: bottom;
+	max-height: 250px;
+}
+
+/*  Typography 
+------------------------------------------------------------- */
+
+h1, h2 {
+	font-family: Avenir, Heveltica, sans-serif;
+	margin: 0;
+	text-transform: uppercase;
+}
+h2 {
+	font-weight: 100;
+}
