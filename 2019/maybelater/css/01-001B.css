@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box; 
+}
+body {
+	margin: 0;
+}
+@font-face {
+  font-family: 'Roslindale';
+  src: url('/fonts/Roslindale/RoslindaleVariableDisplay-VF.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Portada';
+  src: url('/fonts/typetogether/Portada_variable_DEMO/Portada_Variable-Upright-DEMO.woff2') format('woff2');
+}
+html {
+  font-family: 'Portada', Helvetica;
+  font-size: 100%;
+	line-height: 1.85;
+	font-variation-settings: 'opsz' 36;
+}
+article {
+	display: grid;
+	grid-gap: 1.2rem 2rem;
+	grid-template-columns: 1fr minmax(20ch, 65ch) 1fr;
+	margin: 0 0 5rem;
+}
+h1, div {
+	grid-column: 2 / 3;
+}
+h1 {
+	grid-row: 1 / 2;
+	z-index: 1;
+	align-self: center;
+	margin: 0;
+  font-family: 'Roslindale', Georgia;
+	font-size: calc(6vw + 1.8rem);
+	font-weight: 375;
+	line-height: 1.1;
+	color: white;
+}
+p {
+	font-size: 110%;
+}
+img {
+	width: 100%;
+	margin: 1rem 0;
+}
+img.intro {
+	grid-column: 1 / 4;
+	grid-row: 1 / 2;
+	filter: brightness(0.4);
+}
+img.tall {
+	width: 50%;
+	float: left;
+	margin-right: 2rem;
+}

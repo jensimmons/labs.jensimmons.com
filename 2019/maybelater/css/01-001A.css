@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box; 
+}
+body {
+	margin: 0;
+}
+@font-face {
+  font-family: 'Roslindale';
+  src: url('/fonts/Roslindale/RoslindaleVariableDisplay-VF.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Portada';
+  src: url('/fonts/typetogether/Portada_variable_DEMO/Portada_Variable-Upright-DEMO.woff2') format('woff2');
+}
+html {
+  font-family: 'Portada', Helvetica;
+  font-size: 100%;
+	line-height: 1.85;
+	font-variation-settings: 'opsz' 36;
+}
+article {
+	display: grid;
+	grid-gap: 1.2rem 0;
+	grid-template-columns: 1fr minmax(200px, 650px) 1fr;
+	margin: 0 8vw 5rem;
+}
+h1, p, img {
+	grid-column: 2 / 3;
+}
+h1 {
+	margin: 1rem 0;
+  font-family: 'Roslindale', Georgia;
+	font-size: 4rem;
+	font-weight: 375;
+	line-height: 1.1;
+}
+p {
+	margin: 0;
+	font-size: 110%;
+}
+img {
+	width: 100%;
+	margin: 1rem 0;
+}
