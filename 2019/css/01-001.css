@@ -33,6 +33,7 @@ main {
 	display: grid;
 	grid-template-columns: 75fr 215fr 315fr 85fr 75fr; 
 	grid-template-rows: 75px 65px auto auto auto auto 75px;
+	min-height: 97vh;
 }
 h1 {
 	grid-column: 2 / 5;
