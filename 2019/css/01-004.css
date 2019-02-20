@@ -1,0 +1,64 @@
+/*  Remedy
+------------------------------------------------------------- */
+* { box-sizing: border-box; background-repeat: no-repeat; }
+body { margin: 0; }
+
+
+html {
+	background-color: #feee75;
+}
+
+header {
+	display: grid;
+	grid-template-columns: 1fr min-content min-content max-content 100px;
+	grid-template-rows: 700px auto auto;
+}
+
+img {
+	grid-column: 1 / -1;
+	grid-row: 1 / -1;
+	justify-self: end;
+}
+h1 {
+	grid-row: 2;
+	grid-column: 2 / 4;
+	display: grid;
+	grid-template-columns: repeat(3, 0.9em);
+}
+h1 span {
+	writing-mode: vertical-rl;
+	transform: rotate(180deg)
+}
+h1 span b {
+	width: 0.15em;
+	height: 2em;
+	background: black;
+	display: inline-block;
+	margin-bottom: 0.2em;
+}
+ul {
+	grid-row: 3;
+	grid-column: 3 / 5;
+}
+
+
+/*  Typography 
+------------------------------------------------------------- */
+html {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	letter-spacing: -1px;
+}
+h1 {
+	font-size: 3rem;
+	line-height: 1.1;
+}
+ul {
+	font-size: 1rem;
+	font-weight: 600;
+	color: #b30411;
+	padding: 0;
+}
+li {
+	display: block;
+	line-height: 1.1;
+}

@@ -22,17 +22,38 @@ header {
 	grid-row: 2 / 3;
 	background: black;
 	color: white;
-	padding: 1rem 4rem;
+	padding: 1rem 3.2rem;
 	border-top: 24px solid white;
 	border-image: url("../media/01-003/stripe.gif") 24 0 repeat; 
 }
 figure {
 	grid-row: 1 / 2;
 	margin: 0;
+	display: grid;
+/*	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(12, 1fr); */
+	grid-template-columns: repeat(10, 1fr);
+	gap: 1rem;
 }
 img {
+	grid-column: span 4;
 	vertical-align: bottom;
-	max-height: 250px;
+	max-height: 350px;
+	clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+	width: 100%;
+	object-fit: cover;
+}
+img:nth-child(1) {
+	grid-column: 1 / 5;
+	grid-row: 1 / 2;
+}
+img:nth-child(2) {
+	grid-column: 4 / 8;
+	grid-row: 1 / 2;
+}
+img:nth-child(3) {
+	grid-column: 7 / 11;
+	grid-row: 1 / 2;
 }
 
 /*  Typography 
