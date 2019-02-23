@@ -36,6 +36,17 @@ header {
 	width: 50px;
 }
 
+/*  Some other stuff on the page
+------------------------------------------------------------- */
+
+article {
+	background: #e7e7e7;
+	min-width: 200px;
+	max-width: 900px;
+	margin: 2rem auto;
+	height: 500px;
+}
+
 /*  Version 2 — a la 2007
 ------------------------------------------------------------- */
 /*
@@ -57,26 +68,72 @@ nav {
 ------------------------------------------------------------- */
 header {
 	display: grid;
-	grid-template-columns: auto auto auto;
-	
-	grid-template-columns: max-content auto auto;
 	gap: 2rem;
 	align-items: center;
 	border-bottom: none;
-	grid-template-columns: repeat(auto-fit, minmax(100px, max-content));
-	grid-template-columns: repeat(auto-fit, minmax(100px, max-content));
+
+	grid-template-columns: 1fr 1fr 1fr; /* this? */
+	grid-template-columns: max-content 1fr 1fr; /* this? */
+	grid-template-columns: max-content auto max-content;
+	
 }
 h1, ul {
 	margin: 0;
 }
 nav {
 	text-align: right;
-	grid-column: -2;
 }
-ul {
 
+
+/*  Add a navbar layout
+------------------------------------------------------------- */
+ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0 1rem;
+}
+header {
+	grid-template-columns: max-content auto 1fr; /* nope */
+	grid-template-columns: max-content auto auto; /* nope */
+	grid-template-columns: max-content auto min-content; /* nope */
+	grid-template-columns: max-content auto minmax(100px, max-content);
+
+}
+
+/*  next version
+------------------------------------------------------------- */
+
+header {
+	grid-template-rows: auto auto;
+	grid-template-columns: min-content auto;
+	gap: 0 2rem;
 }
 .logo {
-
+	grid-row: span 2;
+	align-self: start;
 }
+h1 {
+	align-self: start;
+}
+nav {
+	align-self: end;
+}
+
+
+/*  Let's do something more interesting
+------------------------------------------------------------- 
+header {
+	background: none;
+}
+nav {
+	text-align: left;
+	transform: rotate(-90deg);
+}
+ul {
+	display: block;
+}
+li {
+}
+
+*/
 
