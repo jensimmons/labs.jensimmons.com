@@ -1,0 +1,82 @@
+/*  Remedy
+------------------------------------------------------------- */
+* { box-sizing: border-box; background-repeat: no-repeat; }
+body { margin: 0; }
+
+/*  Version 0 — No CSS
+------------------------------------------------------------- */
+
+
+/*  Version 1 — Typography (so our eyes don't bleed)
+------------------------------------------------------------- */
+html {
+	font-family: Avenir, Helvetica, sans-serif;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+ul {
+	padding-left: 0;
+}
+li {
+	list-style: none;
+}
+header {
+	padding: 2rem;
+}
+.logo img {
+	width: 100px;
+}
+header {
+	background: #84e5ff;
+	border-bottom: 6px solid grey;
+}
+.logo img {
+	width: 50px;
+}
+
+/*  Version 2 — a la 2007
+------------------------------------------------------------- */
+/*
+
+.logo {
+	float: left;
+	margin-right: 2em;
+}
+h1 {
+	width: 80%;
+	float: left;
+}
+nav {
+	float: right;
+}
+*/
+
+/*  Version 2 — like it's 2007, but coded in 2018
+------------------------------------------------------------- */
+header {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	
+	grid-template-columns: max-content auto auto;
+	gap: 2rem;
+	align-items: center;
+	border-bottom: none;
+	grid-template-columns: repeat(auto-fit, minmax(100px, max-content));
+	grid-template-columns: repeat(auto-fit, minmax(100px, max-content));
+}
+h1, ul {
+	margin: 0;
+}
+nav {
+	text-align: right;
+	grid-column: -2;
+}
+ul {
+
+}
+.logo {
+
+}
+
