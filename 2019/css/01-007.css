@@ -9,7 +9,7 @@ body { margin: 0; }
 
 html {
 	font-family: Avenir, Helvetica, sans-serif;
-	background: #0d52bb;
+	background: #0d52bb; /* dark blue */
 }
 a {
 	text-decoration: none;
@@ -31,7 +31,7 @@ header {
 	background: white;
 }
 article {
-	background: #bbb;
+	background: #bbb; /* medium grey */
 	min-width: 200px;
 	max-width: 900px;
 	margin: 2rem auto;
@@ -55,7 +55,6 @@ article {
 .C nav {
 	float: right;
 }
-
 
 /*  Version D — like it's 2007, but coded in 2018
 ------------------------------------------------------------- */
