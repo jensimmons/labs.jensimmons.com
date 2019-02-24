@@ -3,11 +3,37 @@
 * { box-sizing: border-box; background-repeat: no-repeat; }
 body { margin: 0; }
 
-/*  Version 0 — No CSS
+
+/*  Version A — No CSS
 ------------------------------------------------------------- */
+.A html {
+	font-family: none;
+}
+.A a {
+	text-decoration: underline;
+	color: inherit;
+}
+.A ul {
+	padding-left: inherit;
+}
+.A li {
+	list-style: inherit;
+}
+.A header {
+	padding: inherit;
+}
+.A .logo img {
+	width: inherit;
+}
+.A header {
+	background: none;
+}
+.A .logo img {
+	width: auto;
+}
 
 
-/*  Version 1 — Typography (so our eyes don't bleed)
+/*  Version B — Typography (so our eyes don't bleed)
 ------------------------------------------------------------- */
 html {
 	font-family: Avenir, Helvetica, sans-serif;
@@ -26,19 +52,11 @@ header {
 	padding: 2rem;
 }
 .logo img {
-	width: 100px;
+	width: 50px;
 }
 header {
 	background: #84e5ff;
-	border-bottom: 6px solid grey;
 }
-.logo img {
-	width: 50px;
-}
-
-/*  Some other stuff on the page
-------------------------------------------------------------- */
-
 article {
 	background: #e7e7e7;
 	min-width: 200px;
@@ -47,52 +65,58 @@ article {
 	height: 500px;
 }
 
-/*  Version 2 — a la 2007
+/*  Version C — a la 2007
 ------------------------------------------------------------- */
-/*
 
-.logo {
+.C header {
+	border-bottom: 6px solid grey;
+}
+.C .logo {
 	float: left;
 	margin-right: 2em;
 }
-h1 {
+.C h1 {
 	width: 80%;
 	float: left;
 }
-nav {
+.C nav {
 	float: right;
 }
-*/
 
-/*  Version 2 — like it's 2007, but coded in 2018
+
+/*  Version D — like it's 2007, but coded in 2018
 ------------------------------------------------------------- */
-header {
+.D header {
 	display: grid;
 	gap: 2rem;
 	align-items: center;
-	border-bottom: none;
 
 	grid-template-columns: 1fr 1fr 1fr; /* this? */
 	grid-template-columns: max-content 1fr 1fr; /* this? */
 	grid-template-columns: max-content auto max-content;
 	
 }
-h1, ul {
+.D h1, 
+.D ul {
 	margin: 0;
 }
-nav {
+.D nav {
 	text-align: right;
 }
 
 
-/*  Add a navbar layout
+/*  Version E — Add a navbar layout
 ------------------------------------------------------------- */
-ul {
+.E ul {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 0 1rem;
 }
-header {
+.E header {
+	display: grid;
+	gap: 2rem;
+	align-items: center;
+
 	grid-template-columns: max-content auto 1fr; /* nope */
 	grid-template-columns: max-content auto auto; /* nope */
 	grid-template-columns: max-content auto min-content; /* nope */
@@ -100,40 +124,41 @@ header {
 
 }
 
-/*  next version
+/*  Version F — next version
 ------------------------------------------------------------- */
 
-header {
+.F header {
+	display: grid;
+	gap: 2rem;
+	align-items: center;
+
 	grid-template-rows: auto auto;
 	grid-template-columns: min-content auto;
 	gap: 0 2rem;
 }
-.logo {
+.F .logo {
 	grid-row: span 2;
 	align-self: start;
 }
-h1 {
+.F h1 {
 	align-self: start;
 }
-nav {
+.F nav {
 	align-self: end;
 }
 
 
-/*  Let's do something more interesting
-------------------------------------------------------------- 
-header {
+/*  Version G — Let's do something more interesting
+------------------------------------------------------------- */
+.G header {
 	background: none;
 }
-nav {
+.G nav {
 	text-align: left;
 	transform: rotate(-90deg);
 }
-ul {
+.G ul {
 	display: block;
 }
-li {
+.G li {
 }
-
-*/
-
