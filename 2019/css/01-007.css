@@ -1,42 +1,15 @@
-/*  Remedy
-------------------------------------------------------------- */
-* { box-sizing: border-box; background-repeat: no-repeat; }
-body { margin: 0; }
-
-
 /*  Version A — No CSS
 ------------------------------------------------------------- */
-.A html {
-	font-family: none;
-}
-.A a {
-	text-decoration: underline;
-	color: inherit;
-}
-.A ul {
-	padding-left: inherit;
-}
-.A li {
-	list-style: inherit;
-}
-.A header {
-	padding: inherit;
-}
-.A .logo img {
-	width: inherit;
-}
-.A header {
-	background: none;
-}
-.A .logo img {
-	width: auto;
-}
+/* no CSS file is loaded */
 
-
-/*  Version B — Typography (so our eyes don't bleed)
+/*  Version B — Basic styles (so our eyes don't bleed)
 ------------------------------------------------------------- */
+* { box-sizing: border-box; }
+body { margin: 0; }
+
 html {
 	font-family: Avenir, Helvetica, sans-serif;
+	background: #0d52bb;
 }
 a {
 	text-decoration: none;
@@ -55,10 +28,10 @@ header {
 	width: 50px;
 }
 header {
-	background: #84e5ff;
+	background: white;
 }
 article {
-	background: #e7e7e7;
+	background: #bbb;
 	min-width: 200px;
 	max-width: 900px;
 	margin: 2rem auto;
