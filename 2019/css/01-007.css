@@ -62,11 +62,11 @@ article {
 	display: grid;
 	gap: 2rem;
 	align-items: center;
-
-	grid-template-columns: 1fr 1fr 1fr; /* this? */
-	grid-template-columns: max-content 1fr 1fr; /* this? */
-	grid-template-columns: max-content auto max-content;
-	
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 8fr 75fr 18fr; /* this? */
+	grid-template-columns: 8% 75% 18%; /* this? */
+	grid-template-columns: max-content 3fr 1fr; /* which one is best? */
+	grid-template-columns: max-content auto max-content; /* maybe this one */
 }
 .D h1, 
 .D ul {
