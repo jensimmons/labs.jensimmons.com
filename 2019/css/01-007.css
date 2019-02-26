@@ -1,9 +1,9 @@
 /*  Version A — No CSS
-------------------------------------------------------------- */
+---------------------------------------- */
 /* no CSS file is loaded */
 
 /*  Version B — Basic styles (so our eyes don't bleed)
-------------------------------------------------------------- */
+---------------------------------------- */
 * { box-sizing: border-box; }
 body { margin: 0; }
 
@@ -39,7 +39,7 @@ article {
 }
 
 /*  Version C — a la 2007
-------------------------------------------------------------- */
+---------------------------------------- */
 
 .C header {
 	border-bottom: 6px solid grey;
@@ -56,8 +56,8 @@ article {
 	float: right;
 }
 
-/*  Version D — like it's 2007, but coded in 2018
-------------------------------------------------------------- */
+/*  Version D — Let's use CSS Grid
+---------------------------------------- */
 .D header {
 	display: grid;
 	gap: 2rem;
@@ -76,9 +76,8 @@ article {
 	text-align: right;
 }
 
-
 /*  Version E — Add a navbar layout
-------------------------------------------------------------- */
+---------------------------------------- */
 .E ul {
 	display: flex;
 	flex-wrap: wrap;
@@ -97,7 +96,7 @@ article {
 }
 
 /*  Version F — next version
-------------------------------------------------------------- */
+---------------------------------------- */
 
 .F header {
 	display: grid;
@@ -121,7 +120,7 @@ article {
 
 
 /*  Version G — Let's do something more interesting
-------------------------------------------------------------- */
+---------------------------------------- */
 .G header {
 	background: none;
 }
