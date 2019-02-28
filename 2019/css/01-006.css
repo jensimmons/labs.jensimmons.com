@@ -1,0 +1,200 @@
+* { box-sizing: border-box; }
+body { margin: 0; }
+
+html {
+	font-family: Avenir, Helvetica, sans-serif;
+	background: #e4e4d5;
+}
+header {
+	margin: 4rem;
+}
+h1 {
+	text-transform: uppercase;	
+	font-size: 4rem;
+	border: 8px solid #d55349;
+}
+
+/*  Version A — Let's break apart the letters
+------------------------------------------------------- */
+.A h1 {
+	overflow-wrap: anywhere;
+	text-align: center;
+}
+
+/*  Version B — How about a deconstructed layout
+------------------------------------------------------- */
+.B h1 {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	width: max-content;
+	justify-items: center;
+}
+.B h1 span:nth-child(1) { /* G */
+	grid-column: 2;
+	grid-row: 1;
+}
+.B h1 span:nth-child(2) { /* R */
+	grid-column: 3;
+	grid-row: 1;
+}
+.B h1 span:nth-child(3) { /* A */
+	grid-column: 6;
+	grid-row: 1;
+}
+.B h1 span:nth-child(4) { /* P */
+	grid-column: 3;
+	grid-row: 2;
+}
+.B h1 span:nth-child(5) { /* H */
+	grid-column: 4;
+	grid-row: 2;
+}
+.B h1 span:nth-child(6) { /* I */
+	grid-column: 5;
+	grid-row: 3;
+}
+.B h1 span:nth-child(7) { /* C */
+	grid-column: 6;
+	grid-row: 3;
+}
+.B h1 span:nth-child(8) { /* D */
+	grid-column: 1;
+	grid-row: 4;
+}
+.B h1 span:nth-child(9) { /* E */
+	grid-column: 2;
+	grid-row: 4;
+}
+.B h1 span:nth-child(10) { /* S */
+	grid-column: 5;
+	grid-row: 5;
+}
+.B h1 span:nth-child(11) { /* I */
+	grid-column: 3;
+	grid-row: 6;
+}
+.B h1 span:nth-child(12) {
+	grid-column: 5;
+	grid-row: 6;
+}
+.B h1 span:nth-child(13) {
+	grid-column: 8;
+	grid-row: 7;
+}
+
+
+/*  Version C — How about a deconstructed layout
+------------------------------------------------------- */
+
+.C header {
+	display: grid;
+	grid-template-columns: 2rem max-content 5rem auto minmax(0, 300px);
+	grid-template-rows: 0rem 50px auto minmax(50px, 200px) auto;
+	gap: 1rem;
+	min-height: 100vh;
+}
+.C h1 {
+	width: max-content;
+	margin: 0;
+	grid-row: 1 / -1;
+	grid-column: 1 / 3;
+	border: none;
+}
+.C nav {
+	grid-row: 3;
+	grid-column: 3 / 5;
+	background: #d55349;
+	padding: 0;
+	writing-mode: vertical-rl;
+}
+.C .red-box {
+	border: 8px solid #d55349;
+	grid-row: 2 / 5;
+	grid-column: 2 / 4;
+	z-index: -1;
+
+}
+.C .black-line {
+	background: black;
+	height: 8px;
+	grid-row: 4;
+	grid-column: 5;
+}
+.C ul {
+	padding: 1rem;
+}
+.C li {
+	list-style: none;
+}
+.C a { 
+	color: black; 
+	text-transform: uppercase; 
+	text-decoration: none; 
+	font-size: 1.5rem;
+	font-weight: 800;
+}
+.C img {
+	mix-blend-mode: overlay;
+	grid-column: 3 / 5;
+	grid-row: 3 / 6;
+}
+
+.C h1 {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	justify-items: center;
+	font-size: 3rem;
+}
+.C h1 span:nth-child(1) { /* G */
+	grid-column: 2;
+	grid-row: 1;
+}
+.C h1 span:nth-child(2) { /* R */
+	grid-column: 3;
+	grid-row: 1;
+}
+.C h1 span:nth-child(3) { /* A */
+	grid-column: 6;
+	grid-row: 1;
+}
+.C h1 span:nth-child(4) { /* P */
+	grid-column: 3;
+	grid-row: 2;
+}
+.C h1 span:nth-child(5) { /* H */
+	grid-column: 4;
+	grid-row: 2;
+}
+.C h1 span:nth-child(6) { /* I */
+	grid-column: 5;
+	grid-row: 3;
+}
+.C h1 span:nth-child(7) { /* C */
+	grid-column: 6;
+	grid-row: 3;
+}
+.C h1 span:nth-child(8) { /* D */
+	grid-column: 1;
+	grid-row: 4;
+}
+.C h1 span:nth-child(9) { /* E */
+	grid-column: 2;
+	grid-row: 4;
+}
+.C h1 span:nth-child(10) { /* S */
+	grid-column: 5;
+	grid-row: 5;
+}
+.C h1 span:nth-child(11) { /* I */
+	grid-column: 3;
+	grid-row: 6;
+}
+.C h1 span:nth-child(12) {
+	grid-column: 5;
+	grid-row: 6;
+}
+.C h1 span:nth-child(13) {
+	grid-column: 8;
+	grid-row: 7;
+}
+
