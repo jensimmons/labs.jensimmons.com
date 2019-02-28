@@ -3,13 +3,15 @@
 /* no CSS file is loaded */
 
 /*  Version B — Basic styles (so our eyes don't bleed)
----------------------------------------- */
+------------------------------------------------------- */
 * { box-sizing: border-box; }
 body { margin: 0; }
 
 html {
 	font-family: Avenir, Helvetica, sans-serif;
 	background: #0d52bb; /* dark blue */
+	background: #b3d1ff; /* lighter blue */
+	background: #f9daff; /* pink */
 }
 a {
 	text-decoration: none;
@@ -31,16 +33,16 @@ header {
 	background: white;
 }
 article {
-	background: #bbb; /* medium grey */
+	background: #ddd; /* grey */
 	min-width: 200px;
 	max-width: 900px;
 	margin: 2rem auto;
 	height: 500px;
+	display: none;
 }
 
 /*  Version C — a la 2007
 ---------------------------------------- */
-
 .C header {
 	border-bottom: 6px solid grey;
 }
@@ -76,60 +78,64 @@ article {
 	text-align: right;
 }
 
-/*  Version E — Add a navbar layout
----------------------------------------- */
-.E ul {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 0 1rem;
-}
+/*  Version E — Layout navigation as a bar
+------------------------------------------- */
 .E header {
 	display: grid;
 	gap: 2rem;
 	align-items: center;
-
-	grid-template-columns: max-content auto 1fr; /* nope */
-	grid-template-columns: max-content auto auto; /* nope */
-	grid-template-columns: max-content auto min-content; /* nope */
-	grid-template-columns: max-content auto minmax(100px, max-content);
-
+	grid-template-columns: max-content auto auto;
+}
+.E nav {
+	justify-self: end;
+}
+.E ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0 2rem;
 }
 
-/*  Version F — next version
----------------------------------------- */
+/*  Version F — Navigation under the site name
+----------------------------------------------- */
+.F h1, /* remove margins from item content */
+.F ul {
+	margin: 0;
+}
+.F ul { /* layout navbar in one line */ 
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0 1rem;
+}
 
 .F header {
 	display: grid;
-	gap: 2rem;
-	align-items: center;
-
-	grid-template-rows: auto auto;
 	grid-template-columns: min-content auto;
-	gap: 0 2rem;
+	grid-template-rows: auto auto;
+	gap: 1rem 2rem;
 }
 .F .logo {
 	grid-row: span 2;
-	align-self: start;
-}
-.F h1 {
-	align-self: start;
 }
 .F nav {
 	align-self: end;
 }
 
 
+
+
+
 /*  Version G — Let's do something more interesting
----------------------------------------- */
+---------------------------------------------------- */
 .G header {
-	background: none;
+	display: grid;
+	gap: 2rem;
+	align-items: center;
+	grid-template-columns: max-content auto max-content; 
+}
+.G h1, 
+.G ul {
+	margin: 0;
 }
 .G nav {
-	text-align: left;
-	transform: rotate(-90deg);
-}
-.G ul {
-	display: block;
-}
-.G li {
+	text-align: right;
 }
