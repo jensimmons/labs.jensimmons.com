@@ -1,0 +1,66 @@
+/*  Basic Styling
+------------------------------------------------------- */
+* { box-sizing: border-box; }
+
+html {
+	font-family: Helvetica, sans-serif;
+	background: #645296;
+	color: #c8b957;
+}
+body { 
+	margin: 2rem;
+}
+h1 {
+	font-family: georgia;
+	font-style: italic;
+	font-weight: 200;
+	text-transform: uppercase;	
+	font-size: 3rem;
+	line-height: 1.2;
+}
+h2 {
+	text-align: right;
+	font-size: 3rem;
+	font-weight: 400;
+}
+
+/*  First attempt at Grid Layout
+------------------------------------------------------- */
+.B main {
+	display: grid;
+	grid-template-columns: 1fr 3fr 3fr 1fr;
+	gap: 0 1rem;
+}
+.B h1 {
+	grid-column: 1 / 4;
+	grid-row: 1 / 2;
+	margin: 0;
+}
+.B img {
+	max-width: 100%;
+}
+.B img:nth-of-type(1) {
+	grid-column: 2 / 3;
+	grid-row: 2 / 4;
+}
+.B img:nth-of-type(2) {
+	grid-column: 3 / 4;
+	grid-row: 2 / 4;
+}
+.B h2 {
+	grid-column: 3 / 5;
+	grid-row: 3 / 5;
+	margin: 0;
+}
+
+/*  Improving Grid Layout
+------------------------------------------------------- */
+/* All of the code for "B" is loading too               */
+
+.C main {
+	grid-template-columns: 1fr minmax(100px, 400px) minmax(100px, 400px) min-content;
+}
+.C h2 {
+	align-self: end;
+}
+
