@@ -12,6 +12,7 @@ html {
 	background: #0d52bb; /* dark blue */
 	background: #b3d1ff; /* lighter blue */
 	background: #f9daff; /* pink */
+	background: #ffe9d9; 
 }
 a {
 	text-decoration: none;
@@ -130,7 +131,7 @@ article {
 	display: grid;
 	gap: 2rem;
 	align-items: center;
-	grid-template-columns: max-content auto max-content; 
+	grid-template-columns: max-content auto auto; 
 }
 .G h1, 
 .G ul {
@@ -138,4 +139,5 @@ article {
 }
 .G nav {
 	text-align: right;
+	writing-mode: vertical-rl;
 }
