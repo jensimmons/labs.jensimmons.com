@@ -1,0 +1,98 @@
+* {	box-sizing: border-box; }
+img { max-width: 100%; }
+
+
+html {
+	background: #e2be8a;
+}
+body {
+	margin: 2rem;
+  font-family: "eb_garamond_mediumregular", serif;
+}
+
+article {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 80vh;
+}
+.theater-photo {
+	grid-column: 1 / 6;
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+h1 {
+	grid-column: 1 / 5;
+  font-family: "heebobold", sans-serif;
+	color: #bc790a;
+  text-transform: uppercase;
+  letter-spacing: 0.33rem;
+	font-size: calc(2rem + 2vw);
+	margin-bottom: 0;
+}
+
+cite {
+	display: none;
+}
+.lede {
+	font-size: 150%;	
+	grid-column: 1 / 4;
+	grid-row: 4;
+	margin-bottom: calc(2rem + 2vw);
+}
+.first-real-p {
+	grid-row: 5;	
+}
+
+p {
+	grid-column: 2 / 5;
+	margin: 0;
+	text-indent: 2rem;
+}
+.person {
+	grid-column: 2 / 6;
+	grid-row: 2;
+}
+
+
+
+
+@font-face {
+  font-family: "eb_garamondbold";
+  src: url("../fonts/ebgaramond-bold-webfont.woff2") format("woff2"),
+    url("../fonts/ebgaramond-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "eb_garamond_mediumregular";
+  src: url("../fonts/ebgaramond-medium-webfont.woff2") format("woff2"),
+    url("../fonts/ebgaramond-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "eb_garamond_mediumitalic";
+  src: url("../fonts/ebgaramond-mediumitalic-webfont.woff2") format("woff2"),
+    url("../fonts/ebgaramond-mediumitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "heebobold";
+  src: url("../fonts/heebo-bold-webfont.woff2") format("woff2"),
+    url("../fonts/heebo-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "heebo_mediumregular";
+  src: url("../fonts/heebo-medium-webfont.woff2") format("woff2"),
+    url("../fonts/heebo-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
