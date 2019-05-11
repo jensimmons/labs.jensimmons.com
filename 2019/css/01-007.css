@@ -95,6 +95,14 @@ article {
 	flex-wrap: wrap;
 	gap: 0 2rem;
 }
+@supports not (gap: 1rem;) {
+	.E li {
+		margin: 0 0.5rem;
+	}
+	.E li:nth-of-type(1) {
+		margin-left: 0;
+	}
+}
 
 /*  Version F — Navigation under the site name
 ----------------------------------------------- */
@@ -107,7 +115,14 @@ article {
 	flex-wrap: wrap;
 	gap: 0 1rem;
 }
-
+@supports not (gap: 1rem;) {
+	.F li {
+		margin: 0 0.5rem;
+	}
+	.F li:nth-of-type(1) {
+		margin-left: 0;
+	}
+}
 .F header {
 	display: grid;
 	grid-template-columns: min-content auto;
