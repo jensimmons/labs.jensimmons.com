@@ -14,8 +14,11 @@ article {
 article section {
 	grid-column: 3 / 4;
 }
-article section.transcript {
+article section.more {
 	grid-column: 4 / 5;
+}
+article section.transcript {
+	grid-column: 2 / 4;
 }
 article header {
 	grid-row: 2 / 3;
