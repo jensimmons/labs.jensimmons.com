@@ -9,13 +9,18 @@ body {
 }
 article {
 	display: grid;
-	grid-template-columns: minmax(1rem, 5rem) 1fr minmax(300px, 70ch) 2fr minmax(1rem, 10rem);
+	gap: 1rem 2rem;
+	grid-template-columns: minmax(1rem, 5rem) 1fr minmax(300px, 70ch) 4fr minmax(1rem, 10rem);
+}
+article h1 {
+	margin: 0;
 }
 article section {
 	grid-column: 3 / 4;
 }
 article section.more {
 	grid-column: 4 / 5;
+	grid-row: 3 / 5;
 }
 article section.transcript {
 	grid-column: 2 / 4;
