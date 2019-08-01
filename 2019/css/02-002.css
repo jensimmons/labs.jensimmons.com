@@ -24,6 +24,8 @@ article section.more {
 }
 article section.transcript {
 	grid-column: 2 / 4;
+	padding-top: 1rem;
+	border-top: 1px solid #ccc;
 }
 article header {
 	grid-row: 2 / 3;
