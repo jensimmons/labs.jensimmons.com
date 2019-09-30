@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'CERN-www 14_Bold';
+    src:    url('CERN-www-bold-14.woff') format('woff'),
+            url('CERN-www-bold-14.woff2') format('woff2'),
+            url('CERN-www-bold-14.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CERN-www Headline_Bold';
+    src:    url('CERN-www-headline-bold.woff') format('woff'),
+            url('CERN-www-headline-bold.woff2') format('woff2'),
+            url('CERN-www-headline-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CERN-www Mono_Roman';
+    src:    url('CERN-www-mono.woff') format('woff'),
+            url('CERN-www-mono.woff2') format('woff2'),
+            url('CERN-www-mono.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CERN-www 16_Oblique';
+    src:    url('CERN-www-oblique-16.woff') format('woff'),
+            url('CERN-www-oblique-16.woff2') format('woff2'),
+            url('CERN-www-oblique-16.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CERN-www Regular_Bold Oblique';
+    src:    url('CERN-www-regular-bold-oblique.woff') format('woff'),
+            url('CERN-www-regular-bold-oblique.woff2') format('woff2'),
+            url('CERN-www-regular-bold-oblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CERN-www Regular_Bold';
+    src:    url('CERN-www-regular-bold.woff') format('woff'),
+            url('CERN-www-regular-bold.woff2') format('woff2'),
+            url('CERN-www-regular-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CERN-www Regular_Oblique';
+    src:    url('CERN-www-regular-oblique.woff') format('woff'),
+            url('CERN-www-regular-oblique.woff2') format('woff2'),
+            url('CERN-www-regular-oblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CERN-www Regular_Roman';
+    src:    url('CERN-www-regular.woff') format('woff'),
+            url('CERN-www-regular.woff2') format('woff2'),
+            url('CERN-www-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
