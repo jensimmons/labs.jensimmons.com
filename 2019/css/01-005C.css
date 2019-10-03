@@ -45,6 +45,7 @@ p.intro {
 	font-weight: 140;
 	background: white;
 }
+
 p.beginning:first-line {
 	font-feature-settings: "smcp" on;
 	text-transform: uppercase;
