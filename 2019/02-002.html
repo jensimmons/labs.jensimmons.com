@@ -8,19 +8,61 @@
   </head>
   <body>
 
-<header>
-
-
-</header>
-
 <main>
+	<article>
+	<header>
+		<h1>The Firefox Shape Path Editor</h1>
+	</header>
+	<div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/w8pksaGhjfA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	
+	
+	<section class="description">
+	<p>Everything on the web starts as a rectangular box. You can use Clip Path and CSS Shapes to change that. Clip the shape of of the element, and make it a circle. Float something and get the content that flows around it to flow along the edges of a polygon. These CSS properties make much more interesting graphic design possible. But also, they can be tricky.</p>
+	
+	<p>The Firefox Shape Path Editor is a tool you can use in Firefox 62 or later to help you edit the basic shape in CSS.</p>
+	</section>
+	
+	<section class="show-notes">
+		<h3>Links</h3>
+		<ul>
+			<li>Demo at: <a href="http://labs.jensimmons.com/2018/02-001.html">labs.jensimmons.com/2018/02-001.html</a></li>
+			<li>Music by Vidian, <a href="http://beta.ccmixter.org/files/Vidian/52275">beta.ccmixter.org/files/Vidian/52275</a></li>
+			<li>Photo of the bees by Karunakar Rayker, <a href="https://twitter.com/krayker">https://twitter.com/krayker</a></li>
+		</ul>
+	</section>
 
-<picture>
-	<source srcset="media/02-002/cat.webp" type="image/webp">
-	<source srcset="media/02-002/cat.jpg" type="image/jpeg">
-	<img src="media/02-002/cat.jpg" alt="a cat, belly up">
-</picture>
+	<section class="more">		
+		<p><a href="https://youtu.be/w8pksaGhjfA">Watch on YouTube</a></p>
+		<h3>On MDN</h3>
+		<ul>
+					<li><a href="https://developer.mozilla.org/docs/Tools/Page_Inspector/How_to/Edit_CSS_shapes">Shape Path Editor</a></li>
+			<li><a href="https://developer.mozilla.org/docs/Web/CSS/CSS_Shapes">CSS Shapes: </a></li>
+			<li><a href="https://developer.mozilla.org/docs/Web/CSS/clip-path">Clip Path: </a></li>
+			<li><a href="https://developer.mozilla.org/docs/Web/CSS/CSS_Shapes/Basic_Shapes">Guide on basic shapes: </a></li>
+			<li><a href="https://developer.mozilla.org/Web/CSS/basic-shape">Details on basic shapes syntax: </a></li>
+		</ul>
+		<h3>More like this</h3>
+		<p>[thumbnails to related videos]</p>
+	</section>
+	
+	<section class="transcript">
+		<h2>In Text...</h2>
+		
+		<p>I want to show you the Firefox Shape Path Editor. It's pretty exciting.</p> 
+		<p>Firefox is shipping CSS Shapes in Firefox 62, which comes out in May 2018. The Firefox Shape Path Editor in Developer Tools gives us an easy way to edit our CSS Shape Paths. It also edits paths for clip-path, so let's take a look.</p>
+		<p>We can see here, I've got a demo page for clip-path and CSS shapes. Let's inspect this first image of this bird's nest. We can see here on this image I have clip-path circle 50% at 50% at 50%. Well, where did I get that math from? Well, I like using this tool over here called clippy, and I can then kind of click on circle, and I can grab this code right here at the bottom as a kind of starter and I can put that code into my code editor and save it, and then come back over here into Firefox, and edit this and tweak it, and perfect it by using this tool. So you can see here where it says clip-path in the Rules Panel there's this icon of this little polygon with a bunch of points on it, and I can click on that and it brings up this blue line. It's dashed in some places, it's solid in others, and it also brings up these little handles, and I can grab the handles here with circle. It's pretty simple you just grab these handles. I can make this circle as big or as small as I want, and I can grab this centre point, and I can drag it around. Maybe we want to get it on these eggs, and make this nice little bird's nest, and I can turn it off and see the results, and turn it back on tweak it a little bit more. Let's look here at this egg where I've applied clip-path ellipse. Again, I got that starter code by clicking over here on clippy and I got myself some code here from an ellipse, and I put it in my code editor. Then I can check it out on this website, and I can click on this icon and adjust it here. I can adjust the vertical direction. I can adjust the horizontal direction, and I can drag the centre point. What it's doing is it's taking that content box of this content which happens to be an image so it's the edges of the box of the image and it's clipping them according to a path that we have to find. You can check out here on this photograph of the little chickies where I've put a polygon. Again, I grabbed this code from clippy to get me started. There's all kinds of shapes over here. You can pick right arrow, you can pick a trapezoid. I picked a parallelogram, but there's all sorts of shapes that you might want to use to get started. Now I can edit this polygon. I can drag any of these points around, and put them where I want. I can double-click and add a point, or I can double-click on an existing point, and it will disappear, which gives me the chance to ... It really kind of doesn't even matter if I started with the right number of points or not because I can add how many ever points that I want. Right here so far I've just clicked on this icon on and off, but I can hold down the command key or the control key depending on whether you're on a Mac or Windows, and I can switch into this other mode of box, and this gives me the chance to sort of squish it in the horizontal direction, the vertical direction. I can grab the corner, and kind of keeping the aspect ratio of the box I can change my path like that, or I can grab this handle right here, and I can rotate this giving me a lot of opportunity, a lot of choices to adjust this however I might need. I can click back into the original mode, and move my points around until I get it to be whatever kind of effect I'm going for. Now these tools don't just work on images they work on any kind of element box whatsoever. So maybe an image box, but maybe a headline or any other sort of content. Perhaps even an empty div that we've put a solid colour background on. So let's look here at a headline. You can see this word, Wildlife, it's an h1. In fact, I put a background on it. I've put padding on it. I've put text-align centre on it. I can add a clip-path, which gives me a chance to kind of give this a little bit different shape. I can turn this on and edit it. Let me switch over to this other mode. I can go ahead and make it sort of more narrow, or something until I get it to be the way that I want it to. It just gives us a tremendous number of opportunities. This doesn't just work on clip-path it works on CSS shapes. So clip-path is a CSS property that allows you to clip the outer edges of some sort of piece of content changing it from a rectangle some sort of a rectangular shape into whatever other kind of shape you want. CSS shapes using specifically for now the shape-outside property gives you a chance to affect the flow of content around a piece of content that's been floated, so we take say an image, or even something like a poll quote, or I don't know anything you want. You float that original piece of content, you take a piece of content and you float it, and then the rest of the content that's flowing around it can be floated in a shape that's not a rectangle, so, for instance, text. Let's look here you can see this photograph of a bee, and this photograph of a bee is, in fact, a rectangle, and you can see that the rectangle has a white background behind it, but it is a rectangle, but maybe we don't want the text to flow in a rectangle so basically this bee is floated left, which gets the text to flow around that rectangle, but we can add a shape-outside to it. In this case I'm floating it around an ellipse so you can see that the text flows around this ellipse shape. I can change the ellipse shape, I can move it around, and it adjusts where exactly it is that this text is going to flow. It's not really paying any attention to the image in this case it's only paying attention to the shape that I've defined. It's up to me as the author to kind of get it to work out the way that I want it to work out. In the tool you can see that there's this solid blue line that shows you kind of where it is that the path is going to have effect, and then you can see this dashed blue line indicating that even though I've dragged the ellipse, and I've made it kind of bigger, and I'm asking for it to push these words away that it's not going to because shape-outside only works within the content box of the element that it's applied to, so in this case there's a figure, and I've put the shape-outside on this figure. Well, it's not going to have any effect in a space that's outside of the content box for that figure. Hopefully, those lines can help you understand that, that, in fact, the words that are being flowed around this floated object are going to flow according to this blue solid shaped that's the combination of the shape path, and the content box, and not just the shape path all by itself. Let's look here we can see maybe trying to adjust this, and get this to flow the way that we want to using ellipse isn't using quite the right tool, so let's try again a very, very similar example where, in fact, I'm using a polygon, and I can sit here and mess around with the points, and move them and get them to be kind of where I want them to be in order to get this text to flow in a way that looks really beautiful. Again, outside of the content box of the floated figure it's not going to have any effect. Then I can turn this off and look at it and go, yeah, that is what I want, and I can grab this code out of the CSS pane in Firefox dev tools, and come back over here to my code and my code editor and paste it in here, save it, push it to my server. Here's a combination I'll show you this last example where I've got both clip-path, and shape-outside being applied at the same time. Let's just turn all of this off, and you can see the first thing I do is float the image to the left. I'm going to add a little bit of a margin on the right in the bottom so it just pushed the words away from the image, and then if I apply clip-path it clips the content this figure which, in fact, also clips the image, and the figcaption and everything it's clipping that figure element. If I add shape-outside because it's floated then the shape of the flow of the content that goes around the floated element is going to flow around that shape itself. If we want to mess with it we can mess with those two things independently. You mess with the way that the content flows separate from the way that the box is actually being clipped. There's several places where you can see documentation for this information for these tools. You can come over to MDN Web Docs, and there's a page on edit, shape paths and CSS that has all the information that I just told you about these tools including the keyboard shortcut to control or command click to switch from one mode to the other. We've also got a page on clip-path that explains it in more detail. A page on shape-outside that explains how shape-outside works along with shape-image-threshold and shape-margin. There's also a whole page on basic shapes because basic shapes are the underlying thing that does work both on clip-path, and on CSS shapes, shape-outside. If you want to study more about exactly what shapes are allowed ellipse, circle, polygon, and how they work and what the syntax is for them you can look at this page for basic shapes. So check it out, Firefox Shape Path Editor, shipping fully in Firefox 62 along with CSS Shapes. It's actually working already for Clip Path in Firefox 60. I hope you like it. It's just one of many tools we have coming in 2018 to help people design in the browser, or to refine your details as you're working as a front-end developer.
+	</section>
 
+
+
+ 
+ 
+ 
+ 
+
+
+
+	</article>
 </main>
 
 

@@ -1,0 +1,27 @@
+* { box-sizing: border-box; }
+body { margin: 0; }
+img { display: block; }
+html { font-family: Avenir; }
+
+p { 
+	font-size: 300%;
+	padding: 2rem;
+	margin: 2rem;
+	border: 10px solid cornflowerblue; 
+	
+ 
+}
+article {
+	writing-mode: vertical-lr;
+}
+
+/*
+	
+* { border: 2px solid blue;}
+
+/*
+article { 
+	display: grid;
+	grid-template-columns: max-content;
+}
+*/
