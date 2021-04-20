@@ -18,7 +18,7 @@
 			main {
 				margin: 4rem 4rem; 
 				display: grid;
-				grid-template-columns: repeat(3, max-content);
+				grid-template-columns: 1fr max-content 1fr;
 				gap: 5rem;
 			}
 			h1 { 
@@ -34,6 +34,11 @@
 				border: 0px solid black;
 				padding: 1rem;
 				background: white;
+				grid-column: 2;
+			}
+			b {
+				grid-column: 2;
+				height: 3rem;
 			}
 			label {
 				display: block;
@@ -47,20 +52,20 @@
 	
 	<body>
 		<main>
-			<div>
-				<label for="datetimeinput">Date time:</label>
-				<input type="datetime-local" id="datetimeinput"
-							 name="date-time-input" value="2021-06-07T10:00">
-			</div>
-			<div>
-				<label for="dateinput">Date:</label>
-				<input type="date" id="dateinput" name="date-input" value="2021-06-07">
-			</div>
-
-			<div>
-				<label for="timeinput">Time:</label>
-				<input type="time" id="timeinput" name="time-input">
-			</div>
+<div>
+	<label for="datetimeinput">Date time:</label>
+	<input type="datetime-local" id="datetimeinput"
+				 name="date-time-input" value="2021-06-07T10:00">
+</div>
+<b></b>
+<div>
+	<label for="dateinput">Date:</label>
+	<input type="date" id="dateinput" name="date-input" value="2021-06-07">
+</div>
+<div>
+	<label for="timeinput">Time:</label>
+	<input type="time" id="timeinput" name="time-input">
+</div>
 		</main>
 	</body>
 </html>
