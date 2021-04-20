@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>Maggie the dog</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" color="#43699B">
+
+		<style>
+			*, *:before, *:after { box-sizing: border-box; }
+			html { 
+				font-family: -apple-system, "SF Pro Display", "Helvetica Neue", sans-serif; font-synthesis: none; -webkit-font-smoothing: antialiased;
+				background: rgb(241, 240, 227);
+			}
+			body { 
+
+			}
+			main {
+				margin: 4rem 4rem; 
+				display: grid;
+				grid-template-columns: repeat(3, max-content);
+				gap: 5rem;
+			}
+			h1 { 
+				font-size: 1.4rem;
+				line-height: 1.47059;
+				font-weight: 400;
+				color: rgb(0, 102, 204);
+				margin: 4rem 0 0;
+				font-stretch: condensed;
+				display: none;
+			}
+			div {
+				border: 0px solid black;
+				padding: 1rem;
+				background: white;
+			}
+			label {
+				display: block;
+				font-size: 0.8rem;
+				margin-bottom: 4px;
+				font-weight: 500;
+			}
+
+		</style>
+	</head>	
+	
+	<body>
+		<main>
+			<div>
+				<label for="datetimeinput">Date time:</label>
+				<input type="datetime-local" id="datetimeinput"
+							 name="date-time-input" value="2021-06-07T10:00">
+			</div>
+			<div>
+				<label for="dateinput">Date:</label>
+				<input type="date" id="dateinput" name="date-input" value="2021-06-07">
+			</div>
+
+			<div>
+				<label for="timeinput">Time:</label>
+				<input type="time" id="timeinput" name="time-input">
+			</div>
+		</main>
+	</body>
+</html>
