@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>Maggie the dog</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" color="#43699B">
+
+		<style>
+			@font-face {
+				font-family: "Roslindale";
+				src: url("/fonts/Roslindale/RoslindaleVariableDisplay-VF.woff2");
+			}
+			*, *:before, *:after { box-sizing: border-box; }
+			img { display: block; }
+			html { background-color:#43699B; color: white; 
+				font-family: "Roslindale", Avenir, sans-serif;}
+			html { 
+				background-color: rgb(240, 177, 208); 
+				color: black;
+			}
+			@media (prefers-color-scheme: dark) {
+				html {
+					background-color: rgb(158, 53, 105); 
+					color: white;
+				}	
+			}
+			body { margin: 5rem 1rem; }
+			main { 
+			  display: grid;
+			  grid-template-columns: 1fr 1fr 1fr;
+			  grid-gap: 1rem;
+			}
+			img {
+			  grid-column: 2 / 3;
+			  width: 100%;
+			  height: auto;
+				border-radius: 14px;
+			} 
+			div {
+				grid-column: 2 / 3;
+			}
+			p {
+				margin: 0;
+				font-size: 1.9rem;
+				font-stretch: 120%;
+				font-weight: 300;
+				text-align: right;
+			}
+		</style>
+	</head>	
+	
+	<body>
+		<main>
+			  <img src="cherryblossoms.jpg" alt="pink flowers hanging in the sky" width="1200" height="900">
+				<div>
+					<p>In the cherry blossom's shade there's no such thing as a stranger. — Kobayashi Issa</p>
+				</div>
+		</main>
+	</body>
+</html>

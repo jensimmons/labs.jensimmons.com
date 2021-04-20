@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>Maggie the dog</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" color="rgb(212, 214, 168)">
+
+		<style>
+			*, *:before, *:after { box-sizing: border-box; }
+			@font-face {
+				font-family: "Agrandir Variable";
+				src: url("/fonts/AgrandirVariable/AgrandirVariable.woff2");
+			}
+			img { display: block; }
+			html { background-color:rgb(212, 214, 168); color: white; 
+				font-family: "Agrandir Variable", Avenir, sans-serif;}
+			body { margin: 5rem 1rem; }
+			main { 
+			  display: grid;
+			  grid-template-columns: repeat(5, 1fr);
+			  grid-gap: 1rem;
+			}
+			article {
+			  grid-column: 2 / 3; 
+			  background: rgb(57, 99, 173);
+			  color: rgb(208, 226, 233);
+				aspect-ratio: 1;
+			}
+			h1 {
+				font-size: 1.1rem;
+				font-weight: 590;
+				font-stretch: 85%;
+				margin: 1rem 1rem 1rem;
+			}
+			p {
+				font-size: 1.1rem;
+				line-height: 1.5;
+				margin: 0.5em 1rem 1rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<main>
+			  <article class="color-block">
+					<h1>Saturday, June 3rd</h1>
+					<p>A night of comedy.</p>
+			  </article>
+			  
+		</main>
+	</body>
+</html>
