@@ -22,23 +22,22 @@
 					color: white;
 				}	
 			}
-			body { margin: 5rem 1rem; }
+			body {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+			 }
 			main { 
-			  display: grid;
-			  grid-template-columns: 1fr 1fr 1fr;
-			  grid-gap: 1rem;
+				max-width: 350px;
 			}
 			img {
-			  grid-column: 2 / 3;
 			  width: 100%;
 			  height: auto;
 				border-radius: 14px;
 			} 
-			div {
-				grid-column: 2 / 3;
-			}
 			p {
-				margin: 0;
+				margin: 1.2rem 0;
 				font-size: 1.9rem;
 				font-stretch: 120%;
 				font-weight: 300;
@@ -50,9 +49,7 @@
 	<body>
 		<main>
 			  <img src="cherryblossoms.jpg" alt="pink flowers hanging in the sky" width="1200" height="900">
-				<div>
-					<p>In the cherry blossom’s shade there’s no such thing as a stranger. — Kobayashi Issa</p>
-				</div>
+				<p>In the cherry blossom’s shade there’s no such thing as a stranger. — Kobayashi Issa</p>
 		</main>
 	</body>
 </html>
