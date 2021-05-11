@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>Yellow</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" color="#43699B">
+
+		<style>
+			*, *:before, *:after { box-sizing: border-box; }
+			body { margin: 0; }
+			header {
+				display: grid;
+				grid-template-columns: 1fr max-content;
+				background: #ccc;
+			}
+			h1, p {
+				margin: 0;
+				grid-column: 1;
+			}
+			ul {
+				grid-column: 2;
+				grid-row: 1;
+				display: flex; 
+				padding: 0; 
+				margin: 0;
+				gap: .75rem;
+				border: 1px solid red;
+			}
+			li {
+				display: block;
+				border: 1px solid green;
+			}
+
+		</style>
+	</head>	
+	
+	<body>
+		<main>
+			<header>
+				<ul><li>Search</li><li>Sign in</li></ul></p>
+			</header>
+		</main>
+
+	</body>
+</html>
