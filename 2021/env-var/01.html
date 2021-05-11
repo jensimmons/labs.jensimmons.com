@@ -10,15 +10,14 @@
 			*, *:before, *:after { box-sizing: border-box; }
 			img { display: block; }
 			html { 
-				background-color:#fbbe23; 
-				font-family: "Proxima Nova";
+				font-family: "Proxima Nova", "Avenir Next Regular";
 				/* font-family: "Rockwell", "Hoefler Text",  "Didot", "Cochin", "Bodoni 72", "Big Caslon"; */
 				/* font-family: "Proxima Nova", "Futura", "DIN condensed"; */
-				
+				background: #f4eedc;
 			}
 			body { margin: 0; }
 			main { 
-
+				position: relative;
 			}
 			header {
 				display: grid;
@@ -28,12 +27,20 @@
 				color: white;
 				padding: 1rem;
 			}
-			h1 {
+			header h1 {
 				font-family: "Hoefler Text";
-			}
-			h1, p {
+				font-size: 3.2rem;
 				margin: 0;
 				grid-column: 1;
+			}
+			header h1 span {
+				font-size: 2rem;
+				text-transform: lowercase;
+				display: block;
+			}
+			header p {
+				margin: 0.5rem 0 -0.3rem 0;
+				grid-column: 1 / 3;
 			}
 			ul {
 				grid-column: 2;
@@ -49,27 +56,34 @@
 			li {
 				display: block;
 			}
-
+			
 			img {
 				grid-column: 2 / 3;
 				width: 100%;
 				height: auto;
 			} 
+			p {
+				margin: 1.5rem;
+				line-height: 1.3;
+			}
+			footer {
+				display: flex;
+				gap: 1rem;
+				justify-content: space-evenly;
+				background: rgb(74, 11, 78);
+				padding: 1rem;
+				position: sticky;
+				bottom: 0;
+			}
 			button {
 				-webkit-appearance: none;
 				padding: 1rem;
 				background: white;
-				border: 1px solid black;
-				font-weight: 600;
-				font-size: 1.2rem;
-				margin: 1rem 0;
+				font-weight: 660;
+				font-size: 1.1rem;
+				margin: 0;
 				width: 100%;
-			}
-
-			.bar {
-				display: flex;
-				gap: 1rem;
-				justify-content: space-evenly;
+				border: none;
 			}
 		</style>
 	</head>	
@@ -77,14 +91,17 @@
 	<body>
 		<main>
 			<header>
-				<h1>The Kitchen</h1>
+				<h1><span>The</span> Kitchen</h1>
 				<p>Home cooks meals every beginner should try.</p>
 				<ul><li>Search</li><li>Sign in</li></ul></p>
 			</header>
-			<p><img src="istockphoto-72822359-612x612.jpg" alt="abuela cooking with kids" width="391" height="612"></p>
+			<img src="istockphoto-72822359-612x612.jpg" alt="abuela cooking with kids" width="391" height="612">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In est ante in nibh mauris cursus mattis. Elementum curabitur vitae nunc sed velit dignissim sodales ut eu. Ultricies lacus sed turpis tincidunt id. Ut sem nulla pharetra diam sit amet. Nisi lacus sed viverra tellus in hac habitasse platea. Semper feugiat nibh sed pulvinar proin. Aenean et tortor at risus viverra. Id diam maecenas ultricies mi eget mauris pharetra et. Sollicitudin tempor id eu nisl. Auctor eu augue ut lectus arcu bibendum at varius. Nibh tortor id aliquet lectus proin. Augue neque gravida in fermentum et sollicitudin ac orci phasellus. Fringilla ut morbi tincidunt augue interdum velit. Cras sed felis eget velit aliquet sagittis id consectetur. Sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula.</p>
+			<p>Vel fringilla est ullamcorper eget nulla facilisi. Egestas fringilla phasellus faucibus scelerisque eleifend donec. Urna cursus eget nunc scelerisque viverra mauris in. Convallis tellus id interdum velit laoreet id donec ultrices. Sit amet luctus venenatis lectus magna fringilla urna. Id ornare arcu odio ut sem nulla pharetra diam. Orci dapibus ultrices in iaculis. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Est ullamcorper eget nulla facilisi etiam dignissim diam quis. Sagittis orci a scelerisque purus. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Lacus vel facilisis volutpat est velit egestas dui id ornare. Volutpat odio facilisis mauris sit amet. Accumsan tortor posuere ac ut consequat.</p>
 		</main>
-		<aside class="bar">
+		<footer>
 			<button>Grocery List</button>
 			<button>Saved recipes</button>
+		</footer>
 	</body>
 </html>
