@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>Maggie the dog</title>
+		<meta name="theme-color" content="black" media="(prefers-color-scheme: light)">
+		<meta name="theme-color" content="rgb(158, 53, 105)" media="(prefers-color-scheme: dark)">
+		<meta name="theme-color" content="rebecca purple" media="(min-width: 800px) media="(prefers-color-scheme: light)">
+
+		<style>
+			@font-face {
+				font-family: "Roslindale";
+				src: url("/fonts/Roslindale/RoslindaleVariableDisplay-VF.woff2");
+			}
+			*, *:before, *:after { box-sizing: border-box; }
+			img { display: block; }
+			html { 
+				font-family: "Roslindale", Avenir, sans-serif;
+				background-color: rgb(240, 177, 208); 
+				color: black;
+			}
+			@media (prefers-color-scheme: dark) {
+				html {
+					background-color: rgb(158, 53, 105); 
+					color: white;
+				}	
+			}
+			body {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 95vh;
+			 }
+			main { 
+				max-width: 350px;
+			}
+			img {
+			  width: 100%;
+			  height: auto;
+				border-radius: 14px;
+			} 
+			p {
+				margin: 1.2rem 0;
+				font-size: 1.9rem;
+				font-stretch: 120%;
+				font-weight: 300;
+				text-align: right;
+			}
+		</style>
+	</head>	
+	
+	<body>
+		<main>
+			  <img src="cherryblossoms.jpg" alt="pink flowers hanging in the sky" width="1200" height="900">
+				<p>In the cherry blossom’s shade there’s no such thing as a stranger. — Kobayashi Issa</p>
+		</main>
+	</body>
+</html>
