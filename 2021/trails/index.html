@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>Let’s Hike</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" color="hsl(160, 38%, 32%)">
+        <style>
+        body {
+            background-color: hsl(160, 38%, 32%);
+            color: white;
+            font-family: "Avenir Next", Avenir, Didot;
+            margin: 0;
+            background-image: url('pattern.svg');
+            background-position: -25vw 50vh;
+            background-repeat: no-repeat;
+            background-size: 60%;
+        }
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 25vh 50vh 25vh;
+            height: 100vw;
+        }
+        a {
+            color: #e4d0b0; 
+            font-weight: 500;
+        }
+        header {
+            background-image: url('corner.svg');
+            background-position: right 1em;
+            background-repeat: no-repeat;
+            background-size: 60%;
+            padding: 0 2rem;
+            grid-column: 1 / 4;
+            height: 25vh;
+            display: grid;
+            grid-template-rows: 1fr min-content min-content 1rem;
+            align-items: end;
+        }
+        header nav {
+            margin: 0;
+            text-align: right;
+            font-size: 1.1em;
+        }
+        h1 {
+            font-weight: normal;
+            line-height: 0.88em;
+            font-size: 3.6em;
+            margin-left: 10rem;
+            color: #e4d0b0;
+        }
+        h1 strong {
+            display: block;
+            margin-left: -9.8rem;
+            font-size: 8rem;
+            color: #cf9f52;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+        .fullbleed {
+            grid-column: 1 / 4;
+        }
+        .pullright {
+            grid-column: 2 / 4;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+        <header>
+            <h1>let’s <strong>hike</strong></h1>
+            <nav>
+                <a href="">Explore</a> |
+                <a href="">Camp</a>
+            </nav>
+        </header>
+        <img src="istockphoto-612619528-612x612.jpg" class="fullbleed">  
+        <img src="istockphoto-1270104024-612x612.jpg" class="pullright">
+        </div>
+    </body>
+</html>
