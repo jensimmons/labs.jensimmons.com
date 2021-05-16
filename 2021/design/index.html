@@ -11,106 +11,88 @@
             color: white;
             font-family: "Gill Sans";
             margin: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr 2fr 1fr 2fr 2fr 1fr;
+            grid-template-rows: 100px 100px 1fr 1fr 100px;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            height: 100vh;
+        } 
+        header {
+            grid-column: 2 / 4;
+            grid-row: 3;
+            align-self: center;
         }
-        
         nav {
-            position: absolute;
-            top: 0;
-            left: 5vw;
-            width: 308px;
-            height: 308px;
-            padding: 2em 0;
+            grid-column: 6 / 9;
+            grid-row: 3;
+            align-self: center;
+        }
+        .close-up {
+            grid-column: 1 / 5;
+            grid-row: 2 / 6;
+            z-index: -1;
+        }
+        .wide-shot { 
+            grid-column: 6 / 8;
+            grid-row: 5 / 8;
+            z-index: -1;
+        }
+        section {
+            grid-column: 4 / 6;
+            grid-row: 6 / 7;
         }
         
+        
+        header h1 {
+            font-weight: 100;
+            font-size: 4rem;
+            margin: 0;
+        }
         nav a {
             color: white;
             font-weight: normal;
             text-transform: uppercase;
             text-decoration: none;
-            margin: 3em 1em 0 0;
-            letter-spacing: 0.1em;
+            margin: 1rem;
+            letter-spacing: 0.1rem;
             font-weight: 100;
         }
-
-        nav .background {
-            position: absolute;
-            top: 0;
-            left: 2em;
-            width: 424px;
-            height: 473px;
-            background-image: url('iStock-1205572042.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            margin: 0;
-            z-index: -1;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
-        
-        header h1 {
-            position: absolute;
-            right: 5vw;
-            top: 2em;
-            font-weight: 100;
-            font-size: 2em;
-        }
-        
-
-        section {
-            position: absolute;
-            right: 8vw;
-            bottom: 0;
-            margin: 0;
-            width: 620px;
-            height: 620px;
-            background-image: url('iStock-899419412.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: bottom right;
-        }
-        
-        section .titles {
-            position: relative;
-            left: -2em;
-            top: 20em;
-        }
-        
         section h3 {
             font-weight: 100;
             text-transform: uppercase;
-            margin-bottom: 0;
-            
+            margin-bottom: 0;   
         }
-        
         section h2 {
             font-weight: 900;
             text-transform: uppercase;
             font-family: "HelveticaNeue-CondensedBold";
-            font-size: 5em;
+            font-size: 7rem;
             line-height: 1;
-            width: 4em;
-            margin-top: 0;
+            margin: 0;
         }
+
         </style>
     </head>
     <body>
+        <header>
+            <h1>design.</h1>
+        </header>
         <nav>
-            <figure class="background"></figure>
-            
             <a href="#news">News</a>
             <a href="#trends">Trends</a>
             <a href="#shop">Shop</a>
             <a href="#about">about</a>
         </nav>
-        <header>
-            <h1>design.</h1>
-        </header>
-        <main>
-            
-            <section>
-                <div class="titles">
-                    <h3>Inspiring.</h3>
-                    <h2>Restful Spaces</h2>
-                </div>
-            </section>
-        </main>
+        <section class="titles">
+            <h3>Inspiring.</h3>
+            <h2>Restful Spaces</h2>
+        </section>
+        <img class="wide-shot" src="iStock-899419412.jpg">
+        <img class="close-up" src="iStock-1205572042.jpg">
     </body>
 </html>
