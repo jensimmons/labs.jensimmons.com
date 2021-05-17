@@ -5,11 +5,13 @@
         <title>Let’s Hike</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" color="hsl(160, 38%, 32%)">
+        <link rel="icon" href="/2021/trails/icon.png">
         <style>
         body {
             background-color: hsl(160, 38%, 32%);
             color: white;
-            font-family: "Avenir Next", Avenir, Didot;
+            font-family: Didot;
+            /* font-family: "Avenir Next", Avenir, Didot; */
             margin: 0;
             background-image: url('pattern.svg');
             background-position: -25vw 50vh;
@@ -19,7 +21,7 @@
         .wrapper {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 25vh 50vh 25vh;
+            grid-template-rows: 20vh 40vh 40vh;
             height: 100vw;
         }
         a {
@@ -33,7 +35,7 @@
             background-size: 60%;
             padding: 0 2rem;
             grid-column: 1 / 4;
-            height: 25vh;
+            height: 20vh;
             display: grid;
             grid-template-rows: 1fr min-content min-content 1rem;
             align-items: end;
@@ -41,18 +43,20 @@
         header nav {
             margin: 0;
             text-align: right;
-            font-size: 1.1em;
+            font-size: 1.2em;
         }
         h1 {
             font-weight: normal;
             line-height: 0.88em;
             font-size: 3.6em;
-            margin-left: 10rem;
             color: #e4d0b0;
+            margin: 0;
+        }
+        h1 span {
+            margin-left: 10.3rem;
         }
         h1 strong {
             display: block;
-            margin-left: -9.8rem;
             font-size: 8rem;
             color: #cf9f52;
         }
@@ -73,14 +77,14 @@
     <body>
         <div class="wrapper">
         <header>
-            <h1>let’s <strong>hike</strong></h1>
+            <h1><span>let’s</span> <strong>hike</strong></h1>
             <nav>
                 <a href="">Explore</a> |
                 <a href="">Camp</a>
             </nav>
         </header>
-        <img src="istockphoto-612619528-612x612.jpg" class="fullbleed">  
-        <img src="istockphoto-1270104024-612x612.jpg" class="pullright">
+        <img src="iStock-612619528.jpg" class="fullbleed">  
+        <img src="iStock-1270104024.jpg" class="pullright">
         </div>
     </body>
 </html>
