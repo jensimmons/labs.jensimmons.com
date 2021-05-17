@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>Testing 1... 2... 3...</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" color="rebeccapurple">
+		<style>
+			*, *:before, *:after { box-sizing: border-box; }
+			img { display: block; }
+			html {
+				background-color: pink;
+			}
+			body {
+				background-color: lightblue;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				margin: 0;
+			}
+			article {
+				grid-column: 2;
+			}
+			h1 {
+				font-size: calc(1rem + 3vh);
+			}
+			ul {
+				grid-column: 1;
+				grid-row: 1;
+				display: grid;
+				grid-auto-rows: 10vh;
+				margin: 0;
+				padding: 0;
+			}
+			li:nth-child(even) {
+				background-color: lemonchiffon;
+			}
+			li {
+				border-bottom: 1px solid black;
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<article>
+			<h1>People use viewport units in typography.</h1>
+			<p>Theme color is purple.</p>
+			<p>HTML background is pink</p>
+			<p>Body background is lightblue.</p>
+			<p>Body height is 100vh.</p>
+		</article>
+		<ul>
+			<li>1</li>			
+			<li>2</li>	
+			<li>3</li>			
+			<li>4</li>			
+			<li>5</li>	
+			<li>6</li>			
+			<li>7</li>			
+			<li>8</li>	
+			<li>9</li>			
+			<li>10</li>	
+		</ul>		
+		</main>
+	</body>
+</html>
