@@ -33,12 +33,10 @@
 				background: white; */
 				background: black;
 				color: white;
-				font-size: 2rem;
 				text-align: center;
-				display: flex;
-				flex-flow: column;
-				justify-content: space-between;
-				aspect-ratio: .75;
+				display: grid;
+				grid-template-rows: 2fr 1fr;
+				aspect-ratio: 0.75;
 			}
 			img {
 				width: 100%;
@@ -46,7 +44,9 @@
 				object-fit: cover;
 			}
 			h2 {
-				margin: 0 0 1.1rem 0;
+				font-size: calc(2rem + 4vw);
+				margin: 0;
+				align-self: center;
 			}
 
 		</style>
