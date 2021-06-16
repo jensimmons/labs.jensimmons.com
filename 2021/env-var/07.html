@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>The Kitchen</title>
+		<meta name="viewport" content="initial-scale=1, viewport-fit=cover">
+		<meta name="theme-color" color="#4A0B4E">
+		<style>
+			*, *:before, *:after { box-sizing: border-box; }
+			img { display: block; }
+			html {
+				font-family: "Proxima Nova", "Avenir Next Regular", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+				font-synthesis: none;
+				-webkit-font-smoothing: antialiased;
+				background: #e9e0c4;
+			}
+			body { margin: 0; }
+			main {
+				position: relative;
+				background: #e9e0c4;
+				padding-bottom: 2rem;
+				display: flow-root;
+			}
+			header {
+				display: grid;
+				grid-template-columns: 1fr max-content;
+				column-gap: 1rem;
+				background: #4A0B4E;
+				color: white;
+				padding: 1rem calc(1rem + env(safe-area-inset-left)) 1rem ;
+			}
+			header h1 {
+				font-family: "Hoefler Text";
+				font-size: 3.2rem;
+				margin: 0;
+				grid-column: 1;
+			}
+			header h1 span {
+				font-size: 2rem;
+				text-transform: lowercase;
+				display: block;
+			}
+			header p {
+				margin: 0.5rem 0 -0.3rem 0;
+				grid-column: 1 / 3;
+				padding: 0;
+			}
+			ul {
+				grid-column: 2;
+				grid-row: 1;
+				display: flex; padding: 0; margin: 0;
+				justify-content: end;
+				gap: .75rem;
+
+				font-weight: bold;
+				text-transform: uppercase;
+				font-size: 0.8rem;
+			}
+			li {
+				display: block;
+			}
+
+			img {
+				grid-column: 2 / 3;
+				width: 100%;
+				height: auto;
+			}
+			@media (min-width: 500px) {
+				img {
+					width: 300px;
+					max-width: 50%;
+					float: right;
+					margin-left: 1rem;
+				}
+			}
+			p {
+				margin: 1rem;
+				line-height: 1.3;
+				padding-left: env(safe-area-inset-left);
+			}
+			footer {
+				display: flex;
+				gap: 1rem;
+				justify-content: space-evenly;
+				background: rgb(74, 11, 78);
+				padding: 1rem 1rem calc(1rem + env(safe-area-inset-bottom));
+				position: sticky;
+				bottom: 0;
+			}
+			button {
+				-webkit-appearance: none;
+				padding: 1rem;
+				background: white;
+				color: black;
+				font-weight: 660;
+				font-size: 1.1rem;
+				margin: 0;
+				width: 100%;
+				border: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<main>
+			<header>
+				<h1><span>The</span> Kitchen</h1>
+				<p>Home cooked meals every beginner should try.</p>
+				<ul><li>Search</li><li>Sign in</li></ul></p>
+			</header>
+			<img src="iStock-72822359.jpg" alt="abuela cooking with kids" width="391" height="612">
+			<p>You can do it. You can learn to cook. Empowering yourself with the skills needed to nourish yourself and your family can be a rewarding adventure. Instead of judging yourself because you aren't currently an amazing chef, think about this as a slow journey. We'll go step-by-step, through grocery shopping, food storage, prep, and the process of cooking. We'll start with very easy recipes, and go through everything you need to know. Like learning anything else in life, setting small goals and growing is the way to do it. Here at the Kitchen, you can find and collect recipes, build a grocery list, and find videos that will show you how to do this.</p>
+		</main>
+		<footer>
+			<button>Grocery List</button>
+			<button>Saved recipes</button>
+		</footer>
+	</body>
+</html>
