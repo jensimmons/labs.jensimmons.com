@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="white">
+		<style>
+				body {
+						margin: 0;
+						text-align: center;
+						font-size: 15pt;
+						font-family: monospace;
+				}
+
+				.viewport-units {
+						position: absolute;
+						top: 0;
+						left: 50px;
+						border: 10px solid rgba(0, 20, 128, 0.5);
+						box-sizing: border-box;
+						background-color: rgba(0, 20, 128, 0.25);
+						writing-mode: vertical-lr;
+				}
+
+				.percent {
+						position: absolute;
+						top: 200px;
+						left: 110px;
+						border: 10px solid rgba(0, 128, 28, 0.5);
+						box-sizing: border-box;
+						background-color: rgba(0, 128, 28, 0.25);
+						writing-mode: vertical-lr;
+				}
+
+				.fill-available {
+						position: absolute;
+						top: 200px;
+						left: 180px;
+						border: 10px solid rgba(0, 128, 28, 0.5);
+						box-sizing: border-box;
+						background-color: rgba(0, 128, 28, 0.25);
+						writing-mode: vertical-lr;
+				}
+
+				.fill-available.height {
+						height: -webkit-fill-available;
+				}
+
+				.inner-size {
+						position: absolute;
+						top: 200px;
+						left: 250px;
+						border: 10px solid rgba(128, 128, 28, 0.5);
+						box-sizing: border-box;
+						background-color: rgba(128, 128, 28, 0.25);
+						writing-mode: vertical-lr;
+				}
+
+				.height {
+						top: 0;
+						width: 60px;
+						height: 100vh;
+				}
+
+				#inner-height {
+						top: 0;
+						height: 10px;
+				}
+
+				.fixed {
+						position: fixed;
+						width: 50px;
+						height: 50px;
+						border: 10px solid blue;
+						background-color: purple;
+						box-sizing: border-box;
+				}
+
+				.fixed.topleft {
+						left: 0;
+						height: 100%;
+						writing-mode: vertical-lr;
+				}
+
+				.fixed.bottomright {
+						display: none;
+						bottom: 0;
+						right: 0;
+				}
+
+				span {
+						font-size: smaller;
+				}
+		</style>
+		<script>
+
+				function updateComputedValue(element)
+				{
+						let span = element.querySelector('span');
+						span.textContent = `(${window.getComputedStyle(element).height})`;
+				}
+
+				function updateComputedValues()
+				{
+						updateComputedValue(document.querySelector('.fixed.topleft'));
+						updateComputedValue(document.querySelector('.viewport-units.height'));
+						updateComputedValue(document.querySelector('.percent.height'));
+						updateComputedValue(document.querySelector('.inner-size.height'));
+						updateComputedValue(document.querySelector('.fill-available.height'));
+				}
+
+				window.addEventListener('resize', () => {
+						document.getElementById('inner-height').style.height = window.innerHeight + 'px';
+						updateComputedValues();
+				}, false);
+
+				window.addEventListener('load', () => {
+						document.getElementById('inner-height').style.height = window.innerHeight + 'px';
+						updateComputedValues();
+				}, false);
+		</script>
+</head>
+<body>
+		<div class="fixed topleft">fixed 100% height <span></span></div>
+
+		<div class="viewport-units height">
+				100vh <span></span>
+		</div>
+		<div class="percent height">
+				height 100% <span></span>
+		</div>
+		<div id="inner-height" class="inner-size height">
+				window.inner-height <span></span>
+		</div>
+		<div class="fill-available height">
+				-webkit-fill-available <span></span>
+		</div>
+
+</body>
+</html>
+
