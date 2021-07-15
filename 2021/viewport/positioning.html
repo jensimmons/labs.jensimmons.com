@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>Positioning</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" color="#aa00ff">
+		<style>
+			*, *:before, *:after { box-sizing: border-box; }
+			img { display: block; }
+			html {
+				background-color: pink;
+			}
+			body {
+				margin: 0;
+				font-family: Avenir;
+				font-size: 2rem;
+			}
+			div {
+				text-align: center;
+			}
+			.absolute {
+				position: absolute;
+				bottom: 0;
+				left:0;
+				height: 80px;
+				width: 40%;
+				background-color: rgb(255, 246, 0);
+			}
+			.fixed {
+				position: fixed;
+				bottom: 0;
+				right: 0;
+				height: 80px;
+				width: 40%;
+				background-color: rgb(255, 246, 0);
+			}
+			p {
+				color: rgb(242, 138, 156);
+			}
+		</style>
+	</head>
+	<body>
+
+		<div class="absolute">absolute</div>
+		<div class="fixed">fixed</div>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lorem risus, rutrum at leo eu, venenatis vehicula felis. Sed sollicitudin massa vel laoreet pellentesque. Vivamus scelerisque enim sed iaculis volutpat. Aenean eget ligula tempor magna ullamcorper gravida. Aenean semper urna vel ex maximus malesuada. Etiam at massa tincidunt, mollis lectus sit amet, interdum quam. Ut euismod cursus odio, vel finibus sapien rhoncus id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at lobortis lectus, ut dignissim neque. Donec consectetur vehicula condimentum. Integer volutpat commodo nunc sed pharetra.</p>
+
+		<p>Donec porttitor mauris at lorem scelerisque, eget congue enim tincidunt. In vel porta lectus, eget sagittis nisi. Proin vehicula euismod leo, vehicula hendrerit risus sollicitudin sit amet. Curabitur accumsan ipsum tellus, id tristique risus scelerisque a. Phasellus mattis magna enim, ac semper nunc eleifend at. Aenean finibus enim quis orci lobortis efficitur. Donec velit magna, sodales nec mi at, faucibus mattis nulla. Mauris interdum placerat ante nec congue. Integer eget bibendum ipsum. Morbi odio lacus, viverra maximus orci a, accumsan viverra dolor. Cras non velit nec ligula volutpat varius non sit amet turpis. Quisque aliquam dolor at ante volutpat, vel posuere urna euismod. Nulla at ullamcorper metus. Suspendisse ac tellus ut tellus euismod mattis commodo rhoncus est. Maecenas pulvinar felis sem, a aliquam metus cursus ac.</p>
+
+		<p>Vivamus vitae justo sit amet dolor dignissim elementum vel vitae libero. Nunc laoreet quis dolor non aliquam. Mauris at diam vitae ante malesuada scelerisque id eu mauris. Nullam condimentum nunc sit amet dolor elementum convallis. Praesent a pulvinar orci, non blandit ante. Aliquam dignissim tellus vel fringilla feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce luctus justo tortor, ac venenatis purus blandit eu. Aenean facilisis lorem at porttitor luctus. Nullam a turpis id lectus convallis gravida et at justo. Pellentesque eget elit nisl.</p>
+
+		<p>Pellentesque laoreet pulvinar diam, et rhoncus elit pulvinar id. Pellentesque placerat ligula eget blandit pharetra. Curabitur ultrices commodo rutrum. Vivamus tristique consectetur purus non gravida. Cras pharetra mattis egestas. Nam a urna nec mi scelerisque auctor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla tempus nibh purus, ac consequat magna consequat sit amet.</p>
+
+		<p>Morbi sagittis malesuada leo sit amet feugiat. Sed et ultricies neque. Integer maximus ipsum id sapien ultrices, at ultricies mauris consectetur. Ut at lorem et augue finibus finibus et ac nisi. Vivamus ut dolor aliquet, feugiat mauris nec, maximus massa. In eu tincidunt risus. In eleifend dapibus ante ac rutrum. Pellentesque non odio neque. Mauris rhoncus lacus at turpis rhoncus tempor.</p>
+
+	</body>
+</html>
