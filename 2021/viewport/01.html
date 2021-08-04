@@ -1,0 +1,48 @@
+<!doctype html>
+<html dir="ltr" lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Viewport Test | Jen Simmons Labs</title>
+    <link rel="stylesheet" href="css/01-005C.css">
+  </head>
+  <style>
+  *, *:before, *:after { box-sizing: border-box; }
+  html {
+    background: red;
+  }
+  body {
+    margin: 0;
+    background: yellow;
+  }
+  main {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: green;
+  }
+  article {
+    display: grid;
+    place-content: center;
+    height: 100%;
+  }
+  p {
+    margin: 0;
+    text-align: center;
+    color: white;
+  }
+</style>
+
+<body>
+
+  <main>
+    <article>
+      <p>Absolute Positioning on Four Sides</br>
+      html has red background. body has yellow.</p>
+    </article>
+  </main>
+
+</body>
+</html>

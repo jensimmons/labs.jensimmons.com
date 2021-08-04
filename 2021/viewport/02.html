@@ -1,0 +1,55 @@
+<!doctype html>
+<html dir="ltr" lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Viewport Test | Jen Simmons Labs</title>
+    <link rel="stylesheet" href="css/01-005C.css">
+  </head>
+  <style>
+  *, *:before, *:after { box-sizing: border-box; }
+  html {
+    background: red;
+    height: 100vh;
+  }
+  body {
+    margin: 0;
+    background: yellow;
+  }
+  main {
+    background: green;
+  }
+  article {
+    display: grid;
+    place-content: center;
+    height: 100%;
+  }
+  p {
+    margin: 0;
+    text-align: center;
+    color: white;
+  }
+  nav {
+    color: white;
+    background: #888;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 44px;
+    display: block;
+  }
+</style>
+
+<body>
+
+  <main>
+    <article>
+      <p>100vh HTML + abspos menu bar</br>
+      html has red background. body has yellow.</p>
+    </article>
+  </main>
+  <nav>This is the menu.</nav>
+
+</body>
+</html>
