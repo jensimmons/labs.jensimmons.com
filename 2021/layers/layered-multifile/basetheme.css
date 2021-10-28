@@ -1,0 +1,15 @@
+html {
+	font-family: Avenir;
+}
+body {
+	margin: 4rem;
+}
+.home-page h1 {
+	font-size: 3rem;
+	font-weight: 400;
+	margin: 1rem 0 0 0;
+	color: purple;
+}
+.home-page p {
+	color: purple;
+}

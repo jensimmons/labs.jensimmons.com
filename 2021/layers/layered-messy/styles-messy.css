@@ -1,0 +1,59 @@
+@layer reset, basetheme, layout, custom;
+
+@layer basetheme {
+	html {
+		font-family: Avenir;
+	}
+}
+
+@layer custom {
+	h1 {
+		color: green;
+	}
+}
+
+@layer layout {
+	body {
+		margin: 2rem;
+	}
+}
+
+p {
+	color: green;
+}
+
+@layer basetheme {
+	.home-page h1 {
+		font-size: 3rem;
+		font-weight: 400;
+		margin: 1rem 0 0 0;
+		color: red;
+	}
+}
+
+@layer layout {
+	body {
+		margin: 4rem;
+	}
+}
+
+@layer basetheme {
+	.home-page p {
+		color: red;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+@layer reset {
+	*, *:before, *:after { box-sizing: border-box; }
+	body { margin: 0; }
+	img {	display: block; max-width: 100%; }
+}

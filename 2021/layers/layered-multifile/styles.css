@@ -1,0 +1,7 @@
+@import(reset.css) layer(reset);
+@import(basetheme.css) layer(basetheme);
+@import(custom.css) layer(custom);
+
+p {
+	color: green;
+}
