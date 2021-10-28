@@ -6,30 +6,22 @@
 }
 
 @layer basetheme {
-	body {
-		font-family: Avenir;
-	}
+	body { font-family: Avenir; }
 	.home-page h1 {
 		font-size: 3rem;
 		font-weight: 400;
 		margin: 1rem 0 0 0;
 		color: purple;
 	}
-	.home-page p {
-		color: purple;
-	}
+	.home-page p { color: purple; }
 }
 
 @layer layout {
-	body {
-		margin: 4rem;
-	}
+	body { margin: 4rem; }
 }
 
 @layer custom {
-	h1 {
-		color: green;
-	}
+	h1 { color: green; }
 }
 
 p {
