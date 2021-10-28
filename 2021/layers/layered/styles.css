@@ -5,7 +5,8 @@
 
 
 
-	html {
+
+	body {
 		font-family: Avenir;
 	}
 	.home-page h1 {
@@ -32,5 +33,5 @@
 
 
 p {
-	color: green !important;
+	color: green;
 }

@@ -1,19 +1,13 @@
 @layer reset, basetheme, layout, custom;
 
 @layer basetheme {
-	html {
-		font-family: Avenir;
-	}
+	html { font-family: Avenir;	}
 }
 @layer custom {
-	h1 {
-		color: green;
-	}
+	h1 { color: green; }
 }
 @layer layout {
-	body {
-		margin: 2rem;
-	}
+	body { margin: 2rem; }
 }
 p {
 	color: green;
@@ -27,22 +21,11 @@ p {
 	}
 }
 @layer layout {
-	body {
-		margin: 4rem;
-	}
+	body { margin: 4rem; }
 }
 @layer basetheme {
-	.home-page p {
-		color: red;
-	}
+	.home-page p { color: red; }
 }
-
-
-
-
-
-
-
 @layer reset {
 	*, *:before, *:after { box-sizing: border-box; }
 	body { margin: 0; }
