@@ -5,23 +5,19 @@
 		font-family: Avenir;
 	}
 }
-
 @layer custom {
 	h1 {
 		color: green;
 	}
 }
-
 @layer layout {
 	body {
 		margin: 2rem;
 	}
 }
-
 p {
 	color: green;
 }
-
 @layer basetheme {
 	.home-page h1 {
 		font-size: 3rem;
@@ -30,21 +26,16 @@ p {
 		color: red;
 	}
 }
-
 @layer layout {
 	body {
 		margin: 4rem;
 	}
 }
-
 @layer basetheme {
 	.home-page p {
 		color: red;
 	}
 }
-
-
-
 
 
 

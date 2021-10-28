@@ -1,6 +1,6 @@
-@import(reset.css) layer(reset);
-@import(basetheme.css) layer(basetheme);
-@import(custom.css) layer(custom);
+@import url(reset.css) layer(reset);
+@import url(basetheme.css) layer(basetheme);
+@import url(custom.css) layer(custom);
 
 p {
 	color: green;
