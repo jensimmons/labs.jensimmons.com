@@ -1,5 +1,5 @@
 @import url(reset.css) layer(reset);
-@import url(basetheme.css) layer(basetheme);
+@import url(third-party-lib.css) layer(basetheme);
 @import url(custom.css) layer(custom);
 
 p {

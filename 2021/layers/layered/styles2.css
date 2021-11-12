@@ -2,7 +2,6 @@
 	*, *:before, *:after { box-sizing: border-box; }
 	body { margin: 0; }
 	img {	display: block; max-width: 100%; }
-	/* body.home-page { font-family: Georgia; } */
 }
 
 @layer basetheme {
